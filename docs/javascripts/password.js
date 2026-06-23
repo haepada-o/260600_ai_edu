@@ -1,27 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
   const pathname = window.location.pathname;
+  // 한글 경로의 URL 인코딩(%EC%8B%9C%EC%9E%91 등)을 디코딩하여 매칭 문제 해결
+  const decodedPath = decodeURIComponent(pathname);
 
   // 1. 강의별 고유 설정 정의 (강의 경로, 비밀번호, 세션 스토리지 키, 표시 이름)
   const LECTURE_CONFIGS = [
     {
       id: 'mc260618',
-      displayName: '260618 마스터클래스 후속 실전 과정',
+      displayName: '아티스트, 창작자를 위한 AI 개론',
       pathKeywords: ['/00_시작', '/01_도구', '/02_루틴', '/03_확장', '/04_시스템', '00_', '01_', '02_', '03_', '04_'],
       password: 'edu260618',
       authKey: 'ai_edu_authorized_260618'
     }
-    // 향후 새로운 강의 아카이브를 개별 비밀번호로 추가할 때 아래처럼 추가하면 됩니다.
-    // {
-    //   id: 'new_lecture',
-    //   displayName: '차기 AI 아카이브 실전 세션',
-    //   pathKeywords: ['/05_워크숍', '05_'],
-    //   password: 'edu231015',
-    //   authKey: 'ai_edu_authorized_next'
-    // }
   ];
 
   // 메인페이지(index.html 또는 루트 경로) 감지
-  const cleanPath = pathname.replace(/\/$/, "");
+  const cleanPath = decodedPath.replace(/\/$/, "");
   const isHome = cleanPath === "" || 
                  cleanPath === "/index.html" || 
                  cleanPath === "/260600_ai_edu" || 
@@ -32,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // 현재 경로가 어떤 강의에 해당하는지 탐색
   let matchedLecture = null;
   for (const config of LECTURE_CONFIGS) {
-    const matches = config.pathKeywords.some(keyword => pathname.includes(keyword));
+    const matches = config.pathKeywords.some(keyword => decodedPath.includes(keyword));
     if (matches) {
       matchedLecture = config;
       break;
