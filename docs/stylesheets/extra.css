@@ -1,116 +1,278 @@
-/* ===== Custom Styles for AI Education Guide ===== */
+/* ===== Custom Premium Minimal Design System for AI Education Archive ===== */
 
-/* Pretendard 웹폰트 로드 */
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
 
 :root {
+  /* Font Families */
   --md-text-font: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+  --md-code-font: "JetBrains Mono", monospace;
+
+  /* Premium Color Palette Customization */
+  --color-brand-primary: #588B8B;   /* Steel Teal */
+  --color-brand-accent: #F28F3B;    /* Cadmium Orange */
+  --color-brand-warn: #C8553D;      /* Cedar Chest */
+  --color-brand-light: #FFD5C2;     /* Unbleached Silk */
+  --color-brand-dark: #1E2D2D;      /* Dark Slate Teal */
+  --color-bg-glass: rgba(255, 255, 255, 0.03);
+  --color-border-glass: rgba(88, 139, 139, 0.15);
 }
 
-/* 본문 최대 폭 확장 (기본 61rem → 72rem) */
+/* Light / Dark Common Adjustments */
+body {
+  word-break: keep-all;
+  overflow-x: hidden;
+}
+
+/* Maximize Content Width & Margins */
 .md-grid {
-  max-width: 72rem;
+  max-width: 68rem;
 }
 
-/* 테이블 가독성 강화 */
+/* Premium Navigation Bar (Header) Styling */
+.md-header {
+  background-color: rgba(30, 45, 45, 0.8) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(88, 139, 139, 0.15);
+  box-shadow: none !important;
+}
+
+/* Remove default footer and boilerplate elements */
+.md-footer {
+  background-color: transparent !important;
+  border-top: 1px solid var(--color-border-glass);
+}
+.md-footer-meta {
+  background-color: transparent !important;
+}
+
+/* Table Style Upgrades */
 .md-typeset table:not([class]) {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   border-collapse: collapse;
+  border: 1px solid var(--color-border-glass);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 2rem 0;
+  width: 100%;
 }
 
 .md-typeset table:not([class]) th {
-  background-color: var(--md-primary-fg-color);
-  color: var(--md-primary-bg-color);
+  background-color: rgba(88, 139, 139, 0.1);
+  color: var(--md-default-fg-color);
   font-weight: 600;
-  white-space: nowrap;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--color-border-glass);
 }
 
 .md-typeset table:not([class]) td {
-  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding: 14px 20px;
+  border-bottom: 1px solid rgba(88, 139, 139, 0.08);
 }
 
 .md-typeset table:not([class]) tr:hover td {
-  background-color: var(--md-accent-fg-color--transparent);
+  background-color: rgba(88, 139, 139, 0.04);
 }
 
-/* 코드 블록 둥근 모서리 */
-.md-typeset pre {
-  border-radius: 8px;
+/* Custom Hero Section */
+.archive-hero {
+  padding: 4.5rem 0 3rem 0;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border-glass);
+  margin-bottom: 3.5rem;
 }
 
-/* 체크리스트 스타일 */
-.md-typeset .task-list-indicator::before {
-  border-radius: 4px;
-}
-
-/* Blockquote 스타일 (인용문) */
-.md-typeset blockquote {
-  border-left: 4px solid var(--md-primary-fg-color);
-  padding: 0.6rem 1rem;
-  margin: 1rem 0;
-  background: var(--md-code-bg-color);
-  border-radius: 0 6px 6px 0;
-}
-
-/* 카드 그리드 스타일 */
-.md-typeset .grid.cards > ul > li {
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 10px;
-  transition: box-shadow 0.2s, transform 0.2s;
-}
-
-.md-typeset .grid.cards > ul > li:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-  transform: translateY(-2px);
-}
-
-/* Mermaid 다이어그램 배경 */
-.mermaid {
-  text-align: center;
-}
-
-/* 모바일 최적화 및 레이아웃 조정 */
-@media screen and (max-width: 76.25em) {
-  .md-typeset table:not([class]) {
-    font-size: 0.78rem;
-  }
-  
-  .md-grid {
-    max-width: 100%;
-  }
-}
-
-/* 좌측 전체 목차(Navigation)와 우측 현재 페이지 목차(TOC) 스타일 강화 */
-.md-sidebar--primary {
-  width: 16rem; /* 좌측 전체 리스트 정리 영역 폭 확보 */
-}
-
-.md-sidebar--secondary {
-  width: 15rem; /* 우측 현재 페이지 목차 영역 */
-}
-
-/* 네비게이션 링크 가독성 및 테이블 줄바꿈 개선 */
-.md-nav__link {
-  font-size: 0.82rem;
-  line-height: 1.4;
-}
-
-.md-nav__link--active {
+.archive-hero .subtitle {
+  font-size: 0.75rem;
   font-weight: 700;
-  color: var(--md-primary-fg-color) !important;
+  letter-spacing: 0.18em;
+  color: var(--color-brand-accent);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
 }
 
-/* 본문 테이블 줄바꿈 및 간격 재조정 */
-.md-typeset table:not([class]) {
+.archive-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0 0 1.2rem 0;
+  letter-spacing: -0.02em;
+  color: var(--md-default-fg-color);
+}
+
+.archive-hero .description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 38rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0;
+}
+
+/* Minimal Grid Layout for Lectures */
+.lecture-section-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color);
+  margin-top: 2rem;
+  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lecture-section-title::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--color-border-glass);
+}
+
+/* Minimalist Glassmorphism Cards */
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.lecture-card {
+  border: 1px solid var(--color-border-glass);
+  border-radius: 12px;
+  padding: 1.8rem;
+  background: var(--color-bg-glass);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none !important;
+}
+
+.lecture-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: table;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  height: 4px;
+  background: var(--color-brand-primary);
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
-.md-typeset table:not([class]) td, 
-.md-typeset table:not([class]) th {
-  padding: 0.75rem 1rem;
+.lecture-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(88, 139, 139, 0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.lecture-card:hover::before {
+  opacity: 1;
+}
+
+.lecture-card.locked::before {
+  background: var(--color-brand-accent);
+}
+
+.lecture-card.locked:hover {
+  border-color: rgba(242, 143, 59, 0.4);
+}
+
+.lecture-card.empty {
+  border-style: dashed;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  color: var(--md-default-fg-color--lightest);
+  min-height: 220px;
+}
+
+.lecture-card.empty:hover {
+  transform: none;
+  border-color: var(--color-border-glass);
+  box-shadow: none;
+}
+
+.lecture-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.lecture-card .card-date {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-brand-accent);
+  letter-spacing: 0.05em;
+}
+
+.lecture-card .card-status {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.lecture-card .card-status.active {
+  background-color: rgba(88, 139, 139, 0.12);
+  color: var(--color-brand-primary);
+}
+
+.lecture-card .card-status.locked-badge {
+  background-color: rgba(242, 143, 59, 0.12);
+  color: var(--color-brand-accent);
+}
+
+.lecture-card .card-status.pending {
+  background-color: rgba(136, 136, 136, 0.08);
+  color: var(--md-default-fg-color--light);
+}
+
+.lecture-card .card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem 0;
+  color: var(--md-default-fg-color);
+  line-height: 1.35;
+}
+
+.lecture-card .card-desc {
+  font-size: 0.82rem;
   line-height: 1.5;
-  word-break: keep-all; /* 단어 단위 줄바꿈 방지하여 가독성 개선 */
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 1.5rem 0;
+}
+
+.lecture-card .card-action {
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-brand-primary);
+  margin-top: auto;
+}
+
+.lecture-card.locked .card-action {
+  color: var(--color-brand-accent);
+}
+
+/* Obsidian and Markdown specific alerts style refinement */
+.md-typeset blockquote {
+  border-left: 3px solid var(--color-brand-primary);
+  background: rgba(88, 139, 139, 0.04);
+  padding: 1rem 1.2rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.5rem 0;
+}
+
+/* Code block refinement */
+.md-typeset pre {
+  border: 1px solid var(--color-border-glass);
 }

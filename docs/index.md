@@ -4,79 +4,64 @@ hide:
   - toc
 ---
 
-# 260618 후속 실전 과정 — AI 교육 포털
+<div class="archive-hero" markdown>
+  <div class="subtitle">Creative AI Lecture Archive</div>
+  <h1>아티스트를 위한 AI 교육 아카이브</h1>
+  <p class="description">
+    사진작가, 영상제작자, 댄서, 공간기획자를 위한 실전 AI 도입 워크숍 자료실입니다.
+    창작자의 아이디어가 시스템이 되고, 도구가 자신을 대신해 일하도록 돕습니다.
+  </p>
+</div>
 
-> **사진작가, 영상제작자, 댄서, 공간기획자를 위한 실전 AI 도입 심화 워크숍**
-> 2026년 6월 18일 진행된 다원예술 창작자 마스터클래스의 후속 실전 강의 자료실입니다.
+<div class="lecture-section-title">최근 강의 아카이브</div>
 
----
+<div class="archive-grid" markdown>
 
-> [!IMPORTANT]
-> **보호된 콘텐츠 안내**
-> 본 사이트는 260618 마스터클래스 후속 강의 참가자 전용으로 운영됩니다.
-> 아래 **00단계부터 04단계**까지의 세부 강의 자료는 전달받은 **비밀번호**가 있어야 열람이 가능합니다. (첫 진입 시 1회 입력 필요)
+  <!-- 260618 마스터클래스 후속 실전 과정 -->
+  <a href="00_시작.md" class="lecture-card locked">
+    <div class="card-header">
+      <span class="card-date">2026.06.18</span>
+      <span class="card-status locked-badge">🔒 PASSWORD PROTECTED</span>
+    </div>
+    <div>
+      <h3 class="card-title">260618 마스터클래스 후속 실전 과정</h3>
+      <p class="card-desc">자가 진단에서 시작해 프롬프트, 루틴 설계, 규칙 파일(CLAUDE.md), 에이전트 파이프라인으로 나아가는 실전 워크숍 가이드북</p>
+    </div>
+    <div class="card-action">
+      강의 세션 입장하기 ➔
+    </div>
+  </a>
 
----
-
-<div class="grid cards" markdown>
-
--   :material-lock:{ .lg .middle } **🔒 00. 시작 — 어디서부터 할 것인가**
-
-    ---
-
-    자가 진단 ➔ Step 1~9 로드맵. 지금 내가 무엇을 해결해야 하는지 확인하고 진단하는 단계.
-
-    [:octicons-arrow-right-24: 강의 보기](00_시작.md)
-
--   :material-lock:{ .lg .middle } **🔒 01. 도구 — 뭘 쓸 것인가**
-
-    ---
-
-    요금제 전략, 한영 통합 검색, 프롬프트 3대 원칙, 웹 vs 설치형 에디터, MCP 개념 정리.
-
-    [:octicons-arrow-right-24: 강의 보기](01_도구.md)
-
--   :material-lock:{ .lg .middle } **🔒 02. 루틴 — 어디에 넣을 것인가**
-
-    ---
-
-    직군별 루틴 분석 워크시트, 인스타그램 영감 아카이브 자동화, 마크다운(MD) 최적화 규칙.
-
-    [:octicons-arrow-right-24: 강의 보기](02_루틴.md)
-
--   :material-lock:{ .lg .middle } **🔒 03. 확장 — 사고를 시스템으로**
-
-    ---
-
-    나만의 개인화 규칙 파일(CLAUDE.md), 옵시디언 3-폴더 LLM 위키 구축, 바이브코딩 기초.
-
-    [:octicons-arrow-right-24: 강의 보기](03_확장.md)
-
--   :material-lock:{ .lg .middle } **🔒 04. 시스템 — 에이전트와 파이프라인**
-
-    ---
-
-    역할 기반 에이전트 분리, 스킬(SOP) 정의, 검증/비평 루프, 창작 파이프라인 시나리오.
-
-    [:octicons-arrow-right-24: 강의 보기](04_시스템.md)
+  <!-- Future Archive Placeholder -->
+  <div class="lecture-card empty">
+    <div style="text-align: center;">
+      <h4 style="margin: 0 0 8px 0; font-size: 1rem; font-weight: 700; color: var(--md-default-fg-color--light);">다음 강의 아카이브 준비 중</h4>
+      <p style="margin: 0; font-size: 0.78rem; color: var(--md-default-fg-color--lightest);">진행 예정인 마스터클래스와 교육 강의자료들이 이곳에 계속 아카이브됩니다.</p>
+    </div>
+  </div>
 
 </div>
 
----
+<div class="lecture-section-title">교육 철학 및 접근 방식</div>
 
-## 교육 흐름 안내 및 빠른 가가 진단
+<div class="grid cards" markdown>
 
-비밀번호를 입력하여 입장한 후, 자신의 현재 학습 진도와 필요성에 맞춰 아래 가이드를 활용하세요.
+-   :material-presentation-play:{ .lg .middle } **보여주기 > 설명하기 (Show > Tell)**
 
-| 수강생의 상태 | 추천하는 시작 단계 | 주요 학습 주제 |
-| :--- | :--- | :--- |
-| AI를 써봤지만 답변이 뻔하고 결과가 만족스럽지 않다 | [**00. 시작** ➔ Step 1~2](00_시작.md) | 모델 교체 및 맥락/제약 조건 부여 |
-| 아이디어를 수집하고 자료를 요약하는 작업을 자동화하고 싶다 | [**00. 시작** ➔ Step 3](00_시작.md#step-3-녹음부터-시작하라-15분) | NotebookLM 오디오 분석 및 자동화 |
-| AI에게 매번 동일한 페르소나와 규칙을 설명하는 것이 지친다 | [**03. 확장** ➔ 규칙 파일](03_확장.md#2-claudemd-및-cursorrules-파일-설계-템플릿) | 프로젝트별 `CLAUDE.md` 규칙 설계 |
-| 창작 파이프라인을 구축하여 AI 비평 및 자동 생산을 하고 싶다 | [**04. 시스템** ➔ 에이전트](04_시스템.md) | Writer-Reviewer 루프 및 워크플로우 |
+    ---
 
----
+    장황한 이론이나 설명 슬라이드 대신 라이브 시연과 질의응답을 중심으로 진행합니다. 프레젠테이션은 사후 배포용 레퍼런스로 활용합니다.
 
-<p style="text-align:center; color: #888; font-size: 0.85em;">
-260618 마스터클래스 후속 실전 워크숍 전용 · 제공된 비밀번호로 모든 상세 세션을 해제할 수 있습니다.
-</p>
+-   :material-heart-pulse:{ .lg .middle } **감정 처리 최우선 (Emotion First)**
+
+    ---
+
+    새로운 기술을 도입할 때 창작자가 겪는 좌절감이나 거부감, 막연한 감정적 허들을 솔직하게 대면하고 시작하는 10분의 시간을 가집니다.
+
+-   :material-lightbulb-on:{ .lg .middle } **한 문장의 힘 (One Strong Action)**
+
+    ---
+
+    복잡한 시스템 이론을 백 장 공부하는 것보다, 실제 내 생산성을 바로 3배 이상 올릴 수 있는 단 하나의 명확한 실천을 강조합니다.
+
+</div>
