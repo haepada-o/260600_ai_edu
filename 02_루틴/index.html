@@ -1,0 +1,2109 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="사진작가, 영상제작자, 댄서, 공간기획자를 위한 AI 실무 도입 단계별 가이드">
+      
+      
+      
+      
+        <link rel="prev" href="../01_%EB%8F%84%EA%B5%AC/">
+      
+      
+        <link rel="next" href="../03_%ED%99%95%EC%9E%A5/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>02. 루틴 — 어디에 넣을 것인가 - AI 활용 가이드 — 아티스트를 위한 실전 교육</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pretendard:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Pretendard";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#02-루틴-어디에-넣을-것인가" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="AI 활용 가이드 — 아티스트를 위한 실전 교육" class="md-header__button md-logo" aria-label="AI 활용 가이드 — 아티스트를 위한 실전 교육" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI 활용 가이드 — 아티스트를 위한 실전 교육
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              02. 루틴 — 어디에 넣을 것인가
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="공유" aria-label="공유" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI 활용 가이드 — 아티스트를 위한 실전 교육" class="md-nav__button md-logo" aria-label="AI 활용 가이드 — 아티스트를 위한 실전 교육" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+
+    </a>
+    AI 활용 가이드 — 아티스트를 위한 실전 교육
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_%EC%8B%9C%EC%9E%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. 시작 — 어디서부터
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_%EB%8F%84%EA%B5%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. 도구 — 뭘 쓸 것인가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. 루틴 — 어디에 넣을 것인가
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. 루틴 — 어디에 넣을 것인가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#목차" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        목차
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-ai-협업의-기본-원칙" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. AI 협업의 기본 원칙
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. AI 협업의 기본 원칙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1-맥락-설계-프레임워크-상생방제" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-1. 맥락 설계 프레임워크 (상·생·방·제)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2-ai-답변-거절-프로토콜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-2. AI 답변 거절 프로토콜
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-3-채팅-휘발-방지를-위한-영구-저장-폴더-구조" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-3. 채팅 휘발 방지를 위한 영구 저장 폴더 구조
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-루틴-분석-및-우선순위-설계" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 루틴 분석 및 우선순위 설계
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 루틴 분석 및 우선순위 설계">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1-우선순위-산출-공식" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-1. 우선순위 산출 공식
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2-나의-반복-작업-분석표-워크시트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-2. 나의 반복 작업 분석표 (워크시트)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-작업별-플랫폼-매칭-및-비용-효과" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 작업별 플랫폼 매칭 및 비용 효과
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 작업별 플랫폼 매칭 및 비용 효과">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-1-도구별-추천-및-매칭표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3-1. 도구별 추천 및 매칭표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-2-유료-모델-구독-포트폴리오-분석" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3-2. 유료 모델 구독 포트폴리오 분석
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-아티스트-직군별-루틴-프로필" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 아티스트 직군별 루틴 프로필
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 아티스트 직군별 루틴 프로필">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-1-사진작가의-하루-루틴" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-1. 사진작가의 하루 루틴
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-2-영상제작자의-워크플로우" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-2. 영상제작자의 워크플로우
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-3-공간기획자의-워크플로우" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-3. 공간기획자의 워크플로우
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-4-댄서안무가의-워크플로우" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-4. 댄서/안무가의 워크플로우
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-5-아티스트-직군별-핵심-도구-조합-요약" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-5. 아티스트 직군별 핵심 도구 조합 요약
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-인스타-영감-아카이브-루틴화" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 인스타 영감 아카이브 루틴화
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 인스타 영감 아카이브 루틴화">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-1-영감노트-마크다운-템플릿" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5-1. 영감노트 마크다운 템플릿
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-아이폰-음성-단축어-및-make-자동화-파이프라인" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 아이폰 음성 단축어 및 Make 자동화 파이프라인
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 아이폰 음성 단축어 및 Make 자동화 파이프라인">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6-1-ios-단축어shortcuts-구성법" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6-1. iOS 단축어(Shortcuts) 구성법
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-2-make구-integromat-시나리오-설계서" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6-2. Make(구 Integromat) 시나리오 설계서
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-프로젝트-파일-및-데이터-관리-자동화" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 프로젝트 파일 및 데이터 관리 자동화
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 프로젝트 파일 및 데이터 관리 자동화">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7-1-표준-파일-네이밍-규칙" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7-1. 표준 파일 네이밍 규칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-2-프로젝트-생성-및-분류-자동화-스크립트-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7-2. 프로젝트 생성 및 분류 자동화 스크립트 (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-3-백업-3-2-1-원칙-및-플랫폼-비교" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7-3. 백업 3-2-1 원칙 및 플랫폼 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-ai-최적화-마크다운md-변환-및-검증-가이드라인" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. AI 최적화 마크다운(MD) 변환 및 검증 가이드라인
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. AI 최적화 마크다운(MD) 변환 및 검증 가이드라인">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8-1-문서-포맷별-토큰-효율성-및-비용-비교" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-1. 문서 포맷별 토큰 효율성 및 비용 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-2-공모전-제안서-검증을-위한-표준-가이드라인-md-설계-프로세스" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-2. 공모전 제안서 검증을 위한 표준 가이드라인 MD 설계 프로세스
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-3-사진작가용-실제-촬영-기준-가이드라인-md-예시" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-3. 사진작가용 실제 촬영 기준 가이드라인 MD 예시
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-부록-실행-체크리스트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 부록: 실행 체크리스트
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. 부록: 실행 체크리스트">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#9-1-매일의-루틴-프로토콜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9-1. 매일의 루틴 프로토콜
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-2-주간월간-검토" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9-2. 주간/월간 검토
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_%ED%99%95%EC%9E%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. 확장 — 사고를 시스템으로
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_%EC%8B%9C%EC%8A%A4%ED%85%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. 시스템 — 에이전트와 파이프라인
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#목차" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        목차
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-ai-협업의-기본-원칙" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. AI 협업의 기본 원칙
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. AI 협업의 기본 원칙">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1-맥락-설계-프레임워크-상생방제" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-1. 맥락 설계 프레임워크 (상·생·방·제)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2-ai-답변-거절-프로토콜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-2. AI 답변 거절 프로토콜
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-3-채팅-휘발-방지를-위한-영구-저장-폴더-구조" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-3. 채팅 휘발 방지를 위한 영구 저장 폴더 구조
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-루틴-분석-및-우선순위-설계" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 루틴 분석 및 우선순위 설계
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 루틴 분석 및 우선순위 설계">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1-우선순위-산출-공식" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-1. 우선순위 산출 공식
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2-나의-반복-작업-분석표-워크시트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-2. 나의 반복 작업 분석표 (워크시트)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-작업별-플랫폼-매칭-및-비용-효과" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 작업별 플랫폼 매칭 및 비용 효과
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 작업별 플랫폼 매칭 및 비용 효과">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-1-도구별-추천-및-매칭표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3-1. 도구별 추천 및 매칭표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-2-유료-모델-구독-포트폴리오-분석" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3-2. 유료 모델 구독 포트폴리오 분석
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-아티스트-직군별-루틴-프로필" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 아티스트 직군별 루틴 프로필
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 아티스트 직군별 루틴 프로필">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-1-사진작가의-하루-루틴" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-1. 사진작가의 하루 루틴
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-2-영상제작자의-워크플로우" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-2. 영상제작자의 워크플로우
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-3-공간기획자의-워크플로우" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-3. 공간기획자의 워크플로우
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-4-댄서안무가의-워크플로우" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-4. 댄서/안무가의 워크플로우
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-5-아티스트-직군별-핵심-도구-조합-요약" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-5. 아티스트 직군별 핵심 도구 조합 요약
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-인스타-영감-아카이브-루틴화" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 인스타 영감 아카이브 루틴화
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 인스타 영감 아카이브 루틴화">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-1-영감노트-마크다운-템플릿" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5-1. 영감노트 마크다운 템플릿
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-아이폰-음성-단축어-및-make-자동화-파이프라인" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 아이폰 음성 단축어 및 Make 자동화 파이프라인
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 아이폰 음성 단축어 및 Make 자동화 파이프라인">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6-1-ios-단축어shortcuts-구성법" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6-1. iOS 단축어(Shortcuts) 구성법
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-2-make구-integromat-시나리오-설계서" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6-2. Make(구 Integromat) 시나리오 설계서
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-프로젝트-파일-및-데이터-관리-자동화" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 프로젝트 파일 및 데이터 관리 자동화
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 프로젝트 파일 및 데이터 관리 자동화">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7-1-표준-파일-네이밍-규칙" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7-1. 표준 파일 네이밍 규칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-2-프로젝트-생성-및-분류-자동화-스크립트-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7-2. 프로젝트 생성 및 분류 자동화 스크립트 (Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-3-백업-3-2-1-원칙-및-플랫폼-비교" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7-3. 백업 3-2-1 원칙 및 플랫폼 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-ai-최적화-마크다운md-변환-및-검증-가이드라인" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. AI 최적화 마크다운(MD) 변환 및 검증 가이드라인
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. AI 최적화 마크다운(MD) 변환 및 검증 가이드라인">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8-1-문서-포맷별-토큰-효율성-및-비용-비교" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-1. 문서 포맷별 토큰 효율성 및 비용 비교
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-2-공모전-제안서-검증을-위한-표준-가이드라인-md-설계-프로세스" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-2. 공모전 제안서 검증을 위한 표준 가이드라인 MD 설계 프로세스
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-3-사진작가용-실제-촬영-기준-가이드라인-md-예시" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-3. 사진작가용 실제 촬영 기준 가이드라인 MD 예시
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-부록-실행-체크리스트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 부록: 실행 체크리스트
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. 부록: 실행 체크리스트">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#9-1-매일의-루틴-프로토콜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9-1. 매일의 루틴 프로토콜
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-2-주간월간-검토" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9-2. 주간/월간 검토
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="02-루틴-어디에-넣을-것인가">02. 루틴, 어디에 넣을 것인가<a class="headerlink" href="#02-루틴-어디에-넣을-것인가" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="목차">목차<a class="headerlink" href="#목차" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="#1-ai-협업의-기본-원칙">AI 협업의 기본 원칙</a></li>
+<li><a href="#2-루틴-분석-및-우선순위-설계">루틴 분석 및 우선순위 설계</a></li>
+<li><a href="#3-작업별-플랫폼-매칭-및-비용-효과">작업별 플랫폼 매칭 및 비용 효과</a></li>
+<li><a href="#4-아티스트-직군별-루틴-프로필">아티스트 직군별 루틴 프로필</a></li>
+<li><a href="#5-인스타-영감-아카이브-루틴화">인스타 영감 아카이브 루틴화</a></li>
+<li><a href="#6-아이폰-음성-단축어-및-make-자동화-파이프라인">아이폰 음성 단축어 및 Make 자동화 파이프라인</a></li>
+<li><a href="#7-프로젝트-파일-및-데이터-관리-자동화">프로젝트 파일 및 데이터 관리 자동화</a></li>
+<li><a href="#8-ai-최적화-마크다운md-변환-및-검증-가이드라인">AI 최적화 마크다운(MD) 변환 및 검증 가이드라인</a></li>
+<li><a href="#9-부록-실행-체크리스트">부록: 실행 체크리스트</a></li>
+</ol>
+<hr />
+<h2 id="1-ai-협업의-기본-원칙">1. AI 협업의 기본 원칙<a class="headerlink" href="#1-ai-협업의-기본-원칙" title="Permanent link">&para;</a></h2>
+<p>AI를 도구로만 쓰는 단계에서 벗어나 유기적인 시스템으로 통합하기 위한 4대 대화 및 저장 원칙입니다.</p>
+<h3 id="1-1-맥락-설계-프레임워크-상생방제">1-1. 맥락 설계 프레임워크 (상·생·방·제)<a class="headerlink" href="#1-1-맥락-설계-프레임워크-상생방제" title="Permanent link">&para;</a></h3>
+<p>AI에게 무작정 결과물을 요청하면 평균적이고 지루한 답변만 출력됩니다. 요청 전에 반드시 아래 4가지 맥락 요소를 정의하십시오.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[상황] 나는 지금 ~하고 있다 (구체적 현재 상태 및 리소스)
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>[생각] 이 작업에 대해 내가 가지고 있는 아이디어, 느낌, 질문
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>[방향] 도출해내고자 하는 결과물의 지향점 및 목적지
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>[제약] 반드시 배제해야 할 요소, 허용하지 않는 표현 및 조건
+</code></pre></div>
+<blockquote>
+<p>[!TIP]
+매번 4가지 요소를 완벽히 채울 필요는 없으나, <strong>[상황]</strong>과 <strong>[방향]</strong>은 필수값으로 지정하여 입력해야 답변의 품질이 보장됩니다.</p>
+</blockquote>
+<h4 id="분야별-프롬프트-적용-예시">분야별 프롬프트 적용 예시<a class="headerlink" href="#분야별-프롬프트-적용-예시" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>창작 분야</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>[상황] 단편 소설을 쓰려고 한다.
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>[생각] 사람이 기계와 경쟁하는 올림픽이라는 이미지가 있다.
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>[방향] 디스토피아가 아니라 인간 존재에 의문을 던지는 건조하고 차분한 톤.
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>[제약] 결론을 내리지 마. 교훈을 주려 하지 마.
+</code></pre></div></li>
+<li><strong>비즈니스 분야</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>[상황] 해양수산 분야 창업지원 프로그램 제안서를 써야 한다.
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>[생각] 우리 회사의 가장 큰 강점은 실제 투자 유치 및 집행 실적이 존재한다는 것.
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>[방향] 심사위원이 포트폴리오의 실현 가능성과 팀의 수행력을 확신할 수 있도록 구성.
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>[제약] 과장된 수사어 금지. 수치 데이터는 내가 직접 제공한 것만 사용할 것.
+</code></pre></div></li>
+<li><strong>일상 관리 분야</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>[상황] 어제 불만을 표출한 팀원과 오늘 면담을 진행해야 한다.
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>[생각] 상대방의 감정적 억울함을 해소해주면서도 주간 마감 일정은 엄수하도록 지도하고 싶다.
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>[방향] 감정은 수용하되 업무 규율은 명확히 확립하는 프로페셔널한 면담 스크립트.
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>[제약] 모호한 위로의 말 금지. 반드시 면담 후 상호 합의할 액션 아이템이 도출되어야 함.
+</code></pre></div></li>
+</ul>
+<hr />
+<h3 id="1-2-ai-답변-거절-프로토콜">1-2. AI 답변 거절 프로토콜<a class="headerlink" href="#1-2-ai-답변-거절-프로토콜" title="Permanent link">&para;</a></h3>
+<p>AI의 기본값은 대중적이고 긍정적이며 안전한 답변입니다. 이를 깨뜨리고 날카롭고 유용한 비판을 얻기 위해서는 <strong>의도적인 거절 단계</strong>를 거쳐야 합니다.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>거절 템플릿</th>
+<th>활용 시점 및 목적</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>"이거 너무 뻔하다. 다시."</code></td>
+<td>결과물이 누구나 할 수 있는 교과서적 답변일 때</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>"결론 내리지 마. 질문만 던져."</code></td>
+<td>AI가 임의로 훈계조의 아름다운 결말을 지으려 할 때</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>"칭찬하지 마. 문제점만 날카롭게 지적해."</code></td>
+<td>제안서나 기획안의 실질적인 허점을 파악하고 싶을 때</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>"교과서적인 답 말고, 실제 필드에서 일어나는 리스크를 나열해."</code></td>
+<td>이론적 해결책이 아닌 현실적인 장벽을 탐색할 때</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>"이 방향 아니야. 정반대의 극단적 관점에서 서술해봐."</code></td>
+<td>확증 편향에 빠졌거나 완전히 새로운 각도가 필요할 때</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>"너무 길어. 수사구 걷어내고 핵심만 3줄 요약해."</code></td>
+<td>장황한 답변을 요약하여 빠르게 스캔하고자 할 때</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>"이건 내가 이미 아는 거야. 뻔한 개념 말고 예외적 케이스를 알려줘."</code></td>
+<td>기본 지식을 배제하고 고난도 인사이트를 요구할 때</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>"아름다운 그림 필요 없어. 불편한 진실만."</code></td>
+<td>포장된 기획안이 아닌 날카로운 현장 피드백을 원할 때</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>"이 단어 쓰지 마: 혁신, 시너지, 패러다임, 미래지향적."</code></td>
+<td>비즈니스 버즈워드를 배제하고 투명한 사실 위주로 기술할 때</td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>"네가 방금 한 주장의 가장 강력한 반대 논거를 3개 대봐."</code></td>
+<td>기획안의 반박 논리를 미리 예측하고 방어 전략을 짤 때</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!IMPORTANT]
+거절은 AI 학습 모델에게 사용자의 <strong>기준(Criteria)</strong>을 주입하는 과정입니다. 거절 횟수가 많아질수록 답변의 밀도는 기하급수적으로 올라갑니다.</p>
+</blockquote>
+<hr />
+<h3 id="1-3-채팅-휘발-방지를-위한-영구-저장-폴더-구조">1-3. 채팅 휘발 방지를 위한 영구 저장 폴더 구조<a class="headerlink" href="#1-3-채팅-휘발-방지를-위한-영구-저장-폴더-구조" title="Permanent link">&para;</a></h3>
+<p>대화 창을 닫는 순간 AI는 모든 맥락을 유실합니다. 이를 방지하기 위해 로컬 또는 클라우드에 아래와 같은 표준 디렉터리 템플릿을 생성하고 동기화하십시오.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>[프로젝트명]/
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>├── raw/          ← 회의 녹음 텍스트, 날것의 자막 데이터, 스크린샷, 메모
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>├── drafts/       ← AI와 공동 작업한 초안 및 파편적인 아티티팩트 (.md, .txt)
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>├── final/        ← 검증이 끝난 최종 제출본 및 실행 문서
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>└── rejected/     ← AI 결과물 중 탈락했으나 나의 의도와 기준을 대변하는 반려 기록 보관소
+</code></pre></div>
+<h4 id="왜-rejected-폴더를-운영해야-하는가">왜 <code>rejected/</code> 폴더를 운영해야 하는가?<a class="headerlink" href="#왜-rejected-폴더를-운영해야-하는가" title="Permanent link">&para;</a></h4>
+<p>거절의 기록은 <strong>'내가 원하지 않는 것의 명확한 경계선'</strong>입니다. 다음 프로젝트 시작 시 이 폴더의 반려 문장을 모아 AI에게 "이러한 방향은 이전 프로젝트에서 제외되었으니 피하라"고 제약 조건으로 제공하면 시행착오를 절반 이하로 줄일 수 있습니다.</p>
+<hr />
+<h2 id="2-루틴-분석-및-우선순위-설계">2. 루틴 분석 및 우선순위 설계<a class="headerlink" href="#2-루틴-분석-및-우선순위-설계" title="Permanent link">&para;</a></h2>
+<p>AI로 전환했을 때 가장 생산성 향상폭이 높은 작업을 찾기 위한 계량 분석법입니다.</p>
+<h3 id="2-1-우선순위-산출-공식">2-1. 우선순위 산출 공식<a class="headerlink" href="#2-1-우선순위-산출-공식" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[\text{AI 전환 우선순위 점수} = \text{작업 빈도 점수} \times \text{소요 시간 점수} \times \text{업무 피로도 (1~5)}\]</div>
+<ul>
+<li><strong>작업 빈도 점수 (Frequency Score)</strong></li>
+<li>매일 수행: <code>5점</code></li>
+<li>주 3~4회 수행: <code>4점</code></li>
+<li>주 1~2회 수행: <code>3점</code></li>
+<li>월 2~3회 수행: <code>2점</code></li>
+<li>
+<p>월 1회 이하: <code>1점</code></p>
+</li>
+<li>
+<p><strong>소요 시간 점수 (Duration Score)</strong></p>
+</li>
+<li>회당 2시간 이상: <code>5점</code></li>
+<li>회당 1~2시간: <code>4점</code></li>
+<li>회당 30분~1시간: <code>3점</code></li>
+<li>회당 15~30분: <code>2점</code></li>
+<li>
+<p>회당 15분 이하: <code>1점</code></p>
+</li>
+<li>
+<p><strong>업무 피로도 점수 (Irritation Score)</strong></p>
+</li>
+<li>1점(지루하지 않음)부터 5점(극도로 귀찮고 수동적인 단순 노동)까지 주관적 평가 부여.</li>
+</ul>
+<hr />
+<h3 id="2-2-나의-반복-작업-분석표-워크시트">2-2. 나의 반복 작업 분석표 (워크시트)<a class="headerlink" href="#2-2-나의-반복-작업-분석표-워크시트" title="Permanent link">&para;</a></h3>
+<p>아래 표를 로컬 메모에 복사하여 우선순위를 평가하고 작업을 전환하십시오.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>작업명</th>
+<th style="text-align: center;">빈도 점수 (1~5)</th>
+<th style="text-align: center;">시간 점수 (1~5)</th>
+<th style="text-align: center;">피로도 (1~5)</th>
+<th style="text-align: center;">총합 점수</th>
+<th>우선순위 판정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>예시</em></td>
+<td><em>미팅 녹음 회의록 정리</em></td>
+<td style="text-align: center;"><em>4</em></td>
+<td style="text-align: center;"><em>3</em></td>
+<td style="text-align: center;"><em>5</em></td>
+<td style="text-align: center;"><strong><code>60</code></strong></td>
+<td>🔴 즉시 전환</td>
+</tr>
+<tr>
+<td><em>예시</em></td>
+<td><em>프로젝트 견적서 작성</em></td>
+<td style="text-align: center;"><em>3</em></td>
+<td style="text-align: center;"><em>4</em></td>
+<td style="text-align: center;"><em>4</em></td>
+<td style="text-align: center;"><strong><code>48</code></strong></td>
+<td>🔴 즉시 전환</td>
+</tr>
+<tr>
+<td><em>예시</em></td>
+<td><em>인스타그램 업로드용 캡션 작성</em></td>
+<td style="text-align: center;"><em>5</em></td>
+<td style="text-align: center;"><em>2</em></td>
+<td style="text-align: center;"><em>3</em></td>
+<td style="text-align: center;"><strong><code>30</code></strong></td>
+<td>🟡 전환 추천</td>
+</tr>
+<tr>
+<td>1</td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>판정 기준 가이드라인</strong></li>
+<li><strong><code>40점 이상</code> (🔴 즉시 전환):</strong> 가장 먼저 자동화 스크립트를 짜거나 AI 템플릿을 만들어 고정 루틴화해야 할 작업.</li>
+<li><strong><code>20~39점</code> (🟡 전환 추천):</strong> 시간 여유가 있을 때 AI 챗봇의 Custom Instructions 또는 시스템 프롬프트로 고정시킬 작업.</li>
+<li><strong><code>20점 미만</code> (🟢 여유 있을 때):</strong> 필요 시 수동으로 처리해도 무방한 작업.</li>
+</ul>
+<hr />
+<h2 id="3-작업별-플랫폼-매칭-및-비용-효과">3. 작업별 플랫폼 매칭 및 비용 효과<a class="headerlink" href="#3-작업별-플랫폼-매칭-및-비용-효과" title="Permanent link">&para;</a></h2>
+<p>모든 작업을 한 모델로 처리하는 것은 비효율적입니다. 목적별 최적의 플랫폼 라인업과 유무료 플랜 포트폴리오를 제공합니다.</p>
+<h3 id="3-1-도구별-추천-및-매칭표">3-1. 도구별 추천 및 매칭표<a class="headerlink" href="#3-1-도구별-추천-및-매칭표" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>작업 분류</th>
+<th>권장 플랫폼</th>
+<th>선정 배경 및 기술적 특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>기획서 / 견적서 구조화</strong></td>
+<td><strong>Claude (Projects/Artifacts)</strong></td>
+<td>대량의 사전 콘텍스트 유지 능력 우수, 논리적 구조화 정밀도 최상</td>
+</tr>
+<tr>
+<td><strong>미팅 녹음 요약 및 마인드맵</strong></td>
+<td><strong>NotebookLM</strong></td>
+<td>무료 소스 업로드, 출처가 명확히 링크된 요약본 및 마인드맵 자동 제공</td>
+</tr>
+<tr>
+<td><strong>SNS 홍보 문구 다량 생성</strong></td>
+<td><strong>ChatGPT (GPT-4o)</strong></td>
+<td>톤 앤 매너 변경이 유연하고, 다채로운 스튜디오 톤 및 이모지 활용성 우수</td>
+</tr>
+<tr>
+<td><strong>리서치 및 최신 정보 팩트체크</strong></td>
+<td><strong>Perplexity / Gemini Deep Research</strong></td>
+<td>실시간 웹 크롤링 및 인용 소스 표기, 다각도 심층 검색 보고서 생성</td>
+</tr>
+<tr>
+<td><strong>파일 이름 변경 / 자동 분류</strong></td>
+<td><strong>Cursor / Antigravity</strong></td>
+<td>로컬 시스템 명령어 연동 및 Python 기반 자동화 스크립트 작성 및 실행</td>
+</tr>
+<tr>
+<td><strong>자막 싱크 및 텍스트 변환</strong></td>
+<td><strong>Whisper (Local / API)</strong></td>
+<td>타임코드 매칭 정확도 최고, 민감한 개인 정보 보안을 위한 로컬 실행 지원</td>
+</tr>
+<tr>
+<td><strong>신속 시각 시안 제작</strong></td>
+<td><strong>ChatGPT (DALL-E 3)</strong></td>
+<td>프롬프트 해석 능력이 우수하여 자연어 대화 도중 즉각 반영 가능</td>
+</tr>
+<tr>
+<td><strong>고품질 비주얼 제작</strong></td>
+<td><strong>Midjourney / ComfyUI</strong></td>
+<td>디테일 렌더링 품질 최상, LoRA 및 ControlNet 활용한 정밀 제어</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="3-2-유료-모델-구독-포트폴리오-분석">3-2. 유료 모델 구독 포트폴리오 분석<a class="headerlink" href="#3-2-유료-모델-구독-포트폴리오-분석" title="Permanent link">&para;</a></h3>
+<p>월 20달러의 비용 투입 대비 실질적인 시간 회수율을 분석한 결과입니다.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>[구독 포트폴리오 제안]
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>- 메인 작가/기획자: Claude Pro ($20/월) + NotebookLM (무료) + Google Drive (무료/소액)
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>- 이미지/영상 집중형: Midjourney ($10~30/월) 추가
+</code></pre></div>
+<ul>
+<li><strong>무료 플랜 위주 운용 시 리스크:</strong>
+  하루 질문 횟수 제한으로 인해 대화 중간 맥락이 끊겨 직접 수정하게 됨 <span class="arithmatex">\(\rightarrow\)</span> 건당 2~3시간 추가 소요 <span class="arithmatex">\(\rightarrow\)</span> 기회비용 기준 수십만 원의 손실 발생.</li>
+<li><strong>유료 플랜 가치 환산:</strong>
+  월 약 27,000원 지불로 인해 작업당 피드백 루프가 1회로 단축 <span class="arithmatex">\(\rightarrow\)</span> 매월 최소 20시간 이상의 순수 작업 시간 확보 (시급 25,000원 기준 500,000원 가치 창출).</li>
+</ul>
+<hr />
+<h2 id="4-아티스트-직군별-루틴-프로필">4. 아티스트 직군별 루틴 프로필<a class="headerlink" href="#4-아티스트-직군별-루틴-프로필" title="Permanent link">&para;</a></h2>
+<p>세 가지 대표적인 크리에이터 직군의 하루 일과 중 AI 자동화 개입 지점을 타임라인 형식으로 상세 기술합니다.</p>
+<h3 id="4-1-사진작가의-하루-루틴">4-1. 사진작가의 하루 루틴<a class="headerlink" href="#4-1-사진작가의-하루-루틴" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>gantt
+    title 사진작가 AI 협업 일과
+    dateFormat  HH:mm
+    axisFormat %H:%M
+    section 오전
+    촬영 조건 리서치 &amp; 장비 세팅 체크  :09:00, 09:30
+    클라이언트 메일 요약 &amp; 체크리스트 생성 :09:30, 10:00
+    section 오후
+    촬영 진행 (Manual Work) :13:00, 17:00
+    RAW 파일 이름 일괄 변경 및 분류 :17:00, 17:15
+    section 저녁
+    SNS 설명 작성 및 해시태그 추출 :19:00, 19:30</code></pre>
+<table>
+<thead>
+<tr>
+<th>시간대</th>
+<th>수행 업무</th>
+<th>개입 AI 도구</th>
+<th>프로세스 상세</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>09:00 - 09:30</strong></td>
+<td>촬영 세팅 확인</td>
+<td>Gemini + 옵시디언</td>
+<td>날씨 API 정보 입력 <span class="arithmatex">\(\rightarrow\)</span> 흐린 날 야외 인물용 동조기 및 필라이트 광량 조절 세팅을 옵시디언 기준 데이터베이스에서 즉각 검색 및 복원.</td>
+</tr>
+<tr>
+<td><strong>09:30 - 10:00</strong></td>
+<td>요청서 분석</td>
+<td>Claude (Projects)</td>
+<td>클라이언트가 보낸 래퍼런스 메일 전문 업로드 <span class="arithmatex">\(\rightarrow\)</span> 렌즈 화각별 컷 수 요구사항 추출 및 현장 촬영 모바일 체크리스트 생성.</td>
+</tr>
+<tr>
+<td><strong>17:00 - 17:15</strong></td>
+<td>파일 정리</td>
+<td>Cursor / Antigravity</td>
+<td>SD 카드 장착 후 로컬 스크립트 실행 <span class="arithmatex">\(\rightarrow\)</span> EXIF 촬영 일시 기준으로 연/월/일 폴더 자동 생성 및 메타데이터 이름 자동 매칭.</td>
+</tr>
+<tr>
+<td><strong>19:00 - 19:30</strong></td>
+<td>SNS 마케팅</td>
+<td>ChatGPT</td>
+<td>보정된 인물 컷 분위기를 언어로 묘사하여 제공 <span class="arithmatex">\(\rightarrow\)</span> 채널 특성(브런치/인스타그램)에 맞는 텍스트 3종 피드 및 관련 해시태그 추출.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="4-2-영상제작자의-워크플로우">4-2. 영상제작자의 워크플로우<a class="headerlink" href="#4-2-영상제작자의-워크플로우" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph TD
+    A[기획: 시놉시스 구성] --&gt;|Claude Pro| B[프리프로덕션: 콜시트 스케줄러]
+    B --&gt; C[프로덕션: 촬영 현장 녹음]
+    C --&gt;|NotebookLM| D[포스트프로덕션: 싱크 및 자막 Whisper]
+    D --&gt; E[납품: 결과보고서 작성 및 아카이브]</code></pre>
+<ul>
+<li><strong>[기획 단계] 시놉시스 구성:</strong> 기획 아이디어 노트와 관련 기사를 Claude에 전달하여 공인 포맷의 시놉시스 및 신(Scene) 리스트 구조화 초안 작성 (기존 반나절 <span class="arithmatex">\(\rightarrow\)</span> <strong>1시간</strong>).</li>
+<li><strong>[프리프로덕션] 콜시트 자동 스케줄러:</strong> 타임라인, 장소 5곳, 스태프 8명의 직무 역할을 입력하여 시간대별 이동 동선 및 긴급 연락망이 포함된 콜시트 PDF 포맷 자동 출력 (기존 2시간 <span class="arithmatex">\(\rightarrow\)</span> <strong>15분</strong>).</li>
+<li><strong>[프로덕션] 촬영 현장 녹음:</strong> 대사 및 연출 수정사항을 모바일 음성 메모로 기록 후 즉시 NotebookLM에 통합하여 당일 수정 회의록 및 피드백 맵 작성 (기존 1시간 <span class="arithmatex">\(\rightarrow\)</span> <strong>5분</strong>).</li>
+<li><strong>[포스트프로덕션] 자막 자동 추출:</strong> Whisper 로컬 엔진을 활용하여 촬영본 오디오에서 98% 정확도의 타임코드 싱크 자막 파일(.srt) 자동 추출 (기존 3시간 <span class="arithmatex">\(\rightarrow\)</span> <strong>10분</strong>).</li>
+<li><strong>[납품 단계] 결과보고서 작성:</strong> 전체 기획서 히스토리와 최종 스크립트를 Claude에 업로드하여 양식에 맞춘 정산 보고 및 프로젝트 결과보고서 작성 (기존 3시간 <span class="arithmatex">\(\rightarrow\)</span> <strong>30분</strong>).</li>
+</ul>
+<hr />
+<h3 id="4-3-공간기획자의-워크플로우">4-3. 공간기획자의 워크플로우<a class="headerlink" href="#4-3-공간기획자의-워크플로우" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>[리서치] 글로벌 레퍼런스 발굴:</strong> <code>Gemini Deep Research</code>를 통해 최신 북유럽 몰입형 전시관 및 인터랙티브 미디어 아트 동향 보고서 추출 및 옵시디언 영감 라이브러리 저장 (기존 2일 <span class="arithmatex">\(\rightarrow\)</span> <strong>2시간</strong>).</li>
+<li><strong>[디자인 기획] 무드보드 생성:</strong> 추출한 핵심 키워드를 기반으로 Midjourney를 구동하여 공간 톤 앤 매너(Tone &amp; Manner) 가이드라인 이미지 10종 생성 및 제안서 삽입 (기존 1일 <span class="arithmatex">\(\rightarrow\)</span> <strong>1시간</strong>).</li>
+<li><strong>[현장 실무] 하드웨어 조건 검색:</strong> 천장 높이, 전원 공급 용량, 빔 프로젝터 기종 사양을 옵시디언 로컬에 아카이빙해둔 후 현장에서 조건 입력 시 매칭 하드웨어 세팅 자동 검출 (기억 의존 <span class="arithmatex">\(\rightarrow\)</span> <strong>즉시 확인</strong>).</li>
+<li><strong>[제안 및 정산] 공간 제안서 작성:</strong> 빌딩 도면 정보와 공간 레이아웃 기획안을 통합하여 Claude를 통해 클라이언트 보고용 기획 제안서 초안 렌더링 (기존 반나절 <span class="arithmatex">\(\rightarrow\)</span> <strong>1시간</strong>).</li>
+</ul>
+<hr />
+<h3 id="4-4-댄서안무가의-워크플로우">4-4. 댄서/안무가의 워크플로우<a class="headerlink" href="#4-4-댄서안무가의-워크플로우" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>[리서치] 트렌드 및 레퍼런스 수집:</strong> Grok으로 X(트위터) 내 최신 안무 챌린지·댄스 밈 트렌드를 실시간 수집하고, ChatGPT로 해외 안무 스타일 분류 및 무브먼트 키워드 추출 (기존 수시간 SNS 서핑 → <strong>15분</strong>).</li>
+<li><strong>[창작] 안무 구조 설계:</strong> 음악 BPM과 구간(verse/chorus/bridge)을 입력하여 Claude로 포메이션 전환 타이밍표 및 동선 다이어그램 텍스트 초안 생성 (수기 노트 → <strong>10분</strong>).</li>
+<li><strong>[기록] 연습 영상 피드백:</strong> 연습 영상 촬영 후 구두 피드백을 녹음 → NotebookLM에 업로드하여 수정 포인트 자동 정리 및 타임스탬프별 코멘트 생성 (기존 30분 → <strong>5분</strong>).</li>
+<li><strong>[프레젠테이션] 공연 기획서 작성:</strong> 안무 컨셉 노트, 음악 정보, 의상·조명 참고 이미지를 Claude Projects에 통합하여 축제·공연 응모용 기획서 초안 작성 (기존 반나절 → <strong>1시간</strong>).</li>
+<li><strong>[운영] 수업/워크숍 커리큘럼:</strong> 대상(초급/중급/상급), 시간, 장르를 입력하여 회차별 수업 구성안 + 음악 BPM 추천 리스트 자동 생성 (기존 2시간 → <strong>20분</strong>).</li>
+</ul>
+<hr />
+<h3 id="4-5-아티스트-직군별-핵심-도구-조합-요약">4-5. 아티스트 직군별 핵심 도구 조합 요약<a class="headerlink" href="#4-5-아티스트-직군별-핵심-도구-조합-요약" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>직군</th>
+<th>메인 프레임워크</th>
+<th>서브 서포터</th>
+<th>시너지 아티팩트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>사진작가</strong></td>
+<td>Claude Pro</td>
+<td>ChatGPT (DALL-E 3)</td>
+<td>EXIF 날짜 분류 스크립트</td>
+</tr>
+<tr>
+<td><strong>영상제작자</strong></td>
+<td>Claude Pro</td>
+<td>NotebookLM + Whisper</td>
+<td>SRT 자막 파일 및 씬 리스트</td>
+</tr>
+<tr>
+<td><strong>공간기획자</strong></td>
+<td>Gemini Deep Research</td>
+<td>Midjourney + 옵시디언</td>
+<td>조명/전력 세팅 사전 조건 검색기</td>
+</tr>
+<tr>
+<td><strong>댄서/안무가</strong></td>
+<td>ChatGPT + Grok</td>
+<td>NotebookLM + Claude</td>
+<td>포메이션 타이밍표 및 수업 커리큘럼</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-인스타-영감-아카이브-루틴화">5. 인스타 영감 아카이브 루틴화<a class="headerlink" href="#5-인스타-영감-아카이브-루틴화" title="Permanent link">&para;</a></h2>
+<p>흘러가는 소셜 미디어 영감을 구조화된 자산으로 내재화하는 프로세스입니다.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>[인스타그램 스크롤 중 영감 발견] 
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  → 스크린샷 캡처 
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  → GPT-4o 모바일 업로드 
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  → 시각 분석 및 키워드 태깅 
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>  → 옵시디언 영감 라이브러리 자동 정착
+</code></pre></div>
+<h3 id="5-1-영감노트-마크다운-템플릿">5-1. 영감노트 마크다운 템플릿<a class="headerlink" href="#5-1-영감노트-마크다운-템플릿" title="Permanent link">&para;</a></h3>
+<p>옵시디언 등 개인 지식 관리 도구에 아래 템플릿으로 파일을 생성하십시오.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="gh"># 영감노트 — 2026-06-23</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="gu">## 1. 출처 및 스크린샷</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="k">-</span><span class="w"> </span>출처: Instagram @[계정명]
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="k">-</span><span class="w"> </span>이미지 링크: ![[20260623_inspiration_001.png]]
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="gu">## 2. AI 스타일 분석 결과</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="k">-</span><span class="w"> </span><span class="gs">**조명:**</span> 로우 키(Low-key), 왼쪽 측면의 45도 강한 노란색 네온 사이드라이트.
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="k">-</span><span class="w"> </span><span class="gs">**색감:**</span> 블루와 오렌지의 강한 대비, 암부의 미세한 그린 틴트 필터 처리.
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="k">-</span><span class="w"> </span><span class="gs">**구도:**</span> 3분할 법칙 기준 오른쪽 하단 배치, 광각 렌즈 특유의 주변부 왜곡 발생.
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="k">-</span><span class="w"> </span><span class="gs">**키워드:**</span> <span class="ni">#네온조명</span> <span class="ni">#스틸컷느낌</span> <span class="ni">#사이버펑크</span> <span class="ni">#광각구도</span> <span class="ni">#시네마틱</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="gu">## 3. 내 프로젝트와의 연결 링크</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="k">-</span><span class="w"> </span>[[프로젝트_사이버네틱스_포스터_기획]] - 메인 비주얼 조명으로 벤치마킹 고려.
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="k">-</span><span class="w"> </span>[[야간인물촬영_기초가이드]] - 네온 반사판 활용법 추가 업데이트 필요.
+</code></pre></div>
+<hr />
+<h2 id="6-아이폰-음성-단축어-및-make-자동화-파이프라인">6. 아이폰 음성 단축어 및 Make 자동화 파이프라인<a class="headerlink" href="#6-아이폰-음성-단축어-및-make-자동화-파이프라인" title="Permanent link">&para;</a></h2>
+<p>모바일 환경에서 생각난 아이디어나 미팅 음성을 최소한의 터치로 구조화된 클라우드 문서로 자동 변환하는 고성능 자동화 아키텍처입니다.</p>
+<pre class="mermaid"><code>graph LR
+    A[아이폰 뒷면 탭 2번] --&gt; B[단축어 녹음 개시]
+    B --&gt; C[구글 드라이브 업로드]
+    C --&gt;|Make Webhook| D[OpenAI Whisper API]
+    D --&gt;|텍스트화| E[Claude / GPT-4o API]
+    E --&gt;|구조화/요약| F[구글 드라이브 문서 저장]</code></pre>
+<h3 id="6-1-ios-단축어shortcuts-구성법">6-1. iOS 단축어(Shortcuts) 구성법<a class="headerlink" href="#6-1-ios-단축어shortcuts-구성법" title="Permanent link">&para;</a></h3>
+<p>아이폰의 단축어 앱을 실행하고 다음과 같이 액션 블록을 빌드하십시오.</p>
+<ol>
+<li><strong>[동작 1] 오디오 녹음:</strong></li>
+<li>입력: <code>오디오 녹음</code> 추가</li>
+<li>설정: 오디오 품질 <code>보통</code>(토큰 분석 시 용량 절약용), 녹음 시작 <code>즉시</code>, 녹음 중단 <code>수동으로 누를 때</code> 혹은 <code>시간 지정</code>.</li>
+<li><strong>[동작 2] 파일 저장:</strong></li>
+<li>입력: <code>파일 저장</code> 추가</li>
+<li>경로: <code>Google Drive</code> 선택 후 특정 폴더(예: <code>/AI_Voice_Trans/</code>)로 지정.</li>
+<li><em>선택 옵션:</em> iCloud Drive에 임시 저장 후 Make Webhook으로 Direct POST 전송 설정도 가능.</li>
+<li><strong>[동작 3] 알림 트리거:</strong></li>
+<li>입력: <code>알림 보기</code> 추가</li>
+<li>텍스트: "녹음 파일이 클라우드로 업로드되었습니다. 자동 분석이 시작됩니다."</li>
+<li><strong>[뒷면 탭 연결]:</strong></li>
+<li>설정 <span class="arithmatex">\(\rightarrow\)</span> 손쉬운 사용 <span class="arithmatex">\(\rightarrow\)</span> 터치 <span class="arithmatex">\(\rightarrow\)</span> 뒷면 탭 <span class="arithmatex">\(\rightarrow\)</span> 이중 탭 <span class="arithmatex">\(\rightarrow\)</span> 위에서 제작한 '녹음 단축어'를 바인딩합니다.</li>
+</ol>
+<hr />
+<h3 id="6-2-make구-integromat-시나리오-설계서">6-2. Make(구 Integromat) 시나리오 설계서<a class="headerlink" href="#6-2-make구-integromat-시나리오-설계서" title="Permanent link">&para;</a></h3>
+<p>Make.com에 로그인 후 다음과 같이 노드를 구성하십시오.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>[Google Drive: Watch Files] ──&gt; [HTTP: OpenAI Whisper API] ──&gt; [HTTP: Anthropic Claude API] ──&gt; [Google Drive: Create a File]
+</code></pre></div>
+<ul>
+<li><strong>Step 1: Google Drive (Watch Files in a Folder)</strong></li>
+<li><strong>설정:</strong> <code>Folder ID</code>에 아이폰 단축어가 업로드하는 <code>/AI_Voice_Trans/</code> 폴더를 입력합니다.</li>
+<li><strong>수집 대상:</strong> 새로 추가되는 파일 <code>.m4a</code> 또는 <code>.mp3</code>.</li>
+<li><strong>Step 2: HTTP (Make a Request) - OpenAI Whisper API 호출</strong></li>
+<li><strong>URL:</strong> <code>https://api.openai.com/v1/audio/transcriptions</code></li>
+<li><strong>Method:</strong> <code>POST</code></li>
+<li><strong>Headers:</strong><ul>
+<li><code>Authorization</code>: <code>Bearer [YOUR_OPENAI_API_KEY]</code></li>
+</ul>
+</li>
+<li><strong>Body Type:</strong> <code>Multipart/form-data</code></li>
+<li><strong>Fields:</strong><ul>
+<li><code>file</code>: 구글 드라이브에서 가져온 파일 바이너리 데이터 매핑</li>
+<li><code>model</code>: <code>whisper-1</code></li>
+<li><code>language</code>: <code>ko</code> (한국어 인식 성능 극대화)</li>
+</ul>
+</li>
+<li><strong>Step 3: HTTP (Make a Request) - Anthropic Claude API 호출</strong></li>
+<li><strong>URL:</strong> <code>https://api.anthropic.com/v1/messages</code></li>
+<li><strong>Headers:</strong><ul>
+<li><code>x-api-key</code>: <code>[YOUR_CLAUDE_API_KEY]</code></li>
+<li><code>anthropic-version</code>: <code>2024-10-22</code></li>
+<li><code>content-type</code>: <code>application/json</code></li>
+</ul>
+</li>
+<li><strong>Body:</strong>
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">{</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="nt">&quot;model&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;claude-sonnet-4-6-20260515&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="nt">&quot;max_tokens&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4000</span><span class="p">,</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="nt">&quot;system&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;너는 프로페셔널한 녹음 요약 비서다. 제공된 회의 녹음 텍스트를 분석하여 핵심 주제, 날짜/장소, 의사결정 사항, 담당자별 액션 아이템을 마크다운 표로 깔끔하게 정리해라. 전문적인 어조를 유지하고 불필요한 서사는 배제하라.&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span><span class="nt">&quot;messages&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">      </span><span class="nt">&quot;role&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">      </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{{Step 2에서 반환된 text 데이터}}&quot;</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="p">}</span>
+</code></pre></div></li>
+<li><strong>Step 4: Google Drive (Create a File)</strong></li>
+<li><strong>폴더:</strong> <code>/AI_Summaries/</code></li>
+<li><strong>파일명:</strong> <code>{{Step 1의 파일명}}_요약본.md</code></li>
+<li><strong>내용:</strong> Claude API의 Response <code>content[0].text</code> 데이터 바인딩.</li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+본 Make 시나리오 구성을 완료하면, 현장 인터뷰 및 브레인스토밍 종료 후 폰 뒷면을 탭하는 것만으로 <strong>3분 이내에 구조화된 요약 문서(.md)</strong>가 구글 드라이브에 자동으로 생성됩니다.</p>
+</blockquote>
+<hr />
+<h2 id="7-프로젝트-파일-및-데이터-관리-자동화">7. 프로젝트 파일 및 데이터 관리 자동화<a class="headerlink" href="#7-프로젝트-파일-및-데이터-관리-자동화" title="Permanent link">&para;</a></h2>
+<p>수많은 미디어 리소스와 임시 파일들이 혼재하는 바탕화면을 정돈하기 위한 자동화 솔루션입니다.</p>
+<h3 id="7-1-표준-파일-네이밍-규칙">7-1. 표준 파일 네이밍 규칙<a class="headerlink" href="#7-1-표준-파일-네이밍-규칙" title="Permanent link">&para;</a></h3>
+<p>공백이나 한글 특수문자는 AI 에이전트 및 코딩 툴이 로컬 경로를 파싱할 때 잦은 오류를 유발합니다. 규칙을 강제 적용하여 명명하십시오.</p>
+<div class="arithmatex">\[\text{파일명} = \text{YYYY-MM-DD} + \text{\_프로젝트명} + \text{\_리소스유형} + \text{\_일련번호} + \text{.확장자}\]</div>
+<ul>
+<li><strong>나쁜 예:</strong> <code>IMG_4329 (1) 최종의최종 수정.jpg</code></li>
+<li><strong>좋은 예:</strong> <code>2026-06-23_PROJECT-A_model-a_001.jpg</code></li>
+</ul>
+<hr />
+<h3 id="7-2-프로젝트-생성-및-분류-자동화-스크립트-python">7-2. 프로젝트 생성 및 분류 자동화 스크립트 (Python)<a class="headerlink" href="#7-2-프로젝트-생성-및-분류-자동화-스크립트-python" title="Permanent link">&para;</a></h3>
+<p>Cursor 또는 Antigravity 에이전트에게 아래 지침을 복사하여 주입하면, 타깃 폴더 내에 완벽한 템플릿 디렉터리를 1초 만에 구성하고 파일을 정렬합니다.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">initialize_project</span><span class="p">(</span><span class="n">base_path</span><span class="p">,</span> <span class="n">project_name</span><span class="p">):</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    <span class="c1"># 표준 디렉토리 구조 정의</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    <span class="n">folders</span> <span class="o">=</span> <span class="p">[</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>        <span class="s2">&quot;01_기획/제안서&quot;</span><span class="p">,</span> <span class="s2">&quot;01_기획/레퍼런스&quot;</span><span class="p">,</span> <span class="s2">&quot;01_기획/회의록&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>        <span class="s2">&quot;02_프리프로덕션/콜시트&quot;</span><span class="p">,</span> <span class="s2">&quot;02_프리프로덕션/스케줄&quot;</span><span class="p">,</span> <span class="s2">&quot;02_프리프로덕션/세팅&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>        <span class="s2">&quot;03_촬영_원본/raw&quot;</span><span class="p">,</span> <span class="s2">&quot;03_촬영_원본/selected&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>        <span class="s2">&quot;04_편집/v1&quot;</span><span class="p">,</span> <span class="s2">&quot;04_편집/v2&quot;</span><span class="p">,</span> <span class="s2">&quot;04_편집/final&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>        <span class="s2">&quot;05_납품/최종파일&quot;</span><span class="p">,</span> <span class="s2">&quot;05_납품/결과보고서&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>        <span class="s2">&quot;06_정산/견적서&quot;</span><span class="p">,</span> <span class="s2">&quot;06_정산/세금계산서&quot;</span>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>    <span class="p">]</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>    <span class="n">project_root</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">base_path</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">project_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>    <span class="k">for</span> <span class="n">folder</span> <span class="ow">in</span> <span class="n">folders</span><span class="p">:</span>
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>        <span class="n">path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">project_root</span><span class="p">,</span> <span class="n">folder</span><span class="p">)</span>
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>        <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[알림] 프로젝트 디렉터리 &#39;</span><span class="si">{</span><span class="n">project_root</span><span class="si">}</span><span class="s2">&#39;가 생성되었습니다.&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>    <span class="k">return</span> <span class="n">project_root</span>
+<a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>
+<a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a><span class="c1"># Cursor 구동용 프롬프트: &quot;위 파이썬 스크립트를 로컬에서 실행할 수 있도록 터미널 명령어로 작성해줘.&quot;</span>
+</code></pre></div>
+<hr />
+<h3 id="7-3-백업-3-2-1-원칙-및-플랫폼-비교">7-3. 백업 3-2-1 원칙 및 플랫폼 비교<a class="headerlink" href="#7-3-백업-3-2-1-원칙-및-플랫폼-비교" title="Permanent link">&para;</a></h3>
+<p>데이터를 영구 소실하지 않기 위한 분산 보관 전략입니다.</p>
+<ul>
+<li><strong>3:</strong> <strong>3개 이상의 복사본</strong> 유지 (로컬 작업 드라이브, 외장하드 백업본, 클라우드 아카이브).</li>
+<li><strong>2:</strong> <strong>2개 이상의 다른 매체</strong>에 저장 (로컬 SSD + 클라우드 스토리지).</li>
+<li><strong>1:</strong> <strong>1개 이상의 복사본은 외부 보관</strong> (화재, 침수, 도난 리스크 방지를 위해 클라우드 스페이스 활용).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>서비스명</th>
+<th>무료 제공량</th>
+<th>유료 최저 요금제</th>
+<th>주요 특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Google Drive</strong></td>
+<td>15 GB</td>
+<td>100 GB (₩2,400/월)</td>
+<td>NotebookLM 소스 연동 성능 최상, 구글 생태계 유기적 결합</td>
+</tr>
+<tr>
+<td><strong>iCloud</strong></td>
+<td>5 GB</td>
+<td>50 GB (₩1,100/월)</td>
+<td>Apple macOS 및 iOS 디바이스 백업 최적화</td>
+</tr>
+<tr>
+<td><strong>Dropbox</strong></td>
+<td>2 GB</td>
+<td>2 TB ($11.99/월)</td>
+<td>대용량 바이너리 미디어 파일의 델타 동기화 및 복구 속도 최상</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="8-ai-최적화-마크다운md-변환-및-검증-가이드라인">8. AI 최적화 마크다운(MD) 변환 및 검증 가이드라인<a class="headerlink" href="#8-ai-최적화-마크다운md-변환-및-검증-가이드라인" title="Permanent link">&para;</a></h2>
+<p>AI가 문서를 인지하고 활용할 때 가장 뛰어난 생산성을 보여주는 포맷은 단연 마크다운(.md)입니다.</p>
+<h3 id="8-1-문서-포맷별-토큰-효율성-및-비용-비교">8-1. 문서 포맷별 토큰 효율성 및 비용 비교<a class="headerlink" href="#8-1-문서-포맷별-토큰-효율성-및-비용-비교" title="Permanent link">&para;</a></h3>
+<p>동일한 내용의 텍스트(A4 10페이지 분량 기준)를 각 파일 포맷별로 AI 컨텍스트 창에 입력했을 때 소모되는 대략적인 토큰 수치 분석입니다.</p>
+<table>
+<thead>
+<tr>
+<th>파일 포맷</th>
+<th>평균 소모 토큰 (입력당)</th>
+<th>토큰 효율 지수</th>
+<th>비용 지수</th>
+<th>AI 해석의 정확도 및 한계점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HWP (아래아한글)</strong></td>
+<td><code>~4,500 Token</code></td>
+<td>🔴 20%</td>
+<td>🔴 5.0x</td>
+<td>변환 라이브러리 가동 시 표 및 그리드 서식 깨짐 심각, 쓸데없는 스타일 메타데이터 정보가 토큰 대다수를 낭비함.</td>
+</tr>
+<tr>
+<td><strong>PDF</strong></td>
+<td><code>~3,500 Token</code></td>
+<td>🟡 40%</td>
+<td>🟡 3.5x</td>
+<td>다단 구성이나 도식 이미지 포함 시 레이아웃 인식이 어긋나 내용 혼선 유발, OCR이 필요하여 추가 API 비용 청구 가능.</td>
+</tr>
+<tr>
+<td><strong>DOCX (MS워드)</strong></td>
+<td><code>~2,200 Token</code></td>
+<td>🟢 70%</td>
+<td>🟢 2.2x</td>
+<td>양식은 안정적으로 읽히나 파서(Parser)의 종속성으로 인해 프롬프트 전처리 과정 필수.</td>
+</tr>
+<tr>
+<td><strong>.md (마크다운)</strong></td>
+<td><strong><code>~800 Token</code></strong></td>
+<td><strong>🔵 100%</strong></td>
+<td><strong>🔵 1.0x</strong></td>
+<td><strong>텍스트 네이티브 포맷. 구조 정보를 마크업 부호만으로 인식하여 토큰 소모 극최소화. 내용 이해도 99% 달성.</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!IMPORTANT]
+.md 포맷을 활용할 경우, HWP 포맷 대비 <strong>토큰 비용을 80% 이상 절감</strong>할 수 있으며 동일한 예산으로 약 5.6배 더 많은 양의 텍스트를 한 번에 검증하고 지시할 수 있습니다.</p>
+</blockquote>
+<hr />
+<h3 id="8-2-공모전-제안서-검증을-위한-표준-가이드라인-md-설계-프로세스">8-2. 공모전 제안서 검증을 위한 표준 가이드라인 MD 설계 프로세스<a class="headerlink" href="#8-2-공모전-제안서-검증을-위한-표준-가이드라인-md-설계-프로세스" title="Permanent link">&para;</a></h3>
+<p>공모 심사 기준 및 사업계획서 체크 사항을 표준 가이드라인 MD 파일로 구축하여 AI에 검색용으로 제공하는 프레임워크입니다.</p>
+<h4 id="표준-가이드라인-마크다운-템플릿-제안서-검증-기준md">표준 가이드라인 마크다운 템플릿 (<code>제안서-검증-기준.md</code>)<a class="headerlink" href="#표준-가이드라인-마크다운-템플릿-제안서-검증-기준md" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="gh"># [가이드라인] 해양창업 지원사업 제안서 검증 기준</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="gu">## 1. 행정적 필수 요건 (Pass/Fail)</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="k">-</span><span class="w"> </span><span class="gs">**사업 기간:**</span> 2026.09.01 ~ 2027.08.31 (12개월)
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="k">-</span><span class="w"> </span><span class="gs">**예산 상한:**</span> 총액 50,000,000원 이내 구성
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="k">-</span><span class="w"> </span><span class="gs">**필수 제출 서류:**</span> 사업계획서(서식 1), 예산산출내역서(서식 2), 대표자 이력서
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="gu">## 2. 배점 기준표 및 상세 검증 포인트</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>| 평가 항목 | 배점 | 핵심 평가 초점 | 필수 키워드 및 증빙 내용 |
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>|---|---|---|---|
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>| <span class="gs">**사업 타당성**</span> | 30 | 지역 어촌계 연계 및 시장성 | 로컬 파트너십 구축 증빙, 시장 데이터 인용 |
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>| <span class="gs">**수행 역량**</span> | 40 | 팀원 전문성 및 기존 실적 | 과거 유사 사업 2건 이상의 포트폴리오 기재 |
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>| <span class="gs">**예산 적정성**</span> | 30 | 산출 근거의 현실성 | 공인 노임 단가 적용, 일반 관리비 10% 미만 제한 |
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="gu">## 3. 금지 및 감점 사항</span>
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="k">-</span><span class="w"> </span>[WARNING] &quot;독보적인&quot;, &quot;세계 최고의&quot;, &quot;혁신적인 패러다임&quot; 등 정량적 근거 없는 형용사 표현 사용 시 감점.
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="k">-</span><span class="w"> </span>[CAUTION] 예산 내 인건비 비중이 총액의 50%를 초과하는 경우 서면 검토 즉시 탈락 처리.
+</code></pre></div>
+<h4 id="프롬프트-결합-및-검증-워크플로우">프롬프트 결합 및 검증 워크플로우<a class="headerlink" href="#프롬프트-결합-및-검증-워크플로우" title="Permanent link">&para;</a></h4>
+<p>제안서 작성을 완료한 후, Claude 창에 <code>제안서-검증-기준.md</code> 파일과 <code>제안서_초안.md</code> 파일 두 개를 함께 업로드하고 아래 프롬프트를 실행하십시오.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>역할: 전문 공모 사업 심사위원
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>제시된 [제안서-검증-기준.md]의 검증 포인트와 제약 사항을 준수하여, 첨부된 [제안서_초안.md]에 대해 다음 양식으로 피드백을 출력하시오.
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>1. 필수 요건 통과 여부 (Pass/Fail)
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>2. 배점 항목별 예상 점수 및 감점 리스크 항목 (감점 사유 구체적 적시)
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>3. 금지 단어 사용 여부 및 구체적인 대체어 제안
+</code></pre></div>
+<hr />
+<h3 id="8-3-사진작가용-실제-촬영-기준-가이드라인-md-예시">8-3. 사진작가용 실제 촬영 기준 가이드라인 MD 예시<a class="headerlink" href="#8-3-사진작가용-실제-촬영-기준-가이드라인-md-예시" title="Permanent link">&para;</a></h3>
+<p>스튜디오 내부 자산으로 축적해가는 '살아있는 기준 문서'의 예시입니다.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="gh"># [스튜디오 규격] 촬영 및 보정 가이드라인</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="gu">## 1. 마스터 파일 납품 사양</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="k">-</span><span class="w"> </span><span class="gs">**기본 포맷:**</span> RAW(.ARW) 촬영 후 보정본 JPEG 변환 납품
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="k">-</span><span class="w"> </span><span class="gs">**해상도:**</span> 4200px (장축 기준) 이상 유지
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="k">-</span><span class="w"> </span><span class="gs">**컬러 스페이스:**</span> 웹 업로드용 sRGB / 인쇄용 Adobe RGB 개별 아웃풋
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="k">-</span><span class="w"> </span><span class="gs">**네이밍 시퀀스:**</span> <span class="sb">`YYYYMMDD_[PROJECT-NAME]_Selected_[NUM].jpg`</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="gu">## 2. 현장 기본 하드웨어 프리셋 정보</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>| 촬영 환경 | 조리개(f) 값 | 셔터 스피드 | 감도(ISO) | 권장 조명/반사판 셋팅 |
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>|---|---|---|---|---|
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>| <span class="gs">**야외 맑은 날 정오**</span> | f/4.0 - f/8.0 | 1/500s 이상 | ISO 100 | 은색 반사판 (역광 방지용 피사체 45도 측면 배치) |
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>| <span class="gs">**야외 흐린 날**</span> | f/2.8 - f/4.0 | 1/200s | ISO 200 - 400 | 동조 스트로브 1점 (디퓨저 장착 필수, 광량 1/16 발광) |
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>| <span class="gs">**스튜디오 프로필**</span> | f/8.0 | 1/160s | ISO 100 | 3점 조명 세팅 (Key, Fill, Rim Light 개별 동조 확인) |
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="gu">## 3. 리터칭(보정) 핵심 제한조건</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="k">-</span><span class="w"> </span>[IMPORTANT] 피부 텍스처(요철 및 모공)를 뭉개는 블러 필터 과다 적용 금지. Frequency Separation 기법 기반 디테일 복구 적용 필수.
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="k">-</span><span class="w"> </span>[WARNING] 화이트밸런스 오차 ±100K 이내 준수. 그레이카드 측정 필수.
+</code></pre></div>
+<hr />
+<h2 id="9-부록-실행-체크리스트">9. 부록: 실행 체크리스트<a class="headerlink" href="#9-부록-실행-체크리스트" title="Permanent link">&para;</a></h2>
+<p>AI 루틴을 즉시 실천하기 위한 실천 목록입니다.</p>
+<h3 id="9-1-매일의-루틴-프로토콜">9-1. 매일의 루틴 프로토콜<a class="headerlink" href="#9-1-매일의-루틴-프로토콜" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>[오전 09:00]</strong> 오늘 수행할 메인 작업의 '상·생·방·제' 맥락 노트를 작성하여 AI 메인 챗봇에 입력했는가?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>[작업 중]</strong> 미팅 및 현장 회의 시 단축어/음성메모 녹음을 켰는가?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>[작업 후]</strong> SD카드 및 신규 리소스를 표준 파일 네임 템플릿(날짜_프로젝트_유형)으로 자동 분류하여 클라우드에 백업했는가?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>[저녁 19:00]</strong> 오늘 캡처한 영감 이미지를 AI 분석을 거쳐 키워드 태그와 함께 옵시디언 로컬에 정착시켰는가?</li>
+</ul>
+<h3 id="9-2-주간월간-검토">9-2. 주간/월간 검토<a class="headerlink" href="#9-2-주간월간-검토" title="Permanent link">&para;</a></h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>[주 1회 - 금요일]</strong> 한 주 동안 쌓인 <code>rejected/</code> 폴더 내 반려 데이터를 열람하여 나의 기획 필터링 경향성을 업데이트했는가?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>[월 1회 - 말일]</strong> 3-2-1 백업 원칙에 따라 외장하드와 Google Drive가 정상 동기화되어 에러 없이 백업되었는지 물리적으로 체크했는가?</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

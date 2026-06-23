@@ -1,0 +1,2559 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="사진작가, 영상제작자, 댄서, 공간기획자를 위한 AI 실무 도입 단계별 가이드">
+      
+      
+      
+      
+        <link rel="prev" href="../00_%EC%8B%9C%EC%9E%91/">
+      
+      
+        <link rel="next" href="../02_%EB%A3%A8%ED%8B%B4/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>01. 도구 — 뭘 쓸 것인가 - AI 활용 가이드 — 아티스트를 위한 실전 교육</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pretendard:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Pretendard";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#01-도구--뭘-쓸-것인가" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href=".." title="AI 활용 가이드 — 아티스트를 위한 실전 교육" class="md-header__button md-logo" aria-label="AI 활용 가이드 — 아티스트를 위한 실전 교육" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI 활용 가이드 — 아티스트를 위한 실전 교육
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              01. 도구 — 뭘 쓸 것인가
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="공유" aria-label="공유" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI 활용 가이드 — 아티스트를 위한 실전 교육" class="md-nav__button md-logo" aria-label="AI 활용 가이드 — 아티스트를 위한 실전 교육" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+
+    </a>
+    AI 활용 가이드 — 아티스트를 위한 실전 교육
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_%EC%8B%9C%EC%9E%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    00. 시작 — 어디서부터
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. 도구 — 뭘 쓸 것인가
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01. 도구 — 뭘 쓸 것인가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#목차" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        목차
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-ai-모델-등급-및-요금제-가이드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. AI 모델 등급 및 요금제 가이드
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. AI 모델 등급 및 요금제 가이드">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1-모델-등급-체계-fast--standard--deep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-1. 모델 등급 체계 (Fast / Standard / Deep)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2-등급별-성능-비교표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-2. 등급별 성능 비교표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-3-서비스별-모델-설정-및-대응표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-3. 서비스별 모델 설정 및 대응표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-4-단일-모델-내-추론-레벨-설정-thinking-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-4. 단일 모델 내 추론 레벨 설정 (Thinking Level)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-5-결제-및-구독-가이드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-5. 결제 및 구독 가이드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-6-보안-및-데이터-환각hallucination-관리" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-6. 보안 및 데이터 환각(Hallucination) 관리
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-주요-언어모델-상세-비교-및-직군별-추천" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 주요 언어모델 상세 비교 및 직군별 추천
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 주요 언어모델 상세 비교 및 직군별 추천">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1-5대-핵심-언어모델-비교표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-1. 5대 핵심 언어모델 비교표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2-특수-목적-모델-활용처" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-2. 특수 목적 모델 활용처
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-3-아티스트-직군별-추천-모델-조합" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-3. 아티스트 직군별 추천 모델 조합
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-녹음-정리-및-자료-요약-notebooklm-실전" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 녹음 정리 및 자료 요약 (NotebookLM 실전)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 녹음 정리 및 자료 요약 (NotebookLM 실전)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-1-도구-프로필" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3-1. 도구 프로필
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-2-회의-녹음-정리-6단계-워크플로우" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3-2. 회의 녹음 정리 6단계 워크플로우
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-3-현장-녹음-파일-분석용-3종-프롬프트-템플릿" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3-3. 현장 녹음 파일 분석용 3종 프롬프트 템플릿
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-4-크롬-확장-프로그램-연동-팁-glasp-youtube-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3-4. 크롬 확장 프로그램 연동 팁 (Glasp YouTube Summary)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-프롬프트-작성-원칙-역할-맥락-형식" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 프롬프트 작성 원칙: 역할, 맥락, 형식
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 프롬프트 작성 원칙: 역할, 맥락, 형식">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-0-맥락-중심의-프롬프트-설계-전략-long-context-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-0. 맥락 중심의 프롬프트 설계 전략 (Long-context Prompting)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-1-나쁜-프롬프트-vs-좋은-프롬프트-비교표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-1. 나쁜 프롬프트 vs 좋은 프롬프트 비교표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-2-프롬프트-설계-3대-구성-원칙" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-2. 프롬프트 설계 3대 구성 원칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-웹saas-vs-설치형에디터-및-확장-개념" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 웹(SaaS) vs 설치형(에디터) 및 확장 개념
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 웹(SaaS) vs 설치형(에디터) 및 확장 개념">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-1-웹-서비스-vs-설치형-에디터-비교표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5-1. 웹 서비스 vs 설치형 에디터 비교표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-2-ai-확장-단계-5-step-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5-2. AI 확장 단계 (5-Step Evolution)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-3-설치형-에디터-3대-도구-상세-분석" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5-3. 설치형 에디터 3대 도구 상세 분석
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-claude-심화-chat--projects--code-모드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Claude 심화: Chat / Projects / Code 모드
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Claude 심화: Chat / Projects / Code 모드">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6-1-모드별-기능-분석표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6-1. 모드별 기능 분석표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-2-모드별-실전-구축-및-활용-가이드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6-2. 모드별 실전 구축 및 활용 가이드
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-이미지-생성-모델-비교-및-심화-제어" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 이미지 생성 모델 비교 및 심화 제어
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 이미지 생성 모델 비교 및 심화 제어">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7-1-4대-이미지-생성-도구-비교표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7-1. 4대 이미지 생성 도구 비교표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-2-comfyui와-노드node-기반-세부-제어" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7-2. ComfyUI와 노드(Node) 기반 세부 제어
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-3-stable-diffusion-vs-flux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7-3. Stable Diffusion vs Flux
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-mcp-model-context-protocol-실전-가이드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. MCP (Model Context Protocol) 실전 가이드
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. MCP (Model Context Protocol) 실전 가이드">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8-1-mcp-서버-구동-아키텍처" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-1. MCP 서버 구동 아키텍처
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-2-주요-mcp-서버-라이브러리-및-리소스" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-2. 주요 MCP 서버 라이브러리 및 리소스
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-3-에디터cursorantigravity-내-설정-도입-절차" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-3. 에디터(Cursor/Antigravity) 내 설정 도입 절차
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-4-직군별-mcp-실전-활용-시나리오" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-4. 직군별 MCP 실전 활용 시나리오
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-최종-요약-및-실무-실행-체크리스트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 최종 요약 및 실무 실행 체크리스트
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. 최종 요약 및 실무 실행 체크리스트">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#9-1-비용-투자-설계안" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9-1. 비용 투자 설계안
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-2-직군별-최종-권장-도구-사양표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9-2. 직군별 최종 권장 도구 사양표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-3-오늘-즉시-실행할-4대-액션-플랜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9-3. 오늘 즉시 실행할 4대 액션 플랜
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_%EB%A3%A8%ED%8B%B4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02. 루틴 — 어디에 넣을 것인가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_%ED%99%95%EC%9E%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03. 확장 — 사고를 시스템으로
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_%EC%8B%9C%EC%8A%A4%ED%85%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04. 시스템 — 에이전트와 파이프라인
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#목차" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        목차
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-ai-모델-등급-및-요금제-가이드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. AI 모델 등급 및 요금제 가이드
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. AI 모델 등급 및 요금제 가이드">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1-모델-등급-체계-fast--standard--deep" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-1. 모델 등급 체계 (Fast / Standard / Deep)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2-등급별-성능-비교표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-2. 등급별 성능 비교표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-3-서비스별-모델-설정-및-대응표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-3. 서비스별 모델 설정 및 대응표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-4-단일-모델-내-추론-레벨-설정-thinking-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-4. 단일 모델 내 추론 레벨 설정 (Thinking Level)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-5-결제-및-구독-가이드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-5. 결제 및 구독 가이드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-6-보안-및-데이터-환각hallucination-관리" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-6. 보안 및 데이터 환각(Hallucination) 관리
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-주요-언어모델-상세-비교-및-직군별-추천" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 주요 언어모델 상세 비교 및 직군별 추천
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 주요 언어모델 상세 비교 및 직군별 추천">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1-5대-핵심-언어모델-비교표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-1. 5대 핵심 언어모델 비교표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2-특수-목적-모델-활용처" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-2. 특수 목적 모델 활용처
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-3-아티스트-직군별-추천-모델-조합" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-3. 아티스트 직군별 추천 모델 조합
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-녹음-정리-및-자료-요약-notebooklm-실전" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 녹음 정리 및 자료 요약 (NotebookLM 실전)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 녹음 정리 및 자료 요약 (NotebookLM 실전)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-1-도구-프로필" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3-1. 도구 프로필
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-2-회의-녹음-정리-6단계-워크플로우" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3-2. 회의 녹음 정리 6단계 워크플로우
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-3-현장-녹음-파일-분석용-3종-프롬프트-템플릿" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3-3. 현장 녹음 파일 분석용 3종 프롬프트 템플릿
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-4-크롬-확장-프로그램-연동-팁-glasp-youtube-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3-4. 크롬 확장 프로그램 연동 팁 (Glasp YouTube Summary)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-프롬프트-작성-원칙-역할-맥락-형식" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 프롬프트 작성 원칙: 역할, 맥락, 형식
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 프롬프트 작성 원칙: 역할, 맥락, 형식">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-0-맥락-중심의-프롬프트-설계-전략-long-context-prompting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-0. 맥락 중심의 프롬프트 설계 전략 (Long-context Prompting)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-1-나쁜-프롬프트-vs-좋은-프롬프트-비교표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-1. 나쁜 프롬프트 vs 좋은 프롬프트 비교표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-2-프롬프트-설계-3대-구성-원칙" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-2. 프롬프트 설계 3대 구성 원칙
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-웹saas-vs-설치형에디터-및-확장-개념" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 웹(SaaS) vs 설치형(에디터) 및 확장 개념
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 웹(SaaS) vs 설치형(에디터) 및 확장 개념">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-1-웹-서비스-vs-설치형-에디터-비교표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5-1. 웹 서비스 vs 설치형 에디터 비교표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-2-ai-확장-단계-5-step-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5-2. AI 확장 단계 (5-Step Evolution)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-3-설치형-에디터-3대-도구-상세-분석" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5-3. 설치형 에디터 3대 도구 상세 분석
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-claude-심화-chat--projects--code-모드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Claude 심화: Chat / Projects / Code 모드
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Claude 심화: Chat / Projects / Code 모드">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#6-1-모드별-기능-분석표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6-1. 모드별 기능 분석표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-2-모드별-실전-구축-및-활용-가이드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6-2. 모드별 실전 구축 및 활용 가이드
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-이미지-생성-모델-비교-및-심화-제어" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 이미지 생성 모델 비교 및 심화 제어
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 이미지 생성 모델 비교 및 심화 제어">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#7-1-4대-이미지-생성-도구-비교표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7-1. 4대 이미지 생성 도구 비교표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-2-comfyui와-노드node-기반-세부-제어" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7-2. ComfyUI와 노드(Node) 기반 세부 제어
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-3-stable-diffusion-vs-flux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7-3. Stable Diffusion vs Flux
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-mcp-model-context-protocol-실전-가이드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. MCP (Model Context Protocol) 실전 가이드
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. MCP (Model Context Protocol) 실전 가이드">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8-1-mcp-서버-구동-아키텍처" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-1. MCP 서버 구동 아키텍처
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-2-주요-mcp-서버-라이브러리-및-리소스" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-2. 주요 MCP 서버 라이브러리 및 리소스
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-3-에디터cursorantigravity-내-설정-도입-절차" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-3. 에디터(Cursor/Antigravity) 내 설정 도입 절차
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-4-직군별-mcp-실전-활용-시나리오" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8-4. 직군별 MCP 실전 활용 시나리오
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-최종-요약-및-실무-실행-체크리스트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 최종 요약 및 실무 실행 체크리스트
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. 최종 요약 및 실무 실행 체크리스트">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#9-1-비용-투자-설계안" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9-1. 비용 투자 설계안
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-2-직군별-최종-권장-도구-사양표" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9-2. 직군별 최종 권장 도구 사양표
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-3-오늘-즉시-실행할-4대-액션-플랜" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9-3. 오늘 즉시 실행할 4대 액션 플랜
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="01-도구--뭘-쓸-것인가">01. 도구 — 뭘 쓸 것인가<a class="headerlink" href="#01-도구--뭘-쓸-것인가" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>이 문서는 아티스트(사진작가, 영상제작자, 댄서, 공간기획자, 기획자)가 AI 도구를 선택하고 실무에 도입할 때 필요한 실전 통합 가이드라인입니다.</strong>
+감상이나 동기부여용 서술을 배제하고 오직 사실, 비교표, 템플릿, 경고 문구 위주로 구성되어 있습니다.</p>
+</blockquote>
+<hr />
+<h2 id="목차">목차<a class="headerlink" href="#목차" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="#1-ai-모델-등급-및-요금제-가이드">1. AI 모델 등급 및 요금제 가이드</a></li>
+<li><a href="#2-주요-언어모델-상세-비교-및-직군별-추천">2. 주요 언어모델 상세 비교 및 직군별 추천</a></li>
+<li><a href="#3-녹음-정리-및-자료-요약-notebooklm-실전">3. 녹음 정리 및 자료 요약 (NotebookLM 실전)</a></li>
+<li><a href="#4-프롬프트-작성-원칙-역할-맥락-형식">4. 프롬프트 작성 원칙: 역할, 맥락, 형식</a></li>
+<li><a href="#5-웹saas-vs-설치형에디터-및-확장-개념">5. 웹(SaaS) vs 설치형(에디터) 및 확장 개념</a></li>
+<li><a href="#6-claude-심화-chat--projects--code-모드">6. Claude 심화: Chat / Projects / Code 모드</a></li>
+<li><a href="#7-이미지-생성-모델-비교-및-심화-제어">7. 이미지 생성 모델 비교 및 심화 제어</a></li>
+<li><a href="#8-mcp-model-context-protocol-실전-가이드">8. MCP (Model Context Protocol) 실전 가이드</a></li>
+<li><a href="#9-최종-요약-및-실무-실행-체크리스트">9. 최종 요약 및 실무 실행 체크리스트</a></li>
+</ol>
+<hr />
+<h2 id="1-ai-모델-등급-및-요금제-가이드">1. AI 모델 등급 및 요금제 가이드<a class="headerlink" href="#1-ai-모델-등급-및-요금제-가이드" title="Permanent link">&para;</a></h2>
+<p>AI의 성능 한계를 느끼는 주된 요인은 질문의 기술 부족 이전에 <strong>낮은 등급의 모델 사용</strong>에 있습니다. 각 서비스의 기본 무료 모델은 성능이 가장 낮게 설정되어 있으므로 업무 목적에 맞는 적절한 등급 선택이 필수적입니다.</p>
+<h3 id="1-1-모델-등급-체계-fast--standard--deep">1-1. 모델 등급 체계 (Fast / Standard / Deep)<a class="headerlink" href="#1-1-모델-등급-체계-fast--standard--deep" title="Permanent link">&para;</a></h3>
+<p>모든 주요 AI 모델은 속도, 품질, 연산 비용에 따라 3개 등급으로 나뉩니다.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Fast (빠른 모델)
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── 용도: 단순 질문, 번역, 대량 텍스트 요약
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── 예: GPT-5.5 Mini, Claude Haiku, Gemini 3.5 Flash, Llama 4 Scout
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>└── 비유: 인턴 — 신속하나 결과물의 깊이가 얕음
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Standard (기본 모델)
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>├── 용도: 일반적인 대화, 문서 초안 작성, 기본적인 아이디어 도출
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── 예: GPT-5.5, Claude Sonnet 4.6, Gemini 3.1 Pro, Grok 4.3, Llama 4 Maverick
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>└── 비유: 대리 — 범용적이고 합리적인 수준의 작업 수행
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>Deep (깊은/추론 모델)
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>├── 용도: 복잡한 논리 분석, 정밀 문서 작성, 코드 생성 및 디버깅, 기획서 최종 감수
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>├── 예: GPT-5.5 Thinking, Claude Opus 4.8, Gemini Deep Research, Llama 4 Maverick (large)
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>└── 비유: 팀장 — 연산 속도는 느리지만 깊이 있는 추론 결과 도출
+</code></pre></div>
+<h3 id="1-2-등급별-성능-비교표">1-2. 등급별 성능 비교표<a class="headerlink" href="#1-2-등급별-성능-비교표" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">Fast</th>
+<th style="text-align: left;">Standard</th>
+<th style="text-align: left;">Deep</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>작동 속도</strong></td>
+<td style="text-align: left;">★★★★★ (최상)</td>
+<td style="text-align: left;">★★★☆☆ (보통)</td>
+<td style="text-align: left;">★★☆☆☆ (느림/추론 시간 소요)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>출력 품질</strong></td>
+<td style="text-align: left;">★★☆☆☆ (낮음)</td>
+<td style="text-align: left;">★★★☆☆ (보통)</td>
+<td style="text-align: left;">★★★★★ (최상)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>비용 소비</strong></td>
+<td style="text-align: left;">최저 (무료 제공 다수)</td>
+<td style="text-align: left;">중간 (월 구독 범위 내)</td>
+<td style="text-align: left;">최고 (사용량 제한 및 추가 과금)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>적합한 작업</strong></td>
+<td style="text-align: left;">번역, 요약, 간단한 데이터 분류</td>
+<td style="text-align: left;">일반적인 초안 작성, 브레인스토밍</td>
+<td style="text-align: left;">제안서 작성, 계약서 정밀 분석, 코딩</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1-3-서비스별-모델-설정-및-대응표">1-3. 서비스별 모델 설정 및 대응표<a class="headerlink" href="#1-3-서비스별-모델-설정-및-대응표" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">등급</th>
+<th style="text-align: left;">ChatGPT (OpenAI)</th>
+<th style="text-align: left;">Claude (Anthropic)</th>
+<th style="text-align: left;">Gemini (Google)</th>
+<th style="text-align: left;">Llama (Meta)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Fast</strong></td>
+<td style="text-align: left;">GPT-5.5 Mini</td>
+<td style="text-align: left;">Claude Haiku 4.6</td>
+<td style="text-align: left;">Gemini 3.5 Flash</td>
+<td style="text-align: left;">Llama 4 Scout</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Standard</strong></td>
+<td style="text-align: left;">GPT-5.5</td>
+<td style="text-align: left;">Claude Sonnet 4.6</td>
+<td style="text-align: left;">Gemini 3.1 Pro</td>
+<td style="text-align: left;">Llama 4 Maverick</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Deep</strong></td>
+<td style="text-align: left;">GPT-5.5 Thinking</td>
+<td style="text-align: left;">Claude Opus 4.8</td>
+<td style="text-align: left;">Gemini Deep Research</td>
+<td style="text-align: left;">Llama 4 Maverick (large)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!IMPORTANT]
+<strong>중요도가 높은 문서나 최종 결과물 산출 시에는 반드시 Deep 모델을 사용하십시오.</strong>
+Fast 또는 Standard 모델로 작성된 제안서나 계약서 검토는 오류 발생 가능성이 높으며 디테일이 부족합니다.</p>
+</blockquote>
+<hr />
+<h3 id="1-4-단일-모델-내-추론-레벨-설정-thinking-level">1-4. 단일 모델 내 추론 레벨 설정 (Thinking Level)<a class="headerlink" href="#1-4-단일-모델-내-추론-레벨-설정-thinking-level" title="Permanent link">&para;</a></h3>
+<p>최근 AI 플랫폼들은 단순히 모델을 전환하는 것을 넘어, 동일한 모델 내에서 <strong>생각의 깊이(추론 레벨)</strong>를 설정할 수 있는 기능을 제공합니다 (예: Antigravity, Gemini API 등). 이 설정은 앞서 다룬 모델 등급 체계(Fast / Standard / Deep)를 단일 모델 내부에서 소프트웨어적으로 제어하는 것과 유사합니다.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">설정 레벨</th>
+<th style="text-align: left;">작동 방식</th>
+<th style="text-align: left;">대응되는 모델 등급</th>
+<th style="text-align: left;">특징 및 추천 용도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Low (낮음)</strong></td>
+<td style="text-align: left;">생각(추론) 과정을 생략하고 즉각 답변 생성</td>
+<td style="text-align: left;"><strong>Fast</strong></td>
+<td style="text-align: left;">속도가 가장 빠름. 가벼운 코드 편집, 단순 오타 교정, 포맷 변환 등</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Medium (보통)</strong></td>
+<td style="text-align: left;">기본적인 문제 해결 및 분석 흐름을 적용</td>
+<td style="text-align: left;"><strong>Standard</strong></td>
+<td style="text-align: left;">균형 잡힌 속도와 품질. 일반적인 기능 구현, 기획안 초안 작성 등 (기본값)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>High (높음)</strong></td>
+<td style="text-align: left;">여러 단계를 쪼개어 스스로 검증 및 추론 수행</td>
+<td style="text-align: left;"><strong>Deep</strong></td>
+<td style="text-align: left;">정밀도가 가장 높음. 전체 시스템 설계 검토, 복잡한 버그 디버깅, 다각도 피드백 등</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!TIP]
+단순 텍스트 변환이나 단순 조작 작업은 <strong>Low</strong> 또는 <strong>Medium</strong>으로 설정하여 빠른 작업 속도를 챙기고, 코드 아키텍처 재설계나 대형 기획 분석 등 고도의 논리적 판단이 필요할 때는 반드시 <strong>High</strong>로 상향 설정하여 활용하는 것이 훨씬 생산적입니다.</p>
+</blockquote>
+<hr />
+<h3 id="1-5-결제-및-구독-가이드">1-5. 결제 및 구독 가이드<a class="headerlink" href="#1-5-결제-및-구독-가이드" title="Permanent link">&para;</a></h3>
+<p>업무용 AI 도구 도입 시 월 2~3만 원 수준의 구독 비용 투자는 필수적입니다. 무료 플랜은 모델의 쿼리 제한이 심하거나 하위 모델로 자동 전환됩니다.</p>
+<h4 id="a-단일-서비스-구독-시">A. 단일 서비스 구독 시<a class="headerlink" href="#a-단일-서비스-구독-시" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">서비스</th>
+<th style="text-align: left;">월 비용</th>
+<th style="text-align: left;">추천 이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>ChatGPT Plus</strong></td>
+<td style="text-align: left;">$20/월 (약 ₩27,000)</td>
+<td style="text-align: left;">가장 범용적임. 고성능 이미지 생성(DALL-E), 데이터 분석, 코드 실행 환경을 단일 플랫폼에서 완결하고 싶을 때 적합.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Claude Pro</strong></td>
+<td style="text-align: left;">$20/월 (약 ₩27,000)</td>
+<td style="text-align: left;">정밀한 텍스트 작성 및 구조화 최우선. 문서 작업 비중이 높고 긴 코드나 긴 텍스트 분석이 잦은 경우 추천.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="b-이중-서비스-구독-시-추천-조합">B. 이중 서비스 구독 시 (추천 조합)<a class="headerlink" href="#b-이중-서비스-구독-시-추천-조합" title="Permanent link">&para;</a></h4>
+<p><strong>Claude Pro (<span class="arithmatex">\(20/월) + Gemini Advanced (\)</span>20/월)</strong>
+* <strong>Claude Pro</strong>: 제안서, 보고서 작성, 프로젝트 단위 데이터 구축 및 정밀 분석에 활용.
+* <strong>Gemini Advanced</strong>: 회의록 녹음 파일 대량 정리, 구글 워크스페이스(Workspace) 연동 문서 검색, NotebookLM 연동 리서치에 활용.</p>
+<h4 id="c-무료-활용-중심-구성-시">C. 무료 활용 중심 구성 시<a class="headerlink" href="#c-무료-활용-중심-구성-시" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Gemini (Google)</strong>: 타 서비스 대비 무료 제공 범위가 넓으며, 파일 분석 및 검색 연동에 강점이 있습니다.</li>
+<li><strong>NotebookLM</strong>: 완전 무료로 제공되며 대용량 문서 및 오디오 분석에 최적화되어 있습니다.</li>
+</ul>
+<hr />
+<h3 id="1-6-보안-및-데이터-환각hallucination-관리">1-6. 보안 및 데이터 환각(Hallucination) 관리<a class="headerlink" href="#1-6-보안-및-데이터-환각hallucination-관리" title="Permanent link">&para;</a></h3>
+<h4 id="a-데이터-학습-방지-및-보안-가이드">A. 데이터 학습 방지 및 보안 가이드<a class="headerlink" href="#a-데이터-학습-방지-및-보안-가이드" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">서비스</th>
+<th style="text-align: left;">유료 플랜 (Plus/Pro)</th>
+<th style="text-align: left;">무료 플랜</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>ChatGPT</strong></td>
+<td style="text-align: left;">❌ 학습 제외 (기본 설정)</td>
+<td style="text-align: left;">⚠️ 설정에서 'Chat history &amp; training' 비활성화 필요</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Claude</strong></td>
+<td style="text-align: left;">❌ 학습 제외</td>
+<td style="text-align: left;">⚠️ 데이터가 서비스 품질 개선용으로 수집될 수 있음</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gemini</strong></td>
+<td style="text-align: left;">❌ 학습 제외</td>
+<td style="text-align: left;">⚠️ 데이터가 인간 검토자에 의해 분석 및 사용될 수 있음</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!CAUTION]
+개인정보(주민등록번호, 주소, 연락처), 금융 정보(계좌번호, 카드 비밀번호), 기업 기밀(미공개 특허 자료, 상세 고객 명단)은 등급 및 요금제와 무관하게 AI 입력창에 절대 직접 입력하지 마십시오.</p>
+</blockquote>
+<h4 id="b-환각-현상거짓-답변-대응-매뉴얼">B. 환각 현상(거짓 답변) 대응 매뉴얼<a class="headerlink" href="#b-환각-현상거짓-답변-대응-매뉴얼" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>정밀 검증 대상</strong>: 통계 수치, 법률 조항 번호, 인물 검색 결과, 역사적 사실은 AI가 잘못된 정보를 진짜처럼 서술할 확률이 높습니다.</li>
+<li><strong>해결 절차</strong>:</li>
+<li>실시간 팩트체크가 필요한 질문은 검색 기능이 내장된 <strong>Perplexity</strong> 또는 <strong>Gemini</strong>를 사용하여 실시간 출처를 함께 조회하십시오.</li>
+<li>프롬프트 끝에 <code>"답변의 근거가 되는 원문 출처 또는 URL을 본문 내에 명시해라"</code>를 포함시키십시오.</li>
+<li>중요한 정보는 반드시 사람이 직접 원문을 교차 검증해야 합니다.</li>
+</ol>
+<hr />
+<h2 id="2-주요-언어모델-상세-비교-및-직군별-추천">2. 주요 언어모델 상세 비교 및 직군별 추천<a class="headerlink" href="#2-주요-언어모델-상세-비교-및-직군별-추천" title="Permanent link">&para;</a></h2>
+<h3 id="2-1-5대-핵심-언어모델-비교표">2-1. 5대 핵심 언어모델 비교표<a class="headerlink" href="#2-1-5대-핵심-언어모델-비교표" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">구분</th>
+<th style="text-align: left;">ChatGPT</th>
+<th style="text-align: left;">Claude</th>
+<th style="text-align: left;">Gemini</th>
+<th style="text-align: left;">Grok</th>
+<th style="text-align: left;">Llama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>개발사</strong></td>
+<td style="text-align: left;">OpenAI</td>
+<td style="text-align: left;">Anthropic</td>
+<td style="text-align: left;">Google</td>
+<td style="text-align: left;">xAI</td>
+<td style="text-align: left;">Meta</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>강점</strong></td>
+<td style="text-align: left;">이미지 생성(DALL-E), 범용 대화</td>
+<td style="text-align: left;">문서 구조화, 고성능 코딩, 아티팩트</td>
+<td style="text-align: left;">대용량 컨텍스트(긴 문서), 구글 검색</td>
+<td style="text-align: left;">실시간 X(트위터) 데이터, 무제한 톤</td>
+<td style="text-align: left;">로컬 설치 가능, 완전 폐쇄망 운영</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>약점</strong></td>
+<td style="text-align: left;">긴 문서의 정밀한 구조화 부족</td>
+<td style="text-align: left;">이미지 생성 품질이 DALL-E 대비 낮음</td>
+<td style="text-align: left;">정밀 추론 작업 시의 미세 오류</td>
+<td style="text-align: left;">공식 기획서 작성 등 포멀한 톤</td>
+<td style="text-align: left;">로컬 구동 시 고성능 GPU 필수</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>비용</strong></td>
+<td style="text-align: left;">$20/월 (무료 제한적)</td>
+<td style="text-align: left;">$20/월 (무료 제한적)</td>
+<td style="text-align: left;">$20/월 (무료 Flash 제공)</td>
+<td style="text-align: left;">X Premium 요금제 포함</td>
+<td style="text-align: left;">무료 (오픈소스)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>특이사항</strong></td>
+<td style="text-align: left;">GPTs 커스텀 챗봇 빌더 지원</td>
+<td style="text-align: left;">프로젝트(Project) 단위 작업 최적</td>
+<td style="text-align: left;">NotebookLM과의 데이터 호환</td>
+<td style="text-align: left;">가감 없는 트렌드 정보 수집</td>
+<td style="text-align: left;">내 컴퓨터 단독 구동으로 데이터 유출 0%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="2-2-특수-목적-모델-활용처">2-2. 특수 목적 모델 활용처<a class="headerlink" href="#2-2-특수-목적-모델-활용처" title="Permanent link">&para;</a></h3>
+<h4 id="a-grok-실시간-트렌드-및-시장-반응-리서치">A. Grok (실시간 트렌드 및 시장 반응 리서치)<a class="headerlink" href="#a-grok-실시간-트렌드-및-시장-반응-리서치" title="Permanent link">&para;</a></h4>
+<p>X(구 트위터)의 실시간 포스팅 데이터를 <strong>검색·참조</strong>하므로 다른 검색 엔진이나 일반 AI 모델이 접근할 수 없는 최신 트렌드를 파악할 수 있습니다.</p>
+<ul>
+<li><strong>적합한 활용 사례</strong>:</li>
+<li>특정 브랜드 또는 신규 팝업 스토어에 대한 대중의 실시간 반응 피드백 수집</li>
+<li>서브컬처, 서브안무, 특정 밈(Meme)의 유행 흐름 추적</li>
+<li>
+<p>공식 보도자료 외 실제 사용자들의 가감 없는 업계 동향 및 불만 사항 수집</p>
+</li>
+<li>
+<p><strong>실전 프롬프트 예시</strong>:
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>최근 48시간 동안 X(트위터) 내에서 &#39;성수동 팝업스토어 공간 디자인&#39;에 관한 반응을 긍정적 의견과 부정적 의견으로 분류하여 리포트 형태로 요약해라. 특히 공간 구성 요소 중 가장 많이 언급된 특징 3가지를 명시해라.
+</code></pre></div></p>
+</li>
+</ul>
+<h4 id="b-llama-데이터-오프라인-완전-보안화">B. Llama (데이터 오프라인 완전 보안화)<a class="headerlink" href="#b-llama-데이터-오프라인-완전-보안화" title="Permanent link">&para;</a></h4>
+<p>메타가 배포한 오픈소스 모델로, 기업 내부망이나 개인 PC에 패키지 형태로 빌드하여 인터넷 연결 없이 사용할 수 있습니다.</p>
+<ul>
+<li><strong>적합한 활용 사례</strong>:</li>
+<li>외부 유출 시 법적 책임이 따르는 내부 재무 보고서, 미발표 IP 기획서 분석</li>
+<li>
+<p>오프라인 작업 환경(보안 구역, 현장 작업실 등)에서의 AI 어시스턴트 구동</p>
+</li>
+<li>
+<p><strong>설치 프로토콜 (Ollama 기준)</strong>:</p>
+</li>
+<li>공식 웹사이트(<a href="https://ollama.com">ollama.com</a>)에서 OS에 맞는 Ollama 설치 프로그램을 다운로드하여 실행합니다.</li>
+<li>터미널(Terminal) 또는 명령 프롬프트(CMD)를 엽니다.</li>
+<li>아래 명령어를 입력하여 Llama 모델을 로컬로 내려받고 실행합니다:
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ollama<span class="w"> </span>run<span class="w"> </span>llama4
+</code></pre></div></li>
+<li>설치 완료 즉시 터미널 상에서 실시간 로컬 대화가 가능해집니다.<blockquote>
+<p>[!WARNING]
+로컬 환경에서 원활한 구동을 위해서는 최소 16GB 이상의 RAM과 외장 GPU(Nvidia RTX 시리즈 또는 Apple Silicon M 시리즈 프로세서)가 장착된 하드웨어가 강력히 권장됩니다.</p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h3 id="2-3-아티스트-직군별-추천-모델-조합">2-3. 아티스트 직군별 추천 모델 조합<a class="headerlink" href="#2-3-아티스트-직군별-추천-모델-조합" title="Permanent link">&para;</a></h3>
+<p>각 아티스트의 작업 성향과 결과물의 형태에 따른 맞춤형 도구 조합 레이아웃입니다.</p>
+<pre class="mermaid"><code>graph TD
+    Artist[아티스트 직군] --&gt; Photo[사진작가]
+    Artist[아티스트 직군] --&gt; Video[영상제작자]
+    Artist[아티스트 직군] --&gt; Dance[댄서/안무가]
+    Artist[아티스트 직군] --&gt; Plan[기획자]
+    Artist[아티스트 직군] --&gt; Space[공간기획자]
+
+    Photo --&gt; |컨셉 시각화 및 리서치| CP[ChatGPT + Gemini]
+    Video --&gt; |시나리오 구조화 및 회의록 정리| CN[Claude + NotebookLM]
+    Dance --&gt; |안무 아이디어 빌드 및 트렌드 분석| CG[ChatGPT + Grok]
+    Plan --&gt; |기획서 작성 및 회의록 분석| CLN[Claude + NotebookLM]
+    Space --&gt; |렌더링 레퍼런스 및 기획서 작성| CSC[ChatGPT + Claude + Gemini]</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">직군</th>
+<th style="text-align: left;">메인 도구</th>
+<th style="text-align: left;">보조 도구</th>
+<th style="text-align: left;">조합 목적 및 실무 활용 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>사진작가</strong></td>
+<td style="text-align: left;"><strong>ChatGPT (DALL-E)</strong></td>
+<td style="text-align: left;"><strong>Gemini</strong></td>
+<td style="text-align: left;">DALL-E를 활용해 촬영 전 조명, 구도, 의상 톤을 사전 시각화하고, Gemini의 검색 연동을 사용해 해외 로케이션 촬영지 정보 및 기상 데이터를 수집합니다.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>영상제작자</strong></td>
+<td style="text-align: left;"><strong>Claude (Projects)</strong></td>
+<td style="text-align: left;"><strong>NotebookLM</strong></td>
+<td style="text-align: left;">기획서와 촬영 대본의 씬(Scene) 구조를 Claude Projects로 관리하고, 현장 연출 회의나 편집본 피드백 녹음 파일을 NotebookLM에 올려 정리합니다.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>댄서 / 안무가</strong></td>
+<td style="text-align: left;"><strong>ChatGPT</strong></td>
+<td style="text-align: left;"><strong>Grok</strong></td>
+<td style="text-align: left;">공연 컨셉 시각화 이미지를 ChatGPT로 구체화하고, Grok을 통해 최신 숏폼 댄스 챌린지 밈과 음악적 트렌드를 모니터링하여 안무 구성에 도입합니다.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>기획자</strong></td>
+<td style="text-align: left;"><strong>Claude (Projects)</strong></td>
+<td style="text-align: left;"><strong>NotebookLM</strong></td>
+<td style="text-align: left;">제안서 아웃라인과 본문 작성을 Claude의 구조화 기능을 통해 정교화하고, 다양한 회의 녹취록과 참고 논문 PDF 파일들을 NotebookLM으로 분석하여 뼈대를 잡습니다.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>공간기획자</strong></td>
+<td style="text-align: left;"><strong>ChatGPT + Claude</strong></td>
+<td style="text-align: left;"><strong>Gemini</strong></td>
+<td style="text-align: left;">ChatGPT로 조감도와 공간 무드보드 기초 시안을 제작하고, Claude로 예산서 및 제안서를 구조화하며, Gemini를 통해 관련 법적 규제(건축법, 소방법 등)를 확인합니다.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-녹음-정리-및-자료-요약-notebooklm-실전">3. 녹음 정리 및 자료 요약 (NotebookLM 실전)<a class="headerlink" href="#3-녹음-정리-및-자료-요약-notebooklm-실전" title="Permanent link">&para;</a></h2>
+<p>회의록 작성, 긴 설명회 분석, 인터뷰 정리 시 타이핑을 대체하여 시간을 절약할 수 있는 구글 NotebookLM 활용 프로토콜입니다.</p>
+<h3 id="3-1-도구-프로필">3-1. 도구 프로필<a class="headerlink" href="#3-1-도구-프로필" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>제공사</strong>: Google (구글)</li>
+<li><strong>비용</strong>: 완전 무료</li>
+<li><strong>핵심 기능</strong>: 사용자가 업로드한 문서(PDF, TXT, Markdown, Google Docs) 및 오디오 파일(MP3, WAV 등)을 기반으로 외부 검색 데이터의 방해 없이 업로드된 소스 데이터 내부에서만 팩트체크, 요약, 추출, 마인드맵 구조화 작업을 수행합니다.</li>
+</ul>
+<h3 id="3-2-회의-녹음-정리-6단계-워크플로우">3-2. 회의 녹음 정리 6단계 워크플로우<a class="headerlink" href="#3-2-회의-녹음-정리-6단계-워크플로우" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>음성 녹음 파일 확보</strong>:</li>
+<li>모바일 기기 또는 녹음 장비의 기본 탑재 녹음 기능을 통해 회의나 인터뷰를 녹음합니다. 파일 형식은 MP3, WAV, M4A 등 대중적인 포맷을 사용합니다.</li>
+<li><strong>NotebookLM 접속</strong>:</li>
+<li>웹 브라우저를 통해 <a href="https://notebooklm.google.com">notebooklm.google.com</a>에 접속하여 구글 계정으로 로그인합니다.</li>
+<li><strong>새 노트북 생성</strong>:</li>
+<li>화면 좌상단의 <code>"새 노트북(New Notebook)"</code> 버튼을 클릭합니다.</li>
+<li><strong>오디오 파일 업로드</strong>:</li>
+<li>소스 업로드 창에서 <code>"오디오 파일(Audio)"</code> 또는 <code>"로컬 파일 업로드"</code>를 선택하고 준비된 녹음 파일을 드래그 앤 드롭하여 업로드합니다. 업로드 즉시 백엔드에서 텍스트 변환(Speech-to-Text) 연산이 자동 개시됩니다.</li>
+<li><strong>질의응답 및 요약 지시</strong>:</li>
+<li>텍스트 변환이 끝나면 대화창에 아래의 지침 프롬프트를 입력하여 구조화된 정보를 받아냅니다.</li>
+<li><strong>내용 검수 및 수정</strong>:</li>
+<li>AI가 간혹 오청취하여 고유명사나 금액 수치를 잘못 변환하는 경우가 있으므로, 최종 확인 과정에서 반드시 수치와 인명 데이터를 재검증해야 합니다.</li>
+</ol>
+<h3 id="3-3-현장-녹음-파일-분석용-3종-프롬프트-템플릿">3-3. 현장 녹음 파일 분석용 3종 프롬프트 템플릿<a class="headerlink" href="#3-3-현장-녹음-파일-분석용-3종-프롬프트-템플릿" title="Permanent link">&para;</a></h3>
+<p>녹음 파일 업로드 완료 후 하단 채팅 입력창에 입력할 실전용 명령 템플릿입니다.</p>
+<h4 id="템플릿-1-회의록-요약-및-액션-아이템-추출">템플릿 1: 회의록 요약 및 액션 아이템 추출<a class="headerlink" href="#템플릿-1-회의록-요약-및-액션-아이템-추출" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>업로드된 오디오 데이터 전체를 상세히 분석하여 다음 형식에 맞춰 요약본을 출력해라.
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>1. 회의의 핵심 아젠다 (요약형 불릿 포인트 3개)
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>2. 참가자별 주요 의견 및 발언 요약
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>3. 최종 결정사항 및 승인된 안건
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>4. 담당자별 액션 아이템 (담당자 이름 - 마감 기한 - 상세 태스크 순으로 표로 정리할 것)
+</code></pre></div>
+<h4 id="템플릿-2-회의-흐름-마인드맵-텍스트화">템플릿 2: 회의 흐름 마인드맵 텍스트화<a class="headerlink" href="#템플릿-2-회의-흐름-마인드맵-텍스트화" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>회의 내에서 다루어진 주제들의 인과관계와 계층적 관계를 파악하여 하향식(Top-down) 마인드맵 구조의 텍스트 형태로 도식화해라. 대주제, 중주제, 세부사항 단계로 인덴트(들여쓰기)를 적용하여 정돈할 것.
+</code></pre></div>
+<h4 id="템플릿-3-핵심-리스크-분석">템플릿 3: 핵심 리스크 분석<a class="headerlink" href="#템플릿-3-핵심-리스크-분석" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>이 회의에서 언급되었거나 내재되어 있는 사업/프로젝트적 리스크 3가지를 도출하고, 이에 대한 회의 내 해결책 제안 내용과 아직 해결되지 않은 미결 과제를 각각 정리하여 출력해라.
+</code></pre></div>
+<h3 id="3-4-크롬-확장-프로그램-연동-팁-glasp-youtube-summary">3-4. 크롬 확장 프로그램 연동 팁 (Glasp YouTube Summary)<a class="headerlink" href="#3-4-크롬-확장-프로그램-연동-팁-glasp-youtube-summary" title="Permanent link">&para;</a></h3>
+<p>영상을 처음부터 끝까지 시청하지 않고도 핵심 정보와 맥락을 3초 만에 텍스트로 추출하여 공부하고 내 위키 시스템에 적용하는 초고속 학습 프로토콜입니다.</p>
+<ul>
+<li><strong>추천 도구</strong>: <strong>Glasp - YouTube Summary with ChatGPT &amp; Claude</strong> (<a href="https://glasp.co/youtube-summary">glasp.co/youtube-summary</a>)</li>
+<li><strong>설치 및 구동 절차</strong>:</li>
+<li>크롬 웹 스토어에서 <code>Glasp</code> 또는 <code>YouTube Summary</code>를 검색하여 크롬 브라우저에 확장 프로그램을 설치합니다.</li>
+<li>설치 완료 후 YouTube 동영상 페이지에 접속하면, 우측 상단에 <code>Transcript &amp; Summary</code> 패널이 자동 활성화됩니다.</li>
+<li>
+<p>패널 내부의 <code>Copy</code> 아이콘을 누르면 영상 전체 자막 대본(타임스탬프 포함)이 클립보드에 복사되며, <code>AI Summary</code> 버튼을 누르면 ChatGPT/Claude 웹 인터페이스로 자동 연동되어 전체 내용 요약본이 실시간 렌더링됩니다.</p>
+</li>
+<li>
+<p><strong>이 가이드를 기반으로 한 실전 적용법</strong>:</p>
+</li>
+<li><strong>자막 텍스트 추출</strong>: 위 단축 툴로 영상 자막을 복사합니다.</li>
+<li><strong>내 시스템과 비교 대조</strong>: 복사한 자막 원본 텍스트를 내 로컬 에디터(Cursor/Antigravity)나 Claude Projects 지식 창에 통째로 던집니다.</li>
+<li><strong>실전 쿼리</strong>: <code>"이 유튜브 강의 자막 내용과 내 CLAUDE.md(또는 내 기존 기획 가이드라인)를 대조해서, 내가 아직 적용하지 않은 실전 노하우 3가지와 내 시스템의 구체적인 개선안을 뽑아줘"</code>라고 요청합니다. 이를 통해 남의 지식을 그대로 카피하는 것이 아닌, 내 시스템에 맞춤형 처방을 받아 업데이트하는 효율적 지식 누적이 가능해집니다.</li>
+</ul>
+<hr />
+<h2 id="4-프롬프트-작성-원칙-역할-맥락-형식">4. 프롬프트 작성 원칙: 역할, 맥락, 형식<a class="headerlink" href="#4-프롬프트-작성-원칙-역할-맥락-형식" title="Permanent link">&para;</a></h2>
+<h3 id="4-0-맥락-중심의-프롬프트-설계-전략-long-context-prompting">4-0. 맥락 중심의 프롬프트 설계 전략 (Long-context Prompting)<a class="headerlink" href="#4-0-맥락-중심의-프롬프트-설계-전략-long-context-prompting" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>"프롬프트가 짧을 필요는 없다. 오히려 풍부한 맥락의 프롬프트가 고품질의 결과물을 보장한다."</strong></p>
+</blockquote>
+<p>일반적인 맹신과 달리, 최신 대형 언어 모델은 수만 자에서 수십만 자의 긴 텍스트를 막힘없이 인지하는 컨텍스트 창(Context Window)을 갖추고 있습니다. 따라서 프롬프트를 한 줄로 짧게 압축하려 애쓰지 말고, <strong>해당 도메인의 실제 이슈, 기존 레퍼런스, 데이터 한계점 및 내가 통제하고자 하는 모든 상세 명세(Context)를 프롬프트에 그대로 노출시키는 것</strong>이 훨씬 정밀한 결과물을 유도합니다.</p>
+<h4 id="실전-문제-상황을-직접-주입하여-해결하는-방법">실전 문제 상황을 직접 주입하여 해결하는 방법<a class="headerlink" href="#실전-문제-상황을-직접-주입하여-해결하는-방법" title="Permanent link">&para;</a></h4>
+<p>단순히 "이런 에러 해결해줘" 대신, 에러가 발생한 주변 맥락과 이전 해결 시도 내역까지 통째로 프롬프트에 담아 제공하십시오.</p>
+<ul>
+<li><strong>예시 상황</strong>: 조명 DMX 제어 코드를 바이브코딩하는 도중 특정 채널 오버플로우 에러가 발생하는 경우</li>
+<li><strong>나쁜 긴 프롬프트 (단순 중언부언)</strong>:
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>조명 코드가 에러가 나는데 이거 조명 큐시트 자동화할 때 에러가 나거든. dmx 채널이 뭐가 안 맞는대. GrandMA 형식으로 바꾸는 중에 에러가 났어. 고쳐줘.
+</code></pre></div></li>
+<li><strong>좋은 맥락 위주 프롬프트 (이슈의 완전한 노출)</strong>:
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>[배경 상황]
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>- 나는 TouchDesigner에서 추출한 BPM 데이터(Python 기반)를 DMX 채널 값(GrandMA2 형식)으로 실시간 매핑하여 조명 큐시트를 자동 생성하는 도구를 제작 중이다.
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>[발생한 구체적 에러 이슈]
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>- 10번째 곡의 BPM 값이 140에서 180으로 급변하는 시점에 조명 페이드 속도가 오버플로우되면서 DMX 채널 512 범위를 초과하는 에러가 감지되었다.
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>[나의 분석 및 제약 사항]
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>- DMX 컨트롤러 하드웨어의 최대 대역폭은 512 채널로 물리적 제한이 있다. 
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>- 코드가 512를 넘어가기 전에 자동으로 다음 유니버스(Universe 2)로 DMX 채널을 분할 매핑하거나, 최대치를 512로 클리핑(Clipping)하는 예외 처리 루틴이 코드에 누락된 것으로 추정된다.
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>[요청 사항]
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>- 이 문제 상황과 제약 조건을 해결할 수 있도록 기존 Python 매핑 소스코드 중 예외 처리 핸들러 파트를 작성해라. 수식과 예외 처리 분기 코드를 포함하여 명확하게 고쳐라.
+</code></pre></div></li>
+</ul>
+<p>이처럼 실제 마주한 현장의 <strong>이슈 배경, 물리적 제약, 에러 내용 및 나의 의심점</strong>을 투명하게 드러내는 맥락 위주의 긴 프롬프트를 제공할 때, AI는 문제의 정확한 본질을 짚어내고 단 한 번의 피드백 루프만으로 정상 작동하는 결과물을 돌려줍니다.</p>
+<hr />
+<p>AI로부터 높은 품질의 답변을 얻으려면 프롬프트 작성 시 <strong>역할(Role)</strong>, <strong>맥락(Context)</strong>, <strong>형식(Format)</strong>의 세 가지 요소를 명확히 지시해야 합니다.</p>
+<h3 id="4-1-나쁜-프롬프트-vs-좋은-프롬프트-비교표">4-1. 나쁜 프롬프트 vs 좋은 프롬프트 비교표<a class="headerlink" href="#4-1-나쁜-프롬프트-vs-좋은-프롬프트-비교표" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">❌ 나쁜 프롬프트 (단발성/무맥락)</th>
+<th style="text-align: left;">✅ 좋은 프롬프트 (역할 + 맥락 + 형식 정의)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">"미술 전시회 기획서 써줘."</td>
+<td style="text-align: left;">"너는 10년 경력의 미디어아트 전시 기획자다. 타겟은 IT 업계 직장인(20~30대)이며 예산은 5천만 원 선이다. 관람객이 상호작용할 수 있는 인터랙티브 인터페이스 요소가 가미된 미디어 전시 기획안 초안을 [기획서 포맷] 템플릿에 맞추어 작성해라."</td>
+</tr>
+<tr>
+<td style="text-align: left;">"촬영 대본 고쳐줘."</td>
+<td style="text-align: left;">"아래 촬영 대본의 가독성을 개선하고자 한다. 2인 대화 씬에서 감정 고조가 드러나도록 인물 간의 호흡(대사 간 간격, 지문 추가)을 수정하고, 대사 톤은 비즈니스 격식체로 수정하여 원본과 수정본의 차이를 보여줄 수 있는 전후(Before/After) 대조 테이블로 정리해라."</td>
+</tr>
+<tr>
+<td style="text-align: left;">"함수가 오류 나는데 왜 이래?"</td>
+<td style="text-align: left;">"엑셀 시트 내에서 C열의 이름 값을 매칭하여 D열의 매출액 정보를 가져오기 위해 =VLOOKUP(A2, C2:E100, 2, FALSE)를 입력했으나 #N/A 에러가 발생한다. 매칭 값의 공백 문자 유무를 확인하는 수식 적용 방안을 제시하고 에러 해결책을 단계별로 설명해라."</td>
+</tr>
+<tr>
+<td style="text-align: left;">"화장품 브랜드 이름 추천해줘."</td>
+<td style="text-align: left;">"천연 유기농 원료만을 사용하는 프리미엄 스킨케어 브랜드 이름을 기획 중이다. 핵심 타겟은 피부 자극에 민감한 30대 초반 여성이며, 핵심 키워드는 '투명함', '자연주의', '안심'이다. 영문 이름 5개와 각 이름의 기획 의도 및 도메인 등록 가능성 체크 포인트를 리스트로 제시해라."</td>
+</tr>
+<tr>
+<td style="text-align: left;">"번역 좀 해줘."</td>
+<td style="text-align: left;">"첨부된 영문 라이선스 계약서 전문을 한국어로 번역하되, 법률 용어(계약 당사자 정의, 위약금 조항, 면책 사항 등)는 한국 민법 표준 계약서 용어로 의역하고 모호한 영문 명사구는 괄호 안에 원문을 병기해라."</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="4-2-프롬프트-설계-3대-구성-원칙">4-2. 프롬프트 설계 3대 구성 원칙<a class="headerlink" href="#4-2-프롬프트-설계-3대-구성-원칙" title="Permanent link">&para;</a></h3>
+<h4 id="①-역할-정의-role">① 역할 정의 (Role)<a class="headerlink" href="#①-역할-정의-role" title="Permanent link">&para;</a></h4>
+<p>AI에게 전문가의 가상 페르소나를 부여하는 단계입니다. AI 내부의 거대한 매개변수 중 특정 영역의 가중치를 집중시켜 답변의 전문성을 대폭 향상시킵니다.
+* <strong>사용 문구 예시</strong>:
+  - <code>"너는 15년 차 영화 전문 촬영 감독이다."</code>
+  - <code>"너는 문화체육관광부 예술 지원 사업의 외부 심사위원단 소속 평가위원이다."</code></p>
+<h4 id="②-맥락-제공-context">② 맥락 제공 (Context)<a class="headerlink" href="#②-맥락-제공-context" title="Permanent link">&para;</a></h4>
+<p>작업이 진행되는 구체적인 배경, 사용 제한사항, 타겟층, 하드웨어 사양 등의 세부 환경 정보를 입력하여 모호성을 줄입니다.
+* <strong>사용 문구 예시</strong>:
+  - <code>"이 제안서는 디자인 전공을 하지 않은 예산 결정 부서 임원진에게 보고될 양식이다."</code>
+  - <code>"이 프로젝트는 가로 20m, 세로 10m 크기의 어두운 창고 공간에서 연출되는 실내 인스톨레이션 전시다."</code></p>
+<h4 id="③-출력-형식-명시-format">③ 출력 형식 명시 (Format)<a class="headerlink" href="#③-출력-형식-명시-format" title="Permanent link">&para;</a></h4>
+<p>답변의 외형적 구조를 강제하여 정보의 스캐너빌리티(Scannability)를 확보합니다.
+* <strong>사용 문구 예시</strong>:
+  - <code>"최종 결과물은 마크다운 테이블(Markdown Table) 형식으로 정리해라."</code>
+  - <code>"핵심 주장을 먼저 두 줄로 요약하고, 세부 사항은 불릿 포인트를 사용하여 기술해라."</code></p>
+<hr />
+<h2 id="5-웹saas-vs-설치형에디터-및-확장-개념">5. 웹(SaaS) vs 설치형(에디터) 및 확장 개념<a class="headerlink" href="#5-웹saas-vs-설치형에디터-및-확장-개념" title="Permanent link">&para;</a></h2>
+<p>AI를 다루는 수단은 웹 브라우저를 통한 대화 방식에서 내 하드웨어 및 로컬 파일에 직접 연동하는 에디터 방식으로 고도화되고 있습니다.</p>
+<h3 id="5-1-웹-서비스-vs-설치형-에디터-비교표">5-1. 웹 서비스 vs 설치형 에디터 비교표<a class="headerlink" href="#5-1-웹-서비스-vs-설치형-에디터-비교표" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">비교 항목</th>
+<th style="text-align: left;">웹 (SaaS - claude.ai, chatgpt.com 등)</th>
+<th style="text-align: left;">설치형 에디터 (Cursor, Antigravity 등)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>작동 환경</strong></td>
+<td style="text-align: left;">크롬 등 웹 브라우저</td>
+<td style="text-align: left;">로컬 PC 내 설치 앱 구동</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>파일 접근 권한</strong></td>
+<td style="text-align: left;">수동으로 파일을 드래그하여 업로드해야 함</td>
+<td style="text-align: left;">폴더 전체에 대한 탐색기 권한 소유 (자동 읽기/수정)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>외부 연동(MCP)</strong></td>
+<td style="text-align: left;">지원 불가 (클라우드 환경에 격리됨)</td>
+<td style="text-align: left;">지원 가능 (내 로컬 환경을 매개로 외부 서비스 호출)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>주요 활용 방식</strong></td>
+<td style="text-align: left;">텍스트 대화, 간단한 코딩 질문, 이미지 렌더링</td>
+<td style="text-align: left;">폴더 일괄 제어, 로컬 코드 작성, 외부 툴 자동 조작</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>비유</strong></td>
+<td style="text-align: left;">전화를 통해 비서에게 매번 작업을 구두 지시</td>
+<td style="text-align: left;">비서가 내 책상에 앉아서 모든 폴더와 도구를 직접 조작</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="5-2-ai-확장-단계-5-step-evolution">5-2. AI 확장 단계 (5-Step Evolution)<a class="headerlink" href="#5-2-ai-확장-단계-5-step-evolution" title="Permanent link">&para;</a></h3>
+<p>AI 도구 활용 능력이 고도화됨에 따라 사용자는 다음과 같은 구조적 단계로 도구를 확장해 나가게 됩니다.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>[ 5단계: 시스템화 ] ─ 규칙 파일(.cursorrules), 자율 에이전트, 파이프라인 자동화 구축
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>        ▲
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>[ 4단계: 지식 축적 ] ─ 옵시디언(Obsidian) 로컬 노트 연동 및 개인지식베이스(PKM) 구축
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>        ▲
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>[ 3단계: 도구 연결 ] ─ MCP(Model Context Protocol) 적용, Notion/구글 드라이브/Figma API 연동
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>        ▲
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>[ 2단계: 파일 조작 ] ─ 설치형 에디터(Cursor/Antigravity) 도입, 로컬 폴더 직접 분석 및 대량 처리
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>        ▲
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>[ 1단계: 단순 대화 ] ─ 웹 브라우저를 통한 단순 Q&amp;A 질의응답 (일반 사용자 수준)
+</code></pre></div>
+<ol>
+<li><strong>1단계 (대화)</strong>: 웹 브라우저 창에서 단순히 궁금한 점을 치고 복사하여 필요한 곳에 옮겨 붙이는 단계입니다.</li>
+<li><strong>2단계 (파일 조작)</strong>: Cursor 나 Antigravity 같은 전용 에디터에 로컬 프로젝트 폴더를 열고, AI가 폴더 내 여러 파일을 교차 참조하며 코드 및 문서를 생성하도록 지시하는 단계입니다.</li>
+<li><strong>3단계 (도구 연결)</strong>: MCP 프로토콜을 통과시켜 AI가 구글 드라이브의 문서를 읽거나, 피그마 레이아웃 정보를 긁어오거나, 노션 데이터베이스에 값을 직접 쓰는 단계입니다.</li>
+<li><strong>4단계 (지식 축적)</strong>: 로컬 텍스트 위키 파일 그룹(Obsidian 등)에 모든 지식과 매뉴얼을 축적해 두고, 이를 AI가 상시 조회하여 사용자의 취향과 이력을 맞춤식으로 인지하도록 설계하는 단계입니다.</li>
+<li><strong>5단계 (시스템화)</strong>: <code>.cursorrules</code> 등 룰 파일을 설정하고 반복 작업을 알아서 처리하는 크론 잡(Cron job)이나 스크립트를 빌드하여 완전한 업무 자동화를 구축하는 최종 단계입니다.</li>
+</ol>
+<hr />
+<h3 id="5-3-설치형-에디터-3대-도구-상세-분석">5-3. 설치형 에디터 3대 도구 상세 분석<a class="headerlink" href="#5-3-설치형-에디터-3대-도구-상세-분석" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">Cursor</th>
+<th style="text-align: left;">Antigravity</th>
+<th style="text-align: left;">Claude Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>인터페이스</strong></td>
+<td style="text-align: left;">VS Code 기반 GUI 에디터</td>
+<td style="text-align: left;">VS Code 기반 GUI 에디터</td>
+<td style="text-align: left;">CLI 터미널 환경 (커맨드라인 입력)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>지원 언어 모델</strong></td>
+<td style="text-align: left;">Claude, GPT, Gemini, Llama 선택 가능</td>
+<td style="text-align: left;">Claude 중심 세팅</td>
+<td style="text-align: left;">Claude 전용 (최적화 모델 탑재)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>작동 특징</strong></td>
+<td style="text-align: left;">개발자 중심의 편리한 편의기능 다수 탑재</td>
+<td style="text-align: left;">아티스트 및 비개발자 지향 맞춤 설계</td>
+<td style="text-align: left;">터미널 내 명령어 전송 및 즉시 파일 조작</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MCP 지원 여부</strong></td>
+<td style="text-align: left;">지원 가능</td>
+<td style="text-align: left;">지원 가능</td>
+<td style="text-align: left;">지원 가능</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>추천 사용자</strong></td>
+<td style="text-align: left;">다중 모델을 교차 활용하려는 유저</td>
+<td style="text-align: left;">직관적인 에디터를 활용하려는 아티스트</td>
+<td style="text-align: left;">터미널 명령어 입력에 숙달된 중상급자</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-claude-심화-chat--projects--code-모드">6. Claude 심화: Chat / Projects / Code 모드<a class="headerlink" href="#6-claude-심화-chat--projects--code-모드" title="Permanent link">&para;</a></h2>
+<p>Claude 3.5 제품군은 사용되는 인터페이스 및 타겟 경로에 따라 <strong>Chat</strong>, <strong>Co-work (Projects)</strong>, <strong>Code</strong>의 세 가지 운용 모드를 제공합니다. 각 모드의 특성을 이해하고 다르게 접근해야 합니다.</p>
+<h3 id="6-1-모드별-기능-분석표">6-1. 모드별 기능 분석표<a class="headerlink" href="#6-1-모드별-기능-분석표" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">구분</th>
+<th style="text-align: left;">Chat</th>
+<th style="text-align: left;">Co-work (Projects)</th>
+<th style="text-align: left;">Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>사용 환경</strong></td>
+<td style="text-align: left;">claude.ai 기본 대화창</td>
+<td style="text-align: left;">claude.ai 내의 Projects 페이지</td>
+<td style="text-align: left;">로컬 컴퓨터 터미널 창</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>데이터 유지 범위</strong></td>
+<td style="text-align: left;">개별 대화창 단위로 정보 유실</td>
+<td style="text-align: left;">프로젝트 폴더 내 파일 상시 상주</td>
+<td style="text-align: left;">실행하는 로컬 디렉토리 전체 조회</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>대상 소스 등록 방식</strong></td>
+<td style="text-align: left;">대화 시마다 매번 수동 첨부</td>
+<td style="text-align: left;">프로젝트 지식 베이스에 상시 업로드</td>
+<td style="text-align: left;">터미널 내부에서 전체 소스 자동 검출</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>로컬 파일 수정 권한</strong></td>
+<td style="text-align: left;">불가 (텍스트로만 코드 제안)</td>
+<td style="text-align: left;">불가 (텍스트로만 결과물 출력)</td>
+<td style="text-align: left;"><strong>가능 (사용자 승인 하에 직접 파일 수정)</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>주요 타겟 작업</strong></td>
+<td style="text-align: left;">1회성 질문, 용어 정의, 간단 번역</td>
+<td style="text-align: left;">기획서 관리, 브랜드 가이드라인 적용</td>
+<td style="text-align: left;">프로그램 빌드, 폴더 일괄 파일명 처리</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="6-2-모드별-실전-구축-및-활용-가이드">6-2. 모드별 실전 구축 및 활용 가이드<a class="headerlink" href="#6-2-모드별-실전-구축-및-활용-가이드" title="Permanent link">&para;</a></h3>
+<h4 id="a-chat-모드">A. Chat 모드<a class="headerlink" href="#a-chat-모드" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>실행 프로세스</strong>: <code>claude.ai</code> 접속 후 신규 채팅 세션을 열어 단발성 태스크를 지시합니다.</li>
+<li><strong>사용 지침</strong>: 긴 작업 이력 축적이 불필요하며, 특정 텍스트를 급하게 마크다운 형태로 변환하거나 영어 메일을 교정하는 작업 등에 한정하여 사용합니다.</li>
+</ul>
+<h4 id="b-co-work-projects-모드">B. Co-work (Projects) 모드<a class="headerlink" href="#b-co-work-projects-모드" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>실행 프로세스</strong>: </li>
+<li><code>claude.ai</code> 좌측 사이드바 메뉴에서 <strong>Projects</strong> 탭을 선택하고 <code>"Create Project"</code>를 실행합니다.</li>
+<li>프로젝트 타이틀(예: <code>2026_아티스트_브랜드_리뉴얼</code>)을 입력합니다.</li>
+<li><code>Project Instructions</code> 영역에 프로젝트 전체에 공통 적용될 핵심 규칙(예: <code>"모든 문서는 한국어 격식체로 작성하고, 핵심 개념은 굵게 표기해라"</code>)을 기입합니다.</li>
+<li>우측 <code>Add Content</code> 창에 참고 문서, 가이드라인 파일(PDF/TXT/MD), 로고 규격 가이드 등을 업로드합니다.</li>
+<li>프로젝트 내 세션을 열어 대화합니다. AI는 이미 학습된 전체 문서 맥락을 상시 파악하여 답변합니다.</li>
+</ul>
+<h4 id="c-code-모드">C. Code 모드<a class="headerlink" href="#c-code-모드" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>실행 프로세스</strong>:</li>
+<li>PC의 터미널 프로그램을 엽니다.</li>
+<li>작업할 폴더 경로로 이동합니다 (<code>cd /path/to/project</code>).</li>
+<li>아래 명령어를 실행하여 Claude Code 환경을 시작합니다:
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>claude
+</code></pre></div></li>
+<li>커맨드 창 상에서 파일 자동 수정을 승인하면, 로컬 파일 시스템 내 파일을 직접 편집하고 스크립트를 구동하여 자동 제어를 수행합니다.</li>
+</ul>
+<hr />
+<h2 id="7-이미지-생성-모델-비교-및-심화-제어">7. 이미지 생성 모델 비교 및 심화 제어<a class="headerlink" href="#7-이미지-생성-모델-비교-및-심화-제어" title="Permanent link">&para;</a></h2>
+<p>크리에이티브 워크플로우에 시각적 레퍼런스를 매칭하고 최종 시안을 정교하게 다듬기 위한 이미지 생성 모델들의 분류와 활용법입니다.</p>
+<h3 id="7-1-4대-이미지-생성-도구-비교표">7-1. 4대 이미지 생성 도구 비교표<a class="headerlink" href="#7-1-4대-이미지-생성-도구-비교표" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">ChatGPT (DALL-E)</th>
+<th style="text-align: left;">Midjourney</th>
+<th style="text-align: left;">ComfyUI</th>
+<th style="text-align: left;">Gemini (Imagen)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>생성 방식</strong></td>
+<td style="text-align: left;">대화창 내 자연어 요청</td>
+<td style="text-align: left;">Discord 채널 명령어 기반</td>
+<td style="text-align: left;">노드 기반 로컬 조작</td>
+<td style="text-align: left;">대화창 내 자연어 요청</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>최대 강점</strong></td>
+<td style="text-align: left;">영어/한국어 프롬프트 해석력 탁월, 텍스트 삽입 정확</td>
+<td style="text-align: left;"><strong>초실사 및 예술적 스타일 퀄리티 최고</strong></td>
+<td style="text-align: left;"><strong>완벽한 파이프라인 수동 제어, 무료 구동</strong></td>
+<td style="text-align: left;">인위적이지 않은 구도, 빠른 반응성</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>최대 약점</strong></td>
+<td style="text-align: left;">디테일 수정 및 정교한 각도 제어 한계</td>
+<td style="text-align: left;">유료 요금제만 지원 ($10/월 이상)</td>
+<td style="text-align: left;">높은 학습 난이도, 고성능 그래픽카드 필수</td>
+<td style="text-align: left;">인물 및 상표 이미지 제한 사항 다수</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>비용</strong></td>
+<td style="text-align: left;">ChatGPT Plus 요금제 포함</td>
+<td style="text-align: left;">월 $10 ~ $120</td>
+<td style="text-align: left;">완전 무료 (오픈소스)</td>
+<td style="text-align: left;">Gemini Advanced 요금제 포함</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>조절 난이도</strong></td>
+<td style="text-align: left;">★☆☆☆☆ (매우 쉬움)</td>
+<td style="text-align: left;">★★☆☆☆ (쉬움)</td>
+<td style="text-align: left;">★★★★★ (매우 복잡)</td>
+<td style="text-align: left;">★☆☆☆☆ (매우 쉬움)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="7-2-comfyui와-노드node-기반-세부-제어">7-2. ComfyUI와 노드(Node) 기반 세부 제어<a class="headerlink" href="#7-2-comfyui와-노드node-기반-세부-제어" title="Permanent link">&para;</a></h3>
+<p>ComfyUI는 이미지 생성의 포토샵이라 불릴 만큼 이미지의 구도, 뼈대, 텍스처를 단계별로 구조화하여 편집할 수 있는 도구입니다.</p>
+<pre class="mermaid"><code>graph LR
+    Checkpoint[체크포인트 모델 로드] --&gt; Prompt[프롬프트 노드 입력]
+    Prompt --&gt; KSampler[K-샘플러 노드 연산]
+    KSampler --&gt; VAE[VAE 디코드 변환]
+    VAE --&gt; Image[최종 이미지 출력]
+
+    ControlNet[컨트롤넷 포즈/구도] -.-&gt; |참조 뼈대 입력| KSampler
+    LoRA[스타일 LoRA] -.-&gt; |특화 스타일 추가| Checkpoint</code></pre>
+<h4 id="comfyui-핵심-제어-가능-컴포넌트">ComfyUI 핵심 제어 가능 컴포넌트<a class="headerlink" href="#comfyui-핵심-제어-가능-컴포넌트" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>체크포인트(Checkpoint) 모델</strong>:</li>
+<li>이미지 생성의 기본 기반이 되는 백본 모델입니다. 실사형(Photorealistic), 애니메이션(Anime), 2D 일러스트 등 전체 화풍을 최종 결정합니다.</li>
+<li><strong>LoRA (Low-Rank Adaptation)</strong>:</li>
+<li>기본 백본 모델에 특정 피사체, 특정 화가의 화풍, 브랜드 컬러 조합, 특수 장비의 필름 룩 등을 미세 학습시킨 50MB~200MB 수준의 추가 경량 가중치 모델 파일입니다.</li>
+<li><strong>ControlNet (컨트롤넷)</strong>:</li>
+<li>사용자가 임의로 지정한 특정 자세(Pose), 객체의 외곽선(Canny), 깊이 정보(Depth), 공간 스케치 정보를 AI에게 강제로 주입하여 구도를 강하게 제어합니다.</li>
+<li><strong>KSampler (K-샘플러)</strong>:</li>
+<li>노이즈 상태에서 이미지를 선명하게 다듬는 복원 연산(Denoising)의 속도, 스텝(Step) 수, 노이즈 양을 세밀히 설정하는 컨트롤 휠 역할을 수행합니다.</li>
+</ol>
+<hr />
+<h3 id="7-3-stable-diffusion-vs-flux">7-3. Stable Diffusion vs Flux<a class="headerlink" href="#7-3-stable-diffusion-vs-flux" title="Permanent link">&para;</a></h3>
+<p>ComfyUI를 구동하는 대표적인 두 가지 로컬 모델 아키텍처 비교입니다.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">항목</th>
+<th style="text-align: left;">Stable Diffusion (SDXL)</th>
+<th style="text-align: left;">Flux.1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>출시 시기 및 특징</strong></td>
+<td style="text-align: left;">축적된 데이터베이스가 방대한 전통 모델</td>
+<td style="text-align: left;">뛰어난 이미지 디테일 및 텍스트 렌더링을 지원하는 최신 모델</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>LoRA 생태계</strong></td>
+<td style="text-align: left;">수만 개 이상의 제작된 필름/의상/인물 LoRA 가용</td>
+<td style="text-align: left;">최근 급속하게 점유율 상승 및 고품질 LoRA 지속 생산 중</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>프롬프트 충실도</strong></td>
+<td style="text-align: left;">프롬프트가 길어지면 일부 요소가 무시됨</td>
+<td style="text-align: left;">매우 정밀하게 문장 속 묘사를 이미지에 복원해 냄</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>필요 하드웨어</strong></td>
+<td style="text-align: left;">보급형 GPU (VRAM 8GB 이상)에서도 쾌적하게 구동</td>
+<td style="text-align: left;">고스펙 VRAM (VRAM 12GB~16GB 이상) 필수 요구</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>추천 선택 기준</strong></td>
+<td style="text-align: left;">독창적인 테마 LoRA를 결합하여 커스텀 컨셉 아트를 만들 때</td>
+<td style="text-align: left;">인화용 고해상도 초실사 퀄리티와 정확한 영문 타이포그래피 표현이 필요할 때</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!TIP]
+<strong>LoRA 공유 허브 추천</strong>:
+* <strong>Civitai (civitai.com)</strong>: 전 세계 모든 사용자가 제작한 체크포인트와 LoRA 모델을 썸네일 예시와 프롬프트 정보를 함께 검색하여 즉각 다운로드할 수 있는 최대의 모델 공유 플랫폼입니다.
+* <strong>Hugging Face (huggingface.co)</strong>: 대형 오픈소스 개발 환경으로 최신 AI 모델 소스 코드와 가중치 원본 파일들이 업로드되는 저장소입니다.</p>
+</blockquote>
+<hr />
+<h2 id="8-mcp-model-context-protocol-실전-가이드">8. MCP (Model Context Protocol) 실전 가이드<a class="headerlink" href="#8-mcp-model-context-protocol-실전-가이드" title="Permanent link">&para;</a></h2>
+<p>MCP는 Claude Desktop, Cursor, Antigravity 등의 AI 에디터가 사용자의 PC 로컬 환경과 외부 SaaS 도구(Notion, 구글 드라이브, 피그마 등) 사이를 매끄럽게 오갈 수 있도록 Anthropic 사가 제안한 개방형 통신 프로토콜 표준 규격입니다.</p>
+<h3 id="8-1-mcp-서버-구동-아키텍처">8-1. MCP 서버 구동 아키텍처<a class="headerlink" href="#8-1-mcp-서버-구동-아키텍처" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>┌────────────────────────┐      ┌─────────────────────────┐      ┌──────────────────────────┐
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>│     설치형 에디터      │ ───&gt; │     로컬 MCP 서버       │ ───&gt; │      외부 서비스 API      │
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>│ (Cursor / Antigravity) │ &lt;─── │   (Node.js/Python 런타임)│ &lt;─── │ (Google Drive, Notion 등)│
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>└────────────────────────┘      └─────────────────────────┘      └──────────────────────────┘
+</code></pre></div>
+<ol>
+<li><strong>에디터(Client)</strong>: 사용자가 자연어로 <code>"내 노션에 지난 회의 내용을 페이지로 적어줘"</code> 라고 요청하면 에디터가 MCP 요청 프로토콜을 생성합니다.</li>
+<li><strong>MCP 서버(Host)</strong>: 사용자의 로컬 환경에 상주하며 에디터가 해석할 수 있도록 노션 API 인터페이스 구조를 가공해 전달합니다.</li>
+<li><strong>외부 API(Target)</strong>: 실제 외부 서버 데이터베이스에 접근하여 해당 태스크를 작성 및 처리하고 그 결과를 리턴합니다.</li>
+</ol>
+<hr />
+<h3 id="8-2-주요-mcp-서버-라이브러리-및-리소스">8-2. 주요 MCP 서버 라이브러리 및 리소스<a class="headerlink" href="#8-2-주요-mcp-서버-라이브러리-및-리소스" title="Permanent link">&para;</a></h3>
+<p>AI에 직접 연결할 수 있는 대표적인 도구들의 MCP 라이브러리 목록입니다.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">연동 타겟</th>
+<th style="text-align: left;">수행 가능한 작업 내용</th>
+<th style="text-align: left;">MCP 서버 명칭 및 리소스 경로</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Notion</strong></td>
+<td style="text-align: left;">노션 페이지 조회, 새로운 회의록 페이지 자동 생성, DB 항목 업데이트</td>
+<td style="text-align: left;"><code>@modelcontextprotocol/server-notion</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Google Drive</strong></td>
+<td style="text-align: left;">내 구글 드라이브 내 특정 파일 검색, 파일 내용 직접 읽기, 가공 파일 쓰기</td>
+<td style="text-align: left;"><code>@modelcontextprotocol/server-gdrive</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Figma</strong></td>
+<td style="text-align: left;">피그마 보드 내 프레임 구조 분석, 컴포넌트 정보 추출, UI 마크업 제작</td>
+<td style="text-align: left;"><code>@modelcontextprotocol/server-figma</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Filesystem</strong></td>
+<td style="text-align: left;">로컬 특정 드라이브 내 디렉토리 파일 목록 스캔, 파일 이름 일괄 변경, 새 텍스트 파일 저장</td>
+<td style="text-align: left;"><code>@modelcontextprotocol/server-filesystem</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Puppeteer</strong></td>
+<td style="text-align: left;">특정 웹 페이지를 방문하여 스크린샷 캡처 및 화면 마크업 텍스트 스크래핑</td>
+<td style="text-align: left;"><code>@modelcontextprotocol/server-puppeteer</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>MCP 서버 검색 리소스</strong>:</li>
+<li><strong>cursor.directory</strong>: 커서 에디터 관련 각종 유용한 MCP 설정 세팅 정보 검색 가능.</li>
+<li><strong>mcp.so</strong>: 사용 가능한 오픈소스 MCP 서버들을 카테고리별로 서치하는 검색 전용 인덱스 허브.</li>
+<li><strong>awesome-mcp-servers (GitHub)</strong>: 전 세계 오픈소스 개발자들이 기여하는 유용한 MCP 개발 프로젝트들이 망라된 아카이브 페이지.</li>
+</ul>
+<hr />
+<h3 id="8-3-에디터cursorantigravity-내-설정-도입-절차">8-3. 에디터(Cursor/Antigravity) 내 설정 도입 절차<a class="headerlink" href="#8-3-에디터cursorantigravity-내-설정-도입-절차" title="Permanent link">&para;</a></h3>
+<p>설치형 GUI 에디터에서 특정 MCP 서버(예: 로컬 파일시스템 접근 서버)를 활성화하기 위한 표준 입력 스키마입니다.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">{</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="nt">&quot;mcpServers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="nt">&quot;filesystem&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;node&quot;</span><span class="p">,</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">      </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">        </span><span class="s2">&quot;/usr/local/lib/node_modules/@modelcontextprotocol/server-filesystem/dist/index.js&quot;</span><span class="p">,</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">        </span><span class="s2">&quot;/Users/haepa_mac/REAL_HAEPA/02_Projects&quot;</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">      </span><span class="p">]</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><strong>GUI 주입 방법</strong>: </li>
+<li>에디터 내 <code>Settings</code> (설정) -&gt; <code>Features</code> -&gt; <code>MCP</code> 메뉴로 이동합니다.</li>
+<li><code>Add New MCP Server</code> 버튼을 누르고 위 Command 및 Arguments 값을 해당 입력칸에 매핑하여 추가합니다.</li>
+<li>완료 시 AI 에디터 챗봇 창 내에 하단 연결을 의미하는 커넥션 램프가 녹색으로 점등되며 활용 가능 상태로 전환됩니다.</li>
+</ul>
+<hr />
+<h3 id="8-4-직군별-mcp-실전-활용-시나리오">8-4. 직군별 MCP 실전 활용 시나리오<a class="headerlink" href="#8-4-직군별-mcp-실전-활용-시나리오" title="Permanent link">&para;</a></h3>
+<h4 id="사진작가-로컬-파일-정리-및-촬영-일지-자동-노션-백업">사진작가: 로컬 파일 정리 및 촬영 일지 자동 노션 백업<a class="headerlink" href="#사진작가-로컬-파일-정리-및-촬영-일지-자동-노션-백업" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>연결 MCP</strong>: <code>Filesystem MCP</code> + <code>Notion MCP</code></li>
+<li><strong>지침 프롬프트</strong>:
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>내 로컬 컴퓨터의 /Users/haepa_mac/Pictures/202606_Project 폴더 내부의 모든 사진 파일들의 메타데이터(파일명, 생성날짜)를 파악하고, 내 노션 데이터베이스(DB ID: [입력])의 테이블 형식에 맞춰 각 파일명과 날짜를 1행씩 매치하여 등록해라.
+</code></pre></div></li>
+</ul>
+<h4 id="영상제작자-스토리보드-피드백-자동-일정-등록">영상제작자: 스토리보드 피드백 자동 일정 등록<a class="headerlink" href="#영상제작자-스토리보드-피드백-자동-일정-등록" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>연결 MCP</strong>: <code>Google Calendar MCP</code> + <code>Slack MCP</code></li>
+<li><strong>지침 프롬프트</strong>:
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>내 피그마 스토리보드 디자인 피드백 세션 일정을 구글 캘린더에서 찾아서 2026년 6월 25일 오전 10시로 등록하고, 슬랙 채널(#영상편집실)에 해당 회의 참석 링크와 확정 알림 메시지를 작성하여 전송해라.
+</code></pre></div></li>
+</ul>
+<h4 id="공간기획자-예산-데이터-필터링-및-리포팅">공간기획자: 예산 데이터 필터링 및 리포팅<a class="headerlink" href="#공간기획자-예산-데이터-필터링-및-리포팅" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>연결 MCP</strong>: <code>Google Drive MCP</code> + <code>Notion MCP</code></li>
+<li><strong>지침 프롬프트</strong>:
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>내 구글 드라이브 내의 &#39;2026_인테리어_자재예산.xlsx&#39; 파일 내역을 읽어서 자재 단가 50만 원 이상에 해당하는 물품만 필터링한 뒤, 지정된 노션 특정 페이지 하단에 표 형식으로 요약 정리해라.
+</code></pre></div></li>
+</ul>
+<hr />
+<h2 id="9-최종-요약-및-실무-실행-체크리스트">9. 최종 요약 및 실무 실행 체크리스트<a class="headerlink" href="#9-최종-요약-및-실무-실행-체크리스트" title="Permanent link">&para;</a></h2>
+<h3 id="9-1-비용-투자-설계안">9-1. 비용 투자 설계안<a class="headerlink" href="#9-1-비용-투자-설계안" title="Permanent link">&para;</a></h3>
+<p>가장 합리적인 수준에서 시작해 업무 범위를 넓히는 2단계 전환 계획안입니다.</p>
+<pre class="mermaid"><code>gantt
+    title AI 실무 도입 단계별 전환 로드맵
+    dateFormat  YYYY-MM-DD
+    section 1단계: 0원 시작
+    기초 채팅 탐색 및 요약            :active, 2026-06-23, 14d
+    NotebookLM을 통한 회의록 정리    :active, 2026-06-23, 14d
+    section 2단계: 월 2~3만 원 전환
+    메인 모델 유료 구독 (Pro/Plus)  :after a1, 7d
+    Cursor/Antigravity 에디터 탑재 :7d
+    MCP 기반 노션/드라이브 연동     :7d</code></pre>
+<h4 id="step-1-0원-시작-세트-테스트-및-탐색-단계">Step 1: 0원 시작 세트 (테스트 및 탐색 단계)<a class="headerlink" href="#step-1-0원-시작-세트-테스트-및-탐색-단계" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>메인 AI</strong>: ChatGPT / Claude / Gemini 기본 무료 버전</li>
+<li><strong>녹음/회의록 정리</strong>: Google NotebookLM (완전 무료)</li>
+<li><strong>목표</strong>: 일상적인 질문 및 아이디어 브레인스토밍, 단발성 회의 녹음 정리 업무 안착</li>
+</ul>
+<h4 id="step-2-월-20-투자-세트-본격적인-업무-생산성-향상-단계">Step 2: 월 $20 투자 세트 (본격적인 업무 생산성 향상 단계)<a class="headerlink" href="#step-2-월-20-투자-세트-본격적인-업무-생산성-향상-단계" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>메인 AI</strong>: Claude Pro <strong>또는</strong> ChatGPT Plus 중 택 1 구독 (월 약 27,000원)</li>
+<li><strong>도구 연동</strong>: 로컬 에디터(Cursor 또는 Antigravity) 탑재 후 내부 작업 폴더 전체 연결</li>
+<li><strong>자동화 확장</strong>: Notion 및 구글 드라이브 API를 MCP 프로토콜로 에디터와 링크</li>
+<li><strong>목표</strong>: 수동 복사-붙여넣기 업무를 전면 폐지하고 폴더 내 다수 문서 자동 편집 및 데이터 이관 수행</li>
+</ul>
+<hr />
+<h3 id="9-2-직군별-최종-권장-도구-사양표">9-2. 직군별 최종 권장 도구 사양표<a class="headerlink" href="#9-2-직군별-최종-권장-도구-사양표" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">직군</th>
+<th style="text-align: left;">권장 AI 세트 구성</th>
+<th style="text-align: left;">최소 하드웨어 사양</th>
+<th style="text-align: left;">예상 비용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>사진작가</strong></td>
+<td style="text-align: left;">ChatGPT Plus + NotebookLM + Cursor</td>
+<td style="text-align: left;">Apple M1 16G RAM / Windows RTX 3060급</td>
+<td style="text-align: left;">월 $20</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>영상제작자</strong></td>
+<td style="text-align: left;">Claude Pro + NotebookLM + Cursor</td>
+<td style="text-align: left;">Apple M2 Max 32G RAM / Windows RTX 4070급</td>
+<td style="text-align: left;">월 $20</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>댄서 / 안무가</strong></td>
+<td style="text-align: left;">ChatGPT Plus + Grok (X Premium)</td>
+<td style="text-align: left;">모바일 기기 및 기본 탑재 노트북 사양 무관</td>
+<td style="text-align: left;">월 $20 ~ $28</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>기획자</strong></td>
+<td style="text-align: left;">Claude Pro + NotebookLM + 옵시디언</td>
+<td style="text-align: left;">일반 사무용 노트북 (RAM 8GB 이상)</td>
+<td style="text-align: left;">월 $20</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>공간기획자</strong></td>
+<td style="text-align: left;">Claude Pro + Midjourney + ComfyUI</td>
+<td style="text-align: left;">Apple M3 Max 64G RAM / Windows RTX 4080급</td>
+<td style="text-align: left;">월 $30 ~ $50</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="9-3-오늘-즉시-실행할-4대-액션-플랜">9-3. 오늘 즉시 실행할 4대 액션 플랜<a class="headerlink" href="#9-3-오늘-즉시-실행할-4대-액션-플랜" title="Permanent link">&para;</a></h3>
+<p>가이드를 다 읽었다면 아래의 단계를 순차적으로 실행하여 실무에 적용하십시오.</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>1. 모델 품질 잠금 해제</strong>: 사용하는 AI 웹사이트(ChatGPT/Claude) 상단 설정 드롭다운 메뉴에서 선택 모델이 하위 버전(Haiku/GPT-5.5 Mini 등)으로 설정되어 있는지 확인하고, 즉시 최상위 등급인 <strong>Claude Sonnet 4.6</strong> 또는 <strong>GPT-5.5</strong>로 상향 선택하십시오.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>2. 템플릿 프롬프트 실전 테스트</strong>: 기존에 작성한 단순 질문("제안서 써줘") 대신 본문 4장에 기재된 <code>역할(심사위원) + 맥락(예산 및 타겟) + 형식(마크다운 표)</code> 구조 프롬프트를 복사하여 질문을 다시 시도하고 품질 변화를 체감해 보십시오.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>3. 미팅 녹음 변환 실행</strong>: 미팅이나 아이디어 스케치 음성을 스마트폰으로 3분 이상 녹음한 뒤 <a href="https://notebooklm.google.com">notebooklm.google.com</a>에 접속하여 새 노트북을 생성하고 업로드하여 변환 결과물을 확인하십시오.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <strong>4. 설치형 에디터 다운로드</strong>: 웹 브라우저 복사-붙여넣기의 속도 한계를 극복하기 위해 Cursor 혹은 Antigravity 에디터 중 하나를 설치하고, PC 내부의 업무용 폴더를 에디터 안에서 Open하여 첫 파일 스캔 작업을 시도해 보십시오.</li>
+</ul>
+<hr />
+<p><em>본 가이드는 2026년 6월 기술 사양을 기준으로 고안되었습니다.</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

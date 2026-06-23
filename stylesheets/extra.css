@@ -1,0 +1,116 @@
+/* ===== Custom Styles for AI Education Guide ===== */
+
+/* Pretendard 웹폰트 로드 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+
+:root {
+  --md-text-font: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+}
+
+/* 본문 최대 폭 확장 (기본 61rem → 72rem) */
+.md-grid {
+  max-width: 72rem;
+}
+
+/* 테이블 가독성 강화 */
+.md-typeset table:not([class]) {
+  font-size: 0.82rem;
+  border-collapse: collapse;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.md-typeset table:not([class]) td {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset table:not([class]) tr:hover td {
+  background-color: var(--md-accent-fg-color--transparent);
+}
+
+/* 코드 블록 둥근 모서리 */
+.md-typeset pre {
+  border-radius: 8px;
+}
+
+/* 체크리스트 스타일 */
+.md-typeset .task-list-indicator::before {
+  border-radius: 4px;
+}
+
+/* Blockquote 스타일 (인용문) */
+.md-typeset blockquote {
+  border-left: 4px solid var(--md-primary-fg-color);
+  padding: 0.6rem 1rem;
+  margin: 1rem 0;
+  background: var(--md-code-bg-color);
+  border-radius: 0 6px 6px 0;
+}
+
+/* 카드 그리드 스타일 */
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 10px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Mermaid 다이어그램 배경 */
+.mermaid {
+  text-align: center;
+}
+
+/* 모바일 최적화 및 레이아웃 조정 */
+@media screen and (max-width: 76.25em) {
+  .md-typeset table:not([class]) {
+    font-size: 0.78rem;
+  }
+  
+  .md-grid {
+    max-width: 100%;
+  }
+}
+
+/* 좌측 전체 목차(Navigation)와 우측 현재 페이지 목차(TOC) 스타일 강화 */
+.md-sidebar--primary {
+  width: 16rem; /* 좌측 전체 리스트 정리 영역 폭 확보 */
+}
+
+.md-sidebar--secondary {
+  width: 15rem; /* 우측 현재 페이지 목차 영역 */
+}
+
+/* 네비게이션 링크 가독성 및 테이블 줄바꿈 개선 */
+.md-nav__link {
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.md-nav__link--active {
+  font-weight: 700;
+  color: var(--md-primary-fg-color) !important;
+}
+
+/* 본문 테이블 줄바꿈 및 간격 재조정 */
+.md-typeset table:not([class]) {
+  width: 100%;
+  display: table;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.md-typeset table:not([class]) td, 
+.md-typeset table:not([class]) th {
+  padding: 0.75rem 1rem;
+  line-height: 1.5;
+  word-break: keep-all; /* 단어 단위 줄바꿈 방지하여 가독성 개선 */
+}
