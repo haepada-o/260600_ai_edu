@@ -5,11 +5,10 @@ hide:
 ---
 
 <div class="archive-hero" markdown>
-  <div class="subtitle">Creative AI Lecture Archive</div>
-  <h1>아티스트를 위한 AI 교육 아카이브</h1>
+  <div class="subtitle">2023 ~ 2026 LECTURE ARCHIVE</div>
+  <h1>AI 특강 아카이브</h1>
   <p class="description">
-    사진작가, 영상제작자, 댄서, 공간기획자를 위한 실전 AI 도입 워크숍 자료실입니다.
-    창작자의 아이디어가 시스템이 되고, 도구가 자신을 대신해 일하도록 돕습니다.
+    실무 도입부터 에이전트 설계, 파이프라인 구축까지 — 전승아가 진행한 모든 AI 활용 교육, 워크숍, 마스터클래스의 자산을 체계적으로 축적하는 아카이브 포털입니다.
   </p>
 </div>
 
@@ -35,8 +34,8 @@ hide:
   <!-- Future Archive Placeholder -->
   <div class="lecture-card empty">
     <div style="text-align: center;">
-      <h4 style="margin: 0 0 8px 0; font-size: 1rem; font-weight: 700; color: var(--md-default-fg-color--light);">다음 강의 아카이브 준비 중</h4>
-      <p style="margin: 0; font-size: 0.78rem; color: var(--md-default-fg-color--lightest);">진행 예정인 마스터클래스와 교육 강의자료들이 이곳에 계속 아카이브됩니다.</p>
+      <h4 style="margin: 0 0 8px 0; font-size: 1rem; font-weight: 700; color: var(--md-default-fg-color--light);">과거 및 예정 강의 추가 준비 중</h4>
+      <p style="margin: 0; font-size: 0.78rem; color: var(--md-default-fg-color--lightest);">2023년부터 진행된 특강 및 향후 진행될 워크숍 가이드북이 이 자리에 순차적으로 누적 업데이트됩니다.</p>
     </div>
   </div>
 
@@ -50,18 +49,18 @@ hide:
 
     ---
 
-    장황한 이론이나 설명 슬라이드 대신 라이브 시연과 질의응답을 중심으로 진행합니다. 프레젠테이션은 사후 배포용 레퍼런스로 활용합니다.
+    장황한 이론이나 설명 슬라이드 대신 실시간 미러링 및 라이브 시연을 중심으로 진행합니다. 프레젠테이션은 사후 배포용 레퍼런스로 활용합니다.
 
 -   :material-heart-pulse:{ .lg .middle } **감정 처리 최우선 (Emotion First)**
 
     ---
 
-    새로운 기술을 도입할 때 창작자가 겪는 좌절감이나 거부감, 막연한 감정적 허들을 솔직하게 대면하고 시작하는 10분의 시간을 가집니다.
+    새로운 기술 도입 시 겪는 막연한 거부감, 피로감 등의 심리적 허들을 솔직하게 대면하고 시작하는 10분의 아젠다를 공식 포함합니다.
 
 -   :material-lightbulb-on:{ .lg .middle } **한 문장의 힘 (One Strong Action)**
 
     ---
 
-    복잡한 시스템 이론을 백 장 공부하는 것보다, 실제 내 생산성을 바로 3배 이상 올릴 수 있는 단 하나의 명확한 실천을 강조합니다.
+    복잡한 시스템 이론보다 수강생의 생산성을 즉각 3배 이상 올릴 수 있는 단 하나의 명확하고 강력한 실천(예: 모델 등급 교체)을 이끌어냅니다.
 
 </div>
