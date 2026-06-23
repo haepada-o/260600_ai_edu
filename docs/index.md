@@ -19,7 +19,6 @@ AI 활용 교육, 워크숍, 마스터클래스의 자산을 체계적으로 축
 <!-- 260618 마스터클래스 후속 실전 과정 -->
 <a href="00_시작/" class="lecture-card locked">
 <div class="card-header">
-<span class="card-date">2026.06.18</span>
 <span class="card-status locked-badge">🔒 PASSWORD PROTECTED</span>
 </div>
 <div>
