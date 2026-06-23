@@ -180,8 +180,8 @@ function showPasswordModal(authKey) {
   // Validation function
   const validate = () => {
     const entered = input.value;
-    // Set the password to 'glowgrim2606' as the official password, but also support '260618' or 'glowgrim'
-    if (entered === 'glowgrim' || entered === '260618' || entered === 'glowgrim2606' || entered === 'glowgrim260618') {
+    // Set the password to 'edu260618'
+    if (entered === 'edu260618') {
       sessionStorage.setItem(authKey, 'true');
       overlay.remove();
       // Restore page content
