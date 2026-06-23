@@ -1,0 +1,105 @@
+site_name: "AI 활용 가이드 — 아티스트를 위한 실전 교육"
+site_description: "사진작가, 영상제작자, 댄서, 공간기획자를 위한 AI 실무 도입 단계별 가이드"
+site_url: ""
+
+docs_dir: docs
+theme:
+  name: material
+  language: ko
+  
+  palette:
+    - scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    - scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+
+  font:
+    text: Pretendard
+    code: JetBrains Mono
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+
+  icon:
+    logo: material/lightbulb-outline
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - 홈: index.md
+  - "00. 시작 — 어디서부터": 00_시작.md
+  - "01. 도구 — 뭘 쓸 것인가": 01_도구.md
+  - "02. 루틴 — 어디에 넣을 것인가": 02_루틴.md
+  - "03. 확장 — 사고를 시스템으로": 03_확장.md
+  - "04. 시스템 — 에이전트와 파이프라인": 04_시스템.md
+
+plugins:
+  - search:
+      lang: 
+        - ko
+        - en
+  - tags
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+      toc_depth: 3
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social: []
+  generator: false
+
+copyright: ""
