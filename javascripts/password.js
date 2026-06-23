@@ -1,52 +1,61 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // 1. Check if the page is a protected page
   const pathname = window.location.pathname;
-  
-  // Protect any path that contains '00_시작', '01_도구', '02_루틴', '03_확장', '04_시스템'
-  const isProtected = pathname.includes('/00_') || 
-                      pathname.includes('/01_') || 
-                      pathname.includes('/02_') || 
-                      pathname.includes('/03_') || 
-                      pathname.includes('/04_') ||
-                      // Also cover raw markdown filenames in case they don't use pretty URLs
-                      pathname.includes('00_') ||
-                      pathname.includes('01_') ||
-                      pathname.includes('02_') ||
-                      pathname.includes('03_') ||
-                      pathname.includes('04_');
+  // 한글 경로의 URL 인코딩(%EC%8B%9C%EC%9E%91 등)을 디코딩하여 매칭 문제 해결
+  const decodedPath = decodeURIComponent(pathname);
 
-  // The homepage (index.html or '/') is NOT protected
-  // Handle both local dev server and GitHub Pages subpath deployment
-  const cleanPath = pathname.replace(/\/$/, "");
+  // 1. 강의별 고유 설정 정의 (강의 경로, 비밀번호, 세션 스토리지 키, 표시 이름)
+  const LECTURE_CONFIGS = [
+    {
+      id: 'mc260618',
+      displayName: '아티스트, 창작자를 위한 AI 개론',
+      pathKeywords: ['/00_시작', '/01_도구', '/02_루틴', '/03_확장', '/04_시스템', '00_', '01_', '02_', '03_', '04_'],
+      password: 'edu260618',
+      authKey: 'ai_edu_authorized_260618'
+    }
+  ];
+
+  // 메인페이지(index.html 또는 루트 경로) 감지
+  const cleanPath = decodedPath.replace(/\/$/, "");
   const isHome = cleanPath === "" || 
                  cleanPath === "/index.html" || 
                  cleanPath === "/260600_ai_edu" || 
                  cleanPath === "/260600_ai_edu/index.html";
-  
-  if (!isProtected || isHome) return;
 
-  // 2. Check authorization
-  const authKey = 'ai_edu_authorized_260618';
-  if (sessionStorage.getItem(authKey) === 'true') {
-    return; // Already authorized in this session
+  if (isHome) return;
+
+  // 현재 경로가 어떤 강의에 해당하는지 탐색
+  let matchedLecture = null;
+  for (const config of LECTURE_CONFIGS) {
+    const matches = config.pathKeywords.some(keyword => decodedPath.includes(keyword));
+    if (matches) {
+      matchedLecture = config;
+      break;
+    }
   }
 
-  // 3. If not authorized, hide content immediately to prevent flashing
+  // 매칭되는 보호 대상 강의가 없으면 그대로 렌더링
+  if (!matchedLecture) return;
+
+  // 2. 해당 강의에 대해 세션 내 인증이 완료되었는지 확인
+  if (sessionStorage.getItem(matchedLecture.authKey) === 'true') {
+    return;
+  }
+
+  // 3. 미인증 상태일 때 콘텐츠 및 사이드바 즉시 숨김 (깜빡임 방지)
   const container = document.querySelector('.md-content');
   if (container) {
     container.style.display = 'none';
   }
   
-  // Also hide sidebar and toc to avoid leaking titles/structure
   const sidebars = document.querySelectorAll('.md-sidebar');
   sidebars.forEach(s => s.style.display = 'none');
 
-  // 4. Create and show a beautiful password modal
-  showPasswordModal(authKey);
+  // 4. 모달창을 띄워 비밀번호 확인 프로세스 진행
+  showPasswordModal(matchedLecture);
 });
 
-function showPasswordModal(authKey) {
-  // Create modal overlay
+function showPasswordModal(lecture) {
+  // 모달 레이아웃 생성
   const overlay = document.createElement('div');
   overlay.id = 'password-lock-overlay';
   overlay.style.position = 'fixed';
@@ -64,7 +73,6 @@ function showPasswordModal(authKey) {
   overlay.style.fontFamily = 'Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif';
   overlay.style.color = '#FFFFFF';
 
-  // Modal box
   const box = document.createElement('div');
   box.style.width = '90%';
   box.style.maxWidth = '420px';
@@ -76,7 +84,6 @@ function showPasswordModal(authKey) {
   box.style.textAlign = 'center';
   box.style.transition = 'transform 0.1s ease-in-out';
 
-  // Icon / Title
   const title = document.createElement('h2');
   title.innerText = '🔒 보호된 콘텐츠';
   title.style.margin = '0 0 10px 0';
@@ -85,13 +92,12 @@ function showPasswordModal(authKey) {
   title.style.color = '#FFFFFF';
 
   const desc = document.createElement('p');
-  desc.innerHTML = '이 강의 자료는 <b>260618 마스터클래스 후속강의</b> 참가자 전용입니다.<br>비밀번호를 입력해 주세요.';
+  desc.innerHTML = `이 강의 자료는 <b>${lecture.displayName}</b> 참가자 전용입니다.<br>비밀번호를 입력해 주세요.`;
   desc.style.fontSize = '0.9rem';
   desc.style.color = '#FFD5C2'; // Unbleached Silk
   desc.style.margin = '0 0 25px 0';
   desc.style.lineHeight = '1.6';
 
-  // Password Input
   const input = document.createElement('input');
   input.type = 'password';
   input.placeholder = '비밀번호 입력';
@@ -112,12 +118,10 @@ function showPasswordModal(authKey) {
     input.style.borderColor = '#F28F3B'; // Cadmium Orange
   });
 
-  // Buttons container
   const btnContainer = document.createElement('div');
   btnContainer.style.display = 'flex';
   btnContainer.style.gap = '10px';
 
-  // Submit Button
   const submitBtn = document.createElement('button');
   submitBtn.innerText = '확인';
   submitBtn.style.flex = '2';
@@ -138,7 +142,6 @@ function showPasswordModal(authKey) {
     submitBtn.style.backgroundColor = '#F28F3B';
   });
 
-  // Cancel/Home Button
   const cancelBtn = document.createElement('button');
   cancelBtn.innerText = '홈으로';
   cancelBtn.style.flex = '1';
@@ -177,14 +180,12 @@ function showPasswordModal(authKey) {
   overlay.appendChild(box);
   document.body.appendChild(overlay);
 
-  // Validation function
   const validate = () => {
     const entered = input.value;
-    // Set the password to 'glowgrim2606' as the official password, but also support '260618' or 'glowgrim'
-    if (entered === 'glowgrim' || entered === '260618' || entered === 'glowgrim2606' || entered === 'glowgrim260618') {
-      sessionStorage.setItem(authKey, 'true');
+    if (entered === lecture.password) {
+      sessionStorage.setItem(lecture.authKey, 'true');
       overlay.remove();
-      // Restore page content
+      
       const container = document.querySelector('.md-content');
       if (container) {
         container.style.display = 'block';
@@ -192,11 +193,10 @@ function showPasswordModal(authKey) {
       const sidebars = document.querySelectorAll('.md-sidebar');
       sidebars.forEach(s => s.style.display = 'block');
     } else {
-      input.style.borderColor = '#C8553D'; // cedar chest red
+      input.style.borderColor = '#C8553D'; // Cedar Chest Red
       input.value = '';
       input.placeholder = '비밀번호가 올바르지 않습니다';
       
-      // shake effect
       let pos = 0;
       const id = setInterval(frame, 20);
       function frame() {
@@ -220,6 +220,5 @@ function showPasswordModal(authKey) {
     if (e.key === 'Enter') validate();
   });
   
-  // Auto focus input
   setTimeout(() => input.focus(), 100);
 }

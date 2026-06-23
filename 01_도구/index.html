@@ -1500,8 +1500,7 @@
 
 <h1 id="01-도구--뭘-쓸-것인가">01. 도구 — 뭘 쓸 것인가<a class="headerlink" href="#01-도구--뭘-쓸-것인가" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p><strong>이 문서는 아티스트(사진작가, 영상제작자, 댄서, 공간기획자, 기획자)가 AI 도구를 선택하고 실무에 도입할 때 필요한 실전 통합 가이드라인입니다.</strong>
-감상이나 동기부여용 서술을 배제하고 오직 사실, 비교표, 템플릿, 경고 문구 위주로 구성되어 있습니다.</p>
+<p><strong>이 문서는 아티스트가 AI 도구를 선택하고 실무에 도입할 때 필요한 실전 통합 가이드라인입니다.</strong></p>
 </blockquote>
 <hr />
 <h2 id="목차">목차<a class="headerlink" href="#목차" title="Permanent link">&para;</a></h2>
@@ -1676,9 +1675,11 @@ Fast 또는 Standard 모델로 작성된 제안서나 계약서 검토는 오류
 </tbody>
 </table>
 <h4 id="b-이중-서비스-구독-시-추천-조합">B. 이중 서비스 구독 시 (추천 조합)<a class="headerlink" href="#b-이중-서비스-구독-시-추천-조합" title="Permanent link">&para;</a></h4>
-<p><strong>Claude Pro (<span class="arithmatex">\(20/월) + Gemini Advanced (\)</span>20/월)</strong>
-* <strong>Claude Pro</strong>: 제안서, 보고서 작성, 프로젝트 단위 데이터 구축 및 정밀 분석에 활용.
-* <strong>Gemini Advanced</strong>: 회의록 녹음 파일 대량 정리, 구글 워크스페이스(Workspace) 연동 문서 검색, NotebookLM 연동 리서치에 활용.</p>
+<p><strong>Claude Pro (<span class="arithmatex">\(20/월) + Gemini Advanced (\)</span>20/월)</strong></p>
+<ul>
+<li><strong>Claude Pro</strong>: 제안서, 보고서 작성, 프로젝트 단위 데이터 구축 및 정밀 분석에 활용.</li>
+<li><strong>Gemini Advanced</strong>: 회의록 녹음 파일 대량 정리, 구글 워크스페이스(Workspace) 연동 문서 검색, NotebookLM 연동 리서치에 활용.</li>
+</ul>
 <h4 id="c-무료-활용-중심-구성-시">C. 무료 활용 중심 구성 시<a class="headerlink" href="#c-무료-활용-중심-구성-시" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Gemini (Google)</strong>: 타 서비스 대비 무료 제공 범위가 넓으며, 파일 분석 및 검색 연동에 강점이 있습니다.</li>
@@ -1895,12 +1896,24 @@ Fast 또는 Standard 모델로 작성된 제안서나 계약서 검토는 오류
 <li>웹 브라우저를 통해 <a href="https://notebooklm.google.com">notebooklm.google.com</a>에 접속하여 구글 계정으로 로그인합니다.</li>
 <li><strong>새 노트북 생성</strong>:</li>
 <li>화면 좌상단의 <code>"새 노트북(New Notebook)"</code> 버튼을 클릭합니다.</li>
-<li><strong>오디오 파일 업로드</strong>:</li>
-<li>소스 업로드 창에서 <code>"오디오 파일(Audio)"</code> 또는 <code>"로컬 파일 업로드"</code>를 선택하고 준비된 녹음 파일을 드래그 앤 드롭하여 업로드합니다. 업로드 즉시 백엔드에서 텍스트 변환(Speech-to-Text) 연산이 자동 개시됩니다.</li>
-<li><strong>질의응답 및 요약 지시</strong>:</li>
-<li>텍스트 변환이 끝나면 대화창에 아래의 지침 프롬프트를 입력하여 구조화된 정보를 받아냅니다.</li>
-<li><strong>내용 검수 및 수정</strong>:</li>
-<li>AI가 간혹 오청취하여 고유명사나 금액 수치를 잘못 변환하는 경우가 있으므로, 최종 확인 과정에서 반드시 수치와 인명 데이터를 재검증해야 합니다.</li>
+<li>
+<p><strong>오디오 파일 업로드</strong>:</p>
+</li>
+<li>
+<p>소스 업로드 창에서 <code>"오디오 파일(Audio)"</code> 또는 <code>"로컬 파일 업로드"</code>를 선택하고 준비된 녹음 파일을 드래그 앤 드롭하여 업로드합니다. 업로드 즉시 백엔드에서 텍스트 변환(Speech-to-Text) 연산이 자동 개시됩니다.</p>
+</li>
+<li>
+<p><strong>질의응답 및 요약 지시</strong>:</p>
+</li>
+<li>
+<p>텍스트 변환이 끝나면 대화창에 아래의 지침 프롬프트를 입력하여 구조화된 정보를 받아냅니다.</p>
+</li>
+<li>
+<p><strong>내용 검수 및 수정</strong>:</p>
+</li>
+<li>
+<p>AI가 간혹 오청취하여 고유명사나 금액 수치를 잘못 변환하는 경우가 있으므로, 최종 확인 과정에서 반드시 수치와 인명 데이터를 재검증해야 합니다.</p>
+</li>
 </ol>
 <h3 id="3-3-현장-녹음-파일-분석용-3종-프롬프트-템플릿">3-3. 현장 녹음 파일 분석용 3종 프롬프트 템플릿<a class="headerlink" href="#3-3-현장-녹음-파일-분석용-3종-프롬프트-템플릿" title="Permanent link">&para;</a></h3>
 <p>녹음 파일 업로드 완료 후 하단 채팅 입력창에 입력할 실전용 명령 템플릿입니다.</p>
@@ -1931,10 +1944,60 @@ Fast 또는 Standard 모델로 작성된 제안서나 계약서 검토는 오류
 <li>
 <p><strong>이 가이드를 기반으로 한 실전 적용법</strong>:</p>
 </li>
-<li><strong>자막 텍스트 추출</strong>: 위 단축 툴로 영상 자막을 복사합니다.</li>
+<li>
+<p><strong>자막 텍스트 추출</strong>: 위 단축 툴로 영상 자막을 복사합니다.</p>
+</li>
 <li><strong>내 시스템과 비교 대조</strong>: 복사한 자막 원본 텍스트를 내 로컬 에디터(Cursor/Antigravity)나 Claude Projects 지식 창에 통째로 던집니다.</li>
-<li><strong>실전 쿼리</strong>: <code>"이 유튜브 강의 자막 내용과 내 CLAUDE.md(또는 내 기존 기획 가이드라인)를 대조해서, 내가 아직 적용하지 않은 실전 노하우 3가지와 내 시스템의 구체적인 개선안을 뽑아줘"</code>라고 요청합니다. 이를 통해 남의 지식을 그대로 카피하는 것이 아닌, 내 시스템에 맞춤형 처방을 받아 업데이트하는 효율적 지식 누적이 가능해집니다.</li>
+<li>
+<p><strong>실전 쿼리</strong>: 아래의 프롬프트 템플릿을 복사하여 AI에게 질문을 던집니다.</p>
+</li>
+<li>
+<p><strong>추천 유튜브 영상 목록 (실무 활용편)</strong>:</p>
+</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">추천 영상 제목 / 채널</th>
+<th style="text-align: left;">핵심 학습 목표</th>
+<th style="text-align: left;">추천 이유 및 실전 활용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><a href="https://youtu.be/zjkBMFhNj_g">Intro to Large Language Models</a></strong><br>(Andrej Karpathy)</td>
+<td style="text-align: left;">LLM의 작동 원리 및 미래 전망</td>
+<td style="text-align: left;">AI의 보안, 토큰 제약, 작동 메커니즘을 근본적으로 이해하여 프롬프트 작성 시 모델의 잠재력을 100% 끌어올릴 수 있는 내공을 다집니다.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><a href="https://youtu.be/F8NKVhkZZWw">How I Build AI Agents</a></strong><br>(조코딩 JoCoding 등 에디터 실무)</td>
+<td style="text-align: left;">Cursor 에디터 기반 바이브코딩 실전</td>
+<td style="text-align: left;">코드를 모르는 기획자/디자이너/아티스트가 Cursor 에디터를 켜고 어떻게 폴더를 직접 제어하며 작동하는 앱을 1시간 만에 빌드하는지 과정을 배웁니다.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><a href="https://youtu.be/yWpS142x4b0">Claude 3.5 Sonnet: Developer Guide</a></strong><br>(Anthropic 공식 채널)</td>
+<td style="text-align: left;">Claude의 시스템 프롬프트 및 Projects 기능</td>
+<td style="text-align: left;">Claude를 프로젝트 단위의 든든한 연구 조서이자 규칙(CLAUDE.md)이 작동하는 뇌로 활용하기 위한 공식 최적화 테크닉을 파악합니다.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>실전 유튜브 자막 기반 규칙 파일(CLAUDE.md) 업데이트 프롬프트 템플릿</strong>:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>[나의 기본 설정]
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>나는 ~분야에서 일하는 창작자/기획자다. 현재 내 프로젝트 규칙 파일(CLAUDE.md)의 핵심 내용은 다음과 같다:
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>---
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>(여기에 본인의 기존 규칙 파일 내용 복사 및 붙여넣기)
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>---
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>[추출한 유튜브 자막 대본]
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>---
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>(여기에 Glasp 등으로 복사한 유튜브 자막 텍스트 전체 붙여넣기)
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>---
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>[요청 사항]
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>입력된 유튜브 자막 대본 중에서 내가 기존 규칙 파일(CLAUDE.md)에 아직 반영하지 않은 &#39;실전 AI 활용 팁&#39;이나 &#39;시스템 최적화 규칙&#39; 3가지를 명확히 뽑아내라. 그리고 내 기존 규칙 파일의 어느 위치에 이를 보완해야 하는지 구체적인 업데이트 양식(diff 형식 또는 수정된 최종 코드 블록)으로 제안해 줘.
+</code></pre></div>
 <hr />
 <h2 id="4-프롬프트-작성-원칙-역할-맥락-형식">4. 프롬프트 작성 원칙: 역할, 맥락, 형식<a class="headerlink" href="#4-프롬프트-작성-원칙-역할-맥락-형식" title="Permanent link">&para;</a></h2>
 <h3 id="4-0-맥락-중심의-프롬프트-설계-전략-long-context-prompting">4-0. 맥락 중심의 프롬프트 설계 전략 (Long-context Prompting)<a class="headerlink" href="#4-0-맥락-중심의-프롬프트-설계-전략-long-context-prompting" title="Permanent link">&para;</a></h3>
@@ -1946,23 +2009,27 @@ Fast 또는 Standard 모델로 작성된 제안서나 계약서 검토는 오류
 <p>단순히 "이런 에러 해결해줘" 대신, 에러가 발생한 주변 맥락과 이전 해결 시도 내역까지 통째로 프롬프트에 담아 제공하십시오.</p>
 <ul>
 <li><strong>예시 상황</strong>: 조명 DMX 제어 코드를 바이브코딩하는 도중 특정 채널 오버플로우 에러가 발생하는 경우</li>
-<li><strong>나쁜 긴 프롬프트 (단순 중언부언)</strong>:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>조명 코드가 에러가 나는데 이거 조명 큐시트 자동화할 때 에러가 나거든. dmx 채널이 뭐가 안 맞는대. GrandMA 형식으로 바꾸는 중에 에러가 났어. 고쳐줘.
-</code></pre></div></li>
-<li><strong>좋은 맥락 위주 프롬프트 (이슈의 완전한 노출)</strong>:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>[배경 상황]
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>- 나는 TouchDesigner에서 추출한 BPM 데이터(Python 기반)를 DMX 채널 값(GrandMA2 형식)으로 실시간 매핑하여 조명 큐시트를 자동 생성하는 도구를 제작 중이다.
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>[발생한 구체적 에러 이슈]
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>- 10번째 곡의 BPM 값이 140에서 180으로 급변하는 시점에 조명 페이드 속도가 오버플로우되면서 DMX 채널 512 범위를 초과하는 에러가 감지되었다.
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>[나의 분석 및 제약 사항]
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>- DMX 컨트롤러 하드웨어의 최대 대역폭은 512 채널로 물리적 제한이 있다. 
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>- 코드가 512를 넘어가기 전에 자동으로 다음 유니버스(Universe 2)로 DMX 채널을 분할 매핑하거나, 최대치를 512로 클리핑(Clipping)하는 예외 처리 루틴이 코드에 누락된 것으로 추정된다.
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
-<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>[요청 사항]
-<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>- 이 문제 상황과 제약 조건을 해결할 수 있도록 기존 Python 매핑 소스코드 중 예외 처리 핸들러 파트를 작성해라. 수식과 예외 처리 분기 코드를 포함하여 명확하게 고쳐라.
-</code></pre></div></li>
+<li>
+<p><strong>나쁜 긴 프롬프트 (단순 중언부언)</strong>:
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>조명 코드가 에러가 나는데 이거 조명 큐시트 자동화할 때 에러가 나거든. dmx 채널이 뭐가 안 맞는대. GrandMA 형식으로 바꾸는 중에 에러가 났어. 고쳐줘.
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>좋은 맥락 위주 프롬프트 (이슈의 완전한 노출)</strong>:
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>[배경 상황]
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>- 나는 TouchDesigner에서 추출한 BPM 데이터(Python 기반)를 DMX 채널 값(GrandMA2 형식)으로 실시간 매핑하여 조명 큐시트를 자동 생성하는 도구를 제작 중이다.
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>[발생한 구체적 에러 이슈]
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>- 10번째 곡의 BPM 값이 140에서 180으로 급변하는 시점에 조명 페이드 속도가 오버플로우되면서 DMX 채널 512 범위를 초과하는 에러가 감지되었다.
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>[나의 분석 및 제약 사항]
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>- DMX 컨트롤러 하드웨어의 최대 대역폭은 512 채널로 물리적 제한이 있다. 
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>- 코드가 512를 넘어가기 전에 자동으로 다음 유니버스(Universe 2)로 DMX 채널을 분할 매핑하거나, 최대치를 512로 클리핑(Clipping)하는 예외 처리 루틴이 코드에 누락된 것으로 추정된다.
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>[요청 사항]
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>- 이 문제 상황과 제약 조건을 해결할 수 있도록 기존 Python 매핑 소스코드 중 예외 처리 핸들러 파트를 작성해라. 수식과 예외 처리 분기 코드를 포함하여 명확하게 고쳐라.
+</code></pre></div></p>
+</li>
 </ul>
 <p>이처럼 실제 마주한 현장의 <strong>이슈 배경, 물리적 제약, 에러 내용 및 나의 의심점</strong>을 투명하게 드러내는 맥락 위주의 긴 프롬프트를 제공할 때, AI는 문제의 정확한 본질을 짚어내고 단 한 번의 피드백 루프만으로 정상 작동하는 결과물을 돌려줍니다.</p>
 <hr />
@@ -2001,20 +2068,26 @@ Fast 또는 Standard 모델로 작성된 제안서나 계약서 검토는 오류
 <hr />
 <h3 id="4-2-프롬프트-설계-3대-구성-원칙">4-2. 프롬프트 설계 3대 구성 원칙<a class="headerlink" href="#4-2-프롬프트-설계-3대-구성-원칙" title="Permanent link">&para;</a></h3>
 <h4 id="①-역할-정의-role">① 역할 정의 (Role)<a class="headerlink" href="#①-역할-정의-role" title="Permanent link">&para;</a></h4>
-<p>AI에게 전문가의 가상 페르소나를 부여하는 단계입니다. AI 내부의 거대한 매개변수 중 특정 영역의 가중치를 집중시켜 답변의 전문성을 대폭 향상시킵니다.
-* <strong>사용 문구 예시</strong>:
-  - <code>"너는 15년 차 영화 전문 촬영 감독이다."</code>
-  - <code>"너는 문화체육관광부 예술 지원 사업의 외부 심사위원단 소속 평가위원이다."</code></p>
+<p>AI에게 전문가의 가상 페르소나를 부여하는 단계입니다. AI 내부의 거대한 매개변수 중 특정 영역의 가중치를 집중시켜 답변의 전문성을 대폭 향상시킵니다.</p>
+<ul>
+<li><strong>사용 문구 예시</strong>:</li>
+<li><code>"너는 15년 차 영화 전문 촬영 감독이다."</code></li>
+<li><code>"너는 문화체육관광부 예술 지원 사업의 외부 심사위원단 소속 평가위원이다."</code></li>
+</ul>
 <h4 id="②-맥락-제공-context">② 맥락 제공 (Context)<a class="headerlink" href="#②-맥락-제공-context" title="Permanent link">&para;</a></h4>
-<p>작업이 진행되는 구체적인 배경, 사용 제한사항, 타겟층, 하드웨어 사양 등의 세부 환경 정보를 입력하여 모호성을 줄입니다.
-* <strong>사용 문구 예시</strong>:
-  - <code>"이 제안서는 디자인 전공을 하지 않은 예산 결정 부서 임원진에게 보고될 양식이다."</code>
-  - <code>"이 프로젝트는 가로 20m, 세로 10m 크기의 어두운 창고 공간에서 연출되는 실내 인스톨레이션 전시다."</code></p>
+<p>작업이 진행되는 구체적인 배경, 사용 제한사항, 타겟층, 하드웨어 사양 등의 세부 환경 정보를 입력하여 모호성을 줄입니다.</p>
+<ul>
+<li><strong>사용 문구 예시</strong>:</li>
+<li><code>"이 제안서는 디자인 전공을 하지 않은 예산 결정 부서 임원진에게 보고될 양식이다."</code></li>
+<li><code>"이 프로젝트는 가로 20m, 세로 10m 크기의 어두운 창고 공간에서 연출되는 실내 인스톨레이션 전시다."</code></li>
+</ul>
 <h4 id="③-출력-형식-명시-format">③ 출력 형식 명시 (Format)<a class="headerlink" href="#③-출력-형식-명시-format" title="Permanent link">&para;</a></h4>
-<p>답변의 외형적 구조를 강제하여 정보의 스캐너빌리티(Scannability)를 확보합니다.
-* <strong>사용 문구 예시</strong>:
-  - <code>"최종 결과물은 마크다운 테이블(Markdown Table) 형식으로 정리해라."</code>
-  - <code>"핵심 주장을 먼저 두 줄로 요약하고, 세부 사항은 불릿 포인트를 사용하여 기술해라."</code></p>
+<p>답변의 외형적 구조를 강제하여 정보의 스캐너빌리티(Scannability)를 확보합니다.</p>
+<ul>
+<li><strong>사용 문구 예시</strong>:</li>
+<li><code>"최종 결과물은 마크다운 테이블(Markdown Table) 형식으로 정리해라."</code></li>
+<li><code>"핵심 주장을 먼저 두 줄로 요약하고, 세부 사항은 불릿 포인트를 사용하여 기술해라."</code></li>
+</ul>
 <hr />
 <h2 id="5-웹saas-vs-설치형에디터-및-확장-개념">5. 웹(SaaS) vs 설치형(에디터) 및 확장 개념<a class="headerlink" href="#5-웹saas-vs-설치형에디터-및-확장-개념" title="Permanent link">&para;</a></h2>
 <p>AI를 다루는 수단은 웹 브라우저를 통한 대화 방식에서 내 하드웨어 및 로컬 파일에 직접 연동하는 에디터 방식으로 고도화되고 있습니다.</p>
@@ -2058,15 +2131,15 @@ Fast 또는 Standard 모델로 작성된 제안서나 계약서 검토는 오류
 <hr />
 <h3 id="5-2-ai-확장-단계-5-step-evolution">5-2. AI 확장 단계 (5-Step Evolution)<a class="headerlink" href="#5-2-ai-확장-단계-5-step-evolution" title="Permanent link">&para;</a></h3>
 <p>AI 도구 활용 능력이 고도화됨에 따라 사용자는 다음과 같은 구조적 단계로 도구를 확장해 나가게 됩니다.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>[ 5단계: 시스템화 ] ─ 규칙 파일(.cursorrules), 자율 에이전트, 파이프라인 자동화 구축
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>        ▲
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>[ 4단계: 지식 축적 ] ─ 옵시디언(Obsidian) 로컬 노트 연동 및 개인지식베이스(PKM) 구축
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>        ▲
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>[ 3단계: 도구 연결 ] ─ MCP(Model Context Protocol) 적용, Notion/구글 드라이브/Figma API 연동
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>        ▲
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>[ 2단계: 파일 조작 ] ─ 설치형 에디터(Cursor/Antigravity) 도입, 로컬 폴더 직접 분석 및 대량 처리
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>        ▲
-<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>[ 1단계: 단순 대화 ] ─ 웹 브라우저를 통한 단순 Q&amp;A 질의응답 (일반 사용자 수준)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>[ 5단계: 시스템화 ] ─ 규칙 파일(.cursorrules), 자율 에이전트, 파이프라인 자동화 구축
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>        ▲
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>[ 4단계: 지식 축적 ] ─ 옵시디언(Obsidian) 로컬 노트 연동 및 개인지식베이스(PKM) 구축
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>        ▲
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>[ 3단계: 도구 연결 ] ─ MCP(Model Context Protocol) 적용, Notion/구글 드라이브/Figma API 연동
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>        ▲
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>[ 2단계: 파일 조작 ] ─ 설치형 에디터(Cursor/Antigravity) 도입, 로컬 폴더 직접 분석 및 대량 처리
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>        ▲
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>[ 1단계: 단순 대화 ] ─ 웹 브라우저를 통한 단순 Q&amp;A 질의응답 (일반 사용자 수준)
 </code></pre></div>
 <ol>
 <li><strong>1단계 (대화)</strong>: 웹 브라우저 창에서 단순히 궁금한 점을 치고 복사하여 필요한 곳에 옮겨 붙이는 단계입니다.</li>
@@ -2187,7 +2260,7 @@ Fast 또는 Standard 모델로 작성된 제안서나 계약서 검토는 오류
 <li>PC의 터미널 프로그램을 엽니다.</li>
 <li>작업할 폴더 경로로 이동합니다 (<code>cd /path/to/project</code>).</li>
 <li>아래 명령어를 실행하여 Claude Code 환경을 시작합니다:
-     <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>claude
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>claude
 </code></pre></div></li>
 <li>커맨드 창 상에서 파일 자동 수정을 승인하면, 로컬 파일 시스템 내 파일을 직접 편집하고 스크립트를 구동하여 자동 제어를 수행합니다.</li>
 </ul>
@@ -2202,7 +2275,7 @@ Fast 또는 Standard 모델로 작성된 제안서나 계약서 검토는 오류
 <th style="text-align: left;">ChatGPT (DALL-E)</th>
 <th style="text-align: left;">Midjourney</th>
 <th style="text-align: left;">ComfyUI</th>
-<th style="text-align: left;">Gemini (Imagen)</th>
+<th style="text-align: left;">Gemini (나노바나나)</th>
 </tr>
 </thead>
 <tbody>
@@ -2256,14 +2329,30 @@ Fast 또는 Standard 모델로 작성된 제안서나 계약서 검토는 오류
     LoRA[스타일 LoRA] -.-&gt; |특화 스타일 추가| Checkpoint</code></pre>
 <h4 id="comfyui-핵심-제어-가능-컴포넌트">ComfyUI 핵심 제어 가능 컴포넌트<a class="headerlink" href="#comfyui-핵심-제어-가능-컴포넌트" title="Permanent link">&para;</a></h4>
 <ol>
-<li><strong>체크포인트(Checkpoint) 모델</strong>:</li>
-<li>이미지 생성의 기본 기반이 되는 백본 모델입니다. 실사형(Photorealistic), 애니메이션(Anime), 2D 일러스트 등 전체 화풍을 최종 결정합니다.</li>
-<li><strong>LoRA (Low-Rank Adaptation)</strong>:</li>
-<li>기본 백본 모델에 특정 피사체, 특정 화가의 화풍, 브랜드 컬러 조합, 특수 장비의 필름 룩 등을 미세 학습시킨 50MB~200MB 수준의 추가 경량 가중치 모델 파일입니다.</li>
-<li><strong>ControlNet (컨트롤넷)</strong>:</li>
-<li>사용자가 임의로 지정한 특정 자세(Pose), 객체의 외곽선(Canny), 깊이 정보(Depth), 공간 스케치 정보를 AI에게 강제로 주입하여 구도를 강하게 제어합니다.</li>
-<li><strong>KSampler (K-샘플러)</strong>:</li>
-<li>노이즈 상태에서 이미지를 선명하게 다듬는 복원 연산(Denoising)의 속도, 스텝(Step) 수, 노이즈 양을 세밀히 설정하는 컨트롤 휠 역할을 수행합니다.</li>
+<li>
+<p><strong>체크포인트(Checkpoint) 모델</strong>:</p>
+</li>
+<li>
+<p>이미지 생성의 기본 기반이 되는 백본 모델입니다. 실사형(Photorealistic), 애니메이션(Anime), 2D 일러스트 등 전체 화풍을 최종 결정합니다.</p>
+</li>
+<li>
+<p><strong>LoRA (Low-Rank Adaptation)</strong>:</p>
+</li>
+<li>
+<p>기본 백본 모델에 특정 피사체, 특정 화가의 화풍, 브랜드 컬러 조합, 특수 장비의 필름 룩 등을 미세 학습시킨 50MB~200MB 수준의 추가 경량 가중치 모델 파일입니다.</p>
+</li>
+<li>
+<p><strong>ControlNet (컨트롤넷)</strong>:</p>
+</li>
+<li>
+<p>사용자가 임의로 지정한 특정 자세(Pose), 객체의 외곽선(Canny), 깊이 정보(Depth), 공간 스케치 정보를 AI에게 강제로 주입하여 구도를 강하게 제어합니다.</p>
+</li>
+<li>
+<p><strong>KSampler (K-샘플러)</strong>:</p>
+</li>
+<li>
+<p>노이즈 상태에서 이미지를 선명하게 다듬는 복원 연산(Denoising)의 속도, 스텝(Step) 수, 노이즈 양을 세밀히 설정하는 컨트롤 휠 역할을 수행합니다.</p>
+</li>
 </ol>
 <hr />
 <h3 id="7-3-stable-diffusion-vs-flux">7-3. Stable Diffusion vs Flux<a class="headerlink" href="#7-3-stable-diffusion-vs-flux" title="Permanent link">&para;</a></h3>
@@ -2314,10 +2403,10 @@ Fast 또는 Standard 모델로 작성된 제안서나 계약서 검토는 오류
 <h2 id="8-mcp-model-context-protocol-실전-가이드">8. MCP (Model Context Protocol) 실전 가이드<a class="headerlink" href="#8-mcp-model-context-protocol-실전-가이드" title="Permanent link">&para;</a></h2>
 <p>MCP는 Claude Desktop, Cursor, Antigravity 등의 AI 에디터가 사용자의 PC 로컬 환경과 외부 SaaS 도구(Notion, 구글 드라이브, 피그마 등) 사이를 매끄럽게 오갈 수 있도록 Anthropic 사가 제안한 개방형 통신 프로토콜 표준 규격입니다.</p>
 <h3 id="8-1-mcp-서버-구동-아키텍처">8-1. MCP 서버 구동 아키텍처<a class="headerlink" href="#8-1-mcp-서버-구동-아키텍처" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>┌────────────────────────┐      ┌─────────────────────────┐      ┌──────────────────────────┐
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>│     설치형 에디터      │ ───&gt; │     로컬 MCP 서버       │ ───&gt; │      외부 서비스 API      │
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>│ (Cursor / Antigravity) │ &lt;─── │   (Node.js/Python 런타임)│ &lt;─── │ (Google Drive, Notion 등)│
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>└────────────────────────┘      └─────────────────────────┘      └──────────────────────────┘
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>┌────────────────────────┐      ┌─────────────────────────┐      ┌──────────────────────────┐
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>│     설치형 에디터      │ ───&gt; │     로컬 MCP 서버       │ ───&gt; │      외부 서비스 API      │
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>│ (Cursor / Antigravity) │ &lt;─── │   (Node.js/Python 런타임)│ &lt;─── │ (Google Drive, Notion 등)│
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>└────────────────────────┘      └─────────────────────────┘      └──────────────────────────┘
 </code></pre></div>
 <ol>
 <li><strong>에디터(Client)</strong>: 사용자가 자연어로 <code>"내 노션에 지난 회의 내용을 페이지로 적어줘"</code> 라고 요청하면 에디터가 MCP 요청 프로토콜을 생성합니다.</li>
@@ -2372,17 +2461,17 @@ Fast 또는 Standard 모델로 작성된 제안서나 계약서 검토는 오류
 <hr />
 <h3 id="8-3-에디터cursorantigravity-내-설정-도입-절차">8-3. 에디터(Cursor/Antigravity) 내 설정 도입 절차<a class="headerlink" href="#8-3-에디터cursorantigravity-내-설정-도입-절차" title="Permanent link">&para;</a></h3>
 <p>설치형 GUI 에디터에서 특정 MCP 서버(예: 로컬 파일시스템 접근 서버)를 활성화하기 위한 표준 입력 스키마입니다.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">{</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span><span class="nt">&quot;mcpServers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="nt">&quot;filesystem&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;node&quot;</span><span class="p">,</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">      </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">        </span><span class="s2">&quot;/usr/local/lib/node_modules/@modelcontextprotocol/server-filesystem/dist/index.js&quot;</span><span class="p">,</span>
-<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">        </span><span class="s2">&quot;/Users/haepa_mac/REAL_HAEPA/02_Projects&quot;</span>
-<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">      </span><span class="p">]</span>
-<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">{</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">  </span><span class="nt">&quot;mcpServers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="nt">&quot;filesystem&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;node&quot;</span><span class="p">,</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">      </span><span class="nt">&quot;args&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">        </span><span class="s2">&quot;/usr/local/lib/node_modules/@modelcontextprotocol/server-filesystem/dist/index.js&quot;</span><span class="p">,</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">        </span><span class="s2">&quot;/Users/haepa_mac/REAL_HAEPA/02_Projects&quot;</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">      </span><span class="p">]</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="p">}</span>
 </code></pre></div>
 <ul>
 <li><strong>GUI 주입 방법</strong>: </li>
@@ -2396,21 +2485,21 @@ Fast 또는 Standard 모델로 작성된 제안서나 계약서 검토는 오류
 <ul>
 <li><strong>연결 MCP</strong>: <code>Filesystem MCP</code> + <code>Notion MCP</code></li>
 <li><strong>지침 프롬프트</strong>:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>내 로컬 컴퓨터의 /Users/haepa_mac/Pictures/202606_Project 폴더 내부의 모든 사진 파일들의 메타데이터(파일명, 생성날짜)를 파악하고, 내 노션 데이터베이스(DB ID: [입력])의 테이블 형식에 맞춰 각 파일명과 날짜를 1행씩 매치하여 등록해라.
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>내 로컬 컴퓨터의 /Users/haepa_mac/Pictures/202606_Project 폴더 내부의 모든 사진 파일들의 메타데이터(파일명, 생성날짜)를 파악하고, 내 노션 데이터베이스(DB ID: [입력])의 테이블 형식에 맞춰 각 파일명과 날짜를 1행씩 매치하여 등록해라.
 </code></pre></div></li>
 </ul>
 <h4 id="영상제작자-스토리보드-피드백-자동-일정-등록">영상제작자: 스토리보드 피드백 자동 일정 등록<a class="headerlink" href="#영상제작자-스토리보드-피드백-자동-일정-등록" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>연결 MCP</strong>: <code>Google Calendar MCP</code> + <code>Slack MCP</code></li>
 <li><strong>지침 프롬프트</strong>:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>내 피그마 스토리보드 디자인 피드백 세션 일정을 구글 캘린더에서 찾아서 2026년 6월 25일 오전 10시로 등록하고, 슬랙 채널(#영상편집실)에 해당 회의 참석 링크와 확정 알림 메시지를 작성하여 전송해라.
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>내 피그마 스토리보드 디자인 피드백 세션 일정을 구글 캘린더에서 찾아서 2026년 6월 25일 오전 10시로 등록하고, 슬랙 채널(#영상편집실)에 해당 회의 참석 링크와 확정 알림 메시지를 작성하여 전송해라.
 </code></pre></div></li>
 </ul>
 <h4 id="공간기획자-예산-데이터-필터링-및-리포팅">공간기획자: 예산 데이터 필터링 및 리포팅<a class="headerlink" href="#공간기획자-예산-데이터-필터링-및-리포팅" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>연결 MCP</strong>: <code>Google Drive MCP</code> + <code>Notion MCP</code></li>
 <li><strong>지침 프롬프트</strong>:
-  <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>내 구글 드라이브 내의 &#39;2026_인테리어_자재예산.xlsx&#39; 파일 내역을 읽어서 자재 단가 50만 원 이상에 해당하는 물품만 필터링한 뒤, 지정된 노션 특정 페이지 하단에 표 형식으로 요약 정리해라.
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>내 구글 드라이브 내의 &#39;2026_인테리어_자재예산.xlsx&#39; 파일 내역을 읽어서 자재 단가 50만 원 이상에 해당하는 물품만 필터링한 뒤, 지정된 노션 특정 페이지 하단에 표 형식으로 요약 정리해라.
 </code></pre></div></li>
 </ul>
 <hr />
@@ -2543,13 +2632,11 @@ Fast 또는 Standard 모델로 작성된 제안서나 계약서 검토는 오류
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
-    
     
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
