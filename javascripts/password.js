@@ -16,7 +16,12 @@ document.addEventListener("DOMContentLoaded", function() {
                       pathname.includes('04_');
 
   // The homepage (index.html or '/') is NOT protected
-  const isHome = pathname === '/' || pathname.endsWith('/index.html') || pathname.endsWith('/');
+  // Handle both local dev server and GitHub Pages subpath deployment
+  const cleanPath = pathname.replace(/\/$/, "");
+  const isHome = cleanPath === "" || 
+                 cleanPath === "/index.html" || 
+                 cleanPath === "/260600_ai_edu" || 
+                 cleanPath === "/260600_ai_edu/index.html";
   
   if (!isProtected || isHome) return;
 
