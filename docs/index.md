@@ -5,10 +5,11 @@ hide:
 ---
 
 <div class="archive-hero">
-<div class="subtitle">2023 ~ 2026 LECTURE ARCHIVE</div>
-<h1>AI 특강 아카이브</h1>
+<div class="subtitle">AI MASTER CLASS</div>
+<h1>AI 실전 아카이브</h1>
 <p class="description">
-실무 도입부터 에이전트 설계, 파이프라인 구축까지 — 전승아가 진행한 모든 AI 활용 교육, 워크숍, 마스터클래스의 자산을 체계적으로 축적하는 아카이브 포털입니다.
+실무 도입부터 에이전트 설계, 파이프라인 구축까지 — <br>
+AI 활용 교육, 워크숍, 마스터클래스의 자산을 체계적으로 축적하는 아카이브 포털입니다.
 </p>
 </div>
 
