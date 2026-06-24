@@ -1629,9 +1629,9 @@
 </code></pre></div>
 <ul>
 <li><strong>무료 플랜 위주 운용 시 리스크:</strong>
-  하루 질문 횟수 제한으로 인해 대화 중간 맥락이 끊겨 직접 수정하게 됨 <span class="arithmatex">\(\rightarrow\)</span> 건당 2~3시간 추가 소요 <span class="arithmatex">\(\rightarrow\)</span> 기회비용 기준 수십만 원의 손실 발생.</li>
+  하루 질문 횟수 제한으로 인해 대화 중간 맥락이 끊겨 직접 수정하게 됨 → 건당 2~3시간 추가 소요 → 기회비용 기준 수십만 원의 손실 발생.</li>
 <li><strong>유료 플랜 가치 환산:</strong>
-  월 약 27,000원 지불로 인해 작업당 피드백 루프가 1회로 단축 <span class="arithmatex">\(\rightarrow\)</span> 매월 최소 20시간 이상의 순수 작업 시간 확보 (시급 25,000원 기준 500,000원 가치 창출).</li>
+  월 약 27,000원 지불로 인해 작업당 피드백 루프가 1회로 단축 → 매월 최소 20시간 이상의 순수 작업 시간 확보 (시급 25,000원 기준 500,000원 가치 창출).</li>
 </ul>
 <hr />
 <h2 id="4-아티스트-직군별-루틴-프로필">4. 아티스트 직군별 루틴 프로필<a class="headerlink" href="#4-아티스트-직군별-루틴-프로필" title="Permanent link">&para;</a></h2>
@@ -1663,25 +1663,25 @@
 <td><strong>09:00 - 09:30</strong></td>
 <td>촬영 세팅 확인</td>
 <td>Gemini + 옵시디언</td>
-<td>날씨 API 정보 입력 <span class="arithmatex">\(\rightarrow\)</span> 흐린 날 야외 인물용 동조기 및 필라이트 광량 조절 세팅을 옵시디언 기준 데이터베이스에서 즉각 검색 및 복원.</td>
+<td>날씨 API 정보 입력 → 흐린 날 야외 인물용 동조기 및 필라이트 광량 조절 세팅을 옵시디언 기준 데이터베이스에서 즉각 검색 및 복원.</td>
 </tr>
 <tr>
 <td><strong>09:30 - 10:00</strong></td>
 <td>요청서 분석</td>
 <td>Claude (Projects)</td>
-<td>클라이언트가 보낸 래퍼런스 메일 전문 업로드 <span class="arithmatex">\(\rightarrow\)</span> 렌즈 화각별 컷 수 요구사항 추출 및 현장 촬영 모바일 체크리스트 생성.</td>
+<td>클라이언트가 보낸 래퍼런스 메일 전문 업로드 → 렌즈 화각별 컷 수 요구사항 추출 및 현장 촬영 모바일 체크리스트 생성.</td>
 </tr>
 <tr>
 <td><strong>17:00 - 17:15</strong></td>
 <td>파일 정리</td>
 <td>Cursor / Antigravity</td>
-<td>SD 카드 장착 후 로컬 스크립트 실행 <span class="arithmatex">\(\rightarrow\)</span> EXIF 촬영 일시 기준으로 연/월/일 폴더 자동 생성 및 메타데이터 이름 자동 매칭.</td>
+<td>SD 카드 장착 후 로컬 스크립트 실행 → EXIF 촬영 일시 기준으로 연/월/일 폴더 자동 생성 및 메타데이터 이름 자동 매칭.</td>
 </tr>
 <tr>
 <td><strong>19:00 - 19:30</strong></td>
 <td>SNS 마케팅</td>
 <td>ChatGPT</td>
-<td>보정된 인물 컷 분위기를 언어로 묘사하여 제공 <span class="arithmatex">\(\rightarrow\)</span> 채널 특성(브런치/인스타그램)에 맞는 텍스트 3종 피드 및 관련 해시태그 추출.</td>
+<td>보정된 인물 컷 분위기를 언어로 묘사하여 제공 → 채널 특성(브런치/인스타그램)에 맞는 텍스트 3종 피드 및 관련 해시태그 추출.</td>
 </tr>
 </tbody>
 </table>
@@ -1693,19 +1693,19 @@
     C --&gt;|NotebookLM| D[포스트프로덕션: 싱크 및 자막 Whisper]
     D --&gt; E[납품: 결과보고서 작성 및 아카이브]</code></pre>
 <ul>
-<li><strong>[기획 단계] 시놉시스 구성:</strong> 기획 아이디어 노트와 관련 기사를 Claude에 전달하여 공인 포맷의 시놉시스 및 신(Scene) 리스트 구조화 초안 작성 (기존 반나절 <span class="arithmatex">\(\rightarrow\)</span> <strong>1시간</strong>).</li>
-<li><strong>[프리프로덕션] 콜시트 자동 스케줄러:</strong> 타임라인, 장소 5곳, 스태프 8명의 직무 역할을 입력하여 시간대별 이동 동선 및 긴급 연락망이 포함된 콜시트 PDF 포맷 자동 출력 (기존 2시간 <span class="arithmatex">\(\rightarrow\)</span> <strong>15분</strong>).</li>
-<li><strong>[프로덕션] 촬영 현장 녹음:</strong> 대사 및 연출 수정사항을 모바일 음성 메모로 기록 후 즉시 NotebookLM에 통합하여 당일 수정 회의록 및 피드백 맵 작성 (기존 1시간 <span class="arithmatex">\(\rightarrow\)</span> <strong>5분</strong>).</li>
-<li><strong>[포스트프로덕션] 자막 자동 추출:</strong> Whisper 로컬 엔진을 활용하여 촬영본 오디오에서 98% 정확도의 타임코드 싱크 자막 파일(.srt) 자동 추출 (기존 3시간 <span class="arithmatex">\(\rightarrow\)</span> <strong>10분</strong>).</li>
-<li><strong>[납품 단계] 결과보고서 작성:</strong> 전체 기획서 히스토리와 최종 스크립트를 Claude에 업로드하여 양식에 맞춘 정산 보고 및 프로젝트 결과보고서 작성 (기존 3시간 <span class="arithmatex">\(\rightarrow\)</span> <strong>30분</strong>).</li>
+<li><strong>[기획 단계] 시놉시스 구성:</strong> 기획 아이디어 노트와 관련 기사를 Claude에 전달하여 공인 포맷의 시놉시스 및 신(Scene) 리스트 구조화 초안 작성 (기존 반나절 → <strong>1시간</strong>).</li>
+<li><strong>[프리프로덕션] 콜시트 자동 스케줄러:</strong> 타임라인, 장소 5곳, 스태프 8명의 직무 역할을 입력하여 시간대별 이동 동선 및 긴급 연락망이 포함된 콜시트 PDF 포맷 자동 출력 (기존 2시간 → <strong>15분</strong>).</li>
+<li><strong>[프로덕션] 촬영 현장 녹음:</strong> 대사 및 연출 수정사항을 모바일 음성 메모로 기록 후 즉시 NotebookLM에 통합하여 당일 수정 회의록 및 피드백 맵 작성 (기존 1시간 → <strong>5분</strong>).</li>
+<li><strong>[포스트프로덕션] 자막 자동 추출:</strong> Whisper 로컬 엔진을 활용하여 촬영본 오디오에서 98% 정확도의 타임코드 싱크 자막 파일(.srt) 자동 추출 (기존 3시간 → <strong>10분</strong>).</li>
+<li><strong>[납품 단계] 결과보고서 작성:</strong> 전체 기획서 히스토리와 최종 스크립트를 Claude에 업로드하여 양식에 맞춘 정산 보고 및 프로젝트 결과보고서 작성 (기존 3시간 → <strong>30분</strong>).</li>
 </ul>
 <hr />
 <h3 id="4-3-공간기획자의-워크플로우">4-3. 공간기획자의 워크플로우<a class="headerlink" href="#4-3-공간기획자의-워크플로우" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>[리서치] 글로벌 레퍼런스 발굴:</strong> <code>Gemini Deep Research</code>를 통해 최신 북유럽 몰입형 전시관 및 인터랙티브 미디어 아트 동향 보고서 추출 및 옵시디언 영감 라이브러리 저장 (기존 2일 <span class="arithmatex">\(\rightarrow\)</span> <strong>2시간</strong>).</li>
-<li><strong>[디자인 기획] 무드보드 생성:</strong> 추출한 핵심 키워드를 기반으로 Midjourney를 구동하여 공간 톤 앤 매너(Tone &amp; Manner) 가이드라인 이미지 10종 생성 및 제안서 삽입 (기존 1일 <span class="arithmatex">\(\rightarrow\)</span> <strong>1시간</strong>).</li>
-<li><strong>[현장 실무] 하드웨어 조건 검색:</strong> 천장 높이, 전원 공급 용량, 빔 프로젝터 기종 사양을 옵시디언 로컬에 아카이빙해둔 후 현장에서 조건 입력 시 매칭 하드웨어 세팅 자동 검출 (기억 의존 <span class="arithmatex">\(\rightarrow\)</span> <strong>즉시 확인</strong>).</li>
-<li><strong>[제안 및 정산] 공간 제안서 작성:</strong> 빌딩 도면 정보와 공간 레이아웃 기획안을 통합하여 Claude를 통해 클라이언트 보고용 기획 제안서 초안 렌더링 (기존 반나절 <span class="arithmatex">\(\rightarrow\)</span> <strong>1시간</strong>).</li>
+<li><strong>[리서치] 글로벌 레퍼런스 발굴:</strong> <code>Gemini Deep Research</code>를 통해 최신 북유럽 몰입형 전시관 및 인터랙티브 미디어 아트 동향 보고서 추출 및 옵시디언 영감 라이브러리 저장 (기존 2일 → <strong>2시간</strong>).</li>
+<li><strong>[디자인 기획] 무드보드 생성:</strong> 추출한 핵심 키워드를 기반으로 Midjourney를 구동하여 공간 톤 앤 매너(Tone &amp; Manner) 가이드라인 이미지 10종 생성 및 제안서 삽입 (기존 1일 → <strong>1시간</strong>).</li>
+<li><strong>[현장 실무] 하드웨어 조건 검색:</strong> 천장 높이, 전원 공급 용량, 빔 프로젝터 기종 사양을 옵시디언 로컬에 아카이빙해둔 후 현장에서 조건 입력 시 매칭 하드웨어 세팅 자동 검출 (기억 의존 → <strong>즉시 확인</strong>).</li>
+<li><strong>[제안 및 정산] 공간 제안서 작성:</strong> 빌딩 도면 정보와 공간 레이아웃 기획안을 통합하여 Claude를 통해 클라이언트 보고용 기획 제안서 초안 렌더링 (기존 반나절 → <strong>1시간</strong>).</li>
 </ul>
 <hr />
 <h3 id="4-4-댄서안무가의-워크플로우">4-4. 댄서/안무가의 워크플로우<a class="headerlink" href="#4-4-댄서안무가의-워크플로우" title="Permanent link">&para;</a></h3>
@@ -1807,7 +1807,7 @@
 <p><strong>[뒷면 탭 연결]:</strong></p>
 </li>
 <li>
-<p>설정 <span class="arithmatex">\(\rightarrow\)</span> 손쉬운 사용 <span class="arithmatex">\(\rightarrow\)</span> 터치 <span class="arithmatex">\(\rightarrow\)</span> 뒷면 탭 <span class="arithmatex">\(\rightarrow\)</span> 이중 탭 <span class="arithmatex">\(\rightarrow\)</span> 위에서 제작한 '녹음 단축어'를 바인딩합니다.</p>
+<p>설정 → 손쉬운 사용 → 터치 → 뒷면 탭 → 이중 탭 → 위에서 제작한 '녹음 단축어'를 바인딩합니다.</p>
 </li>
 </ol>
 <hr />
