@@ -42,14 +42,27 @@ AI 활용 교육, 워크숍, 마스터클래스의 자산을 체계적으로 축
 강의 세션 입장하기 ➔
 </div>
 </a>
-<!-- 260715 MCP × AI 영상 -->
+<!-- 260715 MCP 실전 활용 -->
 <a href="lectures/260715_mcp_video/" class="lecture-card locked">
 <div class="card-header">
 <span class="card-status locked-badge">🔒 PASSWORD PROTECTED</span>
 </div>
 <div>
-<h3 class="card-title">MCP × AI 영상</h3>
-<p class="card-desc">MCP로 마케팅 데이터를 연결하고, Higgsfield·Kling·Veo로 영상을 자동 생산하는 실전 파이프라인 가이드</p>
+<h3 class="card-title">MCP 실전 활용 가이드</h3>
+<p class="card-desc">AI에게 내 도구를 연결하는 법. Canva, Notion, Slack, 한국 법률 MCP까지 — 도구 카탈로그 + 연결 가이드</p>
+</div>
+<div class="card-action">
+강의 세션 입장하기 ➔
+</div>
+</a>
+<!-- 260715 AI 영상 자동 제작 -->
+<a href="lectures/260715_ai_video/" class="lecture-card locked">
+<div class="card-header">
+<span class="card-status locked-badge">🔒 PASSWORD PROTECTED</span>
+</div>
+<div>
+<h3 class="card-title">AI 영상 자동 제작</h3>
+<p class="card-desc">Higgsfield·Kling·Veo 도구 비교, 숏폼 자동 제작 파이프라인, 프롬프트 구조 가이드</p>
 </div>
 <div class="card-action">
 강의 세션 입장하기 ➔
