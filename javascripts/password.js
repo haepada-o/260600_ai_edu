@@ -14,10 +14,17 @@ document.addEventListener("DOMContentLoaded", function() {
     },
     {
       id: 'mcp_video',
-      displayName: 'MCP × AI 영상 (마케터·영상편집 자동화)',
+      displayName: 'MCP 실전 활용 가이드',
       pathKeywords: ['260715_mcp_video'],
       password: 'edu260715',
       authKey: 'ai_edu_authorized_mcp_video'
+    },
+    {
+      id: 'ai_video',
+      displayName: 'AI 영상 자동 제작 가이드',
+      pathKeywords: ['260715_ai_video'],
+      password: 'edu260715',
+      authKey: 'ai_edu_authorized_ai_video'
     },
     {
       id: 'mc260618',
