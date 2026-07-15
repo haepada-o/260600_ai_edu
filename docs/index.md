@@ -29,6 +29,19 @@ AI 활용 교육, 워크숍, 마스터클래스의 자산을 체계적으로 축
 강의 세션 입장하기 ➔
 </div>
 </a>
+<!-- 260715 에이전트 설계 -->
+<a href="lectures/260715_agent_design/" class="lecture-card locked">
+<div class="card-header">
+<span class="card-status locked-badge">🔒 PASSWORD PROTECTED</span>
+</div>
+<div>
+<h3 class="card-title">에이전트는 공부하는 게 아닙니다</h3>
+<p class="card-desc">에이전트는 기술이 아니라 업무 설계입니다. 내 업무를 분해하고 자동화 경계선을 긋는 범용 실전 프레임워크 + 워크시트</p>
+</div>
+<div class="card-action">
+강의 세션 입장하기 ➔
+</div>
+</a>
 <!-- 260618 창작 구체화 -->
 <a href="lectures/260618_creativity/" class="lecture-card locked">
 <div class="card-header">
