@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
     {
       id: 'agent_design',
       displayName: '에이전트는 공부하는 게 아닙니다',
-      pathKeywords: ['에이전트_설계', '%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8'],
+      pathKeywords: ['260715_agent_design'],
       password: 'edu260715',
       authKey: 'ai_edu_authorized_agent_design'
     }
