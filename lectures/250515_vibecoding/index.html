@@ -1,0 +1,949 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="실무 도입부터 에이전트 설계, 파이프라인 구축까지 — AI 활용 교육, 워크숍, 마스터클래스 실전 아카이브">
+      
+      
+      
+      
+        <link rel="prev" href="../251114_coldmail/">
+      
+      
+        <link rel="next" href="../230512_midjourney/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>🔒 개발 워크플로우 (바이브코딩) - AI MASTER CLASS ARCHIVE</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pretendard:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Pretendard";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#개발-워크플로우-ai-바이브코딩과-실전-프로토타이핑-deepsea2-사례" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../.." title="AI MASTER CLASS ARCHIVE" class="md-header__button md-logo" aria-label="AI MASTER CLASS ARCHIVE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI MASTER CLASS ARCHIVE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🔒 개발 워크플로우 (바이브코딩)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="공유" aria-label="공유" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI MASTER CLASS ARCHIVE" class="md-nav__button md-logo" aria-label="AI MASTER CLASS ARCHIVE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+
+    </a>
+    AI MASTER CLASS ARCHIVE
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_%EC%8B%9C%EC%9E%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 00. 시작 — 어디서부터
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_%EB%8F%84%EA%B5%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 01. 도구 — 뭘 쓸 것인가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_%EB%A3%A8%ED%8B%B4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 02. 루틴 — 어디에 넣을 것인가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_%ED%99%95%EC%9E%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 03. 확장 — 사고를 시스템으로
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_%EC%8B%9C%EC%8A%A4%ED%85%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 04. 시스템 — 에이전트와 파이프라인
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../260618_creativity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 창작 구체화 (내 생각을 시스템으로)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../260212_automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 실무 자동화 (AI 콘텐츠 공장)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../251114_coldmail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 글로벌 피칭 (실리콘밸리 콜드메일)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 개발 워크플로우 (바이브코딩)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 개발 워크플로우 (바이브코딩)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-바이브코딩-프로토타이핑-로드맵-4단계" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 바이브코딩 프로토타이핑 로드맵 (4단계)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 바이브코딩 프로토타이핑 로드맵 (4단계)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-설계도와-비즈니스-로직-먼저-격리하기-20분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1. 설계도와 비즈니스 로직 먼저 격리하기 (20분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-ai-에이전트와-페어-프로그래밍-가동-40분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2. AI 에이전트와 페어 프로그래밍 가동 (40분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-린팅linting-및-에러-로그-역추적-검증-30분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3. 린팅(Linting) 및 에러 로그 역추적 검증 (30분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-결정-사항-잠금locking-및-문서-갱신-30분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4. 결정 사항 잠금(Locking) 및 문서 갱신 (30분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-강의-리소스--다운로드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💾 강의 리소스 &amp; 다운로드
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../230512_midjourney/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 미드저니 (AI 이미지 생성 워크숍)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midjourney_prompt_sheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📋 미드저니 화풍 & 프롬프트 시트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../230411_planning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 기획서 작성 (AI로 기획안 쓰기)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-바이브코딩-프로토타이핑-로드맵-4단계" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 바이브코딩 프로토타이핑 로드맵 (4단계)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 바이브코딩 프로토타이핑 로드맵 (4단계)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-설계도와-비즈니스-로직-먼저-격리하기-20분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1. 설계도와 비즈니스 로직 먼저 격리하기 (20분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-ai-에이전트와-페어-프로그래밍-가동-40분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2. AI 에이전트와 페어 프로그래밍 가동 (40분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-린팅linting-및-에러-로그-역추적-검증-30분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3. 린팅(Linting) 및 에러 로그 역추적 검증 (30분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-결정-사항-잠금locking-및-문서-갱신-30분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4. 결정 사항 잠금(Locking) 및 문서 갱신 (30분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-강의-리소스--다운로드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💾 강의 리소스 &amp; 다운로드
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="개발-워크플로우-ai-바이브코딩과-실전-프로토타이핑-deepsea2-사례">개발 워크플로우: AI 바이브코딩과 실전 프로토타이핑 (deepsea2 사례)<a class="headerlink" href="#개발-워크플로우-ai-바이브코딩과-실전-프로토타이핑-deepsea2-사례" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>대상</strong>: 비개발자 빌더, 테크-아트 기획자, PM | <strong>시간</strong>: 2시간 특강 | <strong>핵심</strong>: 코딩 지식 없이도 Cursor, Antigravity 등의 에이전트 도구를 활용하여 비즈니스 로직 설계부터 완성형 백엔드/모바일 앱 프로토타입까지 초고속으로 빌딩하는 실전 워크플로우.</p>
+</blockquote>
+<hr />
+<h2 id="-바이브코딩-프로토타이핑-로드맵-4단계">📌 바이브코딩 프로토타이핑 로드맵 (4단계)<a class="headerlink" href="#-바이브코딩-프로토타이핑-로드맵-4단계" title="Permanent link">&para;</a></h2>
+<p>이 가이드는 실제 승아님이 AI 에이전트를 조율해 <code>deepsea2</code> 및 테크-아트 모바일 앱 프로젝트를 빌딩했던 사례를 기반으로 설계된 바이브코딩 입문서입니다.</p>
+<hr />
+<h3 id="step-1-설계도와-비즈니스-로직-먼저-격리하기-20분">Step 1. 설계도와 비즈니스 로직 먼저 격리하기 (20분)<a class="headerlink" href="#step-1-설계도와-비즈니스-로직-먼저-격리하기-20분" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>판단 (Trigger):</strong> AI 에이전트(Cursor 등)에게 다짜고짜 "코딩해줘"라고 해서 산더미처럼 꼬여버린 버그 코드를 받고 좌절할 때.</li>
+<li><strong>할 일 (Actions):</strong></li>
+<li>구현에 들어가기 전, <strong>인간의 언어로 프로젝트 사양서(Spec)</strong>를 마크다운 파일로 명확히 작성한다.</li>
+<li>어떤 데이터베이스 테이블이 필요한지, 어떤 화면 흐름(Flow)이 구성되는지, API의 엔드포인트는 무엇인지 먼저 문자로 확정한다.</li>
+<li><strong>처음이라면 (Tip):</strong></li>
+<li>개발자가 없더라도 걱정하지 마십시오. AI에게 아래 프롬프트를 사용하여 기획 문서를 시스템 아키텍처 문서로 먼저 파싱하게 만드십시오.
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[기획 방향]: [내 서비스 한 줄 아이디어]
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>이 기획을 기반으로 비개발자도 이해할 수 있는 전체 폴더 구조, 필요한 API 엔드포인트 목록, 그리고 비즈니스 로직 시나리오 3개를 설계해줘. 코드는 작성하지 마.
+</code></pre></div></li>
+</ul>
+<hr />
+<h3 id="step-2-ai-에이전트와-페어-프로그래밍-가동-40분">Step 2. AI 에이전트와 페어 프로그래밍 가동 (40분)<a class="headerlink" href="#step-2-ai-에이전트와-페어-프로그래밍-가동-40분" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>판단 (Trigger):</strong> 시스템 설계가 확정되었고, 실제 코드 작성(Python, Dart, Flutter 등)을 에이전트에게 위임할 때.</li>
+<li><strong>할 일 (Actions):</strong></li>
+<li>기획/설계 문서를 프로젝트 폴더 내에 배치하고 에이전트에게 참조시킨다.</li>
+<li>코드를 한꺼번에 짜 달라고 하지 말고, <strong>가장 핵심이 되는 백엔드 유틸리티 함수나 모델 정의부터 순차적으로 요청</strong>한다.</li>
+<li>에이전트가 코드를 작성하는 도중, 뻔한 템플릿 코드나 에러를 발생시키는 방식은 과감히 반려한다.</li>
+<li><strong>실전 프롬프트 패턴:</strong></li>
+<li><code>"~ 라이브러리 사용은 금지하고 내장 모듈 위주로 가볍게 빌드해줘."</code></li>
+<li><code>"이 클래스 정의서의 인터페이스에 맞게 비즈니스 로직 코드만 독립형 모듈로 작성해줘."</code></li>
+</ul>
+<hr />
+<h3 id="step-3-린팅linting-및-에러-로그-역추적-검증-30분">Step 3. 린팅(Linting) 및 에러 로그 역추적 검증 (30분)<a class="headerlink" href="#step-3-린팅linting-및-에러-로그-역추적-검증-30분" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>판단 (Trigger):</strong> 에이전트가 생성한 코드가 동작하지 않고 로컬 쉘에서 붉은색 에러 로그가 터져 나올 때.</li>
+<li><strong>할 일 (Actions):</strong></li>
+<li>에러 메시지 전체를 숨기지 말고 그대로 터미널에서 복사해 에이전트 창에 던진다.</li>
+<li>AI가 소설을 써서 짐작하지 못하도록, <strong>에러가 발생한 지점의 상하 30줄 코드와 함께 에러 덤프를 제공</strong>한다.</li>
+<li>수정 코드를 바로 덮어쓰기 전에, 왜 이 에러가 발생했는지 물리적 원인(원인-해결책)을 요약 보고받는다.</li>
+<li><strong>처음이라면 (Tip):</strong></li>
+<li>에러가 나면 "고쳐줘"라고만 말하지 마십시오. 아래 구조로 질문하십시오.
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>[에러 메시지]: [터미널 에러 복사]
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>[의심 코드]: [에러 라인 주변 코드 복사]
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>왜 이 문제가 발생했는지 논리적 버그를 지적하고, 이를 영구적으로 방지하기 위해 코드를 어떻게 리팩토링해야 하는지 제안해줘.
+</code></pre></div></li>
+</ul>
+<hr />
+<h3 id="step-4-결정-사항-잠금locking-및-문서-갱신-30분">Step 4. 결정 사항 잠금(Locking) 및 문서 갱신 (30분)<a class="headerlink" href="#step-4-결정-사항-잠금locking-및-문서-갱신-30분" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>판단 (Trigger):</strong> 코드가 정상 작동하기 시작했고, 다음 기능 확장을 위해 현재의 성공적인 빌드 버전을 고정하고 싶을 때.</li>
+<li><strong>할 일 (Actions):</strong></li>
+<li>성공적으로 빌드된 핵심 아키텍처와 결정 내역을 <code>README.md</code>나 <code>.claude/rules/</code> 하단에 <strong>결정 로그(Decision Log)</strong>로 추가하여 잠근다.</li>
+<li>새로운 작업을 시작할 때 AI에게 이 결정 로그를 읽게 만들어, 이전의 성공 사례나 코딩 스타일을 유지하게끔 규제한다.</li>
+<li><strong>규정 관리 가이드:</strong></li>
+<li><code>docs/04_시스템.md</code> 가이드라인의 결정 로그 방식을 참고하여, 코드가 꼬이지 않도록 이력을 엄격하게 박제해 관리하십시오.</li>
+</ul>
+<hr />
+<h2 id="-강의-리소스--다운로드">💾 강의 리소스 &amp; 다운로드<a class="headerlink" href="#-강의-리소스--다운로드" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://drive.google.com/drive/folders/1RSyFdUPWWlua2bmA3ZzZ6mzdwyUrC7h8">바이브코딩 - deepsea2 사례 기반 특강 PDF (원본)</a></li>
+<li><a href="https://drive.google.com/drive/folders/1RSyFdUPWWlua2bmA3ZzZ6mzdwyUrC7h8">바이브코딩 실무 깃허브 레포지토리 샘플 및 코드 템플릿</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/password.js"></script>
+      
+    
+  </body>
+</html>

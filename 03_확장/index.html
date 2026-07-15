@@ -445,6 +445,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#1-0-system-prompt-vs-user-prompt--원리-이해" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-0. System Prompt vs User Prompt — 원리 이해
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#1-1-각-서비스별-규칙-설정-방식" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -717,6 +728,195 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lectures/260618_creativity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 창작 구체화 (내 생각을 시스템으로)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lectures/260212_automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 실무 자동화 (AI 콘텐츠 공장)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lectures/251114_coldmail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 글로벌 피칭 (실리콘밸리 콜드메일)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lectures/250515_vibecoding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 개발 워크플로우 (바이브코딩)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lectures/230512_midjourney/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 미드저니 (AI 이미지 생성 워크숍)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lectures/midjourney_prompt_sheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📋 미드저니 화풍 & 프롬프트 시트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lectures/230411_planning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 기획서 작성 (AI로 기획안 쓰기)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -776,6 +976,17 @@
   
     <nav class="md-nav" aria-label="1. 규칙 파일 설계 및 에이전트 개인화">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-0-system-prompt-vs-user-prompt--원리-이해" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-0. System Prompt vs User Prompt — 원리 이해
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#1-1-각-서비스별-규칙-설정-방식" class="md-nav__link">
@@ -1083,6 +1294,59 @@
 <hr />
 <h2 id="1-규칙-파일-설계-및-에이전트-개인화">1. 규칙 파일 설계 및 에이전트 개인화<a class="headerlink" href="#1-규칙-파일-설계-및-에이전트-개인화" title="Permanent link">&para;</a></h2>
 <p>매번 대화가 시작될 때마다 동일한 배경 정보를 제공하는 것은 리소스 낭비입니다. 규칙 파일은 AI가 대화 또는 작업을 시작할 때 가장 먼저 자동으로 로드하는 <strong>"신입사원 업무 매뉴얼"</strong> 역할을 합니다.</p>
+<h3 id="1-0-system-prompt-vs-user-prompt--원리-이해">1-0. System Prompt vs User Prompt — 원리 이해<a class="headerlink" href="#1-0-system-prompt-vs-user-prompt--원리-이해" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>출처</strong>: OpenAI API 가이드, Anthropic 공식 가이드</p>
+</blockquote>
+<p>AI와의 대화는 사실 두 개의 레이어로 구성됩니다. 이 구조를 이해하면 규칙 파일이 왜 필요한지, 어떻게 동작하는지가 명확해집니다.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌─────────────────────────────────────────────┐
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│  System Prompt (시스템 프롬프트)              │
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│  ─ AI의 페르소나, 규칙, 제약을 정의          │
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│  ─ 사용자가 바꿀 수 없는 &quot;고정 레이어&quot;       │
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│  ─ 예: CLAUDE.md, Custom Instructions        │
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>├─────────────────────────────────────────────┤
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│  User Prompt (사용자 프롬프트)               │
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│  ─ 실제 작업 지시                            │
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│  ─ 매번 달라지는 &quot;변동 레이어&quot;               │
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│  ─ 예: &quot;이 기획서 검토해줘&quot;                  │
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>└─────────────────────────────────────────────┘
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">구분</th>
+<th style="text-align: left;">System Prompt</th>
+<th style="text-align: left;">User Prompt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>역할</strong></td>
+<td style="text-align: left;">AI의 정체성·규칙·제약 설정</td>
+<td style="text-align: left;">실제 작업 지시</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>변경 빈도</strong></td>
+<td style="text-align: left;">거의 고정 (한 번 설정)</td>
+<td style="text-align: left;">매 대화마다 변경</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>해당 도구</strong></td>
+<td style="text-align: left;">CLAUDE.md / Custom Instructions / Gem</td>
+<td style="text-align: left;">채팅창에 직접 입력</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>비유</strong></td>
+<td style="text-align: left;">신입사원 업무 매뉴얼</td>
+<td style="text-align: left;">그날그날 업무 지시</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!NOTE]
+<strong>규칙 파일(CLAUDE.md, Custom Instructions)</strong>은 바로 이 <strong>System Prompt 레이어</strong>를 채우는 것입니다.
+이걸 설정해두면 User Prompt (매번의 요청)에서 배경 설명을 반복하지 않아도 됩니다.</p>
+</blockquote>
 <h3 id="1-1-각-서비스별-규칙-설정-방식">1-1. 각 서비스별 규칙 설정 방식<a class="headerlink" href="#1-1-각-서비스별-규칙-설정-방식" title="Permanent link">&para;</a></h3>
 <p>각 서비스에 맞게 규칙을 주입하여 일관된 답변 퀄리티를 유지합니다.</p>
 <table>
@@ -1117,87 +1381,98 @@
 </table>
 <h3 id="1-2-기본-규칙-파일-템플릿">1-2. 기본 규칙 파일 템플릿<a class="headerlink" href="#1-2-기본-규칙-파일-템플릿" title="Permanent link">&para;</a></h3>
 <p>개인 업무 환경에 따라 빈 괄호 안의 매개변수를 정의하여 사용합니다.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="gh"># 나의 AI 규칙 (Basic)</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="gu">## 1. 프로필</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">-</span><span class="w"> </span>이름: [이름]
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">-</span><span class="w"> </span>직무/역할: [예: 프리랜서 사진작가 / 프로젝트 기획자]
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">-</span><span class="w"> </span>핵심 업무: [예: 포트폴리오 관리, 클라이언트 미팅 및 견적 산출, 촬영 세팅 분석]
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="gu">## 2. 인터랙션 스타일</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">-</span><span class="w"> </span>언어 톤앤매너: [예: 전문적이고 간결하며 핵심만 짚는 개조식 말투]
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="k">-</span><span class="w"> </span>답변 포맷: [예: 줄글 작성을 지양하고, 표와 마크다운 문법을 적극 활용]
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="k">-</span><span class="w"> </span>피드백 루프: [예: 불확실한 수치나 정보는 추측하지 말고 질문으로 확인 요청]
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="gu">## 3. 핵심 도메인 규칙</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="k">-</span><span class="w"> </span>[규칙 1: 예) 수치 데이터 제시 시 반드시 출처 또는 산출 근거를 표기한다.]
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="k">-</span><span class="w"> </span>[규칙 2: 예) 도량형 기준은 평(㎡ 병기) 및 억원(천만원 이하 절사) 단위를 준수한다.]
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="k">-</span><span class="w"> </span>[규칙 3: 예) 고유 명사나 전문 용어는 사전에 정의된 용어집을 우선 참조한다.]
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="gu">## 4. 용어 사전</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="k">-</span><span class="w"> </span>[전문용어 1] = [대체어/의미]
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="k">-</span><span class="w"> </span>[전문용어 2] = [대체어/의미]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gh"># 나의 AI 규칙 (Basic)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="gu">## 1. 프로필</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">-</span><span class="w"> </span>이름: [이름]
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">-</span><span class="w"> </span>직무/역할: [예: 프리랜서 사진작가 / 프로젝트 기획자]
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">-</span><span class="w"> </span>핵심 업무: [예: 포트폴리오 관리, 클라이언트 미팅 및 견적 산출, 촬영 세팅 분석]
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="gu">## 2. 인터랙션 스타일</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="k">-</span><span class="w"> </span>언어 톤앤매너: [예: 전문적이고 간결하며 핵심만 짚는 개조식 말투]
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="k">-</span><span class="w"> </span>답변 포맷: [예: 줄글 작성을 지양하고, 표와 마크다운 문법을 적극 활용]
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="k">-</span><span class="w"> </span>피드백 루프: [예: 불확실한 수치나 정보는 추측하지 말고 질문으로 확인 요청]
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="gu">## 3. 핵심 도메인 규칙</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="k">-</span><span class="w"> </span>[규칙 1: 예) 수치 데이터 제시 시 반드시 출처 또는 산출 근거를 표기한다.]
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="k">-</span><span class="w"> </span>[규칙 2: 예) 도량형 기준은 평(㎡ 병기) 및 억원(천만원 이하 절사) 단위를 준수한다.]
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="k">-</span><span class="w"> </span>[규칙 3: 예) 고유 명사나 전문 용어는 사전에 정의된 용어집을 우선 참조한다.]
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="gu">## 4. 용어 사전</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="k">-</span><span class="w"> </span>[전문용어 1] = [대체어/의미]
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="k">-</span><span class="w"> </span>[전문용어 2] = [대체어/의미]
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="gu">## 5. 금지 사항 (Negative Constraints)</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="k">-</span><span class="w"> </span>[예: &quot;혁신적&quot;, &quot;시너지&quot;, &quot;패러다임&quot; 등 근거 없는 버즈워드 사용 금지]
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="k">-</span><span class="w"> </span>[예: 클라이언트 정보나 수치를 임의로 생성하지 말 것]
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="k">-</span><span class="w"> </span>[예: 결론을 내리기 전에 반드시 나에게 확인을 요청할 것]
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="k">-</span><span class="w"> </span>[예: 칭찬 문구로 답변을 시작하지 말 것]
 </code></pre></div>
+<blockquote>
+<p>[!TIP]
+<strong>금지 사항 섹션이 가장 중요합니다.</strong> Anthropic, OpenAI 공식 가이드 모두 "해야 할 것"보다 <strong>"해서는 안 되는 것"을 명확히 쓸수록 AI 품질이 높아진다</strong>고 강조합니다.
+규칙 파일 작성 초반에는 금지 사항을 3개 이상 꼭 채우세요.</p>
+</blockquote>
 <hr />
 <h2 id="2-claudemd-및-cursorrules-파일-설계-템플릿">2. CLAUDE.md 및 .cursorrules 파일 설계 템플릿<a class="headerlink" href="#2-claudemd-및-cursorrules-파일-설계-템플릿" title="Permanent link">&para;</a></h2>
 <p>로컬 개발 환경(Claude Code, Cursor, Antigravity 등)에서는 프로젝트 루트 디렉토리에 시스템 설정 파일(<code>CLAUDE.md</code> 또는 <code>.cursorrules</code>)을 배치하여 AI의 동작 방식을 정밀하게 통제합니다.</p>
 <h3 id="2-1-claudemd--cursorrules-통합-템플릿">2-1. CLAUDE.md / .cursorrules 통합 템플릿<a class="headerlink" href="#2-1-claudemd--cursorrules-통합-템플릿" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gh"># 프로젝트 규칙 (CLAUDE.md / .cursorrules)</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="gu">## 1. 프로젝트 개요</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">-</span><span class="w"> </span>역할: [예: 크리에이티브 아티스트를 위한 지식 베이스 관리 에이전트]
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">-</span><span class="w"> </span>기술 스택: Python 3.10+, Obsidian Markdown, Shell Script
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="k">-</span><span class="w"> </span>작업 디렉토리 구조:
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span><span class="sb">`/01_Inbox`</span> (수정 금지, Read-Only 원본 데이터)
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span><span class="sb">`/concepts`</span> (개념 및 테마 허브 노드)
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span><span class="sb">`/pairings`</span> (개별 분석 및 매칭 데이터)
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span><span class="sb">`/02_Projects`</span> (실제 프로젝트 작업 공간)
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="gu">## 2. 에이전트 라우팅 및 역할 분배</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Ingest Agent**</span>: <span class="sb">`/01_Inbox`</span>에 새로운 파일이 생성되면 감지하고, <span class="sb">`/schema`</span> 규칙에 의거하여 자동 분류 프로세스를 트리거한다.
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Query Agent**</span>: 사용자 질문 시 <span class="sb">`index.md`</span> 목차를 우선 분석한 뒤, 관련 개념 및 페어링 문서를 탐색하여 답변을 구성한다.
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Lint Agent**</span>: 위키 내 깨진 링크, 고아 페이지, 중복 정의된 개념을 탐색하여 무결성을 유지한다.
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="gu">## 3. 코딩 표준 및 자동화 실행 규칙</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="k">-</span><span class="w"> </span>스크립트 작성 시 예외 처리를 철저히 하고 모든 단계를 표준 출력(stdout)으로 로깅한다.
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="k">-</span><span class="w"> </span>파일 및 폴더 제어 시 EXIF 등 메타데이터 유실 방지를 위한 유효성 검증을 철수로 수행한다.
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="k">-</span><span class="w"> </span>외부 라이브러리 의존성을 최소화하고 기본 라이브러리를 적극 활용한다.
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="gu">## 4. 작업 프로세스 및 검증 워크플로우 (Verification Loop)</span>
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="k">1.</span> <span class="gs">**분석**</span>: 수정 대상 파일의 전체 스키마와 인접 연결 링크를 스캔한다.
-<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="k">2.</span> <span class="gs">**초안 작성**</span>: 변경 사항을 임시 버퍼 영역에서 검증한다.
-<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="k">3.</span> <span class="gs">**무결성 검사**</span>: <span class="sb">`Lint`</span> 스크립트를 실행하여 참조 무결성이 깨지지 않는지 체크한다.
-<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="k">4.</span> <span class="gs">**기록**</span>: 수정 완료 시 변경 사항을 <span class="sb">`log.md`</span> 파일에 추가(Append-only)한다.
-<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>
-<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="gu">## 5. 산출물 명세 (Target Output Formats)</span>
-<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="k">-</span><span class="w"> </span>마크다운 파일 헤더에는 반드시 YAML Front Matter 형식으로 아래 메타데이터를 포함해야 한다.
-<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="gu">```yaml</span>
-<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="gu">---</span>
-<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>date: YYYY-MM-DD
-<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>tags: [카테고리1, 카테고리2]
-<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="gu">status: [draft / review / completed]</span>
-<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="gu">---</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="gh"># 프로젝트 규칙 (CLAUDE.md / .cursorrules)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="gu">## 1. 프로젝트 개요</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">-</span><span class="w"> </span>역할: [예: 크리에이티브 아티스트를 위한 지식 베이스 관리 에이전트]
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">-</span><span class="w"> </span>기술 스택: Python 3.10+, Obsidian Markdown, Shell Script
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">-</span><span class="w"> </span>작업 디렉토리 구조:
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span><span class="sb">`/01_Inbox`</span> (수정 금지, Read-Only 원본 데이터)
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span><span class="sb">`/concepts`</span> (개념 및 테마 허브 노드)
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span><span class="sb">`/pairings`</span> (개별 분석 및 매칭 데이터)
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span><span class="sb">`/02_Projects`</span> (실제 프로젝트 작업 공간)
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="gu">## 2. 에이전트 라우팅 및 역할 분배</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Ingest Agent**</span>: <span class="sb">`/01_Inbox`</span>에 새로운 파일이 생성되면 감지하고, <span class="sb">`/schema`</span> 규칙에 의거하여 자동 분류 프로세스를 트리거한다.
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Query Agent**</span>: 사용자 질문 시 <span class="sb">`index.md`</span> 목차를 우선 분석한 뒤, 관련 개념 및 페어링 문서를 탐색하여 답변을 구성한다.
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="k">-</span><span class="w"> </span><span class="gs">**Lint Agent**</span>: 위키 내 깨진 링크, 고아 페이지, 중복 정의된 개념을 탐색하여 무결성을 유지한다.
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="gu">## 3. 코딩 표준 및 자동화 실행 규칙</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="k">-</span><span class="w"> </span>스크립트 작성 시 예외 처리를 철저히 하고 모든 단계를 표준 출력(stdout)으로 로깅한다.
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="k">-</span><span class="w"> </span>파일 및 폴더 제어 시 EXIF 등 메타데이터 유실 방지를 위한 유효성 검증을 철수로 수행한다.
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="k">-</span><span class="w"> </span>외부 라이브러리 의존성을 최소화하고 기본 라이브러리를 적극 활용한다.
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="gu">## 4. 작업 프로세스 및 검증 워크플로우 (Verification Loop)</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="k">1.</span> <span class="gs">**분석**</span>: 수정 대상 파일의 전체 스키마와 인접 연결 링크를 스캔한다.
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="k">2.</span> <span class="gs">**초안 작성**</span>: 변경 사항을 임시 버퍼 영역에서 검증한다.
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="k">3.</span> <span class="gs">**무결성 검사**</span>: <span class="sb">`Lint`</span> 스크립트를 실행하여 참조 무결성이 깨지지 않는지 체크한다.
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="k">4.</span> <span class="gs">**기록**</span>: 수정 완료 시 변경 사항을 <span class="sb">`log.md`</span> 파일에 추가(Append-only)한다.
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="gu">## 5. 산출물 명세 (Target Output Formats)</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="k">-</span><span class="w"> </span>마크다운 파일 헤더에는 반드시 YAML Front Matter 형식으로 아래 메타데이터를 포함해야 한다.
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="gu">```yaml</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="gu">---</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>date: YYYY-MM-DD
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>tags: [카테고리1, 카테고리2]
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="gu">status: [draft / review / completed]</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="gu">---</span>
 </code></pre></div>
 <hr />
 <h2 id="3-옵시디언obsidian-llm-위키-구축">3. 옵시디언(Obsidian) LLM 위키 구축<a class="headerlink" href="#3-옵시디언obsidian-llm-위키-구축" title="Permanent link">&para;</a></h2>
 <p>안드레 카파시(Andrej Karpathy)가 제시한 LLM 위키 개념은 기존 RAG(검색 증강 생성)의 한계를 보완합니다. 사용자가 정보를 단편적으로 검색하는 것을 넘어, <strong>AI가 지식 간의 연결 관계를 능동적으로 파악하고 구조를 고도화</strong>하는 시스템입니다.</p>
 <h3 id="3-1-rag와-llm-위키의-메커니즘-비교">3-1. RAG와 LLM 위키의 메커니즘 비교<a class="headerlink" href="#3-1-rag와-llm-위키의-메커니즘-비교" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>[RAG 방식: 단순 검색 조각 취합]
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>질문 발생 ──&gt; 원본 데이터베이스에서 연관 조각 검색 ──&gt; 임시 맥락 주입 ──&gt; 답변 출력
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>* 문제점: 데이터 노이즈가 많을 경우 왜곡이 심하며, 지식이 스스로 구조화되지 않음.
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>[LLM 위키 방식: 지속적인 가공 및 자산화]
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>원본 데이터 (/raw) ──&gt; 스키마 기반 정제 ──&gt; AI가 위키 문서 (/wiki) 작성 및 링크 연결
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>* 장점: 원본 노이즈 차단, 지식 간 양방향 연결([[링크]]) 구조 형성, 시간이 갈수록 고품질화.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>[RAG 방식: 단순 검색 조각 취합]
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>질문 발생 ──&gt; 원본 데이터베이스에서 연관 조각 검색 ──&gt; 임시 맥락 주입 ──&gt; 답변 출력
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>* 문제점: 데이터 노이즈가 많을 경우 왜곡이 심하며, 지식이 스스로 구조화되지 않음.
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>[LLM 위키 방식: 지속적인 가공 및 자산화]
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>원본 데이터 (/raw) ──&gt; 스키마 기반 정제 ──&gt; AI가 위키 문서 (/wiki) 작성 및 링크 연결
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>* 장점: 원본 노이즈 차단, 지식 간 양방향 연결([[링크]]) 구조 형성, 시간이 갈수록 고품질화.
 </code></pre></div>
 <h3 id="3-2-karpathy-모델-기반-3-폴더-아키텍처">3-2. Karpathy 모델 기반 3-폴더 아키텍처<a class="headerlink" href="#3-2-karpathy-모델-기반-3-폴더-아키텍처" title="Permanent link">&para;</a></h3>
 <p>로컬 컴퓨터의 옵시디언 금고(Vault)를 아래의 3가지 추상화 레이어로 구분하여 구성합니다.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>옵시디언 금고 루트 (Vault Root)
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>├── /raw (Read-Only)      : 가공되지 않은 회의록, 촬영 원본 메타데이터, 스크랩 웹페이지
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>├── /wiki (AI-Managed)    : AI가 정리한 개념(concepts) 및 분석 페어링(pairings) 문서
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>└── /schema (Rules)       : 데이터 정제 규칙, 템플릿, CLAUDE.md 등 에이전트 지침
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>옵시디언 금고 루트 (Vault Root)
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>├── /raw (Read-Only)      : 가공되지 않은 회의록, 촬영 원본 메타데이터, 스크랩 웹페이지
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>├── /wiki (AI-Managed)    : AI가 정리한 개념(concepts) 및 분석 페어링(pairings) 문서
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>└── /schema (Rules)       : 데이터 정제 규칙, 템플릿, CLAUDE.md 등 에이전트 지침
 </code></pre></div>
 <ul>
 <li><strong><code>/raw</code> (원본 데이터 레이어)</strong>: 사용자가 입력하는 날 것 그대로의 정보입니다. AI는 이 폴더의 파일을 절대 임의로 수정하거나 삭제할 수 없으며 오직 읽기(Read-Only)만 수행합니다.</li>
@@ -1205,16 +1480,16 @@
 <li><strong><code>/schema</code> (규칙 및 템플릿 레이어)</strong>: 지식을 어떻게 정제하고, 어떤 양식으로 기록할지 정의하는 약속의 공간입니다.</li>
 </ul>
 <h3 id="3-3-로컬-옵시디언-위키의-실제-디렉토리-구조-예시">3-3. 로컬 옵시디언 위키의 실제 디렉토리 구조 예시<a class="headerlink" href="#3-3-로컬-옵시디언-위키의-실제-디렉토리-구조-예시" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>WORKSPACE_VAULT/ (Obsidian Vault Root)
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>├── 01_Inbox/                       # /raw에 대응하는 유저 업로드 경로
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>├── concepts/                       # /wiki에 대응하는 주제별 허브 노드
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>├── pairings/                       # /wiki에 대응하는 &#39;콘텐츠 x 이론&#39; 및 &#39;실험 x 결과&#39; 매칭 노드
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>├── 02_Projects/                    # 진행 중인 실제 프로젝트 작업 영역
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>│   └── ai-education/
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>├── index.md                        # 위키 전체 목차 및 네비게이션
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>├── log.md                          # 변경 이력 기록 (Append-only)
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>├── wiki.py                         # 위키 관리용 로컬 CLI 파이썬 스크립트
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>└── CLAUDE.md                       # LLM 위키 작동 규칙 설정 파일
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>WORKSPACE_VAULT/ (Obsidian Vault Root)
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>├── 01_Inbox/                       # /raw에 대응하는 유저 업로드 경로
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>├── concepts/                       # /wiki에 대응하는 주제별 허브 노드
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>├── pairings/                       # /wiki에 대응하는 &#39;콘텐츠 x 이론&#39; 및 &#39;실험 x 결과&#39; 매칭 노드
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>├── 02_Projects/                    # 진행 중인 실제 프로젝트 작업 영역
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>│   └── ai-education/
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>├── index.md                        # 위키 전체 목차 및 네비게이션
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>├── log.md                          # 변경 이력 기록 (Append-only)
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>├── wiki.py                         # 위키 관리용 로컬 CLI 파이썬 스크립트
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>└── CLAUDE.md                       # LLM 위키 작동 규칙 설정 파일
 </code></pre></div>
 <h3 id="3-4-핵심-플러그인-4종-설정">3-4. 핵심 플러그인 4종 설정<a class="headerlink" href="#3-4-핵심-플러그인-4종-설정" title="Permanent link">&para;</a></h3>
 <p>옵시디언의 로컬 데이터 저장 장점을 극대화하기 위해 아래 플러그인을 활성화합니다.</p>
@@ -1250,47 +1525,47 @@
 <hr />
 <h3 id="3-7-페어링-및-허브-노드-문서-템플릿">3-7. 페어링 및 허브 노드 문서 템플릿<a class="headerlink" href="#3-7-페어링-및-허브-노드-문서-템플릿" title="Permanent link">&para;</a></h3>
 <h4 id="페어링-템플릿-예시-사진작가의-촬영-매칭-데이터">[페어링 템플릿 예시: 사진작가의 촬영 매칭 데이터]<a class="headerlink" href="#페어링-템플릿-예시-사진작가의-촬영-매칭-데이터" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="gh"># [26/06/23] 브랜드A 야외촬영, 흐린 날 자연광 분석</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="gu">## 1. 촬영 후기 및 현장 관찰</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">-</span><span class="w"> </span>오후 3시경 구름 양 80% 상태. 반사판을 배치하지 않았음에도 부드러운 확산광 덕분에 명암 대비가 완만하여 얼굴 그림자가 억제됨.
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="k">-</span><span class="w"> </span>85mm f/1.4 세팅은 심도 표현이 과하여 배경 맥락이 다소 유실됨. f/2.0이 더 적절했을 것으로 보임.
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="gu">## 2. 기술적 요소 분석</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="gu">### 확산광(Diffuse Light) 메커니즘</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="k">-</span><span class="w"> </span><span class="gs">**개념**</span>: 구름이 대형 소프트박스 역할을 수행함.
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="k">-</span><span class="w"> </span><span class="gs">**원리**</span>: 광원의 면적이 피사체 대비 극대화될수록 그림자의 경계선이 완화됨.
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="k">-</span><span class="w"> </span><span class="gs">**대응**</span>: 반사판 없이 섀도우 디테일을 살리는 촬영에 적합함.
-<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
-<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="gu">## 3. Action Items (다음 촬영 시 시도)</span>
-<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="k">- [ ]</span> 동일 조건 하 조리개값별(f/1.4 vs f/2.0) 배경 표현력 테스트 진행
-<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="k">- [ ]</span> 흐린 날 반사판 적용 시 캐치라이트 광량 차이 데이터 수집
-<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>
-<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="gu">## 4. 양방향 링크</span>
-<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="k">-</span><span class="w"> </span>유사 사례: [[2026-05-10_잡지B_야외촬영]]
-<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="k">-</span><span class="w"> </span>핵심 개념: [[자연광_인물촬영]], [[조리개_배경분리]]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="gh"># [26/06/23] 브랜드A 야외촬영, 흐린 날 자연광 분석</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="gu">## 1. 촬영 후기 및 현장 관찰</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">-</span><span class="w"> </span>오후 3시경 구름 양 80% 상태. 반사판을 배치하지 않았음에도 부드러운 확산광 덕분에 명암 대비가 완만하여 얼굴 그림자가 억제됨.
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="k">-</span><span class="w"> </span>85mm f/1.4 세팅은 심도 표현이 과하여 배경 맥락이 다소 유실됨. f/2.0이 더 적절했을 것으로 보임.
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="gu">## 2. 기술적 요소 분석</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="gu">### 확산광(Diffuse Light) 메커니즘</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="k">-</span><span class="w"> </span><span class="gs">**개념**</span>: 구름이 대형 소프트박스 역할을 수행함.
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="k">-</span><span class="w"> </span><span class="gs">**원리**</span>: 광원의 면적이 피사체 대비 극대화될수록 그림자의 경계선이 완화됨.
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="k">-</span><span class="w"> </span><span class="gs">**대응**</span>: 반사판 없이 섀도우 디테일을 살리는 촬영에 적합함.
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="gu">## 3. Action Items (다음 촬영 시 시도)</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="k">- [ ]</span> 동일 조건 하 조리개값별(f/1.4 vs f/2.0) 배경 표현력 테스트 진행
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="k">- [ ]</span> 흐린 날 반사판 적용 시 캐치라이트 광량 차이 데이터 수집
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="gu">## 4. 양방향 링크</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="k">-</span><span class="w"> </span>유사 사례: [[2026-05-10_잡지B_야외촬영]]
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="k">-</span><span class="w"> </span>핵심 개념: [[자연광_인물촬영]], [[조리개_배경분리]]
 </code></pre></div>
 <h4 id="허브-노드-템플릿-예시-자연광-인물촬영">[허브 노드 템플릿 예시: 자연광 인물촬영]<a class="headerlink" href="#허브-노드-템플릿-예시-자연광-인물촬영" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="gh"># 자연광 인물촬영 (Hub Node)</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">&gt; </span><span class="ge">인공 광원 없이 자연 환경의 광선(골든아워, 확산광 등)만을 활용하여 인물을 담아내는 기법 분석 및 누적 데이터베이스</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="gu">## 1. 환경 조건별 최적 세팅 가이드라인 (데이터 기반 도출)</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="gu">### 맑은 날 야외</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="k">-</span><span class="w"> </span><span class="gs">**골든아워**</span>: ISO 200, f/2.8, 1/500초 내외 (역광 실루엣 표현)
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="k">-</span><span class="w"> </span><span class="gs">**한낮**</span>: ISO 100, f/4.0, 1/1000초 (그늘막 확보 및 반사판 필수 활용)
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
-<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="gu">### 흐린 날 야외 (소프트박스 효과)</span>
-<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="k">-</span><span class="w"> </span><span class="gs">**기본값**</span>: ISO 400~800, f/2.0~2.8, 1/250초
-<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="k">-</span><span class="w"> </span><span class="gs">**참고사항**</span>: 반사판 사용은 선택적이며, 자연스러운 그림자를 유도함.
-<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>
-<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="gu">## 2. 연관 페어링 히스토리 (최신순)</span>
-<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="k">-</span><span class="w"> </span>[[2026-06-23_브랜드A_야외촬영]] - 흐린 날 자연광, 반사판 미사용 분석
-<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="k">-</span><span class="w"> </span>[[2026-05-10_잡지B_야외촬영]] - 맑은 날 골든아워 시간대 역광 촬영 분석
-<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>
-<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="gu">## 3. 상시 검증 체크리스트</span>
-<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="k">- [ ]</span> 외부 스트로보나 지속광을 혼용한 경우 본 허브가 아닌 [[혼합조명_촬영]] 허브로 이관하였는가?
-<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="k">- [ ]</span> 결과물 만족도 평점(★☆☆ ~ ★★★)을 기입 완료하였는가?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="gh"># 자연광 인물촬영 (Hub Node)</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">&gt; </span><span class="ge">인공 광원 없이 자연 환경의 광선(골든아워, 확산광 등)만을 활용하여 인물을 담아내는 기법 분석 및 누적 데이터베이스</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="gu">## 1. 환경 조건별 최적 세팅 가이드라인 (데이터 기반 도출)</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="gu">### 맑은 날 야외</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="k">-</span><span class="w"> </span><span class="gs">**골든아워**</span>: ISO 200, f/2.8, 1/500초 내외 (역광 실루엣 표현)
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="k">-</span><span class="w"> </span><span class="gs">**한낮**</span>: ISO 100, f/4.0, 1/1000초 (그늘막 확보 및 반사판 필수 활용)
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="gu">### 흐린 날 야외 (소프트박스 효과)</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="k">-</span><span class="w"> </span><span class="gs">**기본값**</span>: ISO 400~800, f/2.0~2.8, 1/250초
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="k">-</span><span class="w"> </span><span class="gs">**참고사항**</span>: 반사판 사용은 선택적이며, 자연스러운 그림자를 유도함.
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="gu">## 2. 연관 페어링 히스토리 (최신순)</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="k">-</span><span class="w"> </span>[[2026-06-23_브랜드A_야외촬영]] - 흐린 날 자연광, 반사판 미사용 분석
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="k">-</span><span class="w"> </span>[[2026-05-10_잡지B_야외촬영]] - 맑은 날 골든아워 시간대 역광 촬영 분석
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="gu">## 3. 상시 검증 체크리스트</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="k">- [ ]</span> 외부 스트로보나 지속광을 혼용한 경우 본 허브가 아닌 [[혼합조명_촬영]] 허브로 이관하였는가?
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="k">- [ ]</span> 결과물 만족도 평점(★☆☆ ~ ★★★)을 기입 완료하였는가?
 </code></pre></div>
 <h3 id="3-6-유튜브-자막-기반-옵시디언-위키-지식-자산화-프로토콜">3-6. 유튜브 자막 기반 옵시디언 위키 지식 자산화 프로토콜<a class="headerlink" href="#3-6-유튜브-자막-기반-옵시디언-위키-지식-자산화-프로토콜" title="Permanent link">&para;</a></h3>
 <p>외부의 훌륭한 유튜브 강의나 지식 영상에서 자막 텍스트를 추출하여, 내 옵시디언 위키 폴더 구조(<code>raw/</code>, <code>wiki/</code>)의 양식에 맞추어 양방향 연결([[링크]]) 문서로 자동 정제해 자산화하는 프로토콜입니다.</p>
@@ -1321,60 +1596,60 @@
 <ul>
 <li><strong>실전 유튜브 자막 기반 옵시디언 위키 추출 프롬프트 템플릿</strong>:</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>[나의 옵시디언 위키 스키마]
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>나는 /raw 폴더에 날것의 자료를 두고, 이를 정제하여 /wiki 폴더에 다음 두 가지 형식의 마크다운 파일로 기록한다:
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>1. 페어링 노드(Pairing Node): 특정 날짜, 단일 프로젝트, 사건에 대한 관찰 기록. 파일명 형식은 `[[YYYY-MM-DD_프로젝트명]]`.
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>2. 허브 노드(Hub Node): 여러 페어링 노트들을 묶어주는 상위 개념 정리 노트. 파일명 형식은 `[[개념명]]`.
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>[추출한 유튜브 자막 대본]
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>---
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>(여기에 Glasp 등으로 복사한 유튜브 자막 텍스트 전체 붙여넣기)
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>---
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
-<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>[요청 사항]
-<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>입력된 유튜브 자막 대본을 분석하여 다음 두 가지 문서 초안을 마크다운으로 생성해라.
-<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>1. 이 영상의 핵심 주장이 담긴 페어링 노드 초안 (파일명: `[[오늘날짜_유튜브영상제목]]`)
-<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>   - 후기, 핵심 관찰 내용, 기술 분석 정리 포함.
-<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>2. 이와 연결할 상위 개념을 정리한 허브 노드 초안 (파일명: `[[핵심개념명]]`)
-<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>   - 개념 정의, 가이드라인, 그리고 이 허브 노드 내부에 방금 생성한 페어링 노드에 대한 양방향 연결 링크(`[[오늘날짜_유튜브영상제목]]`)를 반드시 포함할 것.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>[나의 옵시디언 위키 스키마]
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>나는 /raw 폴더에 날것의 자료를 두고, 이를 정제하여 /wiki 폴더에 다음 두 가지 형식의 마크다운 파일로 기록한다:
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>1. 페어링 노드(Pairing Node): 특정 날짜, 단일 프로젝트, 사건에 대한 관찰 기록. 파일명 형식은 `[[YYYY-MM-DD_프로젝트명]]`.
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>2. 허브 노드(Hub Node): 여러 페어링 노트들을 묶어주는 상위 개념 정리 노트. 파일명 형식은 `[[개념명]]`.
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>[추출한 유튜브 자막 대본]
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>---
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>(여기에 Glasp 등으로 복사한 유튜브 자막 텍스트 전체 붙여넣기)
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>---
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>[요청 사항]
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>입력된 유튜브 자막 대본을 분석하여 다음 두 가지 문서 초안을 마크다운으로 생성해라.
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>1. 이 영상의 핵심 주장이 담긴 페어링 노드 초안 (파일명: `[[오늘날짜_유튜브영상제목]]`)
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>   - 후기, 핵심 관찰 내용, 기술 분석 정리 포함.
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>2. 이와 연결할 상위 개념을 정리한 허브 노드 초안 (파일명: `[[핵심개념명]]`)
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>   - 개념 정의, 가이드라인, 그리고 이 허브 노드 내부에 방금 생성한 페어링 노드에 대한 양방향 연결 링크(`[[오늘날짜_유튜브영상제목]]`)를 반드시 포함할 것.
 </code></pre></div>
 <hr />
 <h2 id="4-크리에이터를-위한-바이브-코딩vibe-coding">4. 크리에이터를 위한 바이브 코딩(Vibe Coding)<a class="headerlink" href="#4-크리에이터를-위한-바이브-코딩vibe-coding" title="Permanent link">&para;</a></h2>
 <p>바이브 코딩은 사용자가 구체적인 문법이나 코딩 지식 없이도, <strong>AI에게 요구사항을 구어로 전달하여 실제 하드웨어와 소프트웨어를 제어하는 완성형 도구를 빌드하는 방식</strong>을 의미합니다. </p>
 <p>특히 예술가나 비개발 기획자는 이를 통해 물리적 장치 제어부터 비즈니스 시스템 자동화까지 전 과정을 스스로 구축할 수 있습니다.</p>
 <h3 id="4-1-바이브-코딩-핵심-실행-로직">4-1. 바이브 코딩 핵심 실행 로직<a class="headerlink" href="#4-1-바이브-코딩-핵심-실행-로직" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>[1단계] 요구사항 구어 설명 ──&gt; [2단계] AI가 제어 스크립트 작성 ──&gt; [3단계] 로컬 터미널에서 즉시 실행 ──&gt; [4단계] 자동 도구 획득
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>[1단계] 요구사항 구어 설명 ──&gt; [2단계] AI가 제어 스크립트 작성 ──&gt; [3단계] 로컬 터미널에서 즉시 실행 ──&gt; [4단계] 자동 도구 획득
 </code></pre></div>
 <h4 id="실전-자동화-스크립트-예시-exif-날짜-기준-사진-파일-자동-정렬-파이썬-코드">[실전 자동화 스크립트 예시: EXIF 날짜 기준 사진 파일 자동 정렬 파이썬 코드]<a class="headerlink" href="#실전-자동화-스크립트-예시-exif-날짜-기준-사진-파일-자동-정렬-파이썬-코드" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">organize_and_rename_photos</span><span class="p">(</span><span class="n">source_dir</span><span class="p">,</span> <span class="n">project_name</span><span class="p">):</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="c1"># 폴더 내 JPG 파일 스캔</span>
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="n">files</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">([</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">source_dir</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s1">&#39;.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpeg&#39;</span><span class="p">))])</span>
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">filename</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
-<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>        <span class="n">file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">source_dir</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
-<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>        <span class="k">try</span><span class="p">:</span>
-<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>            <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
-<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>            <span class="n">exif_data</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">_getexif</span><span class="p">()</span>
-<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>
-<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>            <span class="c1"># EXIF 촬영 날짜 데이터 추출 (태그 번호 36867)</span>
-<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>            <span class="k">if</span> <span class="n">exif_data</span> <span class="ow">and</span> <span class="mi">36867</span> <span class="ow">in</span> <span class="n">exif_data</span><span class="p">:</span>
-<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>                <span class="n">raw_date</span> <span class="o">=</span> <span class="n">exif_data</span><span class="p">[</span><span class="mi">36867</span><span class="p">]</span>
-<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>                <span class="n">date_str</span> <span class="o">=</span> <span class="n">raw_date</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">)[:</span><span class="mi">10</span><span class="p">]</span>  <span class="c1"># YYYY-MM-DD 포맷 변환</span>
-<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>            <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>                <span class="n">date_str</span> <span class="o">=</span> <span class="s2">&quot;unknown-date&quot;</span>
-<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
-<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>            <span class="n">date_str</span> <span class="o">=</span> <span class="s2">&quot;corrupted-exif&quot;</span>
-<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>
-<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>        <span class="n">new_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">date_str</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">project_name</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">idx</span><span class="si">:</span><span class="s2">03d</span><span class="si">}</span><span class="s2">.jpg&quot;</span>
-<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>        <span class="n">new_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">source_dir</span><span class="p">,</span> <span class="n">new_name</span><span class="p">)</span>
-<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>        <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">new_path</span><span class="p">)</span>
-<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[정렬 완료] </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2"> ──&gt; </span><span class="si">{</span><span class="n">new_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>
-<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="c1"># 로컬 실행 테스트 경로 정의</span>
-<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a><span class="c1"># organize_and_rename_photos(&quot;/Users/[username]/Pictures/shoot_0623&quot;, &quot;BrandShoot&quot;)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">organize_and_rename_photos</span><span class="p">(</span><span class="n">source_dir</span><span class="p">,</span> <span class="n">project_name</span><span class="p">):</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="c1"># 폴더 내 JPG 파일 스캔</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    <span class="n">files</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">([</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">source_dir</span><span class="p">)</span> <span class="k">if</span> <span class="n">f</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s1">&#39;.jpg&#39;</span><span class="p">,</span> <span class="s1">&#39;.jpeg&#39;</span><span class="p">))])</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">filename</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>        <span class="n">file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">source_dir</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>        <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>            <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>            <span class="n">exif_data</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">_getexif</span><span class="p">()</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>            <span class="c1"># EXIF 촬영 날짜 데이터 추출 (태그 번호 36867)</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>            <span class="k">if</span> <span class="n">exif_data</span> <span class="ow">and</span> <span class="mi">36867</span> <span class="ow">in</span> <span class="n">exif_data</span><span class="p">:</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>                <span class="n">raw_date</span> <span class="o">=</span> <span class="n">exif_data</span><span class="p">[</span><span class="mi">36867</span><span class="p">]</span>
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>                <span class="n">date_str</span> <span class="o">=</span> <span class="n">raw_date</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">)[:</span><span class="mi">10</span><span class="p">]</span>  <span class="c1"># YYYY-MM-DD 포맷 변환</span>
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>            <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>                <span class="n">date_str</span> <span class="o">=</span> <span class="s2">&quot;unknown-date&quot;</span>
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>            <span class="n">date_str</span> <span class="o">=</span> <span class="s2">&quot;corrupted-exif&quot;</span>
+<a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>
+<a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>        <span class="n">new_name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">date_str</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">project_name</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">idx</span><span class="si">:</span><span class="s2">03d</span><span class="si">}</span><span class="s2">.jpg&quot;</span>
+<a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>        <span class="n">new_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">source_dir</span><span class="p">,</span> <span class="n">new_name</span><span class="p">)</span>
+<a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>        <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">new_path</span><span class="p">)</span>
+<a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[정렬 완료] </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2"> ──&gt; </span><span class="si">{</span><span class="n">new_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>
+<a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a><span class="c1"># 로컬 실행 테스트 경로 정의</span>
+<a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a><span class="c1"># organize_and_rename_photos(&quot;/Users/[username]/Pictures/shoot_0623&quot;, &quot;BrandShoot&quot;)</span>
 </code></pre></div>
 <hr />
 <h3 id="4-2-크리에이티브-아티스트를-위한-바이브-코딩-7대-영역-및-실전-적용-사례">4-2. 크리에이티브 아티스트를 위한 바이브 코딩 7대 영역 및 실전 적용 사례<a class="headerlink" href="#4-2-크리에이티브-아티스트를-위한-바이브-코딩-7대-영역-및-실전-적용-사례" title="Permanent link">&para;</a></h3>
@@ -1446,10 +1721,10 @@
 </ul>
 <hr />
 <h2 id="실행-체크리스트">실행 체크리스트<a class="headerlink" href="#실행-체크리스트" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>□ CLAUDE.md 또는 서비스별 규칙 파일을 1개 이상 등록했다
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>□ 옵시디언(또는 유사 도구)에 /raw, /wiki, /schema 3-폴더를 만들었다
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>□ 바이브코딩으로 스크립트 또는 도구를 1개 만들어봤다
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>□ MCP 서버를 1개 이상 연결해봤다 (→ 01_도구 참조)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>□ CLAUDE.md 또는 서비스별 규칙 파일을 1개 이상 등록했다
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>□ 옵시디언(또는 유사 도구)에 /raw, /wiki, /schema 3-폴더를 만들었다
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>□ 바이브코딩으로 스크립트 또는 도구를 1개 만들어봤다
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>□ MCP 서버를 1개 이상 연결해봤다 (→ 01_도구 참조)
 </code></pre></div>
 <blockquote>
 <p>이 단계가 안착되면, 다음은 에이전트를 역할별로 분리하는 것입니다.

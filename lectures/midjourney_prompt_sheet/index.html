@@ -1,0 +1,3941 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="실무 도입부터 에이전트 설계, 파이프라인 구축까지 — AI 활용 교육, 워크숍, 마스터클래스 실전 아카이브">
+      
+      
+      
+      
+        <link rel="prev" href="../230512_midjourney/">
+      
+      
+        <link rel="next" href="../230411_planning/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>📋 미드저니 화풍 & 프롬프트 시트 - AI MASTER CLASS ARCHIVE</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pretendard:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Pretendard";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#미드저니-화풍--프롬프트-키워드-시트" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../.." title="AI MASTER CLASS ARCHIVE" class="md-header__button md-logo" aria-label="AI MASTER CLASS ARCHIVE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI MASTER CLASS ARCHIVE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📋 미드저니 화풍 & 프롬프트 시트
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="공유" aria-label="공유" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI MASTER CLASS ARCHIVE" class="md-nav__button md-logo" aria-label="AI MASTER CLASS ARCHIVE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+
+    </a>
+    AI MASTER CLASS ARCHIVE
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_%EC%8B%9C%EC%9E%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 00. 시작 — 어디서부터
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_%EB%8F%84%EA%B5%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 01. 도구 — 뭘 쓸 것인가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_%EB%A3%A8%ED%8B%B4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 02. 루틴 — 어디에 넣을 것인가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_%ED%99%95%EC%9E%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 03. 확장 — 사고를 시스템으로
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_%EC%8B%9C%EC%8A%A4%ED%85%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 04. 시스템 — 에이전트와 파이프라인
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../260618_creativity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 창작 구체화 (내 생각을 시스템으로)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../260212_automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 실무 자동화 (AI 콘텐츠 공장)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../251114_coldmail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 글로벌 피칭 (실리콘밸리 콜드메일)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../250515_vibecoding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 개발 워크플로우 (바이브코딩)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../230512_midjourney/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 미드저니 (AI 이미지 생성 워크숍)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📋 미드저니 화풍 & 프롬프트 시트
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📋 미드저니 화풍 & 프롬프트 시트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-h-애니메이션-스타일-레퍼런스" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎌 H. 애니메이션 스타일 레퍼런스
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎌 H. 애니메이션 스타일 레퍼런스">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#h-1-모델-선택-가이드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-1. 모델 선택 가이드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-2-일본-애니메이션--스튜디오--감독" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-2. 일본 애니메이션 — 스튜디오 &amp; 감독
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-3-연대별-애니메이션-스타일-시대-분위기" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-3. 연대별 애니메이션 스타일 (시대 분위기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-4-장르별-애니메이션-스타일" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-4. 장르별 애니메이션 스타일
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-5-서양-애니메이션-스타일" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-5. 서양 애니메이션 스타일
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-6-기법별-애니메이션-키워드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-6. 기법별 애니메이션 키워드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-7-유명-캐릭터-디자이너--아트-디렉터" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-7. 유명 캐릭터 디자이너 / 아트 디렉터
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-8-완성-프롬프트--애니메이션-직군별-예시" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-8. 완성 프롬프트 — 애니메이션 직군별 예시
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-g-유명-아티스트--건축가--크리에이터-레퍼런스" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧑‍🎨 G. 유명 아티스트 · 건축가 · 크리에이터 레퍼런스
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧑‍🎨 G. 유명 아티스트 · 건축가 · 크리에이터 레퍼런스">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#g-1-화가-painters--서양" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-1. 화가 (Painters) — 서양
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-2-화가-painters--동양" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-2. 화가 (Painters) — 동양
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-3-일러스트레이터--그래픽-디자이너" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-3. 일러스트레이터 &amp; 그래픽 디자이너
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-4-사진작가-photographers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-4. 사진작가 (Photographers)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-5-건축가-architects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-5. 건축가 (Architects)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-6-영화감독--시네마토그래퍼" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-6. 영화감독 · 시네마토그래퍼
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-7-조각가--설치-아티스트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-7. 조각가 · 설치 아티스트
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-8-아티스트-스타일-조합--직군별-완성-프롬프트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-8. 아티스트 스타일 조합 — 직군별 완성 프롬프트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-a-화풍--매체-medium--style" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 A. 화풍 / 매체 (Medium &amp; Style)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 A. 화풍 / 매체 (Medium &amp; Style)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-1-회화-기법-painting-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A-1. 회화 기법 (Painting Techniques)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-2-사진-스타일-photography-styles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A-2. 사진 스타일 (Photography Styles)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-3-일러스트--디지털-아트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A-3. 일러스트 &amp; 디지털 아트
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-4-예술-사조-art-movements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A-4. 예술 사조 (Art Movements)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-b-조명--분위기-lighting--mood" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 B. 조명 &amp; 분위기 (Lighting &amp; Mood)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-c-카메라--렌즈--촬영-기법--앵글--영상" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📷 C. 카메라 · 렌즈 · 촬영 기법 · 앵글 · 영상
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📷 C. 카메라 · 렌즈 · 촬영 기법 · 앵글 · 영상">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c-1-프레이밍--화각-shot-size--framing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C-1. 프레이밍 &amp; 화각 (Shot Size / Framing)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-2-카메라-앵글--구도-camera-angle--composition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C-2. 카메라 앵글 &amp; 구도 (Camera Angle &amp; Composition)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-3-렌즈--초점-lens--focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C-3. 렌즈 &amp; 초점 (Lens &amp; Focus)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-4-카메라-기종별-특성-camera-body-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C-4. 카메라 기종별 특성 (Camera Body Reference)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-5-촬영-기법--특수-효과-shooting-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C-5. 촬영 기법 &amp; 특수 효과 (Shooting Techniques)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-6--영상--시네마틱-전용-키워드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C-6. 🎬 영상 / 시네마틱 전용 키워드
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-d-파라미터-조합-치트시트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚙️ D. 파라미터 조합 치트시트
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ D. 파라미터 조합 치트시트">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#d-1-상황별-추천-파라미터-세트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D-1. 상황별 추천 파라미터 세트
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-2-네거티브-프롬프트-기본-세트---no" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D-2. 네거티브 프롬프트 기본 세트 (--no)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-e-완성-프롬프트-예시-모음" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 E. 완성 프롬프트 예시 모음
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 E. 완성 프롬프트 예시 모음">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e-1-아티스트-직군별-실전-예시" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-1. 아티스트 직군별 실전 예시
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-2-화풍-변주-템플릿-주제-고정-스타일-변경" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-2. 화풍 변주 템플릿 (주제 고정, 스타일 변경)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-f-키워드-복사용-quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 F. 키워드 복사용 Quick Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 F. 키워드 복사용 Quick Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#화풍-원라이너-바로-붙여넣기" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        화풍 원라이너 (바로 붙여넣기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#조명-원라이너" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        조명 원라이너
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#파라미터-원라이너" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        파라미터 원라이너
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../230411_planning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 기획서 작성 (AI로 기획안 쓰기)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-h-애니메이션-스타일-레퍼런스" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎌 H. 애니메이션 스타일 레퍼런스
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎌 H. 애니메이션 스타일 레퍼런스">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#h-1-모델-선택-가이드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-1. 모델 선택 가이드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-2-일본-애니메이션--스튜디오--감독" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-2. 일본 애니메이션 — 스튜디오 &amp; 감독
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-3-연대별-애니메이션-스타일-시대-분위기" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-3. 연대별 애니메이션 스타일 (시대 분위기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-4-장르별-애니메이션-스타일" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-4. 장르별 애니메이션 스타일
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-5-서양-애니메이션-스타일" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-5. 서양 애니메이션 스타일
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-6-기법별-애니메이션-키워드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-6. 기법별 애니메이션 키워드
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-7-유명-캐릭터-디자이너--아트-디렉터" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-7. 유명 캐릭터 디자이너 / 아트 디렉터
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#h-8-완성-프롬프트--애니메이션-직군별-예시" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        H-8. 완성 프롬프트 — 애니메이션 직군별 예시
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-g-유명-아티스트--건축가--크리에이터-레퍼런스" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧑‍🎨 G. 유명 아티스트 · 건축가 · 크리에이터 레퍼런스
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧑‍🎨 G. 유명 아티스트 · 건축가 · 크리에이터 레퍼런스">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#g-1-화가-painters--서양" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-1. 화가 (Painters) — 서양
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-2-화가-painters--동양" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-2. 화가 (Painters) — 동양
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-3-일러스트레이터--그래픽-디자이너" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-3. 일러스트레이터 &amp; 그래픽 디자이너
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-4-사진작가-photographers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-4. 사진작가 (Photographers)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-5-건축가-architects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-5. 건축가 (Architects)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-6-영화감독--시네마토그래퍼" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-6. 영화감독 · 시네마토그래퍼
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-7-조각가--설치-아티스트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-7. 조각가 · 설치 아티스트
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-8-아티스트-스타일-조합--직군별-완성-프롬프트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-8. 아티스트 스타일 조합 — 직군별 완성 프롬프트
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-a-화풍--매체-medium--style" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 A. 화풍 / 매체 (Medium &amp; Style)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 A. 화풍 / 매체 (Medium &amp; Style)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-1-회화-기법-painting-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A-1. 회화 기법 (Painting Techniques)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-2-사진-스타일-photography-styles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A-2. 사진 스타일 (Photography Styles)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-3-일러스트--디지털-아트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A-3. 일러스트 &amp; 디지털 아트
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-4-예술-사조-art-movements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A-4. 예술 사조 (Art Movements)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-b-조명--분위기-lighting--mood" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 B. 조명 &amp; 분위기 (Lighting &amp; Mood)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-c-카메라--렌즈--촬영-기법--앵글--영상" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📷 C. 카메라 · 렌즈 · 촬영 기법 · 앵글 · 영상
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📷 C. 카메라 · 렌즈 · 촬영 기법 · 앵글 · 영상">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#c-1-프레이밍--화각-shot-size--framing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C-1. 프레이밍 &amp; 화각 (Shot Size / Framing)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-2-카메라-앵글--구도-camera-angle--composition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C-2. 카메라 앵글 &amp; 구도 (Camera Angle &amp; Composition)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-3-렌즈--초점-lens--focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C-3. 렌즈 &amp; 초점 (Lens &amp; Focus)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-4-카메라-기종별-특성-camera-body-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C-4. 카메라 기종별 특성 (Camera Body Reference)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-5-촬영-기법--특수-효과-shooting-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C-5. 촬영 기법 &amp; 특수 효과 (Shooting Techniques)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-6--영상--시네마틱-전용-키워드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C-6. 🎬 영상 / 시네마틱 전용 키워드
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-d-파라미터-조합-치트시트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚙️ D. 파라미터 조합 치트시트
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚙️ D. 파라미터 조합 치트시트">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#d-1-상황별-추천-파라미터-세트" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D-1. 상황별 추천 파라미터 세트
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-2-네거티브-프롬프트-기본-세트---no" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D-2. 네거티브 프롬프트 기본 세트 (--no)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-e-완성-프롬프트-예시-모음" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧩 E. 완성 프롬프트 예시 모음
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 E. 완성 프롬프트 예시 모음">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e-1-아티스트-직군별-실전-예시" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-1. 아티스트 직군별 실전 예시
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-2-화풍-변주-템플릿-주제-고정-스타일-변경" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E-2. 화풍 변주 템플릿 (주제 고정, 스타일 변경)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-f-키워드-복사용-quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📋 F. 키워드 복사용 Quick Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📋 F. 키워드 복사용 Quick Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#화풍-원라이너-바로-붙여넣기" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        화풍 원라이너 (바로 붙여넣기)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#조명-원라이너" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        조명 원라이너
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#파라미터-원라이너" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        파라미터 원라이너
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="미드저니-화풍--프롬프트-키워드-시트">미드저니 화풍 &amp; 프롬프트 키워드 시트<a class="headerlink" href="#미드저니-화풍--프롬프트-키워드-시트" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>사용법</strong>: 각 카테고리에서 키워드를 골라 조합합니다. 
+권장 공식: <code>[매체] + [작가/사조] + [분위기]</code> 최소 3레이어 조합
+전체 구조: <code>[피사체] [배경] [화풍] [조명] [카메라] --ar X:X --v 6.1 --s XXX</code></p>
+</blockquote>
+<hr />
+<h2 id="-h-애니메이션-스타일-레퍼런스">🎌 H. 애니메이션 스타일 레퍼런스<a class="headerlink" href="#-h-애니메이션-스타일-레퍼런스" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>핵심</strong>: 애니메이션 스타일은 <code>--niji 6</code> 모델 전용으로 사용해야 정확도가 높습니다.
+<strong>기본 공식</strong>: <code>[캐릭터 묘사] + [배경/상황] + [스튜디오/감독 스타일] + [분위기/조명] --niji 6 --ar X:X --s XXX</code></p>
+</blockquote>
+<hr />
+<h3 id="h-1-모델-선택-가이드">H-1. 모델 선택 가이드<a class="headerlink" href="#h-1-모델-선택-가이드" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>목적</th>
+<th>사용 모델</th>
+<th>이유</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>애니·만화·일러스트</strong></td>
+<td><code>--niji 6</code></td>
+<td>애니메이션 전용 학습 모델. 선묘·비율·채색 모두 최적화</td>
+</tr>
+<tr>
+<td><strong>사실적 배경 + 애니 인물</strong></td>
+<td><code>--niji 6 --style scenic</code></td>
+<td>배경 묘사력 강화 버전</td>
+</tr>
+<tr>
+<td><strong>실사 느낌 애니</strong></td>
+<td><code>--v 6.1</code> + 애니 키워드</td>
+<td>포토리얼 베이스에 애니 스타일 혼합</td>
+</tr>
+<tr>
+<td><strong>실험적 스타일 믹스</strong></td>
+<td><code>--v 6.1 --s 900</code></td>
+<td>애니+일러스트+회화 혼합 결과</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="h-2-일본-애니메이션--스튜디오--감독">H-2. 일본 애니메이션 — 스튜디오 &amp; 감독<a class="headerlink" href="#h-2-일본-애니메이션--스튜디오--감독" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>스튜디오 / 감독</th>
+<th>대표작</th>
+<th>시각 특징</th>
+<th>미드저니 키워드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Studio Ghibli / 宮崎 駿</strong></td>
+<td>원령공주, 하울</td>
+<td>손 그림 질감, 자연 배경, 따뜻한 수채</td>
+<td><code>Studio Ghibli aesthetic, Hayao Miyazaki, hand-drawn animation, soft watercolor background, nostalgic</code></td>
+</tr>
+<tr>
+<td><strong>新海 誠 (Makoto Shinkai)</strong></td>
+<td>너의 이름은, 스즈메</td>
+<td>빛 산란·광선, 감성 하늘, 도시 풍경</td>
+<td><code>Makoto Shinkai style, detailed light ray refraction, dramatic cloud sky, melancholic cityscape</code></td>
+</tr>
+<tr>
+<td><strong>細田 守 (Mamoru Hosoda)</strong></td>
+<td>썸머워즈, 버블</td>
+<td>선명하고 깨끗한 디지털 채색, 역동성</td>
+<td><code>Mamoru Hosoda style, vibrant clean digital animation, dynamic motion, warm family story</code></td>
+</tr>
+<tr>
+<td><strong>Kyoto Animation (교토 애니)</strong></td>
+<td>바이올렛, K-ON</td>
+<td>섬세한 캐릭터 디자인, 부드러운 조명</td>
+<td><code>Kyoto Animation style, fluid soft character design, detailed lighting, beautiful backgrounds</code></td>
+</tr>
+<tr>
+<td><strong>MAPPA</strong></td>
+<td>체인소맨, 주술회전</td>
+<td>다크, 고품질 CG+셀 혼합, 강렬한 액션</td>
+<td><code>MAPPA studio style, dark cinematic anime, high-quality action, intense atmosphere</code></td>
+</tr>
+<tr>
+<td><strong>Ufotable</strong></td>
+<td>귀멸의 칼날, 페이트</td>
+<td>극도로 정밀한 VFX, 수묵화+CG 융합</td>
+<td><code>Ufotable animation style, detailed VFX effects, ink wash and CG blend, spectacular action</code></td>
+</tr>
+<tr>
+<td><strong>A-1 Pictures</strong></td>
+<td>페어리테일, 소드아트</td>
+<td>깔끔하고 밝은 주류 애니 스타일</td>
+<td><code>A-1 Pictures anime style, clean bright character design, mainstream shonen aesthetic</code></td>
+</tr>
+<tr>
+<td><strong>Wit Studio</strong></td>
+<td>진격의 거인, 스파이 패밀리</td>
+<td>극적 구도, 강한 명암</td>
+<td><code>Wit Studio anime style, dramatic composition, strong contrast lighting, cinematic</code></td>
+</tr>
+<tr>
+<td><strong>트리거 (Trigger)</strong></td>
+<td>그렌라간, 킬라킬</td>
+<td>과장된 역동성, 굵은 선, 강렬한 색</td>
+<td><code>Trigger studio anime style, exaggerated dynamic pose, thick outlines, vibrant hyper-stylized</code></td>
+</tr>
+<tr>
+<td><strong>일류전 (ILCA / PA Works)</strong></td>
+<td>꽃이 피는 첫걸음</td>
+<td>섬세한 배경, 은은한 빛, 일상 감성</td>
+<td><code>PA Works anime style, delicate background art, soft natural lighting, slice of life</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="h-3-연대별-애니메이션-스타일-시대-분위기">H-3. 연대별 애니메이션 스타일 (시대 분위기)<a class="headerlink" href="#h-3-연대별-애니메이션-스타일-시대-분위기" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>연대</th>
+<th>특징</th>
+<th>미드저니 키워드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>70~80년대 레트로</strong></td>
+<td>굵은 선, 탈포화 색상, 셀 애니 질감</td>
+<td><code>1980s retro anime style, cel animation, muted color palette, thick linework, VHS grain</code></td>
+</tr>
+<tr>
+<td><strong>90년대 클래식</strong></td>
+<td>손 그림 명암, OVA 감성, 세밀한 눈</td>
+<td><code>1990s anime aesthetic, hand-drawn shading, OVA style, detailed large eyes, nostalgic</code></td>
+</tr>
+<tr>
+<td><strong>2000년대 초</strong></td>
+<td>디지털 채색 전환기, 선명한 색, 플래시 느낌</td>
+<td><code>early 2000s anime style, early digital coloring, bright saturated colors</code></td>
+</tr>
+<tr>
+<td><strong>2010년대 현대</strong></td>
+<td>깨끗한 디지털 선묘, 모에 스타일</td>
+<td><code>modern anime style 2010s, clean digital linework, moe aesthetic, soft gradient shading</code></td>
+</tr>
+<tr>
+<td><strong>현재 (2020년대)</strong></td>
+<td>시네마틱 퀄리티, CG+셀 혼합</td>
+<td><code>2020s cinematic anime, hybrid CG and cel shading, theatrical quality, detailed background</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="h-4-장르별-애니메이션-스타일">H-4. 장르별 애니메이션 스타일<a class="headerlink" href="#h-4-장르별-애니메이션-스타일" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>장르</th>
+<th>특징</th>
+<th>미드저니 키워드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>소년 액션 (Shonen)</strong></td>
+<td>역동적 포즈, 에너지 이펙트, 강렬한 눈빛</td>
+<td><code>shonen anime style, dynamic action pose, energy aura effect, intense expression, battle scene</code></td>
+</tr>
+<tr>
+<td><strong>소녀 / 마법소녀</strong></td>
+<td>파스텔, 반짝임, 화려한 의상</td>
+<td><code>magical girl anime style, pastel colors, sparkle effects, elaborate costume, shoujo aesthetic</code></td>
+</tr>
+<tr>
+<td><strong>이세계 / 판타지</strong></td>
+<td>웅장한 배경, 판타지 의상, 마법 이펙트</td>
+<td><code>isekai fantasy anime style, grand fantasy landscape, ornate armor, magical particle effects</code></td>
+</tr>
+<tr>
+<td><strong>사이버펑크 / SF</strong></td>
+<td>네온 도시, 기계 신체, 어두운 분위기</td>
+<td><code>cyberpunk anime, neon-lit dystopian city, cyborg character, dark atmospheric rain, Ghost in the Shell</code></td>
+</tr>
+<tr>
+<td><strong>슬라이스 오브 라이프</strong></td>
+<td>일상, 부드러운 빛, 교실/카페 배경</td>
+<td><code>slice of life anime, soft warm sunlight, everyday school scene, cozy café, gentle atmosphere</code></td>
+</tr>
+<tr>
+<td><strong>공포 / 다크 판타지</strong></td>
+<td>암울한 색조, 왜곡된 형태, 심리적 공포</td>
+<td><code>dark anime horror style, muted desaturated tones, distorted surreal forms, psychological dread</code></td>
+</tr>
+<tr>
+<td><strong>스포츠 애니</strong></td>
+<td>땀방울, 역동적 움직임, 집중하는 눈</td>
+<td><code>sports anime style, intense concentration, motion blur, sweat drops, dynamic moment</code></td>
+</tr>
+<tr>
+<td><strong>미소녀 / 모에</strong></td>
+<td>크고 반짝이는 눈, 파스텔, 귀여운 표정</td>
+<td><code>moe anime style, large sparkly eyes, soft pastel tones, cute expression, chibi proportions</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="h-5-서양-애니메이션-스타일">H-5. 서양 애니메이션 스타일<a class="headerlink" href="#h-5-서양-애니메이션-스타일" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>스튜디오 / 시리즈</th>
+<th>특징</th>
+<th>미드저니 키워드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pixar</strong></td>
+<td>3D 사실감+과장, 감성적 스토리텔링</td>
+<td><code>Pixar animation style, 3D render, expressive character design, cinematic lighting, emotional</code></td>
+</tr>
+<tr>
+<td><strong>Disney Classic</strong></td>
+<td>유려한 동작, 뮤지컬 감성, 복잡한 배경</td>
+<td><code>classic Disney animation style, fluid hand-drawn motion, lush painted backgrounds, fairy tale</code></td>
+</tr>
+<tr>
+<td><strong>Spider-Man: Into the Spider-Verse</strong></td>
+<td>만화 점망, 굵은 윤곽선, 속도선</td>
+<td><code>Spider-Man Spider-Verse style, comic halftone dots, bold outlines, action speed lines, kinetic</code></td>
+</tr>
+<tr>
+<td><strong>Arcane (넷플릭스)</strong></td>
+<td>유화+디지털 혼합, 어두운 스팀펑크</td>
+<td><code>Arcane Netflix animation style, oil painting texture, dark steampunk city, cinematic grit</code></td>
+</tr>
+<tr>
+<td><strong>Cartoon Network / 어드벤처 타임</strong></td>
+<td>플랫 디자인, 단순한 선, 파스텔</td>
+<td><code>Adventure Time cartoon style, flat design, simple rounded shapes, pastel background</code></td>
+</tr>
+<tr>
+<td><strong>Rick and Morty</strong></td>
+<td>조잡하면서도 SF적, 형광색, 기이한 형태</td>
+<td><code>Rick and Morty cartoon style, crude animation, neon alien world, bizarre creatures</code></td>
+</tr>
+<tr>
+<td><strong>밤의 카페 테라스 느낌 (Ghiblicore)</strong></td>
+<td>유럽 골목, 따뜻한 조명, 아늑함</td>
+<td><code>Ghiblicore aesthetic, cozy European alley, warm lantern light, nostalgic whimsical</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="h-6-기법별-애니메이션-키워드">H-6. 기법별 애니메이션 키워드<a class="headerlink" href="#h-6-기법별-애니메이션-키워드" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>기법</th>
+<th>한국어 설명</th>
+<th>미드저니 키워드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>셀 애니메이션</strong></td>
+<td>손으로 그린 셀 느낌</td>
+<td><code>cel animation style, hand-drawn cel shading, visible linework, flat color fills</code></td>
+</tr>
+<tr>
+<td><strong>수묵 애니</strong></td>
+<td>동양화+애니 결합</td>
+<td><code>ink wash anime style, sumi-e inspired, brush linework, black and white with color accent</code></td>
+</tr>
+<tr>
+<td><strong>수채 배경</strong></td>
+<td>지브리 배경화 느낌</td>
+<td><code>watercolor background painting, soft wash, hand-painted anime environment</code></td>
+</tr>
+<tr>
+<td><strong>치비</strong></td>
+<td>극단적으로 귀여운 비율</td>
+<td><code>chibi anime style, super deformed SD, oversized head, tiny body, cute expression</code></td>
+</tr>
+<tr>
+<td><strong>린·아트 (Line Art)</strong></td>
+<td>채색 없이 선만으로</td>
+<td><code>anime line art, clean ink outline, black and white sketch, manga-style drawing</code></td>
+</tr>
+<tr>
+<td><strong>CGI 애니</strong></td>
+<td>3D CG 렌더링 애니</td>
+<td><code>3D CGI anime style, toon shading, smooth render, modern animation quality</code></td>
+</tr>
+<tr>
+<td><strong>레트로 픽셀 스프라이트</strong></td>
+<td>16비트 게임 캐릭터</td>
+<td><code>pixel art sprite, 16-bit RPG character design, retro game animation, JRPG style</code></td>
+</tr>
+<tr>
+<td><strong>에치 스케치 / 낙서체</strong></td>
+<td>의도적으로 거칠게</td>
+<td><code>rough sketch anime style, scratchy linework, notebook doodle aesthetic</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="h-7-유명-캐릭터-디자이너--아트-디렉터">H-7. 유명 캐릭터 디자이너 / 아트 디렉터<a class="headerlink" href="#h-7-유명-캐릭터-디자이너--아트-디렉터" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>인물</th>
+<th>대표 작품</th>
+<th>미드저니 키워드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>久保 帯人 (Kubo Tite)</strong></td>
+<td>블리치</td>
+<td><code>Tite Kubo character design, stylish fashion, sharp angular features, detailed costume</code></td>
+</tr>
+<tr>
+<td><strong>岸本 斉史 (Kishimoto)</strong></td>
+<td>나루토</td>
+<td><code>Masashi Kishimoto style, expressive ninja character, dynamic battle pose, manga detail</code></td>
+</tr>
+<tr>
+<td><strong>尾田 栄一郎 (Oda)</strong></td>
+<td>원피스</td>
+<td><code>Eiichiro Oda One Piece style, exaggerated proportions, vibrant pirate adventure, bold outlines</code></td>
+</tr>
+<tr>
+<td><strong>富樫 義博 (Togashi)</strong></td>
+<td>헌터×헌터</td>
+<td><code>Yoshihiro Togashi design, intense character expression, strategic battle scene</code></td>
+</tr>
+<tr>
+<td><strong>藤島 康介 (Fujishima)</strong></td>
+<td>아아 여신님</td>
+<td><code>Kosuke Fujishima character design, elegant goddess, detailed ornate clothing, soft light</code></td>
+</tr>
+<tr>
+<td><strong>吉田 明彦 (Yoshida)</strong></td>
+<td>파이널 판타지 12, 베이그란트 스토리</td>
+<td><code>Akihiko Yoshida character design, armored fantasy warrior, watercolor concept art, JRPG</code></td>
+</tr>
+<tr>
+<td><strong>堀口 悠紀子 (Horiguchi)</strong></td>
+<td>케이온, 바이올렛 에버가든</td>
+<td><code>Yukiko Horiguchi character design, soft delicate features, KyoAni style, emotional expression</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="h-8-완성-프롬프트--애니메이션-직군별-예시">H-8. 완성 프롬프트 — 애니메이션 직군별 예시<a class="headerlink" href="#h-8-완성-프롬프트--애니메이션-직군별-예시" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># 기본 애니 인물 (niji 6 사용)
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>young woman with silver long hair, standing on a rain-soaked city street at night,
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Makoto Shinkai style, neon light reflections, melancholic emotional atmosphere,
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>cinematic wide shot, detailed light refraction
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>--niji 6 --ar 9:16 --s 700
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a># 공연/댄스 컨셉 (동작 표현)
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>contemporary dancer in flowing white dress, mid-leap on stage,
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Kyoto Animation style, soft dramatic spotlight, elegant motion blur on fabric,
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>close-up dynamic angle, emotional performance
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>--niji 6 --ar 2:3 --s 600
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a># 판타지 공간 무드보드 (공간기획자용)
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>ancient Japanese shrine deep in a misty forest, stone lanterns glowing,
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Studio Ghibli aesthetic, hand-painted watercolor background,
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>soft dawn light filtering through cedar trees, magical atmosphere
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>--niji 6 --ar 16:9 --s 800
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a># 레트로 감성 컨셉
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>two friends sitting on a rooftop at sunset, summer breeze, cicadas,
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>1990s OVA anime style, cel animation, nostalgic muted warm tones,
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>soft film grain, hand-drawn quality
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>--niji 6 --ar 16:9 --s 500
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a># 다크 사이버펑크 (영상 컨셉 아트)
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>lone figure in a rain-soaked neon-lit alley, cybernetic arm visible,
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Ghost in the Shell aesthetic, Ufotable VFX detail,
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>dark atmospheric fog, teal and amber neon reflections
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>--niji 6 --ar 21:9 --s 750
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a># 치비 / SNS 스티커용
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>cute chibi character waving, wearing a camera around neck,
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>chibi anime style, bright pastel background, sparkle effects,
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>clean simple linework, sticker design
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>--niji 6 --ar 1:1 --s 300
+</code></pre></div>
+<hr />
+<h2 id="-g-유명-아티스트--건축가--크리에이터-레퍼런스">🧑‍🎨 G. 유명 아티스트 · 건축가 · 크리에이터 레퍼런스<a class="headerlink" href="#-g-유명-아티스트--건축가--크리에이터-레퍼런스" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p><strong>사용법</strong>: <code>in the style of [이름]</code> 또는 <code>by [이름]</code> 형식으로 프롬프트에 추가
+<strong>팁</strong>: 이름 단독보다 <code>[이름] + [사조/기법]</code> 조합 시 정확도 상승
+<strong>예시</strong>: <code>in the style of Tadao Ando, smooth concrete, interplay of light and shadow</code></p>
+</blockquote>
+<hr />
+<h3 id="g-1-화가-painters--서양">G-1. 화가 (Painters) — 서양<a class="headerlink" href="#g-1-화가-painters--서양" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>아티스트</th>
+<th>사조</th>
+<th>미드저니 키워드</th>
+<th>효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Claude Monet</strong></td>
+<td>인상파</td>
+<td><code>in the style of Claude Monet, Impressionism, soft brushstrokes, dappled light</code></td>
+<td>빛과 색의 순간, 수면·정원</td>
+</tr>
+<tr>
+<td><strong>Vincent van Gogh</strong></td>
+<td>후기인상파</td>
+<td><code>in the style of Van Gogh, swirling brushstrokes, vivid color, impasto</code></td>
+<td>소용돌이치는 역동적 자연</td>
+</tr>
+<tr>
+<td><strong>Rembrandt</strong></td>
+<td>바로크</td>
+<td><code>in the style of Rembrandt, chiaroscuro, dramatic shadow, oil painting portrait</code></td>
+<td>극적 명암, 인물 초상화</td>
+</tr>
+<tr>
+<td><strong>Johannes Vermeer</strong></td>
+<td>바로크</td>
+<td><code>Vermeer lighting, Dutch interior, soft window light, intimate scene</code></td>
+<td>정밀한 실내·부드러운 자연광</td>
+</tr>
+<tr>
+<td><strong>Gustav Klimt</strong></td>
+<td>상징주의</td>
+<td><code>in the style of Gustav Klimt, gold leaf pattern, decorative ornate swirls, Symbolism</code></td>
+<td>황금 장식·관능적 인물화</td>
+</tr>
+<tr>
+<td><strong>Egon Schiele</strong></td>
+<td>표현주의</td>
+<td><code>in the style of Egon Schiele, angular lines, raw Expressionism, contour drawing</code></td>
+<td>날카로운 윤곽·심리적 긴장감</td>
+</tr>
+<tr>
+<td><strong>Pablo Picasso</strong></td>
+<td>큐비즘</td>
+<td><code>in the style of Picasso, Cubism, fragmented perspective, bold geometric colors</code></td>
+<td>다시점·기하학적 분해</td>
+</tr>
+<tr>
+<td><strong>Salvador Dalí</strong></td>
+<td>초현실주의</td>
+<td><code>in the style of Salvador Dali, Surrealism, melting forms, dreamlike desert landscape</code></td>
+<td>초현실적 꿈·기묘한 조합</td>
+</tr>
+<tr>
+<td><strong>René Magritte</strong></td>
+<td>초현실주의</td>
+<td><code>in the style of Magritte, conceptual Surrealism, ordinary objects in strange context</code></td>
+<td>익숙한 것의 낯선 배치</td>
+</tr>
+<tr>
+<td><strong>Wassily Kandinsky</strong></td>
+<td>추상주의</td>
+<td><code>in the style of Kandinsky, abstract expressionism, geometric shapes, vibrant color composition</code></td>
+<td>추상 기하학·음악적 색채</td>
+</tr>
+<tr>
+<td><strong>Mark Rothko</strong></td>
+<td>색면 추상</td>
+<td><code>in the style of Mark Rothko, color field painting, large soft rectangles, emotional depth</code></td>
+<td>거대한 색면·명상적 감정</td>
+</tr>
+<tr>
+<td><strong>Jean-Michel Basquiat</strong></td>
+<td>신표현주의</td>
+<td><code>in the style of Basquiat, neo-expressionism, graffiti-like text, raw energy, chaotic lines</code></td>
+<td>그래피티·날 것의 에너지</td>
+</tr>
+<tr>
+<td><strong>Andy Warhol</strong></td>
+<td>팝아트</td>
+<td><code>in the style of Andy Warhol, Pop Art, bold colors, repeated silkscreen imagery</code></td>
+<td>팝적 반복·실크스크린</td>
+</tr>
+<tr>
+<td><strong>Roy Lichtenstein</strong></td>
+<td>팝아트</td>
+<td><code>in the style of Roy Lichtenstein, comic book halftone dots, bold outlines, primary colors</code></td>
+<td>만화 점망·굵은 윤곽선</td>
+</tr>
+<tr>
+<td><strong>Yayoi Kusama</strong></td>
+<td>전위</td>
+<td><code>in the style of Yayoi Kusama, polka dots, infinity room, psychedelic repetitive pattern</code></td>
+<td>무한 도트·몰입형 공간</td>
+</tr>
+<tr>
+<td><strong>Edward Hopper</strong></td>
+<td>사실주의</td>
+<td><code>in the style of Edward Hopper, lonely urban scene, warm sunlight through window, stillness</code></td>
+<td>고독한 도시·강한 자연광</td>
+</tr>
+<tr>
+<td><strong>Banksy</strong></td>
+<td>스트릿 아트</td>
+<td><code>Banksy-style stencil art, urban wall, social commentary, black and white</code></td>
+<td>스텐실·사회 비판</td>
+</tr>
+</tbody>
+</table>
+<h3 id="g-2-화가-painters--동양">G-2. 화가 (Painters) — 동양<a class="headerlink" href="#g-2-화가-painters--동양" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>아티스트</th>
+<th>국적</th>
+<th>사조</th>
+<th>미드저니 키워드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Katsushika Hokusai (호쿠사이)</strong></td>
+<td>일본</td>
+<td>우키요에</td>
+<td><code>in the style of Hokusai, ukiyo-e woodblock print, The Great Wave, bold outlines, flat color</code></td>
+</tr>
+<tr>
+<td><strong>Hiroshige (히로시게)</strong></td>
+<td>일본</td>
+<td>우키요에</td>
+<td><code>in the style of Hiroshige, ukiyo-e landscape, rain, perspective, soft gradient sky</code></td>
+</tr>
+<tr>
+<td><strong>Kim Whanki (김환기)</strong></td>
+<td>한국</td>
+<td>추상</td>
+<td><code>in the style of Kim Whanki, Korean abstract art, dots and lines, subtle blue and white tones</code></td>
+</tr>
+<tr>
+<td><strong>Park Seo-bo (박서보)</strong></td>
+<td>한국</td>
+<td>단색화</td>
+<td><code>in the style of Park Seo-bo, Dansaekhwa, monochromatic, textured hanji paper surface</code></td>
+</tr>
+<tr>
+<td><strong>Lee Ufan (이우환)</strong></td>
+<td>한국</td>
+<td>모노하</td>
+<td><code>in the style of Lee Ufan, minimal brushstroke, raw stone and steel, void space</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="g-3-일러스트레이터--그래픽-디자이너">G-3. 일러스트레이터 &amp; 그래픽 디자이너<a class="headerlink" href="#g-3-일러스트레이터--그래픽-디자이너" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>아티스트</th>
+<th>특징</th>
+<th>미드저니 키워드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Alphonse Mucha</strong></td>
+<td>아르누보 포스터, 유기적 곡선, 꽃 장식</td>
+<td><code>in the style of Alphonse Mucha, Art Nouveau, ornate floral border, pastel decorative poster</code></td>
+</tr>
+<tr>
+<td><strong>Norman Rockwell</strong></td>
+<td>미국 일상, 따뜻한 사실주의</td>
+<td><code>in the style of Norman Rockwell, Saturday Evening Post cover, warm storytelling illustration</code></td>
+</tr>
+<tr>
+<td><strong>Moebius (Jean Giraud)</strong></td>
+<td>SF 만화, 세밀한 라인, 광활한 풍경</td>
+<td><code>in the style of Moebius, sci-fi comic illustration, intricate linework, vast alien desert</code></td>
+</tr>
+<tr>
+<td><strong>Hayao Miyazaki</strong></td>
+<td>지브리, 자연, 따뜻한 손 그림</td>
+<td><code>in the style of Studio Ghibli, Hayao Miyazaki, hand-drawn animation, lush green nature</code></td>
+</tr>
+<tr>
+<td><strong>Makoto Shinkai</strong></td>
+<td>빛 산란, 감성 도시 하늘</td>
+<td><code>in the style of Makoto Shinkai, light ray refraction, detailed emotional sky, anime realism</code></td>
+</tr>
+<tr>
+<td><strong>Yoji Shinkawa</strong></td>
+<td>메탈기어 잉크 스케치, 기계 전사</td>
+<td><code>in the style of Yoji Shinkawa, ink wash concept art, mechanical warrior, monochrome sketch</code></td>
+</tr>
+<tr>
+<td><strong>Yoshitaka Amano</strong></td>
+<td>파이널판타지, 수묵+아르누보</td>
+<td><code>in the style of Yoshitaka Amano, ethereal fantasy illustration, ink and watercolor, delicate</code></td>
+</tr>
+<tr>
+<td><strong>Ralph McQuarrie</strong></td>
+<td>스타워즈 오리지널 컨셉 아트</td>
+<td><code>in the style of Ralph McQuarrie, Star Wars concept art, retro sci-fi, painted environment</code></td>
+</tr>
+<tr>
+<td><strong>Syd Mead</strong></td>
+<td>블레이드러너, 크롬 미래도시</td>
+<td><code>in the style of Syd Mead, retro-futuristic cityscape, chrome reflections, neo-noir</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="g-4-사진작가-photographers">G-4. 사진작가 (Photographers)<a class="headerlink" href="#g-4-사진작가-photographers" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>사진작가</th>
+<th>대표 스타일</th>
+<th>미드저니 키워드</th>
+<th>최적 용도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Annie Leibovitz</strong></td>
+<td>극적 포트레이트, 풍부한 색 스테이징</td>
+<td><code>in the style of Annie Leibovitz, dramatic narrative portrait, rich color staging, celebrity</code></td>
+<td>인물 포트레이트</td>
+</tr>
+<tr>
+<td><strong>Richard Avedon</strong></td>
+<td>미니멀 패션, 흰 배경 초상</td>
+<td><code>in the style of Richard Avedon, minimalist portrait, stark white background, high fashion</code></td>
+<td>패션·에디토리얼</td>
+</tr>
+<tr>
+<td><strong>Ansel Adams</strong></td>
+<td>흑백 대자연, 극명한 명암</td>
+<td><code>in the style of Ansel Adams, black and white landscape, high contrast, majestic mountain, Zone System</code></td>
+<td>자연 풍경</td>
+</tr>
+<tr>
+<td><strong>Henri Cartier-Bresson</strong></td>
+<td>결정적 순간, 스트릿</td>
+<td><code>in the style of Henri Cartier-Bresson, decisive moment, geometric street composition, candid</code></td>
+<td>스트릿·다큐</td>
+</tr>
+<tr>
+<td><strong>Sebastião Salgado</strong></td>
+<td>흑백 인도주의 다큐</td>
+<td><code>in the style of Salgado, black and white documentary, humanistic drama, worker portrait</code></td>
+<td>사회적 다큐</td>
+</tr>
+<tr>
+<td><strong>Helmut Newton</strong></td>
+<td>강렬한 패션, 관능적 흑백</td>
+<td><code>in the style of Helmut Newton, bold fashion photography, dramatic black and white, powerful</code></td>
+<td>하이패션</td>
+</tr>
+<tr>
+<td><strong>Steve McCurry</strong></td>
+<td>선명한 색채, 감성 인물</td>
+<td><code>in the style of Steve McCurry, vivid color portrait, emotional, National Geographic style</code></td>
+<td>여행·인물</td>
+</tr>
+<tr>
+<td><strong>Martin Schoeller</strong></td>
+<td>극단적 클로즈업</td>
+<td><code>in the style of Martin Schoeller, extreme close-up portrait, ultra sharp, direct gaze</code></td>
+<td>인물 클로즈업</td>
+</tr>
+<tr>
+<td><strong>Iwan Baan</strong></td>
+<td>현대 건축 다큐, 인간 스케일</td>
+<td><code>in the style of Iwan Baan, architectural documentary photography, human scale, natural light</code></td>
+<td>건축 사진</td>
+</tr>
+<tr>
+<td><strong>Hélène Binet</strong></td>
+<td>흑백 추상 건축 디테일</td>
+<td><code>in the style of Hélène Binet, moody monochrome architectural detail, abstract shadow play</code></td>
+<td>건축 추상</td>
+</tr>
+<tr>
+<td><strong>Michael Kenna</strong></td>
+<td>장노출 미니멀 흑백 풍경</td>
+<td><code>in the style of Michael Kenna, long exposure, minimalist black and white landscape, fog</code></td>
+<td>미니멀 풍경</td>
+</tr>
+<tr>
+<td><strong>Gregory Crewdson</strong></td>
+<td>연출된 교외 초현실 장면</td>
+<td><code>in the style of Gregory Crewdson, cinematic staged suburban scene, eerie artificial light</code></td>
+<td>시네마틱 연출</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="g-5-건축가-architects">G-5. 건축가 (Architects)<a class="headerlink" href="#g-5-건축가-architects" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>건축가 이름은 <strong>공간·구조·재료의 시각 언어</strong>를 통째로 불러옵니다.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>건축가</th>
+<th>국적</th>
+<th>대표 특징</th>
+<th>미드저니 키워드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tadao Ando</strong></td>
+<td>일본</td>
+<td>노출 콘크리트, 빛과 그림자</td>
+<td><code>in the style of Tadao Ando, smooth exposed concrete, interplay of light and shadow, minimalist chapel</code></td>
+</tr>
+<tr>
+<td><strong>Kengo Kuma</strong></td>
+<td>일본</td>
+<td>목재·자연 소재·격자 레이어</td>
+<td><code>in the style of Kengo Kuma, wooden lattice screen, organic material, nature integration</code></td>
+</tr>
+<tr>
+<td><strong>Zaha Hadid</strong></td>
+<td>영국/이라크</td>
+<td>유동적 곡선, 미래 파라메트릭</td>
+<td><code>in the style of Zaha Hadid, fluid parametric curves, futuristic sweeping form, dynamic</code></td>
+</tr>
+<tr>
+<td><strong>Frank Lloyd Wright</strong></td>
+<td>미국</td>
+<td>프레리 스타일, 수평선, 자연 소재</td>
+<td><code>in the style of Frank Lloyd Wright, organic architecture, horizontal Prairie lines, natural wood</code></td>
+</tr>
+<tr>
+<td><strong>Le Corbusier</strong></td>
+<td>스위스</td>
+<td>순수 기능주의, 필로티, 흰 면</td>
+<td><code>in the style of Le Corbusier, modernist white walls, pilotis, flat roof, open plan</code></td>
+</tr>
+<tr>
+<td><strong>Renzo Piano</strong></td>
+<td>이탈리아</td>
+<td>빛 충만한 유리 구조, 정밀 디테일</td>
+<td><code>in the style of Renzo Piano, transparent glass atrium, light-filled, precision engineering</code></td>
+</tr>
+<tr>
+<td><strong>BIG (Bjarke Ingels)</strong></td>
+<td>덴마크</td>
+<td>유쾌하고 혁신적, 지속가능</td>
+<td><code>in the style of BIG Bjarke Ingels, playful innovative sustainable architecture, high concept</code></td>
+</tr>
+<tr>
+<td><strong>Peter Zumthor</strong></td>
+<td>스위스</td>
+<td>감각적 재료, 침묵의 공간</td>
+<td><code>in the style of Peter Zumthor, atmospheric architecture, sensory materiality, silent contemplative space</code></td>
+</tr>
+<tr>
+<td><strong>SANAA (Sejima + Nishizawa)</strong></td>
+<td>일본</td>
+<td>초박형, 투명성, 흐르는 공간</td>
+<td><code>in the style of SANAA, ultra-thin white walls, transparent flowing space, delicate lightweight</code></td>
+</tr>
+<tr>
+<td><strong>Diébédo Francis Kéré</strong></td>
+<td>부르키나파소</td>
+<td>지역 소재, 자연 통풍, 사회적</td>
+<td><code>in the style of Francis Kere, earthen architecture, community space, natural ventilation</code></td>
+</tr>
+<tr>
+<td><strong>Brutalism</strong></td>
+<td>(사조)</td>
+<td>날 것의 콘크리트, 웅장한 블록</td>
+<td><code>Brutalist architecture, raw exposed concrete, monolithic imposing structure, harsh shadow</code></td>
+</tr>
+<tr>
+<td><strong>Googie</strong></td>
+<td>(사조)</td>
+<td>레트로 미래주의, 로켓 지붕, 네온</td>
+<td><code>Googie architecture, retro-futuristic 1950s diner, angular roof, neon sign, Jetsons style</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="g-6-영화감독--시네마토그래퍼">G-6. 영화감독 · 시네마토그래퍼<a class="headerlink" href="#g-6-영화감독--시네마토그래퍼" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><code>"cinematic"</code> 대신 감독 이름을 넣으면 색감·구도·분위기가 훨씬 구체적으로 나옵니다.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>감독</th>
+<th>시각 특징</th>
+<th>미드저니 키워드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wes Anderson</strong></td>
+<td>파스텔 대칭, 평면 구도, 미니어처 감성</td>
+<td><code>Wes Anderson aesthetic, symmetrical composition, pastel color palette, flat overhead angle</code></td>
+</tr>
+<tr>
+<td><strong>Christopher Nolan</strong></td>
+<td>대규모 현실, 극적 조명, IMAX</td>
+<td><code>Christopher Nolan cinematography, grand practical scale, dramatic high-contrast lighting</code></td>
+</tr>
+<tr>
+<td><strong>Stanley Kubrick</strong></td>
+<td>일점투시 복도, 냉정한 대칭</td>
+<td><code>Stanley Kubrick one-point perspective, symmetrical hallway, cold precise composition</code></td>
+</tr>
+<tr>
+<td><strong>Ridley Scott</strong></td>
+<td>앰버·틸 색보정, 안개, 서사</td>
+<td><code>Ridley Scott cinematography, amber and teal grade, epic atmospheric fog, Blade Runner</code></td>
+</tr>
+<tr>
+<td><strong>Wong Kar-wai</strong></td>
+<td>아웃포커스 동작, 따뜻한 네온, 고독</td>
+<td><code>Wong Kar-wai aesthetic, warm neon blur, motion smear, melancholic Hong Kong night</code></td>
+</tr>
+<tr>
+<td><strong>Denis Villeneuve</strong></td>
+<td>광활한 스케일, 탈포화, 경외감</td>
+<td><code>Denis Villeneuve cinematography, vast alien landscape, desaturated palette, sense of awe</code></td>
+</tr>
+<tr>
+<td><strong>Tim Burton</strong></td>
+<td>고딕 동화, 비틀린 형태, 고대비</td>
+<td><code>Tim Burton aesthetic, gothic fairy tale architecture, twisted form, high contrast black white</code></td>
+</tr>
+<tr>
+<td><strong>Terrence Malick</strong></td>
+<td>골든아워, 핸드헬드, 명상적</td>
+<td><code>Terrence Malick cinematography, golden hour natural light, handheld intimate, contemplative nature</code></td>
+</tr>
+<tr>
+<td><strong>Alfonso Cuarón</strong></td>
+<td>장시간 원테이크, 공간감</td>
+<td><code>Alfonso Cuarón cinematography, long single take, spatial depth, immersive environment</code></td>
+</tr>
+<tr>
+<td><strong>Spike Jonze</strong></td>
+<td>감성적 현실+판타지 혼합</td>
+<td><code>Spike Jonze visual style, emotional surreal everyday, warm intimate, Her aesthetic</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="g-7-조각가--설치-아티스트">G-7. 조각가 · 설치 아티스트<a class="headerlink" href="#g-7-조각가--설치-아티스트" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>아티스트</th>
+<th>대표 특징</th>
+<th>미드저니 키워드</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Auguste Rodin</strong></td>
+<td>역동적 인체, 거친 표면, 청동</td>
+<td><code>in the style of Rodin, bronze sculpture, dynamic human form, rough textured surface</code></td>
+</tr>
+<tr>
+<td><strong>Constantin Brancusi</strong></td>
+<td>극도로 단순화된 유기적 형태</td>
+<td><code>in the style of Brancusi, abstract sculpture, smooth organic polished form, marble</code></td>
+</tr>
+<tr>
+<td><strong>Olafur Eliasson</strong></td>
+<td>빛·물·자연 소재 설치</td>
+<td><code>Olafur Eliasson installation art, light and water environment, immersive natural phenomena</code></td>
+</tr>
+<tr>
+<td><strong>James Turrell</strong></td>
+<td>빛 자체가 작품, 몰입형 색광</td>
+<td><code>James Turrell light installation, sky space, gradient color light chamber, minimal room</code></td>
+</tr>
+<tr>
+<td><strong>Christo</strong></td>
+<td>거대 포장, 풍경+건축 래핑</td>
+<td><code>Christo installation, wrapped monumental building, translucent fabric, landscape scale</code></td>
+</tr>
+<tr>
+<td><strong>Jeff Koons</strong></td>
+<td>초고광택 거울 조각, 풍선 오브제</td>
+<td><code>in the style of Jeff Koons, balloon animal sculpture, mirror-polished chrome, pop</code></td>
+</tr>
+<tr>
+<td><strong>Louise Bourgeois</strong></td>
+<td>대형 거미 조각, 심리적 서사</td>
+<td><code>in the style of Louise Bourgeois, giant spider sculpture Maman, dark psychological space</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="g-8-아티스트-스타일-조합--직군별-완성-프롬프트">G-8. 아티스트 스타일 조합 — 직군별 완성 프롬프트<a class="headerlink" href="#g-8-아티스트-스타일-조합--직군별-완성-프롬프트" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a># 공간기획자 — 명상적 전시 공간
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>minimalist concrete chapel interior with a single skylight,
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>in the style of Tadao Ando,
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>architectural photography by Hélène Binet,
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>soft monochrome light, absolute silence and depth
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>--ar 2:3 --v 6.1 --s 400 --no people, text, furniture
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a># 사진작가 — 패션 에디토리얼
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>elegant woman in sculptural white linen dress,
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>in the style of Richard Avedon,
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>minimalist stark white background, dramatic side lighting,
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>35mm film grain, sharp focus on eyes
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>--ar 4:5 --v 6.1 --style raw --s 250 --no watermark, text
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a># 댄서 — 공연 컨셉 이미지
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>solo dancer mid-leap on empty dark stage,
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>Wes Anderson symmetrical composition meets Gustav Klimt gold ornamental costume,
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>dramatic single spotlight from above, deep shadow
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>--ar 2:3 --v 6.1 --s 750
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a># 영상제작자 — 시네마틱 스틸
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>abandoned warehouse corridor at dusk, dust particles in a shaft of amber light,
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>Denis Villeneuve cinematography, desaturated teal and amber grade,
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>atmospheric fog, 35mm film grain, anamorphic lens
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>--ar 21:9 --v 6.1 --style raw --s 350
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a># 미디어아티스트 — 추상 설치 컨셉
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>infinite ocean of glowing jellyfish, lone figure floating weightlessly,
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>Yayoi Kusama infinity room meets James Turrell color light field,
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>bioluminescent blue-green, surreal dreamlike atmosphere
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>--ar 16:9 --v 6.1 --s 900 --c 20
+</code></pre></div>
+<hr />
+<h2 id="-a-화풍--매체-medium--style">🎨 A. 화풍 / 매체 (Medium &amp; Style)<a class="headerlink" href="#-a-화풍--매체-medium--style" title="Permanent link">&para;</a></h2>
+<h3 id="a-1-회화-기법-painting-techniques">A-1. 회화 기법 (Painting Techniques)<a class="headerlink" href="#a-1-회화-기법-painting-techniques" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>한국어 설명</th>
+<th>시각적 특징</th>
+<th>추천 --s 값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>oil painting</code></td>
+<td>유화</td>
+<td>두꺼운 붓터치, 풍부한 색감</td>
+<td>600~800</td>
+</tr>
+<tr>
+<td><code>acrylic palette knife, impasto</code></td>
+<td>팔레트 나이프 아크릴</td>
+<td>두껍고 거친 물감 질감</td>
+<td>700~900</td>
+</tr>
+<tr>
+<td><code>watercolor, loose brushstrokes</code></td>
+<td>수채화</td>
+<td>번지는 색상, 부드러운 경계</td>
+<td>400~600</td>
+</tr>
+<tr>
+<td><code>gouache, flat illustration</code></td>
+<td>과슈</td>
+<td>불투명하고 선명한 색면</td>
+<td>300~500</td>
+</tr>
+<tr>
+<td><code>charcoal sketch</code></td>
+<td>목탄 스케치</td>
+<td>흑백, 거친 선 질감</td>
+<td>200~400</td>
+</tr>
+<tr>
+<td><code>ink wash painting, sumi-e</code></td>
+<td>수묵화</td>
+<td>동양화 스타일, 여백</td>
+<td>500~700</td>
+</tr>
+<tr>
+<td><code>pastel drawing, soft texture</code></td>
+<td>파스텔</td>
+<td>부드럽고 분감 있는 색감</td>
+<td>400~600</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a-2-사진-스타일-photography-styles">A-2. 사진 스타일 (Photography Styles)<a class="headerlink" href="#a-2-사진-스타일-photography-styles" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>한국어 설명</th>
+<th>시각적 특징</th>
+<th>추천 파라미터</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>editorial photography</code></td>
+<td>에디토리얼 사진</td>
+<td>패션지 스타일, 세련됨</td>
+<td><code>--style raw --s 200</code></td>
+</tr>
+<tr>
+<td><code>documentary photography</code></td>
+<td>다큐멘터리</td>
+<td>자연스럽고 날 것 그대로</td>
+<td><code>--style raw --s 100</code></td>
+</tr>
+<tr>
+<td><code>polaroid-style, vintage instant film</code></td>
+<td>폴라로이드</td>
+<td>빈티지, 약간 탈색됨</td>
+<td><code>--s 400</code></td>
+</tr>
+<tr>
+<td><code>35mm film grain, analog photography</code></td>
+<td>35mm 필름</td>
+<td>필름 그레인, 따뜻한 색감</td>
+<td><code>--s 300</code></td>
+</tr>
+<tr>
+<td><code>street photography, candid</code></td>
+<td>스트릿 포토</td>
+<td>생동감, 비연출</td>
+<td><code>--style raw --s 150</code></td>
+</tr>
+<tr>
+<td><code>architectural photography</code></td>
+<td>건축 사진</td>
+<td>직선, 광각, 기하학</td>
+<td><code>--style raw --s 200</code></td>
+</tr>
+<tr>
+<td><code>product photography, studio</code></td>
+<td>제품 사진</td>
+<td>깔끔한 배경, 선명한 조명</td>
+<td><code>--style raw --s 100</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="a-3-일러스트--디지털-아트">A-3. 일러스트 &amp; 디지털 아트<a class="headerlink" href="#a-3-일러스트--디지털-아트" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>한국어 설명</th>
+<th>시각적 특징</th>
+<th>추천 --s 값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pixel art, 16-bit retro arcade</code></td>
+<td>픽셀 아트</td>
+<td>복고풍, 정사각형 픽셀</td>
+<td>200~400</td>
+</tr>
+<tr>
+<td><code>flat design illustration</code></td>
+<td>플랫 일러스트</td>
+<td>그림자 없음, 단순 색면</td>
+<td>300~500</td>
+</tr>
+<tr>
+<td><code>concept art, fantasy</code></td>
+<td>컨셉 아트</td>
+<td>게임/영화 컨셉</td>
+<td>600~800</td>
+</tr>
+<tr>
+<td><code>anime style, manga</code></td>
+<td>애니메이션</td>
+<td><code>--niji 6</code> 모델 권장</td>
+<td>500~700</td>
+</tr>
+<tr>
+<td><code>children's book illustration</code></td>
+<td>동화책 일러스트</td>
+<td>포근하고 단순한 선</td>
+<td>400~600</td>
+</tr>
+<tr>
+<td><code>comic book style, halftone</code></td>
+<td>만화책</td>
+<td>두꺼운 윤곽선, 점망</td>
+<td>500~700</td>
+</tr>
+<tr>
+<td><code>isometric illustration</code></td>
+<td>아이소메트릭</td>
+<td>등각 투시 건축/공간</td>
+<td>300~500</td>
+</tr>
+<tr>
+<td><code>risograph print</code></td>
+<td>리소그래프</td>
+<td>약간 어긋난 2~3색 인쇄 느낌</td>
+<td>600~800</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a-4-예술-사조-art-movements">A-4. 예술 사조 (Art Movements)<a class="headerlink" href="#a-4-예술-사조-art-movements" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>한국어</th>
+<th>대표 특징</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Impressionism</code></td>
+<td>인상파</td>
+<td>빛과 색의 순간 포착, 부드러운 터치</td>
+</tr>
+<tr>
+<td><code>Surrealism</code></td>
+<td>초현실주의</td>
+<td>꿈 같은 비현실적 조합</td>
+</tr>
+<tr>
+<td><code>Art Nouveau</code></td>
+<td>아르누보</td>
+<td>유기적 곡선, 자연 모티프</td>
+</tr>
+<tr>
+<td><code>Art Deco</code></td>
+<td>아르데코</td>
+<td>기하학적 패턴, 황금색</td>
+</tr>
+<tr>
+<td><code>Expressionism</code></td>
+<td>표현주의</td>
+<td>감정 강조, 왜곡된 형태</td>
+</tr>
+<tr>
+<td><code>Baroque</code></td>
+<td>바로크</td>
+<td>극적인 명암, 화려한 장식</td>
+</tr>
+<tr>
+<td><code>Minimalism</code></td>
+<td>미니멀리즘</td>
+<td>극도로 단순, 여백 강조</td>
+</tr>
+<tr>
+<td><code>Pop Art</code></td>
+<td>팝 아트</td>
+<td>밝은 원색, 대중문화 이미지</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="-b-조명--분위기-lighting--mood">💡 B. 조명 &amp; 분위기 (Lighting &amp; Mood)<a class="headerlink" href="#-b-조명--분위기-lighting--mood" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>한국어 설명</th>
+<th>효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>golden hour lighting</code></td>
+<td>골든아워</td>
+<td>따뜻한 황금빛, 낮은 각도</td>
+</tr>
+<tr>
+<td><code>blue hour, twilight</code></td>
+<td>블루아워</td>
+<td>파란 보랏빛 새벽/황혼</td>
+</tr>
+<tr>
+<td><code>cinematic lighting</code></td>
+<td>시네마틱 조명</td>
+<td>드라마틱한 명암 대비</td>
+</tr>
+<tr>
+<td><code>Rembrandt lighting</code></td>
+<td>렘브란트 조명</td>
+<td>한쪽 눈 아래 삼각형 빛</td>
+</tr>
+<tr>
+<td><code>soft diffused light</code></td>
+<td>확산광</td>
+<td>그림자 없이 부드럽게</td>
+</tr>
+<tr>
+<td><code>dramatic chiaroscuro</code></td>
+<td>키아로스쿠로</td>
+<td>극단적 명암 대비</td>
+</tr>
+<tr>
+<td><code>neon lighting, cyberpunk</code></td>
+<td>네온 조명</td>
+<td>핑크/파랑 빛 반사</td>
+</tr>
+<tr>
+<td><code>bioluminescent glow</code></td>
+<td>생물 발광</td>
+<td>신비롭고 은은한 빛</td>
+</tr>
+<tr>
+<td><code>flat lighting, overcast</code></td>
+<td>평면 조명</td>
+<td>그림자 최소화</td>
+</tr>
+<tr>
+<td><code>backlit, rim light</code></td>
+<td>역광/림라이트</td>
+<td>실루엣, 가장자리 빛</td>
+</tr>
+<tr>
+<td><code>moody, atmospheric fog</code></td>
+<td>안개 분위기</td>
+<td>몽환적, 깊이감</td>
+</tr>
+<tr>
+<td><code>ethereal, dreamlike</code></td>
+<td>꿈 같은 분위기</td>
+<td>비현실적이고 부드러운</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="-c-카메라--렌즈--촬영-기법--앵글--영상">📷 C. 카메라 · 렌즈 · 촬영 기법 · 앵글 · 영상<a class="headerlink" href="#-c-카메라--렌즈--촬영-기법--앵글--영상" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="c-1-프레이밍--화각-shot-size--framing">C-1. 프레이밍 &amp; 화각 (Shot Size / Framing)<a class="headerlink" href="#c-1-프레이밍--화각-shot-size--framing" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>인물을 어디까지 잡느냐에 따라 분위기가 완전히 바뀝니다.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>한국어</th>
+<th>범위</th>
+<th>미드저니 효과</th>
+<th>추천 용도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>extreme wide shot, EWS</code></td>
+<td>익스트림 와이드</td>
+<td>풍경 속 점처럼 작은 인물</td>
+<td>광활한 스케일, 고독감</td>
+<td>풍경·건축·컨셉 아트</td>
+</tr>
+<tr>
+<td><code>wide shot, full shot</code></td>
+<td>와이드 / 풀샷</td>
+<td>머리끝~발끝 전신</td>
+<td>인물의 전체 의상·포즈 확인</td>
+<td>패션·무대·캐릭터 디자인</td>
+</tr>
+<tr>
+<td><code>cowboy shot</code></td>
+<td>카우보이 샷</td>
+<td>무릎 위부터</td>
+<td>서부극 유래, 역동적</td>
+<td>액션·스트릿·인물</td>
+</tr>
+<tr>
+<td><code>medium shot, MS</code></td>
+<td>미디엄 샷</td>
+<td>허리 위부터 (토르소)</td>
+<td>인물과 배경 균형</td>
+<td>인터뷰·대화 장면</td>
+</tr>
+<tr>
+<td><code>medium close-up, MCU</code></td>
+<td>미디엄 클로즈업</td>
+<td>가슴 위부터</td>
+<td>표정+어깨선, 적당한 친밀감</td>
+<td>포트레이트·SNS</td>
+</tr>
+<tr>
+<td><code>close-up, CU</code></td>
+<td>클로즈업</td>
+<td>얼굴 전체</td>
+<td>표정·감정에 집중</td>
+<td>감성 포트레이트·영화</td>
+</tr>
+<tr>
+<td><code>extreme close-up, ECU</code></td>
+<td>익스트림 클로즈업</td>
+<td>눈·입술·손 등 일부</td>
+<td>극단적 디테일, 강렬한 임팩트</td>
+<td>뷰티·감성·공포</td>
+</tr>
+<tr>
+<td><code>bust shot</code></td>
+<td>흉상 샷</td>
+<td>어깨~머리</td>
+<td>클래식 초상화 비율</td>
+<td>포트레이트·프로필</td>
+</tr>
+<tr>
+<td><code>torso shot</code></td>
+<td>토르소 샷</td>
+<td>가슴~머리</td>
+<td>의상 디테일+표정 동시</td>
+<td>패션·에디토리얼</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="c-2-카메라-앵글--구도-camera-angle--composition">C-2. 카메라 앵글 &amp; 구도 (Camera Angle &amp; Composition)<a class="headerlink" href="#c-2-카메라-앵글--구도-camera-angle--composition" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>한국어</th>
+<th>미드저니 키워드</th>
+<th>효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Eye level</strong></td>
+<td>눈높이</td>
+<td><code>eye level camera angle, natural perspective</code></td>
+<td>가장 자연스러운 시선, 기본</td>
+</tr>
+<tr>
+<td><strong>Low angle</strong></td>
+<td>로우 앵글</td>
+<td><code>low angle shot, looking up, heroic perspective</code></td>
+<td>위압감·영웅적·권위적</td>
+</tr>
+<tr>
+<td><strong>High angle</strong></td>
+<td>하이 앵글</td>
+<td><code>high angle shot, looking down</code></td>
+<td>피사체를 작게·연약하게</td>
+</tr>
+<tr>
+<td><strong>Bird's eye</strong></td>
+<td>부감 (탑뷰)</td>
+<td><code>bird's eye view, top-down aerial view</code></td>
+<td>패턴·구조·지형 강조</td>
+</tr>
+<tr>
+<td><strong>Worm's eye</strong></td>
+<td>개미 시점</td>
+<td><code>worm's eye view, extreme low angle from ground</code></td>
+<td>극단적 앙각, 건축·나무</td>
+</tr>
+<tr>
+<td><strong>Dutch angle / Tilt</strong></td>
+<td>더치 앵글 (기울임)</td>
+<td><code>Dutch angle, tilted camera, dynamic diagonal composition</code></td>
+<td>불안감·긴장감·역동성</td>
+</tr>
+<tr>
+<td><strong>Over-the-shoulder</strong></td>
+<td>오버더숄더</td>
+<td><code>over-the-shoulder shot, OTS</code></td>
+<td>대화 장면, 관음적 시선</td>
+</tr>
+<tr>
+<td><strong>POV</strong></td>
+<td>1인칭 시점</td>
+<td><code>POV shot, first person perspective</code></td>
+<td>몰입감, VR 느낌</td>
+</tr>
+<tr>
+<td><strong>Overhead flat lay</strong></td>
+<td>플랫레이 (탑다운)</td>
+<td><code>flat lay, overhead arrangement, top-down product shot</code></td>
+<td>제품·음식·소품 배치</td>
+</tr>
+</tbody>
+</table>
+<h4 id="구도-법칙-키워드">구도 법칙 키워드<a class="headerlink" href="#구도-법칙-키워드" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>한국어</th>
+<th>효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>rule of thirds</code></td>
+<td>3분할 법칙</td>
+<td>피사체를 교차점에 배치, 안정적</td>
+</tr>
+<tr>
+<td><code>golden ratio, golden spiral</code></td>
+<td>황금 비율</td>
+<td>나선형 시선 유도, 클래식 미학</td>
+</tr>
+<tr>
+<td><code>symmetrical composition</code></td>
+<td>대칭 구도</td>
+<td>Kubrick·Anderson 스타일, 정돈된 느낌</td>
+</tr>
+<tr>
+<td><code>leading lines</code></td>
+<td>유도선</td>
+<td>길·기찻길·복도 등으로 시선 집중</td>
+</tr>
+<tr>
+<td><code>centered composition</code></td>
+<td>중앙 배치</td>
+<td>피사체를 정중앙에, 강한 시선 고정</td>
+</tr>
+<tr>
+<td><code>negative space</code></td>
+<td>여백 활용</td>
+<td>피사체 주변 여백으로 고립감·미니멀</td>
+</tr>
+<tr>
+<td><code>frame within a frame</code></td>
+<td>프레임 속 프레임</td>
+<td>문·창문·아치를 통해 피사체 강조</td>
+</tr>
+<tr>
+<td><code>dynamic diagonal</code></td>
+<td>대각선 구도</td>
+<td>에너지·움직임 느낌</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="c-3-렌즈--초점-lens--focus">C-3. 렌즈 &amp; 초점 (Lens &amp; Focus)<a class="headerlink" href="#c-3-렌즈--초점-lens--focus" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>초점거리</th>
+<th>한국어</th>
+<th>특성</th>
+<th>최적 용도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>14mm ultra-wide</code></td>
+<td>14mm</td>
+<td>초광각</td>
+<td>극단적 원근 왜곡, 넓은 시야</td>
+<td>건축 내부·풍경·설치</td>
+</tr>
+<tr>
+<td><code>24mm wide angle</code></td>
+<td>24mm</td>
+<td>광각</td>
+<td>넓은 화각, 적당한 왜곡</td>
+<td>건축·공간·환경 인물</td>
+</tr>
+<tr>
+<td><code>35mm lens</code></td>
+<td>35mm</td>
+<td>준광각</td>
+<td>자연스러운 시야, 스트릿 표준</td>
+<td>스트릿·다큐·일상</td>
+</tr>
+<tr>
+<td><code>50mm lens</code></td>
+<td>50mm</td>
+<td>표준 렌즈</td>
+<td>인간 시야 가장 유사</td>
+<td>범용·자연스러운 인물</td>
+</tr>
+<tr>
+<td><code>85mm portrait lens</code></td>
+<td>85mm</td>
+<td>인물 표준</td>
+<td>아름다운 배경 분리, 왜곡 최소</td>
+<td>인물 포트레이트</td>
+</tr>
+<tr>
+<td><code>105mm lens</code></td>
+<td>105mm</td>
+<td>중망원</td>
+<td>피사체 압축, 부드러운 보케</td>
+<td>인물·제품</td>
+</tr>
+<tr>
+<td><code>135mm lens</code></td>
+<td>135mm</td>
+<td>망원</td>
+<td>강한 배경 압축, 극도로 얕은 심도</td>
+<td>인물·감성</td>
+</tr>
+<tr>
+<td><code>200mm+ telephoto</code></td>
+<td>200mm+</td>
+<td>초망원</td>
+<td>피사체 극단적 압축, 멀리서 관찰</td>
+<td>야생·스포츠·관음적</td>
+</tr>
+<tr>
+<td><code>macro lens</code></td>
+<td>매크로</td>
+<td>접사 렌즈</td>
+<td>극도로 가까운 디테일</td>
+<td>꽃·곤충·텍스처</td>
+</tr>
+<tr>
+<td><code>fisheye lens</code></td>
+<td>어안</td>
+<td>어안 렌즈</td>
+<td>180도 이상 왜곡 시야</td>
+<td>실험적·스케이트·액션</td>
+</tr>
+<tr>
+<td><code>tilt-shift lens</code></td>
+<td>틸트시프트</td>
+<td>미니어처 효과 렌즈</td>
+<td>실제 풍경을 미니어처처럼</td>
+<td>건축·도시·장난감 느낌</td>
+</tr>
+<tr>
+<td><code>anamorphic lens</code></td>
+<td>아나모픽</td>
+<td>영화용 렌즈</td>
+<td>가로 렌즈 플레어, 시네마틱 타원 보케</td>
+<td>영화·뮤비·시네마틱</td>
+</tr>
+</tbody>
+</table>
+<h4 id="초점-효과">초점 효과<a class="headerlink" href="#초점-효과" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>한국어</th>
+<th>효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>shallow depth of field, bokeh</code></td>
+<td>아웃포커스 / 보케</td>
+<td>피사체만 선명, 배경 원형 흐림</td>
+</tr>
+<tr>
+<td><code>deep depth of field</code></td>
+<td>팬포커스</td>
+<td>전경~배경 모두 선명</td>
+</tr>
+<tr>
+<td><code>soft focus</code></td>
+<td>소프트 포커스</td>
+<td>전체적으로 부드럽게, 몽환적</td>
+</tr>
+<tr>
+<td><code>selective focus</code></td>
+<td>셀렉티브 포커스</td>
+<td>특정 부분만 극도로 선명</td>
+</tr>
+<tr>
+<td><code>rack focus blur</code></td>
+<td>초점 이동 블러</td>
+<td>전경↔배경 포커스 전환 흔적</td>
+</tr>
+<tr>
+<td><code>lens blur, out of focus foreground</code></td>
+<td>전경 흐림</td>
+<td>앞에 흐린 물체로 깊이감</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="c-4-카메라-기종별-특성-camera-body-reference">C-4. 카메라 기종별 특성 (Camera Body Reference)<a class="headerlink" href="#c-4-카메라-기종별-특성-camera-body-reference" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>카메라 이름을 프롬프트에 넣으면 해당 기종의 <strong>색재현·선명도·노이즈 특성</strong>이 반영됩니다.</p>
+</blockquote>
+<h4 id="디지털-카메라">디지털 카메라<a class="headerlink" href="#디지털-카메라" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>브랜드</th>
+<th>특성</th>
+<th>미드저니 효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>shot on Sony A7R IV</code></td>
+<td>Sony</td>
+<td>고해상도 6100만 화소, 선명, 현대적 색감</td>
+<td>극도로 디테일한 선명 사진</td>
+</tr>
+<tr>
+<td><code>shot on Canon EOS R5</code></td>
+<td>Canon</td>
+<td>부드러운 스킨톤, 자연스러운 색감</td>
+<td>따뜻하고 자연스러운 인물</td>
+</tr>
+<tr>
+<td><code>shot on Nikon Z9</code></td>
+<td>Nikon</td>
+<td>정확한 색재현, 높은 다이나믹 레인지</td>
+<td>정밀한 풍경·건축</td>
+</tr>
+<tr>
+<td><code>shot on Fujifilm X-T5</code></td>
+<td>Fujifilm</td>
+<td>필름 시뮬레이션 색감, 빈티지 톤</td>
+<td>레트로 필름 느낌</td>
+</tr>
+<tr>
+<td><code>shot on Leica M11</code></td>
+<td>Leica</td>
+<td>선명한 해상력, 독일 광학 특유 대비</td>
+<td>고급스럽고 선명한 스트릿</td>
+</tr>
+<tr>
+<td><code>shot on Phase One IQ4</code></td>
+<td>Phase One</td>
+<td>중형 포맷, 극단적 해상도, 색 깊이</td>
+<td>상업 제품·패션 최고급 퀄리티</td>
+</tr>
+</tbody>
+</table>
+<h4 id="필름-카메라--필름-스톡">필름 카메라 &amp; 필름 스톡<a class="headerlink" href="#필름-카메라--필름-스톡" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>특성</th>
+<th>미드저니 효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>shot on Hasselblad 500C</code></td>
+<td>중형 필름, 정사각형 포맷, 선명하면서 부드러운</td>
+<td>클래식 중형 포트레이트</td>
+</tr>
+<tr>
+<td><code>shot on Mamiya RZ67</code></td>
+<td>중형 필름, 인물 특화, 크리미한 보케</td>
+<td>부드러운 중형 인물</td>
+</tr>
+<tr>
+<td><code>Kodachrome film</code></td>
+<td>Kodak 슬라이드 필름, 따뜻하고 선명한 색, 깊은 블루</td>
+<td>빈티지 여행·다큐</td>
+</tr>
+<tr>
+<td><code>Kodak Portra 400</code></td>
+<td>부드러운 스킨톤, 따뜻한 하이라이트, 파스텔</td>
+<td>자연스러운 인물·웨딩</td>
+</tr>
+<tr>
+<td><code>Kodak Ektar 100</code></td>
+<td>높은 채도, 선명한 풍경, 미세한 그레인</td>
+<td>선명하고 포화된 풍경</td>
+</tr>
+<tr>
+<td><code>Fujifilm Velvia 50</code></td>
+<td>극도로 높은 채도, 풍부한 색, 슬라이드 필름</td>
+<td>극적 풍경·자연</td>
+</tr>
+<tr>
+<td><code>Fujifilm Superia 400</code></td>
+<td>약간 그린/시안 틴트, 일상적 필름 느낌</td>
+<td>90년대 감성 일상</td>
+</tr>
+<tr>
+<td><code>Ilford HP5 Plus</code></td>
+<td>흑백 필름, 아름다운 그레인, 깊은 톤</td>
+<td>클래식 흑백·다큐</td>
+</tr>
+<tr>
+<td><code>CineStill 800T</code></td>
+<td>텅스텐 밸런스, 레드 할레이션, 야간 특화</td>
+<td>야간 네온·시네마틱</td>
+</tr>
+<tr>
+<td><code>Polaroid 600 film</code></td>
+<td>즉석 필름, 탈색된 색감, 흰 테두리</td>
+<td>빈티지 즉석 사진</td>
+</tr>
+<tr>
+<td><code>35mm film grain</code></td>
+<td>일반 35mm 필름 그레인</td>
+<td>범용 아날로그 느낌</td>
+</tr>
+<tr>
+<td><code>medium format film</code></td>
+<td>중형 필름 특유의 부드러운 해상도</td>
+<td>고급 포트레이트 질감</td>
+</tr>
+</tbody>
+</table>
+<h4 id="특수-촬영-장비">특수 촬영 장비<a class="headerlink" href="#특수-촬영-장비" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>설명</th>
+<th>효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GoPro wide angle</code></td>
+<td>GoPro 액션캠</td>
+<td>넓은 왜곡 화각, 역동적 액션</td>
+</tr>
+<tr>
+<td><code>CCTV security camera</code></td>
+<td>감시 카메라</td>
+<td>저화질·그레인·감시 시점</td>
+</tr>
+<tr>
+<td><code>thermal camera, infrared</code></td>
+<td>열화상/적외선</td>
+<td>열 분포 색상 맵핑</td>
+</tr>
+<tr>
+<td><code>disposable camera, single-use camera</code></td>
+<td>일회용 필름 카메라</td>
+<td>플래시 과노출, 흐릿한 아날로그</td>
+</tr>
+<tr>
+<td><code>pinhole camera</code></td>
+<td>핀홀 카메라</td>
+<td>극도로 부드러운 포커스, 비네팅</td>
+</tr>
+<tr>
+<td><code>daguerreotype</code></td>
+<td>다게레오타입</td>
+<td>초기 사진술, 은판, 골동 느낌</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="c-5-촬영-기법--특수-효과-shooting-techniques">C-5. 촬영 기법 &amp; 특수 효과 (Shooting Techniques)<a class="headerlink" href="#c-5-촬영-기법--특수-효과-shooting-techniques" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>한국어</th>
+<th>미드저니 키워드</th>
+<th>효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>장노출</strong></td>
+<td>긴 셔터 빛의 궤적</td>
+<td><code>long exposure, light trails, motion blur</code></td>
+<td>차량 빛줄기, 물 실크 질감</td>
+</tr>
+<tr>
+<td><strong>이중 노출</strong></td>
+<td>두 이미지 겹침</td>
+<td><code>double exposure, silhouette overlay, dual image blend</code></td>
+<td>인물+풍경 합성, 몽환적</td>
+</tr>
+<tr>
+<td><strong>실루엣</strong></td>
+<td>역광 그림자</td>
+<td><code>backlit silhouette, dark figure against bright sky</code></td>
+<td>강한 윤곽선, 드라마틱</td>
+</tr>
+<tr>
+<td><strong>렌즈 플레어</strong></td>
+<td>광원 반사</td>
+<td><code>lens flare, sun burst, anamorphic flare</code></td>
+<td>따뜻한 느낌, 시네마틱</td>
+</tr>
+<tr>
+<td><strong>프리즘 효과</strong></td>
+<td>무지개 빛 분산</td>
+<td><code>prism effect, rainbow light refraction, crystal overlay</code></td>
+<td>몽환적·신비로운 빛</td>
+</tr>
+<tr>
+<td><strong>반사</strong></td>
+<td>거울·수면 반사</td>
+<td><code>reflection, mirror image, water surface reflection</code></td>
+<td>대칭·깊이감</td>
+</tr>
+<tr>
+<td><strong>그림자 패턴</strong></td>
+<td>블라인드·나뭇잎 그림자</td>
+<td><code>shadow pattern on face, venetian blinds shadow, dappled light</code></td>
+<td>누아르·감성·미스터리</td>
+</tr>
+<tr>
+<td><strong>모션 블러</strong></td>
+<td>의도적 움직임 흐림</td>
+<td><code>motion blur, intentional camera movement, ICM</code></td>
+<td>역동성·추상·댄스</td>
+</tr>
+<tr>
+<td><strong>줌 버스트</strong></td>
+<td>줌 중 촬영</td>
+<td><code>zoom burst effect, radial blur, zooming in during shot</code></td>
+<td>속도감·집중·에너지</td>
+</tr>
+<tr>
+<td><strong>보케 전경</strong></td>
+<td>앞의 흐린 빛 원</td>
+<td><code>foreground bokeh, out of focus lights in foreground</code></td>
+<td>깊이감·로맨틱</td>
+</tr>
+<tr>
+<td><strong>틸트 시프트</strong></td>
+<td>미니어처 효과</td>
+<td><code>tilt-shift photography, miniature effect, selective focus band</code></td>
+<td>도시·건축을 장난감처럼</td>
+</tr>
+<tr>
+<td><strong>HDR</strong></td>
+<td>하이 다이나믹 레인지</td>
+<td><code>HDR photography, high dynamic range, vivid detail</code></td>
+<td>과장된 디테일·극적 색감</td>
+</tr>
+<tr>
+<td><strong>광적/저광</strong></td>
+<td>어두운 환경</td>
+<td><code>available light only, low-key lighting, candlelight only</code></td>
+<td>무드·분위기·은밀한 느낌</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="c-6--영상--시네마틱-전용-키워드">C-6. 🎬 영상 / 시네마틱 전용 키워드<a class="headerlink" href="#c-6--영상--시네마틱-전용-키워드" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>미드저니로 스틸이미지를 생성하되, <strong>영상 컨셉 아트·무드보드·썸네일·스토리보드</strong>에 쓸 때 사용합니다.</p>
+</blockquote>
+<h4 id="영상-포맷--화면비">영상 포맷 &amp; 화면비<a class="headerlink" href="#영상-포맷--화면비" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>포맷</th>
+<th>미드저니 효과</th>
+<th>추천 <code>--ar</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cinematic widescreen</code></td>
+<td>와이드스크린</td>
+<td>영화관 레터박스 느낌</td>
+<td><code>--ar 21:9</code></td>
+</tr>
+<tr>
+<td><code>16:9 broadcast</code></td>
+<td>TV/유튜브 표준</td>
+<td>방송·유튜브 프레임</td>
+<td><code>--ar 16:9</code></td>
+</tr>
+<tr>
+<td><code>4:3 vintage television</code></td>
+<td>구형 TV 비율</td>
+<td>레트로 방송 느낌</td>
+<td><code>--ar 4:3</code></td>
+</tr>
+<tr>
+<td><code>vertical video, social media</code></td>
+<td>세로 영상 (릴스/숏츠)</td>
+<td>모바일 풀스크린</td>
+<td><code>--ar 9:16</code></td>
+</tr>
+<tr>
+<td><code>IMAX frame</code></td>
+<td>IMAX 확장 프레임</td>
+<td>압도적 스케일·광활함</td>
+<td><code>--ar 1.43:1</code> or <code>--ar 16:9</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="카메라-무빙--동작">카메라 무빙 &amp; 동작<a class="headerlink" href="#카메라-무빙--동작" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>한국어</th>
+<th>미드저니 키워드</th>
+<th>효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>트래킹 샷</strong></td>
+<td>피사체 따라 이동</td>
+<td><code>tracking shot, camera following subject, lateral movement</code></td>
+<td>역동적 추적 느낌</td>
+</tr>
+<tr>
+<td><strong>달리 줌 (버티고)</strong></td>
+<td>전진+줌아웃 동시</td>
+<td><code>dolly zoom, vertigo effect, background distortion</code></td>
+<td>불안감·서스펜스·충격</td>
+</tr>
+<tr>
+<td><strong>스테디캠</strong></td>
+<td>안정적 이동</td>
+<td><code>Steadicam smooth movement, floating camera</code></td>
+<td>부드럽고 유려한 동작</td>
+</tr>
+<tr>
+<td><strong>핸드헬드</strong></td>
+<td>손 떨림</td>
+<td><code>handheld camera, shaky cam, documentary feel</code></td>
+<td>긴박감·다큐 리얼리즘</td>
+</tr>
+<tr>
+<td><strong>크레인/집 샷</strong></td>
+<td>위로 올라가며</td>
+<td><code>crane shot, jib arm, rising upward camera</code></td>
+<td>장엄한 스케일 공개</td>
+</tr>
+<tr>
+<td><strong>드론</strong></td>
+<td>항공 촬영</td>
+<td><code>drone shot, aerial cinematic, sweeping overhead</code></td>
+<td>광활한 풍경·건축</td>
+</tr>
+<tr>
+<td><strong>원테이크</strong></td>
+<td>컷 없이 연속</td>
+<td><code>one take, long take, unbroken shot</code></td>
+<td>몰입·긴장감</td>
+</tr>
+<tr>
+<td><strong>슬로우 모션</strong></td>
+<td>고속 촬영</td>
+<td><code>slow motion, 120fps, time dilation, frozen moment</code></td>
+<td>극적 순간 강조</td>
+</tr>
+<tr>
+<td><strong>타임랩스</strong></td>
+<td>시간 압축</td>
+<td><code>timelapse, time-lapse photography, clouds moving fast</code></td>
+<td>시간 경과·변화</td>
+</tr>
+<tr>
+<td><strong>스톱 모션</strong></td>
+<td>프레임 단위 촬영</td>
+<td><code>stop motion animation, claymation, frame by frame</code></td>
+<td>수공예적·실험적</td>
+</tr>
+</tbody>
+</table>
+<h4 id="영상-색보정--필름-룩">영상 색보정 &amp; 필름 룩<a class="headerlink" href="#영상-색보정--필름-룩" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>키워드</th>
+<th>한국어</th>
+<th>효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>teal and orange color grade</code></td>
+<td>틸+오렌지 보정</td>
+<td>할리우드 블록버스터 표준 색보정</td>
+</tr>
+<tr>
+<td><code>desaturated muted tones</code></td>
+<td>탈포화 색감</td>
+<td>인디영화·다크 드라마</td>
+</tr>
+<tr>
+<td><code>warm golden grade</code></td>
+<td>따뜻한 골드 보정</td>
+<td>회상·노스탤지어</td>
+</tr>
+<tr>
+<td><code>cool blue grade</code></td>
+<td>차가운 블루 보정</td>
+<td>SF·스릴러·미래</td>
+</tr>
+<tr>
+<td><code>high contrast noir</code></td>
+<td>고대비 느와르</td>
+<td>흑백 영화·범죄 장르</td>
+</tr>
+<tr>
+<td><code>bleach bypass</code></td>
+<td>블리치 바이패스</td>
+<td>탈포화+고대비, 전쟁·서사</td>
+</tr>
+<tr>
+<td><code>cross-processed film</code></td>
+<td>크로스 프로세싱</td>
+<td>비정상적 색 전환, 실험적</td>
+</tr>
+<tr>
+<td><code>Kodak Vision3 500T</code></td>
+<td>영화 필름 스톡</td>
+<td>시네마틱 텅스텐 밸런스 필름</td>
+</tr>
+<tr>
+<td><code>16mm film look</code></td>
+<td>16mm 영화 필름</td>
+<td>인디·다큐·거친 그레인</td>
+</tr>
+<tr>
+<td><code>ARRI Alexa look</code></td>
+<td>영화 카메라</td>
+<td>현대 영화 표준 색감·레인지</td>
+</tr>
+<tr>
+<td><code>RED camera look</code></td>
+<td>영화 카메라</td>
+<td>극도로 높은 해상도, 선명</td>
+</tr>
+<tr>
+<td><code>Super 8 footage</code></td>
+<td>슈퍼 8mm</td>
+<td>극도로 레트로, 거친 그레인·비네팅</td>
+</tr>
+</tbody>
+</table>
+<h4 id="영상-전용-완성-프롬프트-예시">영상 전용 완성 프롬프트 예시<a class="headerlink" href="#영상-전용-완성-프롬프트-예시" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a># 뮤직비디오 컨셉 프레임
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>female dancer in flowing red dress, spinning in rain, 
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>tracking shot, slow motion water droplets frozen in mid-air,
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>anamorphic lens flare, teal and orange color grade,
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>shot on ARRI Alexa, cinematic depth of field
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>--ar 21:9 --v 6.1 --style raw --s 400 --no text
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a># 다큐멘터리 스틸
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>elderly fisherman mending nets at dawn harbor,
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>handheld documentary feel, 16mm film grain,
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>soft natural golden hour light, Kodak Portra warm skin tones,
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>in the style of Sebastião Salgado
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>--ar 16:9 --v 6.1 --style raw --s 200
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a># 유튜브 썸네일 (드라마틱)
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>creator facing camera with shocked expression,
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>extreme close-up face, dramatic single rim light,
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>shallow depth of field, neon background blur,
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>shot on Sony A7R IV, high contrast pop
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>--ar 16:9 --v 6.1 --s 500 --no text, watermark
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a># 시네마틱 랜딩 장면 (드론)
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>aerial drone shot of lone figure walking on vast salt flat at sunset,
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>Denis Villeneuve cinematography, IMAX scale,
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>desaturated amber palette, atmospheric haze,
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>200mm telephoto compression, epic wide landscape
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>--ar 21:9 --v 6.1 --style raw --s 350
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a># 공포/스릴러 장면 컨셉
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>dark empty hallway, CCTV security camera perspective,
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>worm&#39;s eye view, Dutch angle, single flickering fluorescent light,
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>bleach bypass desaturated, high contrast noir,
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>unsettling atmosphere, found footage feel
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>--ar 16:9 --v 6.1 --s 600 --no people, text
+</code></pre></div>
+<hr />
+<h2 id="-d-파라미터-조합-치트시트">⚙️ D. 파라미터 조합 치트시트<a class="headerlink" href="#-d-파라미터-조합-치트시트" title="Permanent link">&para;</a></h2>
+<h3 id="d-1-상황별-추천-파라미터-세트">D-1. 상황별 추천 파라미터 세트<a class="headerlink" href="#d-1-상황별-추천-파라미터-세트" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>용도</th>
+<th>추천 파라미터 조합</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SNS 인스타 세로</strong></td>
+<td><code>--ar 9:16 --v 6.1 --s 300</code></td>
+</tr>
+<tr>
+<td><strong>유튜브 썸네일</strong></td>
+<td><code>--ar 16:9 --v 6.1 --s 500</code></td>
+</tr>
+<tr>
+<td><strong>정사각형 피드</strong></td>
+<td><code>--ar 1:1 --v 6.1 --s 400</code></td>
+</tr>
+<tr>
+<td><strong>포트레이트 인물</strong></td>
+<td><code>--ar 4:5 --v 6.1 --style raw --s 200</code></td>
+</tr>
+<tr>
+<td><strong>건축/공간 무드보드</strong></td>
+<td><code>--ar 16:9 --v 6.1 --s 300 --no people</code></td>
+</tr>
+<tr>
+<td><strong>일러스트/아트워크</strong></td>
+<td><code>--ar 3:4 --v 6.1 --s 800</code></td>
+</tr>
+<tr>
+<td><strong>애니메이션 스타일</strong></td>
+<td><code>--ar 16:9 --niji 6 --s 600</code></td>
+</tr>
+<tr>
+<td><strong>초현실/실험적</strong></td>
+<td><code>--ar 1:1 --v 6.1 --s 900 --c 50</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="d-2-네거티브-프롬프트-기본-세트---no">D-2. 네거티브 프롬프트 기본 세트 (<code>--no</code>)<a class="headerlink" href="#d-2-네거티브-프롬프트-기본-세트---no" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a># 모든 이미지 공통 기본 세트
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>--no text, watermark, signature, blurry, low quality, logo
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a># 인물 사진 추가
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>--no extra limbs, distorted face, bad anatomy, extra fingers
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a># 건축/공간 추가
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>--no people, clutter, dark corners, lens flare
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a># 일러스트 추가
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>--no photorealistic, 3D render, uncanny valley
+</code></pre></div>
+<hr />
+<h2 id="-e-완성-프롬프트-예시-모음">🧩 E. 완성 프롬프트 예시 모음<a class="headerlink" href="#-e-완성-프롬프트-예시-모음" title="Permanent link">&para;</a></h2>
+<h3 id="e-1-아티스트-직군별-실전-예시">E-1. 아티스트 직군별 실전 예시<a class="headerlink" href="#e-1-아티스트-직군별-실전-예시" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a># 사진작가 — 야외 인물 포트레이트
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>young woman in a white linen dress, 
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>standing in a lavender field at golden hour, 
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>editorial photography style, 
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>warm golden backlight, soft rim lighting, 
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>85mm f/1.4 lens, shallow bokeh 
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>--ar 4:5 --v 6.1 --style raw --s 200 --no text, watermark
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a># 공간기획자 — 전시 공간 무드보드
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>minimalist gallery space with high white walls and skylights, 
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>single large abstract painting, lone visitor silhouette, 
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>architectural photography style, 
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>natural diffused daylight, serene and contemplative, 
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>wide angle 24mm lens, sharp focus 
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>--ar 16:9 --v 6.1 --s 300 --no people blur text
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a># 댄서/안무가 — 공연 컨셉 이미지
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>solo contemporary dancer mid-leap on an empty dark stage, 
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>single dramatic spotlight from above, long exposure motion blur on limbs, 
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>fine art photography style, 
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>high contrast chiaroscuro, cinematic drama, 
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>85mm lens, sharp focus on face 
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>--ar 2:3 --v 6.1 --s 500 --no audience, busy background
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a># 영상제작자 — 시네마틱 스틸
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>abandoned warehouse interior at dusk, 
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>dust particles floating in a single shaft of light, 
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>cinematic still photography, 
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>Ridley Scott cinematography style, amber and teal color grade, 
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>anamorphic lens flare, 35mm film grain 
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>--ar 21:9 --v 6.1 --style raw --s 400
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a># 미디어아티스트 — 추상 컨셉 아트
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>infinite fractal ocean of iridescent jellyfish, 
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>girl floating weightlessly among them, eyes closed, 
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>surrealist oil painting, impasto texture, 
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>bioluminescent blue-green glow, ethereal dreamlike atmosphere, 
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>golden ratio composition, trending on artstation 
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>--ar 16:9 --v 6.1 --s 900 --c 20
+</code></pre></div>
+<h3 id="e-2-화풍-변주-템플릿-주제-고정-스타일-변경">E-2. 화풍 변주 템플릿 (주제 고정, 스타일 변경)<a class="headerlink" href="#e-2-화풍-변주-템플릿-주제-고정-스타일-변경" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a># 기본 주제: 고양이 in rainy alley
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>cat sitting in a rainy alleyway at night [화풍 키워드] --ar 1:1 --v 6.1
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>→ 유화: oil painting, impasto, Rembrandt lighting --s 700
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>→ 수채화: delicate watercolor, loose brushstrokes, soft diffused light --s 500
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>→ 픽셀아트: pixel art, 16-bit retro style, neon palette --s 300
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>→ 사진: editorial photography, 35mm film grain, neon reflections --style raw --s 200
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>→ 애니: --niji 6, anime style, Makoto Shinkai inspired --s 600
+</code></pre></div>
+<hr />
+<h2 id="-f-키워드-복사용-quick-reference">📋 F. 키워드 복사용 Quick Reference<a class="headerlink" href="#-f-키워드-복사용-quick-reference" title="Permanent link">&para;</a></h2>
+<h3 id="화풍-원라이너-바로-붙여넣기">화풍 원라이너 (바로 붙여넣기)<a class="headerlink" href="#화풍-원라이너-바로-붙여넣기" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>acrylic palette knife style, impasto thick texture, dramatic lighting
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>watercolor illustration, loose brushstrokes, soft pastel tones
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>oil painting, classical baroque style, chiaroscuro lighting
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>polaroid-style, vintage instant film, slightly desaturated, nostalgic
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>editorial photography, 85mm lens, shallow depth of field, golden hour
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>architectural photography, wide angle, natural diffused light, minimalist
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>pixel art, 16-bit retro arcade game, flat coloring, neon palette
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>anime style --niji 6
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>surrealist oil painting, dreamlike atmosphere, artstation trending
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>concept art, dark fantasy, dramatic cinematic lighting, highly detailed
+</code></pre></div>
+<h3 id="조명-원라이너">조명 원라이너<a class="headerlink" href="#조명-원라이너" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>golden hour backlight, warm amber tones, soft rim lighting
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>dramatic single spotlight, high contrast shadows, chiaroscuro
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>soft diffused daylight, overcast sky, even lighting, no harsh shadows
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>neon lighting, cyberpunk palette, pink and blue reflections
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>bioluminescent glow, deep ocean blue-green, ethereal
+</code></pre></div>
+<h3 id="파라미터-원라이너">파라미터 원라이너<a class="headerlink" href="#파라미터-원라이너" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>--ar 9:16 --v 6.1 --s 400 --no text, watermark, blur
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>--ar 16:9 --v 6.1 --style raw --s 200 --no text, watermark
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>--ar 1:1 --v 6.1 --s 700 --c 30 --no text
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>--ar 4:5 --niji 6 --s 600 --no text, watermark
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>--ar 21:9 --v 6.1 --style raw --s 300 --no text, watermark, logo
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/password.js"></script>
+      
+    
+  </body>
+</html>

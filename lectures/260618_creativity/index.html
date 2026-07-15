@@ -1,0 +1,962 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="실무 도입부터 에이전트 설계, 파이프라인 구축까지 — AI 활용 교육, 워크숍, 마스터클래스 실전 아카이브">
+      
+      
+      
+      
+        <link rel="prev" href="../../04_%EC%8B%9C%EC%8A%A4%ED%85%9C/">
+      
+      
+        <link rel="next" href="../260212_automation/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>🔒 창작 구체화 (내 생각을 시스템으로) - AI MASTER CLASS ARCHIVE</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pretendard:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Pretendard";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#창작-구체화-내-생각을-시스템으로-만드는-법" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../.." title="AI MASTER CLASS ARCHIVE" class="md-header__button md-logo" aria-label="AI MASTER CLASS ARCHIVE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI MASTER CLASS ARCHIVE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🔒 창작 구체화 (내 생각을 시스템으로)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="공유" aria-label="공유" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI MASTER CLASS ARCHIVE" class="md-nav__button md-logo" aria-label="AI MASTER CLASS ARCHIVE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+
+    </a>
+    AI MASTER CLASS ARCHIVE
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_%EC%8B%9C%EC%9E%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 00. 시작 — 어디서부터
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_%EB%8F%84%EA%B5%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 01. 도구 — 뭘 쓸 것인가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_%EB%A3%A8%ED%8B%B4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 02. 루틴 — 어디에 넣을 것인가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_%ED%99%95%EC%9E%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 03. 확장 — 사고를 시스템으로
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_%EC%8B%9C%EC%8A%A4%ED%85%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 04. 시스템 — 에이전트와 파이프라인
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 창작 구체화 (내 생각을 시스템으로)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 창작 구체화 (내 생각을 시스템으로)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-실전-창작-구체화-로드맵-4단계" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 실전 창작 구체화 로드맵 (4단계)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 실전 창작 구체화 로드맵 (4단계)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-날것의-맥락-던지기-20분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1. 날것의 맥락 던지기 (20분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-ai의-뻔한-답-거절하기-35분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2. AI의 뻔한 답 거절하기 (35분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-관념을-규칙과-제약으로-잠그기-35분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3. 관념을 규칙과 제약으로 잠그기 (35분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-프로젝트-폴더-및-개인-위키로-축적하기-30분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4. 프로젝트 폴더 및 개인 위키로 축적하기 (30분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-강의-리소스--다운로드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💾 강의 리소스 &amp; 다운로드
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../260212_automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 실무 자동화 (AI 콘텐츠 공장)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../251114_coldmail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 글로벌 피칭 (실리콘밸리 콜드메일)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../250515_vibecoding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 개발 워크플로우 (바이브코딩)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../230512_midjourney/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 미드저니 (AI 이미지 생성 워크숍)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midjourney_prompt_sheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📋 미드저니 화풍 & 프롬프트 시트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../230411_planning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 기획서 작성 (AI로 기획안 쓰기)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-실전-창작-구체화-로드맵-4단계" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 실전 창작 구체화 로드맵 (4단계)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 실전 창작 구체화 로드맵 (4단계)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-날것의-맥락-던지기-20분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1. 날것의 맥락 던지기 (20분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-ai의-뻔한-답-거절하기-35분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2. AI의 뻔한 답 거절하기 (35분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-관념을-규칙과-제약으로-잠그기-35분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3. 관념을 규칙과 제약으로 잠그기 (35분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-프로젝트-폴더-및-개인-위키로-축적하기-30분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4. 프로젝트 폴더 및 개인 위키로 축적하기 (30분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-강의-리소스--다운로드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💾 강의 리소스 &amp; 다운로드
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="창작-구체화-내-생각을-시스템으로-만드는-법">창작 구체화: 내 생각을 시스템으로 만드는 법<a class="headerlink" href="#창작-구체화-내-생각을-시스템으로-만드는-법" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>대상</strong>: 다원예술 창작자, 기획자, 작가 | <strong>시간</strong>: 2시간 워크숍 | <strong>핵심</strong>: 머릿속의 러프한 날것 영감을 세계관, 입체적 캐릭터 DB, 장면으로 구체화하고 개인 위키로 자산화하는 법.</p>
+</blockquote>
+<hr />
+<h2 id="-실전-창작-구체화-로드맵-4단계">📌 실전 창작 구체화 로드맵 (4단계)<a class="headerlink" href="#-실전-창작-구체화-로드맵-4단계" title="Permanent link">&para;</a></h2>
+<p>이 가이드는 강사가 실제로 3만 7천 자의 SF 소설 《판결 미기재》 및 아트디렉션을 AI와 함께 뽑아낸 과정을 분해한 실습 로드맵입니다.</p>
+<hr />
+<h3 id="step-1-날것의-맥락-던지기-20분">Step 1. 날것의 맥락 던지기 (20분)<a class="headerlink" href="#step-1-날것의-맥락-던지기-20분" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>판단 (Trigger):</strong> 기획서나 시놉시스 양식을 채워야 한다는 압박 때문에 첫 글을 떼지 못하고 있을 때.</li>
+<li><strong>할 일 (Actions):</strong></li>
+<li>머릿속에 맴도는 짧은 문장, 불편한 질문, 날것의 이미지 일기를 AI 대화창에 입력한다.</li>
+<li>AI에게 "기획안 써줘"라고 요청하지 말고, <strong>"나는 이런 생각을 하고 있어"</strong>라고 맥락만 먼저 던진 뒤 대화를 유도한다.</li>
+<li><strong>처음이라면 (Tip):</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>나는 이런 생각을 하고 있어: [내 머릿속 날것의 생각/질문].
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>이 생각을 기반으로 대화하고 싶어. 아직 정리가 안 됐는데, 같이 대화하며 구체화해볼 수 있을까?
+</code></pre></div></li>
+<li><strong>실제 사례:</strong><blockquote>
+<p><em>"인간들의 올림픽. 사람들은 달린다. 들어올린다. 쏜다. 부대낀다. 사람이 사람을 바라본다. 아니다 사실 로봇이다. 사실 사람들은 목적을 잃었다."</em> 라는 날것의 한 줄 질문이 이 프로젝트의 시작점이었습니다.</p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h3 id="step-2-ai의-뻔한-답-거절하기-35분">Step 2. AI의 뻔한 답 거절하기 (35분)<a class="headerlink" href="#step-2-ai의-뻔한-답-거절하기-35분" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>판단 (Trigger):</strong> AI가 "인간과 기술의 아름다운 조화" 같은 안전하고 뻔한 공익 광고용 해피엔딩을 제안할 때.</li>
+<li><strong>할 일 (Actions):</strong></li>
+<li>AI가 제시한 결론을 과감히 거절하고, 내가 원하는 <strong>불편한 진실이나 회색지대</strong>를 직접 입력해 방향을 꺾는다.</li>
+<li>원하지 않는 방향은 문장형으로 명시하여 잠근다.</li>
+<li><strong>처음이라면 (Tip):</strong></li>
+<li><code>"~은 필요 없어"</code> : 원하지 않는 공익적 결말 차단</li>
+<li><code>"의문만 던져, 결론은 내리지 마"</code> : 열린 결말 강제</li>
+<li><code>"나의 요점은 ~야"</code> : 삼천포로 빠진 대화 되돌리기</li>
+<li><strong>실제 사례:</strong><blockquote>
+<p><em>"의문만 던지도록 해줘. 인간과 기술의 조화 가능성과 같은 아름다운 그림은 필요 없어."</em></p>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h3 id="step-3-관념을-규칙과-제약으로-잠그기-35분">Step 3. 관념을 규칙과 제약으로 잠그기 (35분)<a class="headerlink" href="#step-3-관념을-규칙과-제약으로-잠그기-35분" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>판단 (Trigger):</strong> 세계관이나 설정이 지나치게 추상적이어서 사건과 갈등이 발생하지 않을 때.</li>
+<li><strong>할 일 (Actions):</strong></li>
+<li>추상적인 질문을 <strong>"세계의 허용 조항과 금지 조항(룰북)"</strong>으로 치환한다.</li>
+<li>주인공 캐릭터가 이 규칙의 아슬아슬한 경계선 위에 서 있도록 역할을 설정한다.</li>
+<li>텍스트보다 강렬한 <strong>장면 이미지 1개</strong>를 정하고 이를 3컷으로 쪼개어 시각화(미드저니 등)한다.</li>
+<li><strong>처음이라면 (Tip):</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>이 세계관에서 주인공이 행동할 때 허용되는 것과 금지되는 규칙 3가지를 정해줘.
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>단, 주인공은 이 규정을 위반할 수밖에 없는 모순된 상황이어야 해.
+</code></pre></div></li>
+<li><strong>실제 사례:</strong><blockquote>
+<ul>
+<li>규칙: "신체적 장애 극복을 위한 개조만 허용하되, 능력 향상을 목적으로 한 개조는 금지한다."</li>
+<li>갈등: 주인공 안나가 경기 도중 머리가 분리되는 사고를 당하지만, 인지 칩이 다른 곳에 있어 머리 없이 결승선을 통과한다. 이것은 극복인가, 위반인가?</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<hr />
+<h3 id="step-4-프로젝트-폴더-및-개인-위키로-축적하기-30분">Step 4. 프로젝트 폴더 및 개인 위키로 축적하기 (30분)<a class="headerlink" href="#step-4-프로젝트-폴더-및-개인-위키로-축적하기-30분" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>판단 (Trigger):</strong> 채팅창을 닫으면 AI와의 대화 내용이 사라져 다음 작업 시 설정이 리셋될 때.</li>
+<li><strong>할 일 (Actions):</strong></li>
+<li>프로젝트 폴더를 만들고 대화 결과물을 <code>01_Lore/</code>, <code>02_Athletes_DB/</code> 등 마크다운 파일로 파편화하여 분리 저장한다.</li>
+<li>폴더 루트에 <code>CLAUDE.md</code>를 만들어 AI에게 규칙(INGEST-QUERY-LINT)을 주입한다.</li>
+<li><code>concepts/</code>와 <code>pairings/</code> 폴더 구조를 사용해 생각의 연결고리를 박제한다.</li>
+<li><strong>처음이라면 (Tip):</strong></li>
+<li><a href="../../04_%EC%8B%9C%EC%8A%A4%ED%85%9C/">04_시스템 — 에이전트와 파이프라인</a> 가이드를 참조하여 <code>CLAUDE.md</code> 뼈대를 프로젝트 폴더에 생성하십시오.</li>
+</ul>
+<hr />
+<h2 id="-강의-리소스--다운로드">💾 강의 리소스 &amp; 다운로드<a class="headerlink" href="#-강의-리소스--다운로드" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://drive.google.com/drive/folders/1RSyFdUPWWlua2bmA3ZzZ6mzdwyUrC7h8">강의 설계서 &amp; 타임테이블 (구글 드라이브)</a></li>
+<li><a href="https://drive.google.com/drive/folders/1RSyFdUPWWlua2bmA3ZzZ6mzdwyUrC7h8">반복 작업 분석 및 AI 전환 우선순위 워크시트(템플릿)</a></li>
+<li><a href="file:///Users/haepa_mac/Library/CloudStorage/GoogleDrive-haepada@gmail.com/내 드라이브/2023~2026 ai 특강/260618 ai 특강/ai_usage_evaluation.md">실습 가이드북 마크다운 초안</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/password.js"></script>
+      
+    
+  </body>
+</html>

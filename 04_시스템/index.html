@@ -14,6 +14,8 @@
         <link rel="prev" href="../03_%ED%99%95%EC%9E%A5/">
       
       
+        <link rel="next" href="../lectures/260618_creativity/">
+      
       
         
       
@@ -602,6 +604,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#4-3-prompt-chaining--복잡한-작업의-순차-분해" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-3. Prompt Chaining — 복잡한 작업의 순차 분해
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -750,6 +763,195 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lectures/260618_creativity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 창작 구체화 (내 생각을 시스템으로)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lectures/260212_automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 실무 자동화 (AI 콘텐츠 공장)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lectures/251114_coldmail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 글로벌 피칭 (실리콘밸리 콜드메일)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lectures/250515_vibecoding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 개발 워크플로우 (바이브코딩)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lectures/230512_midjourney/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 미드저니 (AI 이미지 생성 워크숍)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lectures/midjourney_prompt_sheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📋 미드저니 화풍 & 프롬프트 시트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lectures/230411_planning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 기획서 작성 (AI로 기획안 쓰기)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -941,6 +1143,17 @@
     <span class="md-ellipsis">
       
         4-2. 실전 15종 스킬 체인 상세 명세
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-3-prompt-chaining--복잡한-작업의-순차-분해" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4-3. Prompt Chaining — 복잡한 작업의 순차 분해
       
     </span>
   </a>
@@ -1633,24 +1846,79 @@
 </tbody>
 </table>
 <hr />
+<h3 id="4-3-prompt-chaining--복잡한-작업의-순차-분해">4-3. Prompt Chaining — 복잡한 작업의 순차 분해<a class="headerlink" href="#4-3-prompt-chaining--복잡한-작업의-순차-분해" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>출처</strong>: Anthropic 공식 가이드 (Prompt Chaining 챕터)</p>
+</blockquote>
+<p>복잡한 작업을 <strong>한 번의 프롬프트에 모두 담으면 품질이 떨어집니다.</strong> Prompt Chaining은 이를 2~4개의 순차적 프롬프트로 분해하여, 각 단계의 결과물을 다음 단계의 입력으로 사용하는 방법입니다.</p>
+<p><strong>원리</strong>: 인간도 복잡한 보고서를 쓸 때 "목차 → 아웃라인 → 본문 → 퇴고" 순으로 진행합니다. AI도 동일하게 단계를 나누면 품질이 극적으로 향상됩니다.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>프롬프트 1 결과물
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>       ↓
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>프롬프트 2 (1의 결과물을 입력으로 사용) → 결과물
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>       ↓
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>프롬프트 3 (2의 결과물을 입력으로 사용) → 최종 산출물
+</code></pre></div>
+<h4 id="실전-적용-기획서-작성-체인">실전 적용: 기획서 작성 체인<a class="headerlink" href="#실전-적용-기획서-작성-체인" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a># Step 1: 구조 설계
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>&quot;이 프로젝트의 공모 기획서에 들어갈 핵심 섹션 5개를 뽑고,
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>각 섹션이 심사위원에게 어필할 포인트를 한 줄로 설명해줘.&quot;
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>↓ [결과물 복사]
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a># Step 2: 아웃라인 구체화
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>&quot;위 5개 섹션 구조를 바탕으로, 각 섹션에 들어갈 소제목과
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>핵심 논지 2문장씩 작성해줘. 실제 수치나 사례는 빈칸([  ])으로 표시해.&quot;
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>↓ [결과물 복사]
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a># Step 3: 본문 집필 (섹션별 분리 진행)
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>&quot;위 아웃라인의 &#39;1. 팀 역량&#39; 섹션을 전문 기획서 톤으로 완성해줘.
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>다음 데이터를 반드시 포함해: [내 실제 데이터]&quot;
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>↓ [섹션별 반복]
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a># Step 4: 검증 루프
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>&quot;완성된 기획서 전체를 읽고, 심사위원 입장에서 가장 설득력이 약한
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>섹션 2개와 그 이유, 보완 방향을 지적해줘.&quot;
+</code></pre></div>
+<h4 id="아티스트용-prompt-chaining-예시">아티스트용 Prompt Chaining 예시<a class="headerlink" href="#아티스트용-prompt-chaining-예시" title="Permanent link">&para;</a></h4>
+<p><strong>전시 제안서 작성</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>체인 1: &quot;이번 전시 컨셉을 한 문장으로 정의해줘&quot; → 컨셉 문장
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>체인 2: &quot;이 컨셉을 기반으로 전시 동선과 인터랙션 포인트 3개 설계해줘&quot; → 공간 구조
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>체인 3: &quot;이 공간 구조와 컨셉을 바탕으로 지원 기관 제출용 기획서 목차 작성해줘&quot; → 목차
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>체인 4: &quot;목차의 &#39;기대 효과&#39; 섹션을 구체적 수치와 함께 2단락으로 써줘&quot; → 완성 섹션
+</code></pre></div></p>
+<p><strong>SNS 콘텐츠 기획</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>체인 1: &quot;이번 달 작업 이미지 5장을 보고 공통 주제/무드를 분석해줘&quot; → 테마
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>체인 2: &quot;이 테마로 2주간 인스타그램 게시 계획(요일/주제/해시태그)을 표로 만들어줘&quot; → 캘린더
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>체인 3: &quot;캘린더의 첫 번째 게시물 캡션을 내 평소 스타일로 써줘&quot; → 캡션 초안
+</code></pre></div></p>
+<blockquote>
+<p>[!TIP]
+Prompt Chaining이 필요한 신호:
+- 한 번에 요청했는데 결과물이 어설프게 여러 방향으로 분산될 때
+- "기획서 전체 써줘"처럼 작업이 너무 포괄적일 때
+- 결과물의 품질이 섹션마다 들쑥날쑥할 때</p>
+</blockquote>
+<hr />
 <h2 id="5-검증-루프-validation-loop-자체-검증-및-비판-시스템">5. 검증 루프 (Validation Loop): 자체 검증 및 비판 시스템<a class="headerlink" href="#5-검증-루프-validation-loop-자체-검증-및-비판-시스템" title="Permanent link">&para;</a></h2>
 <p>AI 시스템의 완성도는 "좋은 초안을 쓰는가"보다 <strong>"스스로 결함을 잡아낼 수 있는가"</strong>에 달려 있습니다.</p>
 <h3 id="5-1-비평가-에이전트-악플러-설정-규칙">5-1. 비평가 에이전트 ('악플러') 설정 규칙<a class="headerlink" href="#5-1-비평가-에이전트-악플러-설정-규칙" title="Permanent link">&para;</a></h3>
 <p>AI의 동조 편향("모두 잘 썼습니다")을 제거하기 위해, 오직 결함만을 찾아내는 전용 비평 에이전트를 배치합니다.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="gh"># 악플러 에이전트</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="gu">## 역할</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">-</span><span class="w"> </span>입력된 텍스트/기획안의 약점을 집요하게 찾아내고 비판한다. (칭찬 절대 금지)
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="gu">## 8대 비평 항목 (사냥 목록)</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="k">1.</span> <span class="gs">**클리셰 사냥**</span>: 진부하고 참신함이 결여된 전개나 논리
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="k">2.</span> <span class="gs">**동기 부재**</span>: 캐릭터 혹은 기획 단계의 인과관계 누락
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="k">3.</span> <span class="gs">**편의적 전개**</span>: 현실성 없이 입맛대로 설정된 비즈니스 구조/스토리
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="k">4.</span> <span class="gs">**감정 인플레**</span>: 근거 없이 과도하게 장식된 미사여구나 서술
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="k">5.</span> <span class="gs">**설명충**</span>: 객관적 사실(Show)을 보여주는 대신, 서사로 때우려는 태도(Tell)
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="k">6.</span> <span class="gs">**동어반복**</span>: 단어나 논리가 여러 문단에 걸쳐 다르게 변주되며 중복되는 현상
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="k">7.</span> <span class="gs">**세계관 위반**</span>: 앞서 정의한 규칙 파일이나 실적 데이터와 충돌하는 내용
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="k">8.</span> <span class="gs">**메시지 과잉**</span>: 본질을 넘어선 교훈이나 장황한 목적성 주입
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="gh"># 악플러 에이전트</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="gu">## 역할</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">-</span><span class="w"> </span>입력된 텍스트/기획안의 약점을 집요하게 찾아내고 비판한다. (칭찬 절대 금지)
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="gu">## 8대 비평 항목 (사냥 목록)</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="k">1.</span> <span class="gs">**클리셰 사냥**</span>: 진부하고 참신함이 결여된 전개나 논리
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="k">2.</span> <span class="gs">**동기 부재**</span>: 캐릭터 혹은 기획 단계의 인과관계 누락
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="k">3.</span> <span class="gs">**편의적 전개**</span>: 현실성 없이 입맛대로 설정된 비즈니스 구조/스토리
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="k">4.</span> <span class="gs">**감정 인플레**</span>: 근거 없이 과도하게 장식된 미사여구나 서술
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="k">5.</span> <span class="gs">**설명충**</span>: 객관적 사실(Show)을 보여주는 대신, 서사로 때우려는 태도(Tell)
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="k">6.</span> <span class="gs">**동어반복**</span>: 단어나 논리가 여러 문단에 걸쳐 다르게 변주되며 중복되는 현상
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="k">7.</span> <span class="gs">**세계관 위반**</span>: 앞서 정의한 규칙 파일이나 실적 데이터와 충돌하는 내용
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="k">8.</span> <span class="gs">**메시지 과잉**</span>: 본질을 넘어선 교훈이나 장황한 목적성 주입
 </code></pre></div>
 <h3 id="5-2-변주-매트릭스-variation-matrix">5-2. 변주 매트릭스 (Variation Matrix)<a class="headerlink" href="#5-2-변주-매트릭스-variation-matrix" title="Permanent link">&para;</a></h3>
 <p>기획서나 포트폴리오가 일관된 패턴으로 반복되어 수용자(클라이언트/심사위원)가 복사 붙여넣기로 느끼지 않도록 제어하는 매트릭스입니다.</p>
@@ -1727,11 +1995,11 @@ B 전시 검토 시 3가지 이상의 요소가 중복 감지되어 <strong>'패
 </table>
 <h3 id="5-3-결정-로그-decision-log-재론-금지">5-3. 결정 로그 (Decision Log): 재론 금지<a class="headerlink" href="#5-3-결정-로그-decision-log-재론-금지" title="Permanent link">&para;</a></h3>
 <p>반복되는 대화나 빌드 과정에서 이미 결정했던 사항을 AI가 망각하여 재질문하는 현상을 방지하는 로그북입니다.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="gh"># 결정 로그</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">-</span><span class="w"> </span>[D-01] 포트폴리오 대표작은 최대 12점으로 제한한다. (이유: 클라이언트 집중도 저하 방지)
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">-</span><span class="w"> </span>[D-02] 견적서의 보정비는 컷당 단가제만 적용한다. (이유: 패키지 단가는 분쟁 소지가 높음)
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="k">-</span><span class="w"> </span>[D-03] SNS 캡션은 3줄 이내, 해시태그 10개 이내로 고정한다. (이유: 인스타그램 알고리즘 최적화)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="gh"># 결정 로그</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">-</span><span class="w"> </span>[D-01] 포트폴리오 대표작은 최대 12점으로 제한한다. (이유: 클라이언트 집중도 저하 방지)
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="k">-</span><span class="w"> </span>[D-02] 견적서의 보정비는 컷당 단가제만 적용한다. (이유: 패키지 단가는 분쟁 소지가 높음)
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="k">-</span><span class="w"> </span>[D-03] SNS 캡션은 3줄 이내, 해시태그 10개 이내로 고정한다. (이유: 인스타그램 알고리즘 최적화)
 </code></pre></div>
 <hr />
 <h2 id="6-크리에이티브-및-실무-파이프라인-시나리오">6. 크리에이티브 및 실무 파이프라인 시나리오<a class="headerlink" href="#6-크리에이티브-및-실무-파이프라인-시나리오" title="Permanent link">&para;</a></h2>
@@ -1756,46 +2024,46 @@ B 전시 검토 시 3가지 이상의 요소가 중복 감지되어 <strong>'패
 </ul>
 <h3 id="6-3-아티스트창작-실무-파이프라인-3종">6-3. 아티스트/창작 실무 파이프라인 3종<a class="headerlink" href="#6-3-아티스트창작-실무-파이프라인-3종" title="Permanent link">&para;</a></h3>
 <h4 id="a-사진작가-촬영-자동-세팅-파이프라인">A. 사진작가: 촬영 자동 세팅 파이프라인<a class="headerlink" href="#a-사진작가-촬영-자동-세팅-파이프라인" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>[클라이언트 견적 문의]
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>       │
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>       ▼
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>[견적서 생성 에이전트] ──&gt; 단가표 기준 견적 산출 및 메일 발송
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>       │
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>       ▼
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>[촬영 세팅 검색기] ──&gt; 과거 촬영 세팅(날씨/조도) 검색 (옵시디언 연동)
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>       │
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>       ▼
-<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>[체크리스트 생성] ──&gt; 장비 및 비상 부품 체크리스트 생성
-<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>       │
-<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>       ▼
-<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>[촬영 완료 후 SNS 매니저] ──&gt; 캡션 3종 및 타겟 해시태그 생성
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>[클라이언트 견적 문의]
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>       │
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>       ▼
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>[견적서 생성 에이전트] ──&gt; 단가표 기준 견적 산출 및 메일 발송
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>       │
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>       ▼
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>[촬영 세팅 검색기] ──&gt; 과거 촬영 세팅(날씨/조도) 검색 (옵시디언 연동)
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>       │
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>       ▼
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>[체크리스트 생성] ──&gt; 장비 및 비상 부품 체크리스트 생성
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>       │
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>       ▼
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>[촬영 완료 후 SNS 매니저] ──&gt; 캡션 3종 및 타겟 해시태그 생성
 </code></pre></div>
 <h4 id="b-공간기획자-전시-기획-파이프라인">B. 공간기획자: 전시 기획 파이프라인<a class="headerlink" href="#b-공간기획자-전시-기획-파이프라인" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>[공간 스펙 및 주제 입력] (예: 200평, 프로젝터 3대)
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>       │
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>       ▼
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>[세팅 검색기] ──&gt; 유사 공간/과거 장비 배치 이력 검색
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>       │
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>       ▼
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>[리서치 요약기] ──&gt; 최근 전시 트렌드 및 경쟁 전시 요약
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>       │
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>       ▼
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>[기획서 작성기] ──&gt; 기획 의도, 시공 예산, 하드웨어 스펙 도출
-<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>       │
-<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>       ▼
-<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>[Midjourney 프롬프트 빌더] ──&gt; 시각화용 무드보드 렌더링 프롬프트 생성
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>[공간 스펙 및 주제 입력] (예: 200평, 프로젝터 3대)
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>       │
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>       ▼
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>[세팅 검색기] ──&gt; 유사 공간/과거 장비 배치 이력 검색
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>       │
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>       ▼
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>[리서치 요약기] ──&gt; 최근 전시 트렌드 및 경쟁 전시 요약
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>       │
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>       ▼
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>[기획서 작성기] ──&gt; 기획 의도, 시공 예산, 하드웨어 스펙 도출
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>       │
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>       ▼
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>[Midjourney 프롬프트 빌더] ──&gt; 시각화용 무드보드 렌더링 프롬프트 생성
 </code></pre></div>
 <h4 id="c-댄서안무가-안무-및-무대-큐시트-파이프라인">C. 댄서/안무가: 안무 및 무대 큐시트 파이프라인<a class="headerlink" href="#c-댄서안무가-안무-및-무대-큐시트-파이프라인" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>[안무 영감 수집 (Instagram/YouTube)] ──&gt; 동작 특징 키워드화
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>       │
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>       ▼
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>[옵시디언 위키] ──&gt; 영감 노트 아카이빙 및 축적
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>       │
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>       ▼
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>[음악 분석기] ──&gt; BPM 측정 및 에너지 레벨 구간 분할
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>       │
-<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>       ▼
-<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>[큐시트 생성기] ──&gt; 타임코드별 안무, 조명(핀스팟/풀), 음향 연동 큐시트 표 생성
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>[안무 영감 수집 (Instagram/YouTube)] ──&gt; 동작 특징 키워드화
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>       │
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>       ▼
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>[옵시디언 위키] ──&gt; 영감 노트 아카이빙 및 축적
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>       │
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>       ▼
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>[음악 분석기] ──&gt; BPM 측정 및 에너지 레벨 구간 분할
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>       │
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>       ▼
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>[큐시트 생성기] ──&gt; 타임코드별 안무, 조명(핀스팟/풀), 음향 연동 큐시트 표 생성
 </code></pre></div>
 <hr />
 <h2 id="7-지식-축적-시스템-llm과-옵시디언-위키의-연동">7. 지식 축적 시스템: LLM과 옵시디언 위키의 연동<a class="headerlink" href="#7-지식-축적-시스템-llm과-옵시디언-위키의-연동" title="Permanent link">&para;</a></h2>
@@ -1804,23 +2072,24 @@ B 전시 검토 시 3가지 이상의 요소가 중복 감지되어 <strong>'패
 <p><strong>옵시디언 LLM 위키 상세 설계</strong>: <a href="../03_%ED%99%95%EC%9E%A5/#3-옵시디언obsidian-llm-위키-구축">03_확장 — 3. 옵시디언 LLM 위키 구축</a> 참조</p>
 </blockquote>
 <h3 id="7-1-허브-노드hub-node-네트워크-구조">7-1. 허브 노드(Hub Node) 네트워크 구조<a class="headerlink" href="#7-1-허브-노드hub-node-네트워크-구조" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>[허브 노드: 실패한 프로젝트/전시 공통점]
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>   ├── [예산 초과 요인]
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>   │     └── 2023-03 ○○갤러리 전시 예산 초과 케이스
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>   ├── [일정 지연 리스크]
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>   │     └── 2024-01 △△페스티벌 납기 지연 케이스
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>   └── [연결 사례]
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>         ├── 2025-01 ○○미술관 전시 기획 분석
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>         └── 2025-04 상업 촬영 견적 재검토
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>[허브 노드: 실패한 프로젝트/전시 공통점]
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>   ├── [예산 초과 요인]
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>   │     └── 2023-03 ○○갤러리 전시 예산 초과 케이스
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>   ├── [일정 지연 리스크]
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>   │     └── 2024-01 △△페스티벌 납기 지연 케이스
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>   └── [연결 사례]
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>         ├── 2025-01 ○○미술관 전시 기획 분석
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>         └── 2025-04 상업 촬영 견적 재검토
 </code></pre></div>
 <p>이와 같이 단편적 사례들이 허브 노드로 연결되면, AI는 새로운 프로젝트 의뢰를 만났을 때 과거 실패 허브 노드를 자동 검측하여 <strong>"이번 갤러리 전시 기획 시 2024년 페스티벌과 유사한 일정 지연 리스크가 감지됩니다"</strong>와 같은 수준 높은 경고를 발송할 수 있게 됩니다.</p>
 <hr />
 <h2 id="실행-체크리스트">실행 체크리스트<a class="headerlink" href="#실행-체크리스트" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>□ 내 작업에 필요한 에이전트 3종을 정의했다
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>□ 각 에이전트에 규칙 파일을 연결했다 (→ 03_확장 참조)
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>□ Writer → Critic 검증 루프를 1회 이상 돌려봤다
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>□ 결정 로그를 만들어 재론 방지를 시작했다
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>□ 1개 이상의 스킬 체인을 설계했다
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>□ 내 작업에 필요한 에이전트 3종을 정의했다
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>□ 각 에이전트에 규칙 파일을 연결했다 (→ 03_확장 참조)
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>□ Writer → Critic 검증 루프를 1회 이상 돌려봤다
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>□ 결정 로그를 만들어 재론 방지를 시작했다
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>□ 1개 이상의 스킬 체인을 설계했다
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>□ 복잡한 작업은 Prompt Chaining으로 단계 분해했다 (→ §4-3 참조)
 </code></pre></div>
 <blockquote>
 <p>에이전트 시스템은 한 번에 완성되지 않는다. 1개 에이전트부터 시작하고, 필요할 때 분리한다.</p>

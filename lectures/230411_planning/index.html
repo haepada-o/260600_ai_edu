@@ -1,0 +1,1017 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="실무 도입부터 에이전트 설계, 파이프라인 구축까지 — AI 활용 교육, 워크숍, 마스터클래스 실전 아카이브">
+      
+      
+      
+      
+        <link rel="prev" href="../midjourney_prompt_sheet/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>🔒 기획서 작성 (AI로 기획안 쓰기) - AI MASTER CLASS ARCHIVE</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pretendard:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Pretendard";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#기획서-작성-ai를-활용한-정부지원-및-비즈니스-기획안-빌딩" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../.." title="AI MASTER CLASS ARCHIVE" class="md-header__button md-logo" aria-label="AI MASTER CLASS ARCHIVE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI MASTER CLASS ARCHIVE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🔒 기획서 작성 (AI로 기획안 쓰기)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="다크 모드로 전환"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="다크 모드로 전환" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="deep-orange"  aria-label="라이트 모드로 전환"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="라이트 모드로 전환" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="공유" aria-label="공유" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI MASTER CLASS ARCHIVE" class="md-nav__button md-logo" aria-label="AI MASTER CLASS ARCHIVE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+
+    </a>
+    AI MASTER CLASS ARCHIVE
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    홈
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00_%EC%8B%9C%EC%9E%91/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 00. 시작 — 어디서부터
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_%EB%8F%84%EA%B5%AC/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 01. 도구 — 뭘 쓸 것인가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_%EB%A3%A8%ED%8B%B4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 02. 루틴 — 어디에 넣을 것인가
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_%ED%99%95%EC%9E%A5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 03. 확장 — 사고를 시스템으로
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_%EC%8B%9C%EC%8A%A4%ED%85%9C/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 04. 시스템 — 에이전트와 파이프라인
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../260618_creativity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 창작 구체화 (내 생각을 시스템으로)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../260212_automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 실무 자동화 (AI 콘텐츠 공장)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../251114_coldmail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 글로벌 피칭 (실리콘밸리 콜드메일)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../250515_vibecoding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 개발 워크플로우 (바이브코딩)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../230512_midjourney/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 미드저니 (AI 이미지 생성 워크숍)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midjourney_prompt_sheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📋 미드저니 화풍 & 프롬프트 시트
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 기획서 작성 (AI로 기획안 쓰기)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🔒 기획서 작성 (AI로 기획안 쓰기)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-비즈니스-기획안-작성-로드맵-4단계" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 비즈니스 기획안 작성 로드맵 (4단계)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 비즈니스 기획안 작성 로드맵 (4단계)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-기획-파트너로서의-역할role-및-맥락context-설정-20분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1. 기획 파트너로서의 역할(Role) 및 맥락(Context) 설정 (20분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-아이디어-5대-핵심-요소로-해체하기--prompt-chaining-30분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2. 아이디어 5대 핵심 요소로 해체하기 + Prompt Chaining (30분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-공공-예산-구조-및-마일스톤-설계-자동화-40분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3. 공공 예산 구조 및 마일스톤 설계 자동화 (40분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-자가-진단-및-악플러독설-피드백-요청-30분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4. 자가 진단 및 악플러/독설 피드백 요청 (30분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-강의-리소스--다운로드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💾 강의 리소스 &amp; 다운로드
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#-비즈니스-기획안-작성-로드맵-4단계" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 비즈니스 기획안 작성 로드맵 (4단계)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📌 비즈니스 기획안 작성 로드맵 (4단계)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-기획-파트너로서의-역할role-및-맥락context-설정-20분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1. 기획 파트너로서의 역할(Role) 및 맥락(Context) 설정 (20분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-아이디어-5대-핵심-요소로-해체하기--prompt-chaining-30분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2. 아이디어 5대 핵심 요소로 해체하기 + Prompt Chaining (30분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-공공-예산-구조-및-마일스톤-설계-자동화-40분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3. 공공 예산 구조 및 마일스톤 설계 자동화 (40분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-자가-진단-및-악플러독설-피드백-요청-30분" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4. 자가 진단 및 악플러/독설 피드백 요청 (30분)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-강의-리소스--다운로드" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💾 강의 리소스 &amp; 다운로드
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="기획서-작성-ai를-활용한-정부지원-및-비즈니스-기획안-빌딩">기획서 작성: AI를 활용한 정부지원 및 비즈니스 기획안 빌딩<a class="headerlink" href="#기획서-작성-ai를-활용한-정부지원-및-비즈니스-기획안-빌딩" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p><strong>대상</strong>: 예비 창업자, 스타트업 기획자, 문화 예술 기획자 | <strong>시간</strong>: 2시간 특강 | <strong>핵심</strong>: ChatGPT를 비롯한 LLM을 비서가 아닌 '평가 위원' 및 '기획 파트너'로 빙의시켜 사업 계획서, 예산 계획, 마케팅 로드맵 초안을 단시간에 빌딩하는 프롬프트 테크닉.</p>
+</blockquote>
+<hr />
+<h2 id="-비즈니스-기획안-작성-로드맵-4단계">📌 비즈니스 기획안 작성 로드맵 (4단계)<a class="headerlink" href="#-비즈니스-기획안-작성-로드맵-4단계" title="Permanent link">&para;</a></h2>
+<p>이 가이드는 실제 강연에서 소개된 기획 문서 고속 생성 프롬프트 시나리오를 바탕으로 작성된 기획자 맞춤형 실전 매뉴얼입니다.</p>
+<hr />
+<h3 id="step-1-기획-파트너로서의-역할role-및-맥락context-설정-20분">Step 1. 기획 파트너로서의 역할(Role) 및 맥락(Context) 설정 (20분)<a class="headerlink" href="#step-1-기획-파트너로서의-역할role-및-맥락context-설정-20분" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>판단 (Trigger):</strong> AI에게 단순하게 "지원사업 계획서 양식 짜줘"라고 물어서 초등학생 수준의 단순한 목차만 리턴받았을 때.</li>
+<li><strong>할 일 (Actions):</strong></li>
+<li>기획서 작성을 시작하기 전에 AI에게 <strong>평가 위원의 전문적 시선(Role)</strong>을 부여한다.</li>
+<li>기획안이 제출될 기관의 성격(예: 창업진흥원, 한국콘텐츠진흥원)과 사업의 예산 규모, 목표를 사전에 주입한다.</li>
+<li>맥락 설계 <strong>상·생·방·제·소</strong> 5요소로 요청을 구성한다.</li>
+<li>
+<p><strong>실전 페르소나 설정 프롬프트:</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>너는 스타트업 정부지원사업(예: 예비창업패키지)의 수석 심사위원이야.
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>기술적 실현 가능성, 사업성, 예산 집행 계획의 타당성을 극도로 꼼꼼하게 평가하는 성향을 가졌어.
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>내가 지금 제안하려는 아이디어에 대해 심사위원의 관점에서 먼저 3가지 질문을 던져줘. 질문에 답하며 기획을 빌딩해 나갈 거야.
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>[심화] 상·생·방·제·소 5요소 적용 버전:</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>[상황] 나는 해양수산 분야 창업 지원사업에 제출할 8개월 과제 기획서를 써야 한다.
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>[생각] 우리 팀의 가장 큰 강점은 실제 투자 유치 및 집행 실적이 있다는 것이다.
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>[방향] 심사위원이 실현 가능성과 팀 수행 역량을 확신할 수 있는 구조로 구성하고 싶다.
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>[제약] 과장된 수사어 금지. 수치는 내가 제공한 것만 쓸 것.
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>[소스] 참고: 창업진흥원 2025년도 예비창업패키지 공고문 (첨부)
+</code></pre></div></p>
+</li>
+</ul>
+<hr />
+<h3 id="step-2-아이디어-5대-핵심-요소로-해체하기--prompt-chaining-30분">Step 2. 아이디어 5대 핵심 요소로 해체하기 + Prompt Chaining (30분)<a class="headerlink" href="#step-2-아이디어-5대-핵심-요소로-해체하기--prompt-chaining-30분" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>판단 (Trigger):</strong> 머릿속에 사업 아이디어는 있으나, 이를 비즈니스 모델 규격(Problem-Solution-Customer)에 맞게 정제하기 어려울 때.</li>
+<li><strong>할 일 (Actions):</strong></li>
+<li>기획서를 <strong>한 번에 써달라 하지 말고</strong>, Prompt Chaining으로 단계별 분해한다.</li>
+<li>
+<p><strong>[체인 1]</strong> 아이디어 구조화 → <strong>[체인 2]</strong> 논리 검증 → <strong>[체인 3]</strong> 본문 작성 순으로 진행한다.</p>
+</li>
+<li>
+<p><strong>Prompt Chaining 기획서 체인:</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a># 체인 1: 아이디어 구조화
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>내 사업 아이디어는 [내 아이디어 한 줄 요약]이다.
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>이 아이디어를 다음 5가지 항목으로 구조화해줘:
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>1. 고객의 문제 정의 (Pain Point)
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>2. 해결 방안 (Solution)
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>3. 핵심 타겟 고객층 (Target Customer)
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>4. 수익 모델 (Revenue Stream)
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>5. 초기 모객 채널 (Marketing Channel)
+</code></pre></div>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a># 체인 2: CoT 논리 검증 (체인 1 결과물 붙여넣기 후)
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>위 구조를 검토할 때, ①Pain Point가 실제 데이터로 뒷받침되는지, 
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>②Solution이 Pain Point를 직접 해소하는지, ③수익 모델이 현실적인지 
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>단계별로 순서대로 분석해줘.
+</code></pre></div>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a># 체인 3: 본문 집필 (검증 완료 후)
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>검증된 구조를 바탕으로 &#39;사업 타당성&#39; 섹션을 
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>공모 기획서 격식체 톤으로 A4 1장 분량으로 완성해줘.
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>처음이라면 (Tip):</strong> 기획서 전체를 한 번에 쓰게 하면 품질이 들쑥날쑥합니다. 반드시 체인 1 → 2 → 3 순서로 각 단계 결과를 확인하며 진행하세요.</p>
+</li>
+</ul>
+<hr />
+<h3 id="step-3-공공-예산-구조-및-마일스톤-설계-자동화-40분">Step 3. 공공 예산 구조 및 마일스톤 설계 자동화 (40분)<a class="headerlink" href="#step-3-공공-예산-구조-및-마일스톤-설계-자동화-40분" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>판단 (Trigger):</strong> 정부 예산이나 지자체 보조금 규격에 맞는 비목(인건비, 외주가공비, 재료비, 광고선전비) 분류 및 현실성 있는 마일스톤(일정)을 작성해야 할 때.</li>
+<li><strong>할 일 (Actions):</strong></li>
+<li>전체 사업 기간(예: 8개월)과 총 예산 규모(예: 5천만 원)를 입력한다.</li>
+<li>공공 지원사업 기준에 맞는 비율로 예산 배정 시뮬레이션을 요청한다.</li>
+<li><strong>예산 기획 프롬프트 (XML 구조 버전 — Claude 권장):</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">&lt;context&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>나는<span class="w"> </span>소프트웨어<span class="w"> </span>개발<span class="w"> </span>아웃소싱이<span class="w"> </span>포함된<span class="w"> </span>스타트업<span class="w"> </span>대표이며,
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>정부<span class="w"> </span>공모<span class="w"> </span>지원사업<span class="w"> </span>기획서의<span class="w"> </span>예산<span class="w"> </span>편성을<span class="w"> </span>준비<span class="w"> </span>중이다.
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>공공<span class="w"> </span>기관<span class="w"> </span>예산<span class="w"> </span>편성<span class="w"> </span>가이드라인을<span class="w"> </span>따라야<span class="w"> </span>한다.
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nt">&lt;/context&gt;</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="nt">&lt;instruction&gt;</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>총<span class="w"> </span>사업<span class="w"> </span>기간<span class="w"> </span>8개월,<span class="w"> </span>총<span class="w"> </span>정부지원금<span class="w"> </span>5,000만<span class="w"> </span>원<span class="w"> </span>기준으로
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>비목별<span class="w"> </span>예산<span class="w"> </span>배분표를<span class="w"> </span>작성해줘.
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="nt">&lt;/instruction&gt;</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="nt">&lt;data&gt;</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>-<span class="w"> </span>비목:<span class="w"> </span>인건비,<span class="w"> </span>외주가공비,<span class="w"> </span>마케팅비,<span class="w"> </span>운영비
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>-<span class="w"> </span>인건비<span class="w"> </span>비중<span class="w"> </span>제한:<span class="w"> </span>총액의<span class="w"> </span>50%<span class="w"> </span>미만
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>-<span class="w"> </span>일반<span class="w"> </span>관리비<span class="w"> </span>제한:<span class="w"> </span>10%<span class="w"> </span>미만
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="nt">&lt;/data&gt;</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="nt">&lt;output_format&gt;</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>마크다운<span class="w"> </span>표<span class="w"> </span>형식<span class="w"> </span>(비목<span class="w"> </span>/<span class="w"> </span>금액<span class="w"> </span>/<span class="w"> </span>비율<span class="w"> </span>/<span class="w"> </span>책정<span class="w"> </span>사유).
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>마지막<span class="w"> </span>행에<span class="w"> </span>합계<span class="w"> </span>행<span class="w"> </span>포함.
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="nt">&lt;/output_format&gt;</span>
+</code></pre></div></li>
+</ul>
+<hr />
+<h3 id="step-4-자가-진단-및-악플러독설-피드백-요청-30분">Step 4. 자가 진단 및 악플러/독설 피드백 요청 (30분)<a class="headerlink" href="#step-4-자가-진단-및-악플러독설-피드백-요청-30분" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>판단 (Trigger):</strong> 작성된 초안의 논리적 맹점을 사전에 파악하여 실제 대면 심사나 서류 심사에서 탈락하는 리스크를 낮추고 싶을 때.</li>
+<li><strong>할 일 (Actions):</strong></li>
+<li>완성된 기획서 텍스트를 AI에게 통째로 입력한다.</li>
+<li>AI에게 <strong>'가장 까다롭고 비판적인 심사역'</strong> 또는 <strong>'악플러 독자'</strong> 역할을 강제하여 계획서의 맹점 3가지를 공격하라고 주문한다.</li>
+<li><strong>CoT(단계적 사고)</strong> 를 추가하면 더 날카로운 지적이 나온다.</li>
+<li>
+<p><strong>실전 검증 독설 프롬프트 (CoT 적용):</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>[사업계획서 초안]: [작성된 사업계획서 복사 붙여넣기]
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>너는 경쟁사의 수석 기획자이자, 나를 탈락시켜야 하는 심사위원이야.
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>위 계획서를 검토할 때, ①논리적 모순 → ②시장 진입 장벽 실현 가능성 →
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>③예산 낭비 요소 순으로 단계별로 분석한 뒤, 각각 가장 심각한 문제 하나씩을 지적해줘.
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>칭찬은 필요 없어. 단점만 공격해.
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Few-shot 피드백 강도 조절:</strong>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>아래 예시처럼 날카롭게 비판해줘.
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>예시) &quot;3페이지 수익 모델의 &#39;구독료 월 5만원&#39; 설정은 
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>타겟 고객(자영업자)의 평균 소프트웨어 지출 예산(월 1~2만원)과 
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>3~5배 괴리가 있어 현실성이 없음.&quot;
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>위 수준으로 내 계획서의 가장 취약한 부분 3곳을 지적해줘.
+</code></pre></div></p>
+</li>
+</ul>
+<hr />
+<h2 id="-강의-리소스--다운로드">💾 강의 리소스 &amp; 다운로드<a class="headerlink" href="#-강의-리소스--다운로드" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://drive.google.com/drive/folders/1RSyFdUPWWlua2bmA3ZzZ6mzdwyUrC7h8">AI(ChatGPT)로 기획안 쓰기 발표 슬라이드 PPT</a></li>
+<li><a href="https://drive.google.com/drive/folders/1RSyFdUPWWlua2bmA3ZzZ6mzdwyUrC7h8">기획서 작성 시범 및 프롬프트 대화록 전문</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/password.js"></script>
+      
+    
+  </body>
+</html>
