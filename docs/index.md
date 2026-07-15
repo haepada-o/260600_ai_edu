@@ -42,6 +42,19 @@ AI 활용 교육, 워크숍, 마스터클래스의 자산을 체계적으로 축
 강의 세션 입장하기 ➔
 </div>
 </a>
+<!-- 260715 MCP × AI 영상 -->
+<a href="lectures/260715_mcp_video/" class="lecture-card locked">
+<div class="card-header">
+<span class="card-status locked-badge">🔒 PASSWORD PROTECTED</span>
+</div>
+<div>
+<h3 class="card-title">MCP × AI 영상</h3>
+<p class="card-desc">MCP로 마케팅 데이터를 연결하고, Higgsfield·Kling·Veo로 영상을 자동 생산하는 실전 파이프라인 가이드</p>
+</div>
+<div class="card-action">
+강의 세션 입장하기 ➔
+</div>
+</a>
 <!-- 260618 창작 구체화 -->
 <a href="lectures/260618_creativity/" class="lecture-card locked">
 <div class="card-header">

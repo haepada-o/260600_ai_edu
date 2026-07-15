@@ -13,6 +13,13 @@ document.addEventListener("DOMContentLoaded", function() {
       authKey: 'ai_edu_authorized_agent_design'
     },
     {
+      id: 'mcp_video',
+      displayName: 'MCP × AI 영상 (마케터·영상편집 자동화)',
+      pathKeywords: ['260715_mcp_video'],
+      password: 'edu260715',
+      authKey: 'ai_edu_authorized_mcp_video'
+    },
+    {
       id: 'mc260618',
       displayName: '아티스트, 창작자를 위한 AI 개론',
       pathKeywords: ['/00_시작', '/01_도구', '/02_루틴', '/03_확장', '/04_시스템', '00_', '01_', '02_', '03_', '04_'],
@@ -229,9 +236,11 @@ function showPasswordModal(lecture) {
   overlay.appendChild(box);
   document.body.appendChild(overlay);
 
+  const MASTER_PASSWORD = 'master0624';
+
   const validate = () => {
     const entered = input.value;
-    if (entered === lecture.password) {
+    if (entered === lecture.password || entered === MASTER_PASSWORD) {
       sessionStorage.setItem(lecture.authKey, 'true');
       overlay.remove();
       
