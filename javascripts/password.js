@@ -6,6 +6,13 @@ document.addEventListener("DOMContentLoaded", function() {
   // 1. 강의별 고유 설정 정의 (강의 경로, 비밀번호, 세션 스토리지 키, 표시 이름)
   const LECTURE_CONFIGS = [
     {
+      id: 'agent_design',
+      displayName: '에이전트는 공부하는 게 아닙니다',
+      pathKeywords: ['260715_agent_design'],
+      password: 'edu260715',
+      authKey: 'ai_edu_authorized_agent_design'
+    },
+    {
       id: 'mc260618',
       displayName: '아티스트, 창작자를 위한 AI 개론',
       pathKeywords: ['/00_시작', '/01_도구', '/02_루틴', '/03_확장', '/04_시스템', '00_', '01_', '02_', '03_', '04_'],
@@ -53,13 +60,6 @@ document.addEventListener("DOMContentLoaded", function() {
       pathKeywords: ['230411_planning'],
       password: 'edu230411',
       authKey: 'ai_edu_authorized_lec230411'
-    },
-    {
-      id: 'agent_design',
-      displayName: '에이전트는 공부하는 게 아닙니다',
-      pathKeywords: ['260715_agent_design'],
-      password: 'edu260715',
-      authKey: 'ai_edu_authorized_agent_design'
     }
   ];
 
