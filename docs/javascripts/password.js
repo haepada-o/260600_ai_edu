@@ -11,6 +11,48 @@ document.addEventListener("DOMContentLoaded", function() {
       pathKeywords: ['/00_시작', '/01_도구', '/02_루틴', '/03_확장', '/04_시스템', '00_', '01_', '02_', '03_', '04_'],
       password: 'edu260618',
       authKey: 'ai_edu_authorized_260618'
+    },
+    {
+      id: 'lec260618',
+      displayName: '창작 구체화 (내 생각을 시스템으로)',
+      pathKeywords: ['260618_creativity'],
+      password: 'edu260618',
+      authKey: 'ai_edu_authorized_lec260618'
+    },
+    {
+      id: 'lec260212',
+      displayName: '실무 자동화 (AI 콘텐츠 공장)',
+      pathKeywords: ['260212_automation'],
+      password: 'edu260212',
+      authKey: 'ai_edu_authorized_lec260212'
+    },
+    {
+      id: 'lec251114',
+      displayName: '글로벌 피칭 (실리콘밸리 콜드메일)',
+      pathKeywords: ['251114_coldmail'],
+      password: 'edu251114',
+      authKey: 'ai_edu_authorized_lec251114'
+    },
+    {
+      id: 'lec250515',
+      displayName: '개발 워크플로우 (바이브코딩)',
+      pathKeywords: ['250515_vibecoding'],
+      password: 'edu250515',
+      authKey: 'ai_edu_authorized_lec250515'
+    },
+    {
+      id: 'lec230512',
+      displayName: '미드저니 (AI 이미지 생성 워크숍)',
+      pathKeywords: ['230512_midjourney'],
+      password: 'edu230512',
+      authKey: 'ai_edu_authorized_lec230512'
+    },
+    {
+      id: 'lec230411',
+      displayName: '기획서 작성 (AI로 기획안 쓰기)',
+      pathKeywords: ['230411_planning'],
+      password: 'edu230411',
+      authKey: 'ai_edu_authorized_lec230411'
     }
   ];
 
