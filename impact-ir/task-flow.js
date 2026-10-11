@@ -1,4 +1,5 @@
 export const TASK_FLOW = {
+ context:{files:['01_기업정보/기업정보.md','02_원본자료/','00_설정/스킬/impact-business-planning/assets/company-context-template.md'],condition:'사용할 원본 파일·목적',check:'원본 보존, 출처·기준일·확인 상태, 누락·충돌과 대표 승인'},
  planning:{files:['01_기업정보/기업정보.md','01_기업정보/사업가정.md','01_기업정보/의사결정.md','03_조사계산/','04_기획제작/사업기획.md'],condition:'이번에 해결할 사업 질문·유지할 제약',check:'서비스·시장·수익·임팩트의 연결, 근거와 미결정 사항'},
  service:{files:['01_기업정보/기업정보.md','04_기획제작/서비스정의.md'],condition:'이번에 구체화할 제품·서비스 범위',check:'고객·결제자·제공 업무·구매 이유, 수정 전후 비교'},
  competition:{files:['01_기업정보/기업정보.md','04_기획제작/서비스정의.md','03_조사계산/경쟁비교.md'],condition:'조사할 고객군·지역·기간',check:'같은 고객 업무의 대안 비교, 원출처·확인일·미확인 항목'},
