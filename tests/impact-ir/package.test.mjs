@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import {createRequire} from 'node:module';
 import {fresh,normalize,sample,safeName,companyMarkdown,prompt,reviewMarkdown,packageFiles,agentFiles,installation} from '../../docs/impact-ir/package.js';
 import {MODEL_GUIDES,modelGuidesMarkdown} from '../../docs/impact-ir/models.js';
-import {SECTIONS,TASKS,TOOLS} from '../../docs/impact-ir/content.js';
+import {SECTIONS,TASKS,TOOLS,AGENTS} from '../../docs/impact-ir/content.js';
 import {manualMarkdown,CONTEXT_PROMPT,UPDATE_PROMPT} from '../../docs/impact-ir/manual.js';
 const require=createRequire(import.meta.url);
 const JSZip=require('../../docs/impact-ir/vendor/jszip.min.js');
@@ -36,11 +36,24 @@ for(const tool of Object.keys(TOOLS)){
  restored.tool=tool;
  const files=packageFiles(restored,lib);
  assert.equal(files['사용설명서.md'],manualMarkdown());
- assert.equal(files['00_설정/프롬프트/00A_기존자료정리.md'],CONTEXT_PROMPT);
- assert.equal(files['00_설정/프롬프트/10_패키지업데이트.md'],UPDATE_PROMPT);
+ assert.equal(files['00_설정/에이전트/리서치분석.md'],AGENTS.researcher);
+ assert(Object.hasOwn(files,'00_설정/설정절차.md'));
+ assert(!Object.keys(files).some(p=>p.includes('/프롬프트/')));
+ assert.equal(files['최초설정.md'],prompt(restored,'setup'));
+ assert(prompt(restored,'research').includes('근거대장'));
+ assert(prompt(restored,'ir').includes('구성안은 확인받은 뒤'));
+ assert(!prompt(restored,'ir').includes('undefined'));
+ const registered=Object.keys(agentFiles(tool));
+ if(tool!=='antigravity'){
+  assert(registered.some(p=>p.includes('ir-researcher')));
+  assert(registered.some(p=>p.includes('ir-writer')));
+  assert(registered.some(p=>p.includes('ir-reviewer')));
+ }
+ assert(files['00_설정/설정절차.md'].includes('스킬의 기업정보 정리 모드'));
+ assert.equal(files['00_설정/업데이트.md'],UPDATE_PROMPT);
  assert(CONTEXT_PROMPT.includes('승인 전에는 검토안'));
  assert(UPDATE_PROMPT.includes('내 회사자료를 덮어쓰지 마'));
- assert(manualMarkdown().includes('AI로 IR 한 편 제작'));
+ assert(manualMarkdown().includes('전체 다운로드 → 최초 설정 → 작업 요청'));
  assert.equal(files['00_설정/모델별_프롬프트가이드.md'],modelGuidesMarkdown());
  for(const family of Object.values(MODEL_GUIDES)){
   assert(installation(restored).includes(family.links[0][1]));
@@ -50,7 +63,7 @@ for(const tool of Object.keys(TOOLS)){
  const skillFiles=Object.entries(files).filter(([p])=>p.startsWith('00_설정/스킬/impact-business-planning/'));
  assert.equal(skillFiles.length,5);
  for(const [p,v] of skillFiles)assert.equal(v,lib[p.replace('00_설정/스킬/impact-business-planning/','')]);
- for(const task of TASKS)assert.equal(files[`00_설정/프롬프트/${task.file}.md`],prompt(restored,task.id));
+ assert(files['작업요청예시.md'].includes('투자 미팅용 IR'));
  assert.equal(files['01_기업정보/기업정보.md'],files['01_기업정보/웹워크북_원문.md']);
  assert(files['01_기업정보/사업가정.md'].includes('유료 시험 운영 준비'));
  assert(files['07_참조예시/작성예시.md'].includes('작성 예시'));

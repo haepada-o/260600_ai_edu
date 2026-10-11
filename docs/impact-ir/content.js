@@ -1,4 +1,5 @@
-export const VERSION = '2.3.0';
+import {ROLE_AGENTS} from './workflow.js?v=2.5.1';
+export const VERSION = '2.5.1';
 export const SCHEMA = 'bsquare-impact-ir-workbook-v2';
 export const STATES = ['대표 입력','자료 확인','가정','목표','미확인'];
 const field=(id,label,hint,example,type='textarea')=>({id,label,hint,example,type});
@@ -67,6 +68,7 @@ export const TASKS=[
  {id:'setup',title:'작업환경 설정',file:'00_설정적용',sections:[],output:'05_검토기록/설정확인.md',detail:'패키지 배치, 스킬·에이전트 적용, 인식 확인'},
  {id:'context',title:'기존자료 정리',file:'00A_기존자료정리',sections:[],output:'01_기업정보/기업정보_검토안.md, 05_검토기록/기업정보_확인사항.md',detail:'회사소개서·사업계획·기존 워크북을 기업정보 양식으로 정리'},
  {id:'planning',title:'사업기획 전체 보완',file:'01_사업기획',sections:SECTIONS.map(s=>s.id),output:'04_기획제작/사업기획.md',detail:'기업정보 → 조사·계산 → 사업성·임팩트 검토'},
+ {id:'research',title:'리서치',file:'01A_리서치',sections:SECTIONS.map(s=>s.id),output:'03_조사계산/조사계획.md, 근거대장.md, 조사결론.md',detail:'고객·경쟁·시장·임팩트·투자자 조사, 원문·반대 근거 확인'},
  {id:'service',title:'서비스 구체화',file:'02_서비스구체화',sections:['company','customer','service'],output:'04_기획제작/서비스정의.md',detail:'고객·제공 범위·구매 이유 구체화'},
  {id:'competition',title:'고객·경쟁사 조사',file:'03_고객경쟁조사',sections:['customer','service','market'],output:'03_조사계산/경쟁비교.md',detail:'같은 고객 업무의 대안 비교와 원출처 확인'},
  {id:'market',title:'시장·매출·자금 산정',file:'04_시장매출자금산정',sections:['company','market','finance','execution'],output:'03_조사계산/시장매출자금.md',detail:'입력·산식·기간·단위·제공 역량 검토'},
@@ -80,7 +82,7 @@ export const TOOLS={
  codex:{name:'Codex',install:'https://developers.openai.com/codex/cli',docs:'https://learn.chatgpt.com/docs/build-skills',agents:'https://learn.chatgpt.com/docs/agent-configuration/subagents',skillPath:'.agents/skills/impact-business-planning',rule:'AGENTS.md',agentPath:'.codex/agents',note:'앱·CLI에서 회사 폴더의 자료와 결과물 작업. 프로젝트 스킬·에이전트 설정 포함.'},
  claude:{name:'Claude Code',install:'https://code.claude.com/docs/en/overview',docs:'https://code.claude.com/docs/en/skills',agents:'https://code.claude.com/docs/en/sub-agents',skillPath:'.claude/skills/impact-business-planning',rule:'CLAUDE.md',agentPath:'.claude/agents',note:'터미널·편집기에서 파일 작업. 프로젝트 스킬·서브에이전트 설정 포함.'},
  cursor:{name:'Cursor',install:'https://cursor.com/downloads',docs:'https://cursor.com/docs/skills',agents:'https://cursor.com/docs/subagents',skillPath:'.cursor/skills/impact-business-planning',rule:'.cursor/rules/impact-ir.mdc',agentPath:'.cursor/agents',note:'편집기에서 파일·변경 내용 확인. 프로젝트 규칙·스킬·서브에이전트 설정 포함.'},
- antigravity:{name:'Antigravity',install:'https://www.antigravity.google/download',docs:'https://www.antigravity.google/docs/skills/',agents:'https://www.antigravity.google/docs/rules/',skillPath:'.agents/skills/impact-business-planning',rule:'.agents/rules/impact-ir.md',agentPath:null,note:'프로젝트 규칙·스킬 설정 포함. 기획·검토 역할 문서를 순차 적용하고, 별도 에이전트 지원은 설치 환경에서 확인.'}
+ antigravity:{name:'Antigravity',install:'https://www.antigravity.google/download',docs:'https://www.antigravity.google/docs/skills/',agents:'https://www.antigravity.google/docs/rules/',skillPath:'.agents/skills/impact-business-planning',rule:'.agents/rules/impact-ir.md',agentPath:null,note:'프로젝트 규칙·스킬 설정 포함. 기획·리서치·검토 역할 문서를 순차 적용하고, 별도 에이전트 지원은 설치 환경에서 확인.'}
 };
 export const REVIEW_FIELDS=[
  field('target','검토 자료·버전','파일명과 검토일','IR_원고_v01.md / 2026-10-11'),
@@ -92,6 +94,7 @@ export const REVIEW_FIELDS=[
 export const RULES=`# 회사 작업 규칙
 
 ## 자료와 결정
+- 필요한 중간 파일은 AI가 스킬의 파일 생성·검증 기준에 따라 만들고 재사용한다. 사용자에게 JSON 사전 작성을 요구하지 않는다. 없는 사실은 미확인으로 남기고 원본·승인된 정보는 보존한다.
 - 기업정보는 최초 저장 후 파일로 재사용한다. 웹 재입력·패키지 재다운로드는 반복 작업의 조건이 아니다. 이번 작업 조건만 프롬프트로 전달한다.
 - 필요한 기업정보와 앞 단계 산출물을 실제로 읽고 경로·기준일·승인 상태를 기록한다. 파일이 없거나 읽지 못하면 위치와 필요한 정보를 확인하고, 웹 예시·대화 기억으로 대신하지 않는다.
 - 버전 충돌은 사용자가 지정한 자료와 승인 기록을 대조한다. 대표가 채택한 변경만 로컬 기업정보·의사결정 기록에 갱신하며 최초 원문과 이전 작업본을 보존한다.
@@ -115,27 +118,4 @@ export const RULES=`# 회사 작업 규칙
 - 실제 고객 구매·사용·효과는 문장 수정으로 검증 완료 처리하지 않는다.
 - 최종 PPT·PDF를 열어 글자·차트·출처·숫자·넘침을 확인한다. 외부 제출은 대표 승인 후 진행한다.
 `;
-export const AGENTS={
- writer:`# 기획·작성 에이전트
-
-## 역할
-기업정보와 원자료를 읽고 사업 기획·IR 원고를 작성한다. impact-business-planning 스킬과 00_설정/작업규칙.md를 먼저 적용한다.
-
-## 수행
-고객·서비스 정의 → 필요한 경쟁 조사·계산 → 사업성·임팩트 보완 → 독자의 질문별 구성 → 본문·시각화 → 파일 제작을 연결한다. 자료가 빠졌으면 가능한 작업부터 진행하고, 중요한 사업 조건은 대안과 이유를 제시해 대표에게 남긴다.
-
-## 출력
-실제로 읽은 기업정보·앞 단계 산출물의 경로와 버전, 산출물 경로·사용한 입력 버전·핵심 주장과 근거·변경 사항·검토 요청 항목을 검토 에이전트에 전달한다. 승인되지 않은 제안을 기업 실적으로 저장하지 않는다.
-`,
- reviewer:`# 검토 에이전트
-
-## 역할
-원고를 원자료·계산·출력 파일과 대조한다. impact-business-planning의 검토 기준과 00_설정/작업규칙.md를 읽는다.
-
-## 수행
-전달력·사업성·임팩트·투자자 적합성을 구분한다. 주장·출처·기간·단위·산식·도표·헤드카피의 일관성을 확인한다. 없는 증거는 미확인으로 남긴다.
-
-## 출력과 권한
-위치 / 오류·보류 이유 / 근거 / 수정안 / 복귀 단계 / 대표 결정·현장 검증 필요를 반환한다. 원고·사업 조건을 직접 확정하지 않는다. 외부 연락·제출은 수행하지 않는다. 독립 실행을 지원하지 않으면 같은 에이전트가 검토 단계로 전환했음을 표시한다.
-`
-};
+export const AGENTS=ROLE_AGENTS;
