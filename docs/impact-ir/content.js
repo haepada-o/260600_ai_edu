@@ -1,4 +1,4 @@
-export const VERSION = '2.2.0';
+export const VERSION = '2.3.0';
 export const SCHEMA = 'bsquare-impact-ir-workbook-v2';
 export const STATES = ['대표 입력','자료 확인','가정','목표','미확인'];
 const field=(id,label,hint,example,type='textarea')=>({id,label,hint,example,type});
@@ -65,6 +65,7 @@ export const SECTIONS = [
 ];
 export const TASKS=[
  {id:'setup',title:'작업환경 설정',file:'00_설정적용',sections:[],output:'05_검토기록/설정확인.md',detail:'패키지 배치, 스킬·에이전트 적용, 인식 확인'},
+ {id:'context',title:'기존자료 정리',file:'00A_기존자료정리',sections:[],output:'01_기업정보/기업정보_검토안.md, 05_검토기록/기업정보_확인사항.md',detail:'회사소개서·사업계획·기존 워크북을 기업정보 양식으로 정리'},
  {id:'planning',title:'사업기획 전체 보완',file:'01_사업기획',sections:SECTIONS.map(s=>s.id),output:'04_기획제작/사업기획.md',detail:'기업정보 → 조사·계산 → 사업성·임팩트 검토'},
  {id:'service',title:'서비스 구체화',file:'02_서비스구체화',sections:['company','customer','service'],output:'04_기획제작/서비스정의.md',detail:'고객·제공 범위·구매 이유 구체화'},
  {id:'competition',title:'고객·경쟁사 조사',file:'03_고객경쟁조사',sections:['customer','service','market'],output:'03_조사계산/경쟁비교.md',detail:'같은 고객 업무의 대안 비교와 원출처 확인'},
