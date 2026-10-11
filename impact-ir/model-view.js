@@ -1,4 +1,4 @@
-import {MODEL_GUIDES,GUIDE_DATE,COMMON_GUIDANCE} from './models.js?v=2.3.0';
+import {MODEL_GUIDES,GUIDE_DATE,COMMON_GUIDANCE} from './models.js?v=2.5.1';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export function modelGuideLinks(){return `<div class="link-list">${Object.entries(MODEL_GUIDES).map(([id,g])=>`<a href="#models/${id}">${g.name} 가이드 →</a>`).join('')}</div>`;}
 export function modelGuideView(){
