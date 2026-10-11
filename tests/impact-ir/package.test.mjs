@@ -8,6 +8,13 @@ const require=createRequire(import.meta.url);
 const JSZip=require('../../docs/impact-ir/vendor/jszip.min.js');
 const lib=JSON.parse(await fs.readFile(new URL('../../docs/impact-ir/library.json',import.meta.url),'utf8'));
 assert.equal(Object.keys(lib).length,5);
+for(const [p,value] of Object.entries(lib))assert.equal(value,await fs.readFile(new URL('../../_internal/impact-ir/impact-business-planning/'+p,import.meta.url),'utf8'));
+const changed=fresh();changed.values.company='PRIVATE_COMPANY_SENTINEL';changed.values.offer='PRIVATE_SERVICE_SENTINEL';changed.values.sales='PRIVATE_SALES_SENTINEL';
+for(const task of TASKS.filter(t=>t.id!=='setup')){
+ assert.equal(prompt(changed,task.id),prompt(fresh(),task.id));
+ assert(!prompt(changed,task.id).includes('PRIVATE_'));
+ assert(prompt(changed,task.id).includes('01_기업정보/기업정보.md'));
+}
 assert.equal(SECTIONS.flatMap(s=>s.fields).length,43);
 const input=fresh();input.values={company:'워크북 검수기업',stage:'유료 시험 운영 준비',goal:'1:1 투자 미팅용 IR 작성'};
 input.states.stage='가정';input.sources.company='사업메모 / 2026-10-11';input.review.decisions='가격은 대표 결정 전';input.revision=4;

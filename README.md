@@ -52,6 +52,8 @@ mkdocs gh-deploy      # GitHub Pages 배포
 - 기업정보는 브라우저에 저장하며, 프롬프트·MD·스킬·에이전트 ZIP은 브라우저에서 생성한다. 서버 동기화 없음.
 - 이전 chatgpt.site 주소의 입력은 해당 페이지에서 백업 JSON을 내려받아 새 주소에서 불러온다.
 - 검사: `node tests/impact-ir/package.test.mjs`
+- v2.2: 기업정보는 MD로 저장·재사용하고 단계별 프롬프트는 파일·이전 산출물을 참조한다. 웹 입력을 프롬프트에 삽입하지 않는다.
+- 배포 스킬 원본: `_internal/impact-ir/impact-business-planning/` (5개 파일). 수정 후 `node tests/impact-ir/build-library.mjs`로 공개 library.json을 생성하고 검사한다.
 - 업데이트: 해당 폴더 수정 → 검사 → 전체 `mkdocs build` → `mkdocs gh-deploy`. `gh-pages` 반영 후 기존 Pages 자동배포가 실행된다.
 - 웹 업데이트는 이미 내려받은 회사 폴더를 자동 변경하지 않는다. 기업정보·작업 결과는 보존한다.
 

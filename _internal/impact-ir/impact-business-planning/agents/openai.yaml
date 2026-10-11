@@ -1,0 +1,4 @@
+interface:
+  display_name: "임팩트기업 사업기획"
+  short_description: "우리 기업 자료로 사업성과 임팩트를 검토하고 개선하는 교육용 스킬"
+  default_prompt: "$impact-business-planning으로 첨부한 우리 기업 자료를 읽고 사업계획을 작성한 뒤, 사업성·임팩트·투자자 관점에서 개선하고 재검토해줘."
