@@ -11,3 +11,10 @@
 - 변경: 공개된 main을 기준으로 기존 홈·강의를 유지하고 `/impact-ir/` 독립 워크북 추가. 기존 로컬의 미배포 비밀번호 안내 수정은 포함하지 않음.
 - 파일: `docs/impact-ir/`, `tests/impact-ir/`, `README.md`.
 - 검증: 배포 전 패키지·백업·프롬프트 테스트 및 전체 MkDocs 빌드 수행. 배포 결과는 후속 release 기록에 추가.
+
+## [2026-10-11] release | impact-ir | GitHub Pages 공개 완료
+- 주소: https://haepada-o.github.io/260600_ai_edu/impact-ir/
+- 배포: 기존 gh-pages 자동배포 성공. 실행 기록 https://github.com/haepada-o/260600_ai_edu/actions/runs/38129616165
+- 검증: 4개 도구의 패키지 생성·ZIP 재읽기·백업·프롬프트 검사 통과. 전체 MkDocs 빌드 성공. 공개 HTML·JS·CSS·스킬 데이터·PDF 10개 파일 HTTP 200 및 배포본 바이트 일치 확인.
+- 보존: 기존 홈페이지·강의 HTML 유지, chatgpt.site 기존 주소 유지. 원래 로컬 프로젝트의 미배포 비밀번호 안내 수정은 이번 공개본에서 제외.
+- 운영: docs/impact-ir 편집 후 테스트·전체 빌드·gh-deploy. 도메인 이동 시 기존 워크북 백업 JSON을 새 주소에서 불러오기.
