@@ -1,0 +1,34 @@
+{
+  "version": "3.0.0-beta.2",
+  "kind": "blank-template",
+  "packages": [
+    {
+      "tool": "codex",
+      "name": "Codex",
+      "file": "impact-ir-codex-3.0.0-beta.2.zip",
+      "files": 70,
+      "sha256": "ad5bb2572eed499ab87f98ada8fd30251bca9a68682247a936b9ec03cf402eb6"
+    },
+    {
+      "tool": "claude",
+      "name": "Claude Code",
+      "file": "impact-ir-claude-3.0.0-beta.2.zip",
+      "files": 70,
+      "sha256": "ce65aef992c971c8b149450d06fe507bf1d1a0f25c1c62ab5038dbdfb9d4cf86"
+    },
+    {
+      "tool": "cursor",
+      "name": "Cursor",
+      "file": "impact-ir-cursor-3.0.0-beta.2.zip",
+      "files": 70,
+      "sha256": "eb23d01b4195a46e6b1bab3944722e4682c6a4c6c17149708e72d81abc09b50c"
+    },
+    {
+      "tool": "antigravity",
+      "name": "Antigravity",
+      "file": "impact-ir-antigravity-3.0.0-beta.2.zip",
+      "files": 70,
+      "sha256": "227cf4c09e5dcf1868d52f3463bbe449483be7f056ee049e82ec4d8d9d6aab31"
+    }
+  ]
+}

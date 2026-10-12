@@ -1,5 +1,5 @@
-import {ROLE_AGENTS} from './workflow.js?v=2.5.1';
-export const VERSION = '2.5.1';
+import {ROLE_AGENTS,WORK_RULES} from './runtime-content.js?v=3.0.0-beta.2';
+export const VERSION = '3.0.0-beta.2';
 export const SCHEMA = 'bsquare-impact-ir-workbook-v2';
 export const STATES = ['대표 입력','자료 확인','가정','목표','미확인'];
 const field=(id,label,hint,example,type='textarea')=>({id,label,hint,example,type});
@@ -19,25 +19,25 @@ export const SECTIONS = [
   field('purchaseEvidence','구매 이유와 확인 자료','인터뷰·견적·계약 등을 실제 확인 범위로 작성','가설: 운영사가 용기 공급·회수·세척을 묶어서 맡기려 함. 구매 의사·가격 수용성 확인 필요.')
  ]},
  {id:'service',title:'서비스',question:'무엇을 어떤 방식으로 제공하나요?',task:'service',checks:['서비스명만으로 끝내지 않고 제공 업무 명시','현재 제공 기능과 개발 예정 기능 구분','고객이 받는 결과물 확인'],fields:[
-  field('offer','제공 제품·서비스','고객과 제공 업무가 보이는 한 문장','행사 운영사의 다회용기 공급·회수·세척 대행.'),
+  field('offer','제공 제품·서비스','고객과 제공 업무가 보이는 서비스 정의','행사 운영사가 일회용기 대신 컵·식기를 반복 사용하도록 대여와 회수·세척을 맡고, 행사별 대체량을 확인하는 다회용기 운영 서비스.'),
   field('scope','제공 범위와 제외 범위','포함 업무, 수량, 지역, 납기 등','용기 공급, 행사 후 회수, 세척, 처리량 보고. 현장 인력 배치는 별도 협의.'),
   field('process','서비스 제공 과정','신청부터 전달까지의 순서','운영사 수량 협의 → 용기 공급 → 행사 후 회수 → 세척 → 처리량 보고.'),
   field('result','고객이 받는 결과와 변화','시간·비용·업무 변화와 확인 방법','용기 조달과 회수·세척 업무를 한 계약으로 관리. 절감 시간·비용은 행사 전후 비교 예정.'),
-  field('difference','선택받을 이유','같은 업무·비교 기준으로 설명','공급·회수·세척의 통합 운영을 제안. 비용·납기·회수율은 기존 대안과 비교 필요.')
+  field('difference','선택받을 이유','같은 업무·비교 기준으로 설명','가설: 반복 행사 계약과 지역 세척 동선으로 납기와 재주문을 개선. 고객의 선택 이유를 기획한 뒤 기존 대안과 비용·납기·재주문으로 비교.')
  ]},
- {id:'market',title:'시장·경쟁',question:'어느 고객부터 접근하고, 얼마나 확보할 수 있나요?',task:'market',checks:['시장 범위의 상품·지역·기간 일치','TAM·SAM·SOM의 포함 관계 확인','목표 고객 수와 영업·제공 역량 연결'],fields:[
+ {id:'market',title:'시장·경쟁',question:'어떤 시장 기회에서 시작해 어디까지 확장할 수 있나요?',task:'market',checks:['시장 범위의 상품·지역·기간 일치','TAM·SAM·SOM의 포함 관계 확인','목표 고객 수와 영업·제공 역량 연결'],fields:[
   field('marketScope','상품·고객·지역·기간','어떤 거래의 규모를 계산할지','다회용기 공급·회수·세척 / 행사 운영사 / 부산·경남부터 / 연간 기준.'),
-  field('tam','TAM: 전체 관련 수요','고객 수·구매량·단가·산식과 원출처','전국 행사 용기 수요의 연간 구매·처리량과 단가 조사 필요. 수치 미확인.'),
-  field('sam','SAM: 제공 가능한 시장','서비스 지역·대상·공급 제약 적용','부산·경남의 운송 가능 거리 내 행사로 제한. 대상 행사 목록 조사 필요.'),
+  field('tam','TAM: 전체 서비스 수요','산업 기회와 서비스 매출시장 구분. 상품·지역·기간·원출처','전국 행사 용기 수요의 연간 구매·처리량과 단가 조사 필요. 수치 미확인.'),
+  field('sam','SAM: 목표 서비스 시장','확장할 고객군·지역·서비스 범위. 현재 역량만으로 시장 전체를 축소하지 않기','초기 부산·경남 행사에서 시작해 기업 행사·급식·상설 다회용 수요로 확장하는 가설. 서비스 매출시장 규모는 각 범위의 원출처 조사 필요.'),
   field('som','SOM: 확보 가능한 시장','접촉량·전환율·도입 시점·제공 역량으로 계산','목표 고객 수를 영업 접근량·계약 전환·월 처리 역량과 대조해 산정 예정.'),
   field('channels','고객 확보 경로','누구에게 어떻게 접근하고 계약하는지','지역 행사 운영사 목록 확보 → 담당자 면담 → 견적·유료 시험 → 반복 계약.'),
   field('competitors','비교 대상과 기준','동일한 고객 업무를 기준으로 비교','일회용기 구매, 자체 세척, 외부 대행을 비용·업무 범위·납기·처리 역량으로 비교.')
  ]},
- {id:'finance',title:'매출·원가',question:'어떤 단위로 과금하고, 얼마가 남나요?',task:'market',checks:['매출·거래액·투자금 구분','판매량과 처리 역량 대조','단가·기간·단위와 직접 원가 누락 확인'],fields:[
-  field('pricing','가격과 과금 단위','누가 어떤 단위에 얼마를 지불하는지','계산 가정: 행사 운영사가 용기 1개 처리당 500원 지불.'),
-  field('sales','매출 실적 또는 목표·산식','실적과 목표를 분리하고 기간 표기','월 목표 가정: 10곳 × 월 2회 × 1,000개 × 500원 = 월 1,000만원.'),
-  field('cost','직접 원가와 고정비','판매할 때 늘어나는 비용과 매달 드는 비용','직접 원가 가정: 1개 350원, 월 20,000개 = 700만원. 고정비 별도 산정 필요.'),
-  field('capacity','현재 제공 역량','인력·시설·납기 기준 최대 제공량','월 15,000개 처리 가능 가정. 목표 20,000개 대비 5,000개 부족.'),
+ {id:'finance',title:'매출·원가',question:'누가 무엇을 받고 돈을 내며, 어떤 비용이 생기나요?',task:'market',checks:['매출·거래액·투자금 구분','판매량과 처리 역량 대조','단가·기간·단위와 직접 원가 누락 확인'],fields:[
+  field('pricing','가격과 과금 단위','누가 어떤 단위에 얼마를 지불하는지','교육용 조건: 행사 운영사가 회수·세척 완료한 용기 1개당 500원 지불.'),
+  field('sales','매출 실적 또는 목표·산식','실적과 목표를 분리하고 기간 표기','공급 가정: 월 20회 × 행사 전 1,000개 = 20,000개. 청구량은 회수·세척 완료 수량이므로 월 매출은 완료 수량 × 500원. 회수·세척 완료율 미정.'),
+  field('cost','직접 원가와 고정비','판매할 때 늘어나는 비용과 매달 드는 비용','350원/개의 기준 수량은 미정. 공급·회수·세척·고정비로 나눠 확인한 뒤 계산. 현 단계에서는 매출총이익 확정 불가.'),
+  field('capacity','현재 제공 역량','인력·시설·납기 기준 최대 제공량','월 세척 역량 15,000개 가정. 공급 20,000개와 바로 차감하지 않고 회수·세척 완료 목표가 정해지면 역량 대조.'),
   field('cash','보유 현금·지출·유입','산정 기간, 현금 부족 시점, 확정·예정 구분','보유 현금, 설비·운송비, 월 고정비, 대금 회수 조건 입력 필요.')
  ]},
  {id:'impact',title:'임팩트',question:'사업 활동이 누구에게 어떤 변화를 만드나요?',task:'impact',checks:['활동량·직접 산출·실제 변화 구분','기준선·기간·측정 방법 확인','다른 영향 요인과 부작용 검토'],fields:[
@@ -59,7 +59,7 @@ export const SECTIONS = [
   field('investor','대상 투자자','하우스·펀드·포트폴리오의 공개자료','초기 임팩트 투자사 검토. 하우스·펀드·포트폴리오 조사 필요.'),
   field('format','미팅 목적·발표 방식·분량','무대 피칭, 1:1, 서면 검토 등','첫 1:1 미팅용. 후속 검토에 필요한 고객·서비스·사업성·임팩트 제시. 분량 미정.'),
   field('traction','본문에 제시할 핵심 근거','계약·매출·고객 사용·측정 결과의 원자료','현재 유료 계약·매출·환경 효과 실적 미확인. 서비스 범위와 계산 가정을 구분해 제시.'),
-  field('headline','가장 먼저 전달할 내용','고객·상품·구매 이유가 보이는 문장','행사 운영사의 다회용기 공급·회수·세척을 한 번에 수행.'),
+  field('headline','가장 먼저 전달할 내용','고객·상품·구매 이유가 보이는 문장','일회용기 폐기를 줄이는 행사 다회용기 운영 서비스'),
   field('appendix','어펜딕스에 연결할 자료','상세 산식, 경쟁 비교, 측정 방법 등','단위 원가 계산, 영업 대상 목록, 대안별 비교표, 회수율 측정 설계.'),
   field('risks','남은 결정과 검증 과제','검증 결과에 따라 바뀔 사업 조건','처리 역량 확대 비용, 구매 의사, 가격 수용성, 회수율 확인.')
  ]}
@@ -75,47 +75,26 @@ export const TASKS=[
  {id:'impact',title:'사업성·임팩트 검토',file:'05_사업성임팩트검토',sections:['customer','service','finance','impact','execution'],output:'05_검토기록/사업성임팩트.md',detail:'수익 구조와 변화의 경로·측정·부작용 검토'},
  {id:'ir',title:'IR 기획·제작',file:'06_IR기획제작',sections:SECTIONS.map(s=>s.id),output:'04_기획제작/IR_원고.md',detail:'구성안·헤드카피·본문·시각화·PPT·PDF'},
  {id:'loop',title:'검토·수정 반복',file:'07_자동검토수정',sections:SECTIONS.map(s=>s.id),output:'05_검토기록/오류와_다음행동.md',detail:'오류별 수정과 변경 항목 재검토'},
- {id:'investor',title:'투자자별 맞춤 수정',file:'08_투자자맞춤화',sections:['company','market','impact','execution','ir'],output:'04_기획제작/투자자별_수정안.md',detail:'공개자료를 바탕으로 강조점·순서 조정'},
+ {id:'investor',title:'투자자 관점 평가·보완',file:'08_투자자맞춤화',sections:['company','market','impact','execution','ir'],output:'05_검토기록/투자자검토.md',detail:'투자 단계·근거·보류 사유를 사업 보완과 재평가로 연결'},
  {id:'audit',title:'제출 전 검토',file:'09_제출전검토',sections:SECTIONS.map(s=>s.id),output:'05_검토기록/제출전검토.md',detail:'원고·계산·PPT·PDF의 사실·수치·표현 대조'}
 ];
 export const TOOLS={
- codex:{name:'Codex',install:'https://developers.openai.com/codex/cli',docs:'https://learn.chatgpt.com/docs/build-skills',agents:'https://learn.chatgpt.com/docs/agent-configuration/subagents',skillPath:'.agents/skills/impact-business-planning',rule:'AGENTS.md',agentPath:'.codex/agents',note:'앱·CLI에서 회사 폴더의 자료와 결과물 작업. 프로젝트 스킬·에이전트 설정 포함.'},
- claude:{name:'Claude Code',install:'https://code.claude.com/docs/en/overview',docs:'https://code.claude.com/docs/en/skills',agents:'https://code.claude.com/docs/en/sub-agents',skillPath:'.claude/skills/impact-business-planning',rule:'CLAUDE.md',agentPath:'.claude/agents',note:'터미널·편집기에서 파일 작업. 프로젝트 스킬·서브에이전트 설정 포함.'},
- cursor:{name:'Cursor',install:'https://cursor.com/downloads',docs:'https://cursor.com/docs/skills',agents:'https://cursor.com/docs/subagents',skillPath:'.cursor/skills/impact-business-planning',rule:'.cursor/rules/impact-ir.mdc',agentPath:'.cursor/agents',note:'편집기에서 파일·변경 내용 확인. 프로젝트 규칙·스킬·서브에이전트 설정 포함.'},
- antigravity:{name:'Antigravity',install:'https://www.antigravity.google/download',docs:'https://www.antigravity.google/docs/skills/',agents:'https://www.antigravity.google/docs/rules/',skillPath:'.agents/skills/impact-business-planning',rule:'.agents/rules/impact-ir.md',agentPath:null,note:'프로젝트 규칙·스킬 설정 포함. 기획·리서치·검토 역할 문서를 순차 적용하고, 별도 에이전트 지원은 설치 환경에서 확인.'}
+ codex:{name:'Codex',install:'https://developers.openai.com/codex/cli',docs:'https://learn.chatgpt.com/docs/build-skills',agents:'https://learn.chatgpt.com/docs/agent-configuration/subagents',skillPath:'.agents/skills/impact-business-planning',rule:'AGENTS.md',agentPath:'.codex/agents',verified:'공식 형식 확인 · 실행 환경에서 호출 확인 필요',note:'앱·CLI에서 회사 폴더의 자료와 결과물 작업. 프로젝트 스킬·에이전트 설정 포함.'},
+ claude:{name:'Claude Code',install:'https://code.claude.com/docs/en/overview',docs:'https://code.claude.com/docs/en/skills',agents:'https://code.claude.com/docs/en/sub-agents',skillPath:'.claude/skills/impact-business-planning',rule:'CLAUDE.md',agentPath:'.claude/agents',verified:'공식 형식 확인 · 실제 호출 미시험',note:'터미널·편집기에서 파일 작업. 프로젝트 스킬·서브에이전트 설정 포함.'},
+ cursor:{name:'Cursor',install:'https://cursor.com/downloads',docs:'https://cursor.com/docs/skills',agents:'https://cursor.com/docs/subagents',skillPath:'.cursor/skills/impact-business-planning',rule:'.cursor/rules/impact-ir.mdc',agentPath:'.cursor/agents',verified:'공식 형식 확인 · 실제 호출 미시험',note:'편집기에서 파일·변경 내용 확인. 프로젝트 규칙·스킬·서브에이전트 설정 포함.'},
+ antigravity:{name:'Antigravity',install:'https://www.antigravity.google/download',docs:'https://www.antigravity.google/docs/skills/',agents:'https://antigravity.google/docs/subagents/',skillPath:'.agents/skills/impact-business-planning',rule:'.agents/rules/impact-ir.md',agentPath:'.agents/agents',verified:'2.0·CLI 공식 형식 확인 · 실제 호출 미시험. 미지원 환경은 순차 역할 적용',note:'2.0·CLI용 규칙·스킬·역할 등록 파일 포함. 실제 설치 환경에서 독립 호출과 사용 도구를 확인.'}
 };
 export const REVIEW_FIELDS=[
  field('target','검토 자료·버전','파일명과 검토일','IR_원고_v01.md / 2026-10-11'),
  field('findings','발견한 오류와 근거','위치·문제·근거·수정안','서비스 페이지의 고객 확보 문구: 계약 자료 없음 → 타깃 가설로 수정'),
  field('corrected','수정·재검토 결과','실제로 바뀐 내용과 확인 결과','월 목표 물량과 처리 역량 대조. 월 5,000개 부족 확인.'),
  field('decisions','대표가 결정할 사항','선택지·판단 이유·결정 상태','가격·우선 고객·설비 확대 여부 결정 필요.'),
- field('pending','현장 검증 과제','대상·방법·기간·담당·판정 기준','행사 운영사 구매 의사와 가격 수용성 확인 계획 수립.')
+ field('pending','현장 검증 과제','대상·방법·기간·담당·판정 기준','행사 운영사 구매 의사와 가격 수용성 확인 계획 수립.'),
+ field('origin','피드백 출처·관점','대표·실제 고객·실제 투자자·AI 모의 검토, 기록일과 확인 범위','AI 모의 투자 검토 / 초기 임팩트 투자자 관점'),
+ field('desired','원하는 변화·유지 조건','수정할 내용과 바꾸지 않을 사업 조건','고객 가치와 임팩트 경로를 명확히. 기존 가격 조건 유지.'),
+ field('recheck','재검사·재평가와 다음 행동','확인한 결과·미해결·담당·다음 단계','수정본에서 제목과 본문 대조. 구매 검증은 현장 과제로 유지.'),
+ field('learning','반복 오류와 스킬 교정 기록','입력·원출력·원인·적용 범위·교정·재시험 결과','업무 나열형 소개가 반복됨 → 서비스 정체·고객 가치·임팩트 경로 기준을 적용하고 정상 문장도 확인.')
+
 ];
-export const RULES=`# 회사 작업 규칙
-
-## 자료와 결정
-- 필요한 중간 파일은 AI가 스킬의 파일 생성·검증 기준에 따라 만들고 재사용한다. 사용자에게 JSON 사전 작성을 요구하지 않는다. 없는 사실은 미확인으로 남기고 원본·승인된 정보는 보존한다.
-- 기업정보는 최초 저장 후 파일로 재사용한다. 웹 재입력·패키지 재다운로드는 반복 작업의 조건이 아니다. 이번 작업 조건만 프롬프트로 전달한다.
-- 필요한 기업정보와 앞 단계 산출물을 실제로 읽고 경로·기준일·승인 상태를 기록한다. 파일이 없거나 읽지 못하면 위치와 필요한 정보를 확인하고, 웹 예시·대화 기억으로 대신하지 않는다.
-- 버전 충돌은 사용자가 지정한 자료와 승인 기록을 대조한다. 대표가 채택한 변경만 로컬 기업정보·의사결정 기록에 갱신하며 최초 원문과 이전 작업본을 보존한다.
-- 01_기업정보/기업정보.md, 사업가정.md, 의사결정.md를 읽고 기준일·버전을 확인한다. 웹 입력은 대표가 적은 내용이며 자료 확인과 동일하지 않다.
-- 확인 사실·계산·가정·목표·미확인을 구분한다. 계약·고객·매출·인터뷰·효과를 만들지 않는다.
-- 원본과 웹워크북_원문.md는 보존한다. AI 제안은 대표의 채택 전까지 사업가정에 기록한다.
-- 고객·가격·예산·투자 조건·미션의 변경은 대표가 결정한다. 조사·계산·원고 수정은 요청 범위에서 이어간다.
-
-## 기획·표현
-- 고객·상품·제공 업무·구매 이유를 비즈니스 용어로 설명한다. 투자자가 업종 전문용어를 안다고 가정하지 않는다.
-- 헤드카피는 본문의 답을 직관적으로 표현한다. 메뉴·작업 제목은 명확한 기능명으로 쓴다.
-- '혁신적 플랫폼', '성장 기반' 같은 추상어만 남기지 않는다. '그래서 무엇을 제공하는가'에 답한다.
-- 본문에는 핵심 주장·대표 근거·중요 조건, 어펜딕스에는 상세 계산·측정·비교 자료를 연결한다. 10장을 고정하지 않는다.
-- 내부 검토 메모·작성 지시·불필요한 변명은 발표 본문에서 제거한다. 출처·가정·위험 조건은 보존한다.
-
-## 저장·검토
-- 02_원본자료는 읽기 전용으로 취급한다. 작업본은 03_조사계산·04_기획제작, 검토 기록은 05_검토기록에 저장한다.
-- 파일명은 주제_YYYYMMDD_v01 형식. 같은 파일이 있으면 변경 내용 확인 후 다음 버전으로 저장한다.
-- 주장마다 출처·기준일·단위·확인 범위를 기록한다. 수치는 입력·산식·기간과 대조한다.
-- 작성 → 검토 → 원인별 수정 → 변경 항목 재검토를 수행한다. 새 근거가 없으면 미해결 과제를 남기고 해당 반복을 종료한다.
-- 실제 고객 구매·사용·효과는 문장 수정으로 검증 완료 처리하지 않는다.
-- 최종 PPT·PDF를 열어 글자·차트·출처·숫자·넘침을 확인한다. 외부 제출은 대표 승인 후 진행한다.
-`;
+export const RULES=WORK_RULES;
 export const AGENTS=ROLE_AGENTS;
