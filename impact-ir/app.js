@@ -1,4 +1,4 @@
-import {quickView,requestsView,copyBlock} from './quickstart.js?v=2.5.1-lecture03';
+import {quickView,requestsView,copyBlock} from './quickstart.js?v=2.5.1-install-links';
 import {manualView,manualMarkdown,UPDATE_PROMPT} from './manual.js?v=2.5.1';
 import {TASK_FLOW} from './task-flow.js?v=2.5.1';
 import {VERSION,SECTIONS,STATES,TASKS,TOOLS,REVIEW_FIELDS,AGENTS,RULES} from './content.js?v=2.5.1';
